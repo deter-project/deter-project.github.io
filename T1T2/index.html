@@ -63,8 +63,5 @@ We have developed strategies to contain experiment risk while allowing users to 
 
 <p>The safest way to change something in your experiment is via Modify Experiment Web page. This should properly set up all the routes, firewall rules, etc. in your experiment. You will not be allowed to modify tunnel node&rsquo;s settings such as OS image and name but you can modify where this node links with your topology. If you need to add some start commands on experiment nodes (except the tunnel node) the best way is to copy the commands we have automatically inserted into your startup script, add commands you want, then replace the start-cmd options in the NS file with the name of your startup script. If you mess up startcmd options in the NS file routing on experiment nodes will not be set up properly. To amend the problem you can delete the entire &ldquo;tunnelcode&rdquo; section of the NS file, make sure that the connectivity box is checked and run Modify Experiment and the proper code for connectivity will be automatically inserted.</p>
 
-<script data-no-instant>document.write('<script src="http://'
-        + (location.host || 'localhost').split(':')[0]
-		+ ':1313/livereload.js?mindelay=10"></'
-        + 'script>')</script></body>
+</body>
 </html>

@@ -971,6 +971,89 @@ tb-set-hardware $atUCB UCB
     
     <item>
       <title></title>
+      <link>http://localhost:1313/BatchStats/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/BatchStats/</guid>
+      <description>&lt;p&gt;All these stats ignore class projects which are currently banned from creating batch experiments.&lt;/p&gt;
+
+&lt;p&gt;Recent activity:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
+select year(last_activity) as yr, month(last_activity) as mo,
+       p.pid, eid
+  from experiment_stats s, projects p
+ where s.pid_idx = p.pid_idx and
+       !p.class and batch and year(last_activity) &amp;gt;= 2009
+ order by yr, mo, p.pid, eid;
++------+------+--------------+---------------+
+| yr   | mo   | pid          | eid           |
++------+------+--------------+---------------+
+| 2009 |    4 | T1T2         | jdemo         | 
+| 2009 |    5 | SecureIED    | 32hostsmcast  | 
+| 2010 |    1 | liveobjects2 | myexp1        | 
+| 2010 |    3 | DeterTest    | jjh-batch     | 
+| 2010 |    3 | DeterTest    | jjh-batchtest | 
+| 2010 |    3 | liveobjects2 | myexp         | 
+| 2010 |    3 | Panorama     | bitfuzz10-1   | 
+| 2010 |    8 | SOS          | appcomm       | 
++------+------+--------------+---------------+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All batch, by project:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql&amp;gt; 
+select p.pid, count(*)
+  from experiment_stats e, projects p
+ where e.pid_idx = p.pid_idx and
+       !p.class and e.batch
+ group by pid order by count(*) desc;
++--------------+----------+
+| pid          | count(*) |
++--------------+----------+
+| ddos         |     2412 | 
+| Fidran       |      134 | 
+| FloodWatch   |       48 | 
+| MONA         |       29 | 
+| worm         |       12 | 
+| emulab-ops   |       12 | 
+| NSUDDOS      |       11 | 
+| DeterTest    |       10 | 
+| psuworm      |        8 | 
+| SOS          |        6 | 
+| rsgc         |        4 | 
+| DIAMOND      |        3 | 
+| Deter        |        2 | 
+| liveobjects2 |        2 | 
+| SWOON        |        2 | 
+| vinci        |        1 | 
+| T1T2         |        1 | 
+| SecureIED    |        1 | 
+| DDoSImpact   |        1 | 
+| Panorama     |        1 | 
+| eWorm        |        1 | 
++--------------+----------+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All activity, ever:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
+select year(last_activity) as yr, month(last_activity) as mo,
+       count(*)
+  from experiment_stats s, projects p
+ where s.pid_idx = p.pid_idx and
+       !p.class and batch
+ group by yr, mo
+ order by yr, mo;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: y axis is log scale
+[[Image(graph.png)]]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://localhost:1313/AnonymityModule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -1192,55 +1275,6 @@ onion route the data. As the name suggests onion routing alters the data flow th
 &lt;h1 id=&#34;more-on-your-own:49601fcc70443e8a9f263221deee393b&#34;&gt;More on Your Own&lt;/h1&gt;
 
 &lt;p&gt;If you want to explore this some more, you can use &lt;code&gt;tcpdump&lt;/code&gt; and Wireshark on more than just the server node. When using the proxy to send data, you can use it on the Alice node and the proxy node to determine what each knows about the source and destination of the packets. If you&amp;rsquo;re using Tor, then you can use it on the Alice node and the Tor Relays to determine what they all know about the packets. After you&amp;rsquo;ve done some of that, which anonymity tool do you think is the best at keeping users anonymous?&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/BnFnotation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/BnFnotation/</guid>
-      <description>&lt;p&gt;metadescription&amp;gt; ::= declaration dimensions&lt;/p&gt;
-
-&lt;p&gt;declaration ::= &lt;em&gt;define&lt;/em&gt; identifier &amp;ldquo;:&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;dimensions ::= dimension {dimensions}&lt;/p&gt;
-
-&lt;p&gt;dimension ::= logtopo | evtimeline&lt;/p&gt;
-
-&lt;p&gt;logtopo ::= &lt;em&gt;topology&lt;/em&gt; objects cardinality relationships&lt;/p&gt;
-
-&lt;p&gt;evtimeline ::= &lt;em&gt;timeline&lt;/em&gt; definitions timeline invariants&lt;/p&gt;
-
-&lt;p&gt;objects ::= &lt;em&gt;objects&lt;/em&gt; object {object}&lt;/p&gt;
-
-&lt;p&gt;object ::= alias | dobject&lt;/p&gt;
-
-&lt;p&gt;alias ::= obname &amp;ldquo;.&amp;rdquo; obfield&lt;/p&gt;
-
-&lt;p&gt;dobject ::= obtype [obname] &amp;ldquo;:=&amp;rdquo; &amp;ldquo;{&amp;rdquo; obass &amp;ldquo;}&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;obass ::= obass [&amp;ldquo;,&amp;rdquo; obass]&lt;/p&gt;
-
-&lt;p&gt;obass ::= obvar | obstate&lt;/p&gt;
-
-&lt;p&gt;obvar ::= obtype obname [&amp;ldquo;=&amp;rdquo; value]&lt;/p&gt;
-
-&lt;p&gt;obstate ::= state &amp;ldquo;=&amp;rdquo; value&lt;/p&gt;
-
-&lt;p&gt;obname ::= identifier&lt;/p&gt;
-
-&lt;p&gt;obtype from list of object types&lt;/p&gt;
-
-&lt;p&gt;value ::= number | string&lt;/p&gt;
-
-&lt;p&gt;identifier ::=  letter { letter | digit }&lt;/p&gt;
-
-&lt;p&gt;letter
-diggit
-number
-string&lt;/p&gt;
 </description>
     </item>
     
@@ -1477,84 +1511,50 @@ Attacker att, Auth auth, Name n, FakeIP fIP, fakeAuth fauth, RealIP rIP, victimC
     
     <item>
       <title></title>
-      <link>http://localhost:1313/BatchStats/</link>
+      <link>http://localhost:1313/BnFnotation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/BatchStats/</guid>
-      <description>&lt;p&gt;All these stats ignore class projects which are currently banned from creating batch experiments.&lt;/p&gt;
+      <guid>http://localhost:1313/BnFnotation/</guid>
+      <description>&lt;p&gt;metadescription&amp;gt; ::= declaration dimensions&lt;/p&gt;
 
-&lt;p&gt;Recent activity:&lt;/p&gt;
+&lt;p&gt;declaration ::= &lt;em&gt;define&lt;/em&gt; identifier &amp;ldquo;:&amp;rdquo;&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
-select year(last_activity) as yr, month(last_activity) as mo,
-       p.pid, eid
-  from experiment_stats s, projects p
- where s.pid_idx = p.pid_idx and
-       !p.class and batch and year(last_activity) &amp;gt;= 2009
- order by yr, mo, p.pid, eid;
-+------+------+--------------+---------------+
-| yr   | mo   | pid          | eid           |
-+------+------+--------------+---------------+
-| 2009 |    4 | T1T2         | jdemo         | 
-| 2009 |    5 | SecureIED    | 32hostsmcast  | 
-| 2010 |    1 | liveobjects2 | myexp1        | 
-| 2010 |    3 | DeterTest    | jjh-batch     | 
-| 2010 |    3 | DeterTest    | jjh-batchtest | 
-| 2010 |    3 | liveobjects2 | myexp         | 
-| 2010 |    3 | Panorama     | bitfuzz10-1   | 
-| 2010 |    8 | SOS          | appcomm       | 
-+------+------+--------------+---------------+
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;dimensions ::= dimension {dimensions}&lt;/p&gt;
 
-&lt;p&gt;All batch, by project:&lt;/p&gt;
+&lt;p&gt;dimension ::= logtopo | evtimeline&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;mysql&amp;gt; 
-select p.pid, count(*)
-  from experiment_stats e, projects p
- where e.pid_idx = p.pid_idx and
-       !p.class and e.batch
- group by pid order by count(*) desc;
-+--------------+----------+
-| pid          | count(*) |
-+--------------+----------+
-| ddos         |     2412 | 
-| Fidran       |      134 | 
-| FloodWatch   |       48 | 
-| MONA         |       29 | 
-| worm         |       12 | 
-| emulab-ops   |       12 | 
-| NSUDDOS      |       11 | 
-| DeterTest    |       10 | 
-| psuworm      |        8 | 
-| SOS          |        6 | 
-| rsgc         |        4 | 
-| DIAMOND      |        3 | 
-| Deter        |        2 | 
-| liveobjects2 |        2 | 
-| SWOON        |        2 | 
-| vinci        |        1 | 
-| T1T2         |        1 | 
-| SecureIED    |        1 | 
-| DDoSImpact   |        1 | 
-| Panorama     |        1 | 
-| eWorm        |        1 | 
-+--------------+----------+
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;logtopo ::= &lt;em&gt;topology&lt;/em&gt; objects cardinality relationships&lt;/p&gt;
 
-&lt;p&gt;All activity, ever:&lt;/p&gt;
+&lt;p&gt;evtimeline ::= &lt;em&gt;timeline&lt;/em&gt; definitions timeline invariants&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
-select year(last_activity) as yr, month(last_activity) as mo,
-       count(*)
-  from experiment_stats s, projects p
- where s.pid_idx = p.pid_idx and
-       !p.class and batch
- group by yr, mo
- order by yr, mo;
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;objects ::= &lt;em&gt;objects&lt;/em&gt; object {object}&lt;/p&gt;
 
-&lt;p&gt;Note: y axis is log scale
-[[Image(graph.png)]]&lt;/p&gt;
+&lt;p&gt;object ::= alias | dobject&lt;/p&gt;
+
+&lt;p&gt;alias ::= obname &amp;ldquo;.&amp;rdquo; obfield&lt;/p&gt;
+
+&lt;p&gt;dobject ::= obtype [obname] &amp;ldquo;:=&amp;rdquo; &amp;ldquo;{&amp;rdquo; obass &amp;ldquo;}&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;obass ::= obass [&amp;ldquo;,&amp;rdquo; obass]&lt;/p&gt;
+
+&lt;p&gt;obass ::= obvar | obstate&lt;/p&gt;
+
+&lt;p&gt;obvar ::= obtype obname [&amp;ldquo;=&amp;rdquo; value]&lt;/p&gt;
+
+&lt;p&gt;obstate ::= state &amp;ldquo;=&amp;rdquo; value&lt;/p&gt;
+
+&lt;p&gt;obname ::= identifier&lt;/p&gt;
+
+&lt;p&gt;obtype from list of object types&lt;/p&gt;
+
+&lt;p&gt;value ::= number | string&lt;/p&gt;
+
+&lt;p&gt;identifier ::=  letter { letter | digit }&lt;/p&gt;
+
+&lt;p&gt;letter
+diggit
+number
+string&lt;/p&gt;
 </description>
     </item>
     

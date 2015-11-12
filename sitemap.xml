@@ -38,11 +38,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/AnonymityModule/</loc>
+    <loc>http://localhost:1313/BatchStats/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/BnFnotation/</loc>
+    <loc>http://localhost:1313/AnonymityModule/</loc>
   </url>
   
   <url>
@@ -50,7 +50,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/BatchStats/</loc>
+    <loc>http://localhost:1313/BnFnotation/</loc>
   </url>
   
   <url>
@@ -90,15 +90,15 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassesSpring2013/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/ClassesFall2012/</loc>
   </url>
   
   <url>
     <loc>http://localhost:1313/ClassesSpring2011/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ClassesSpring2013/</loc>
   </url>
   
   <url>
@@ -142,15 +142,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/CurrentlyProposedLanguage/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/CustomOS/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DellSerialConsole/</loc>
+    <loc>http://localhost:1313/CurrentlyProposedLanguage/</loc>
   </url>
   
   <url>
@@ -158,15 +154,19 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/DETERSSH/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/DETERTopology/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Deter/NewExDesc/</loc>
+    <loc>http://localhost:1313/DellSerialConsole/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DETERSSH/</loc>
+    <loc>http://localhost:1313/Deter/NewExDesc/</loc>
   </url>
   
   <url>
@@ -182,11 +182,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/DeterLabCommands/</loc>
+    <loc>http://localhost:1313/DeterVirtualProject/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DeterVirtualProject/</loc>
+    <loc>http://localhost:1313/DeterLabCommands/</loc>
   </url>
   
   <url>
@@ -210,7 +210,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/DevTestbedAPISpec/</loc>
+    <loc>http://localhost:1313/ElabElabSshProxy/</loc>
   </url>
   
   <url>
@@ -218,15 +218,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/ExDescLang/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/ElabElabSshProxy/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/ExperimentAPISPec/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/ExDescLang/</loc>
   </url>
   
   <url>
@@ -238,11 +234,15 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/GettingStarted/</loc>
+    <loc>http://localhost:1313/GitTricks/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/GitTricks/</loc>
+    <loc>http://localhost:1313/DevTestbedAPISpec/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/GettingStarted/</loc>
   </url>
   
   <url>
@@ -350,11 +350,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Servers/</loc>
+    <loc>http://localhost:1313/Internal/Serial/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Serial/</loc>
+    <loc>http://localhost:1313/Internal/Servers/</loc>
   </url>
   
   <url>
@@ -430,11 +430,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/LegacyTools/</loc>
+    <loc>http://localhost:1313/LayoutAspect/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LayoutAspect/</loc>
+    <loc>http://localhost:1313/LegacyTools/</loc>
   </url>
   
   <url>
@@ -462,15 +462,15 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Feedback_Case_Study/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/MAGI_Agent_Library/</loc>
   </url>
   
   <url>
     <loc>http://localhost:1313/MAGI_Scaled_Server_Case_Study/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/MAGI_Feedback_Case_Study/</loc>
   </url>
   
   <url>
@@ -482,11 +482,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Tools/</loc>
+    <loc>http://localhost:1313/MakingNewImages/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MakingNewImages/</loc>
+    <loc>http://localhost:1313/MAGI_Tools/</loc>
   </url>
   
   <url>
@@ -498,6 +498,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/MicroCloud/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/MitmExample/</loc>
   </url>
   
@@ -506,15 +510,7 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/MicroCloud/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/NetFPGA_nodes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/NewContainersAPISpec/</loc>
   </url>
   
   <url>
@@ -522,15 +518,19 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/NewContainersAPISpec/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/NewExperimentAPI/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewDelayNodeNs/</loc>
+    <loc>http://localhost:1313/NewImpl/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewImpl/</loc>
+    <loc>http://localhost:1313/NewDelayNodeNs/</loc>
   </url>
   
   <url>
@@ -570,11 +570,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/PageTemplates/</loc>
+    <loc>http://localhost:1313/OrchestratorWritingAgents/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OrchestratorWritingAgents/</loc>
+    <loc>http://localhost:1313/PageTemplates/</loc>
   </url>
   
   <url>
@@ -610,11 +610,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/SwapInTricks/</loc>
+    <loc>http://localhost:1313/SourceControlPolicy/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/SourceControlPolicy/</loc>
+    <loc>http://localhost:1313/SwapInTricks/</loc>
   </url>
   
   <url>
@@ -630,11 +630,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/T1T2/</loc>
+    <loc>http://localhost:1313/TitleIndex/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TitleIndex/</loc>
+    <loc>http://localhost:1313/T1T2/</loc>
   </url>
   
   <url>
@@ -670,6 +670,10 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/TracGuide/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/TracFastCgi/</loc>
   </url>
   
@@ -679,10 +683,6 @@
   
   <url>
     <loc>http://localhost:1313/TracImport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/TracGuide/</loc>
   </url>
   
   <url>
@@ -698,11 +698,15 @@
   </url>
   
   <url>
+    <loc>http://localhost:1313/TracLinks/</loc>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/TracLogging/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracLinks/</loc>
+    <loc>http://localhost:1313/TracModPython/</loc>
   </url>
   
   <url>
@@ -711,10 +715,6 @@
   
   <url>
     <loc>http://localhost:1313/TracNavigation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/TracModPython/</loc>
   </url>
   
   <url>
@@ -738,19 +738,19 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracRevisionLog/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/TracRepositoryAdmin/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracRoadmap/</loc>
+    <loc>http://localhost:1313/TracRevisionLog/</loc>
   </url>
   
   <url>
     <loc>http://localhost:1313/TracRss/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/TracRoadmap/</loc>
   </url>
   
   <url>
@@ -786,11 +786,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracWiki/</loc>
+    <loc>http://localhost:1313/TracUpgrade/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracUpgrade/</loc>
+    <loc>http://localhost:1313/TracWiki/</loc>
   </url>
   
   <url>
@@ -814,11 +814,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/GettingTheJavaGUIToWork/</loc>
+    <loc>http://localhost:1313/Tutorial/CustomOS/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/CustomOS/</loc>
+    <loc>http://localhost:1313/Tutorial/GettingTheJavaGUIToWork/</loc>
   </url>
   
   <url>
@@ -862,15 +862,15 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiPageNames/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/WikiMacros/</loc>
   </url>
   
   <url>
     <loc>http://localhost:1313/WikiNewPage/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/WikiPageNames/</loc>
   </url>
   
   <url>
@@ -890,15 +890,15 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/bpc2800/</loc>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/Windows/</loc>
   </url>
   
   <url>
     <loc>http://localhost:1313/assign&#43;/</loc>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/bpc2800/</loc>
   </url>
   
   <url>
@@ -926,11 +926,11 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/nscommands/</loc>
+    <loc>http://localhost:1313/pc3000/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/pc3000/</loc>
+    <loc>http://localhost:1313/nscommands/</loc>
   </url>
   
   <url>
