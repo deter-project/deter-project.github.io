@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The Deter Project</title>
-    <link>http://localhost:1313/</link>
+    <link>http://deter-project.github.io/</link>
     <description>Recent content on The Deter Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Nov 2015 07:54:14 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://deter-project.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Core Quickstart</title>
-      <link>http://localhost:1313/CoreQuickstart/</link>
+      <link>http://deter-project.github.io/CoreQuickstart/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/CoreQuickstart/</guid>
+      <guid>http://deter-project.github.io/CoreQuickstart/</guid>
       <description>
 
 &lt;p&gt;This page describes basic information about DeterLab and its core functionality.&lt;/p&gt;
@@ -107,10 +107,10 @@ $ns run
     
     <item>
       <title>Core Guide</title>
-      <link>http://localhost:1313/CoreGuide/</link>
+      <link>http://deter-project.github.io/CoreGuide/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/CoreGuide/</guid>
+      <guid>http://deter-project.github.io/CoreGuide/</guid>
       <description>
 
 &lt;p&gt;In this tutorial we begin with a small 3-5 node experiment, so that you will become familiar with NS syntax and the practical aspects of DeterLab operation. Usually, you will want to incorporate another system such as the [wiki:OrchestratorQuickstart MAGI Orchestrator] for more fully fleshed out experiments. But this is a good starting point for those new to DeterLab.&lt;/p&gt;
@@ -542,10 +542,10 @@ When you are completely finished with your experiment and have no intention of r
     
     <item>
       <title>Sign Up</title>
-      <link>http://localhost:1313/SignUp/</link>
+      <link>http://deter-project.github.io/SignUp/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/SignUp/</guid>
+      <guid>http://deter-project.github.io/SignUp/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-an-account:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Getting an Account&lt;/h1&gt;
@@ -608,10 +608,10 @@ When you are completely finished with your experiment and have no intention of r
     
     <item>
       <title>Sample Topologies</title>
-      <link>http://localhost:1313/Topologies/</link>
+      <link>http://deter-project.github.io/Topologies/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/Topologies/</guid>
+      <guid>http://deter-project.github.io/Topologies/</guid>
       <description>
 
 &lt;p&gt;The following are various topologies you can use to experiment with DeterLab Core.&lt;/p&gt;
@@ -752,10 +752,10 @@ $ns run
     
     <item>
       <title>Using Nodes</title>
-      <link>http://localhost:1313/UsingNodes/</link>
+      <link>http://deter-project.github.io/UsingNodes/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/UsingNodes/</guid>
+      <guid>http://deter-project.github.io/UsingNodes/</guid>
       <description>
 
 &lt;h1 id=&#34;know-your-deter-servers:346b9e50ca891863d0f276733701095f&#34;&gt;Know your DETER servers&lt;/h1&gt;
@@ -893,39 +893,39 @@ tb-set-hardware $atUCB UCB
     
     <item>
       <title>Getting Started</title>
-      <link>http://localhost:1313/WikiStart/</link>
+      <link>http://deter-project.github.io/WikiStart/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/WikiStart/</guid>
+      <guid>http://deter-project.github.io/WikiStart/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-an-account:2482b6fa94d341223660bf6920719a55&#34;&gt;Getting an Account&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/Policy&#34;&gt;The DeterLab usage policy&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/GettingStarted&#34;&gt;Registering to use DeterLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/Policy&#34;&gt;The DeterLab usage policy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/GettingStarted&#34;&gt;Registering to use DeterLab&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;getting-started:2482b6fa94d341223660bf6920719a55&#34;&gt;Getting Started&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/CoreQuickstart&#34;&gt;DeterLab Core Quickstart&lt;/a&gt; - a high level overview of DeterLab Core&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/CoreGuide&#34;&gt;DeterLab Core Guide&lt;/a&gt; - includes a basic tutorial as well as some advanced topics&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/Topologies&#34;&gt;Sample Topologies&lt;/a&gt; - Some sample topologies to help you learn NS syntax&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/UsingNodes&#34;&gt;Using Your Nodes&lt;/a&gt; - Information about accessing and using your experimental nodes&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/LegoTG&#34;&gt;Generating Traffic&lt;/a&gt; - Using the LegoTG framework to generate traffic for your experiment&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/Sharing&#34;&gt;Using Shared Materials&lt;/a&gt; - Sharing files and other elements of your experiment within DeterLab&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/CoreReference&#34;&gt;Core Reference&lt;/a&gt; - Information about system commands, nodes, image IDs, OSIDs and more&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/DETERSSH&#34;&gt;Accessing testbed nodes using SSH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/SerialConsole&#34;&gt;Using the Serial Console on testbed nodes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/Glossary&#34;&gt;Glossary&lt;/a&gt; - List of terms used throughout DeterLab&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/CoreQuickstart&#34;&gt;DeterLab Core Quickstart&lt;/a&gt; - a high level overview of DeterLab Core&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/CoreGuide&#34;&gt;DeterLab Core Guide&lt;/a&gt; - includes a basic tutorial as well as some advanced topics&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/Topologies&#34;&gt;Sample Topologies&lt;/a&gt; - Some sample topologies to help you learn NS syntax&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/UsingNodes&#34;&gt;Using Your Nodes&lt;/a&gt; - Information about accessing and using your experimental nodes&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/LegoTG&#34;&gt;Generating Traffic&lt;/a&gt; - Using the LegoTG framework to generate traffic for your experiment&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/Sharing&#34;&gt;Using Shared Materials&lt;/a&gt; - Sharing files and other elements of your experiment within DeterLab&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/CoreReference&#34;&gt;Core Reference&lt;/a&gt; - Information about system commands, nodes, image IDs, OSIDs and more&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/DETERSSH&#34;&gt;Accessing testbed nodes using SSH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/SerialConsole&#34;&gt;Using the Serial Console on testbed nodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/Glossary&#34;&gt;Glossary&lt;/a&gt; - List of terms used throughout DeterLab&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&#34;technical-support:2482b6fa94d341223660bf6920719a55&#34;&gt;Technical Support&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Read through &lt;a href=&#34;http://localhost:1313/FrequentlyAskedQuestions&#34;&gt;Frequently Asked Questions about DeterLab&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;If you still need assistance, read &lt;a href=&#34;http://localhost:1313/GettingHelp&#34;&gt;Getting Help&lt;/a&gt; to use our support ticketing system.&lt;/li&gt;
+&lt;li&gt;Read through &lt;a href=&#34;http://deter-project.github.io/FrequentlyAskedQuestions&#34;&gt;Frequently Asked Questions about DeterLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you still need assistance, read &lt;a href=&#34;http://deter-project.github.io/GettingHelp&#34;&gt;Getting Help&lt;/a&gt; to use our support ticketing system.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;em&gt;Note&lt;/em&gt;: To view, search and file tickets, you must be logged in with your DeterLab testbed account.&lt;/p&gt;
@@ -933,8 +933,8 @@ tb-set-hardware $atUCB UCB
 &lt;h1 id=&#34;capabilities-for-experimentation:2482b6fa94d341223660bf6920719a55&#34;&gt;Capabilities for Experimentation&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/OrchestratorQuickstart&#34;&gt;Orchestration (MAGI)&lt;/a&gt; - Communications and control system for repeatable experimentation.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/ContainersQuickstart&#34;&gt;Virtualization (Containers)&lt;/a&gt; - For creating large-scale  DETER topologies that support differing degrees of fidelity in individual elements. Helpful for experiments requiring 400+ computers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/OrchestratorQuickstart&#34;&gt;Orchestration (MAGI)&lt;/a&gt; - Communications and control system for repeatable experimentation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/ContainersQuickstart&#34;&gt;Virtualization (Containers)&lt;/a&gt; - For creating large-scale  DETER topologies that support differing degrees of fidelity in individual elements. Helpful for experiments requiring 400+ computers.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://fedd.deterlab.net/trac&#34;&gt;Federation&lt;/a&gt; - Federation architecture for creating experiments that span multiple testbeds through dynamically acquiring resources from other testbeds.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://abac.deterlab.net/&#34;&gt;Attribute-Based Access Control (ABAC)&lt;/a&gt; - Scalable authorization system used with the federation capability.&lt;/li&gt;
 &lt;/ul&gt;
@@ -945,119 +945,36 @@ tb-set-hardware $atUCB UCB
 &lt;li&gt;Commands
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/DeterLabCommands&#34;&gt;DeterLab Shell Commands&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/nscommands&#34;&gt;NS Command Extensions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/DeterLabCommands&#34;&gt;DeterLab Shell Commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/nscommands&#34;&gt;NS Command Extensions&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;Architecture and Network (TBD)&lt;/li&gt;
 &lt;li&gt;Nodes
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/Swapping&#34;&gt;Node Use (Swapping) Policies&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/DETERSSH&#34;&gt;Accessing testbed nodes using SSH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/NodeTypes&#34;&gt;Available Node Types&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/NetFPGA_nodes&#34;&gt;Available NetFPGA Nodes&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/SerialConsole&#34;&gt;Using the Serial Console on testbed nodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/Swapping&#34;&gt;Node Use (Swapping) Policies&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/DETERSSH&#34;&gt;Accessing testbed nodes using SSH&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/NodeTypes&#34;&gt;Available Node Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/NetFPGA_nodes&#34;&gt;Available NetFPGA Nodes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/SerialConsole&#34;&gt;Using the Serial Console on testbed nodes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;OS and Image IDs
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/OSImages&#34;&gt;Operating Systems supported by DETER and details about using them&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/CustomOS&#34;&gt;Custom OSIDs and Image IDs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/OSImages&#34;&gt;Operating Systems supported by DETER and details about using them&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/CustomOS&#34;&gt;Custom OSIDs and Image IDs&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/LegacyTools&#34;&gt;Legacy Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://deter-project.github.io/LegacyTools&#34;&gt;Legacy Tools&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>http://localhost:1313/BatchStats/</link>
+      <link>http://deter-project.github.io/AnonymityModule/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/BatchStats/</guid>
-      <description>&lt;p&gt;All these stats ignore class projects which are currently banned from creating batch experiments.&lt;/p&gt;
-
-&lt;p&gt;Recent activity:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
-select year(last_activity) as yr, month(last_activity) as mo,
-       p.pid, eid
-  from experiment_stats s, projects p
- where s.pid_idx = p.pid_idx and
-       !p.class and batch and year(last_activity) &amp;gt;= 2009
- order by yr, mo, p.pid, eid;
-+------+------+--------------+---------------+
-| yr   | mo   | pid          | eid           |
-+------+------+--------------+---------------+
-| 2009 |    4 | T1T2         | jdemo         | 
-| 2009 |    5 | SecureIED    | 32hostsmcast  | 
-| 2010 |    1 | liveobjects2 | myexp1        | 
-| 2010 |    3 | DeterTest    | jjh-batch     | 
-| 2010 |    3 | DeterTest    | jjh-batchtest | 
-| 2010 |    3 | liveobjects2 | myexp         | 
-| 2010 |    3 | Panorama     | bitfuzz10-1   | 
-| 2010 |    8 | SOS          | appcomm       | 
-+------+------+--------------+---------------+
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;All batch, by project:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mysql&amp;gt; 
-select p.pid, count(*)
-  from experiment_stats e, projects p
- where e.pid_idx = p.pid_idx and
-       !p.class and e.batch
- group by pid order by count(*) desc;
-+--------------+----------+
-| pid          | count(*) |
-+--------------+----------+
-| ddos         |     2412 | 
-| Fidran       |      134 | 
-| FloodWatch   |       48 | 
-| MONA         |       29 | 
-| worm         |       12 | 
-| emulab-ops   |       12 | 
-| NSUDDOS      |       11 | 
-| DeterTest    |       10 | 
-| psuworm      |        8 | 
-| SOS          |        6 | 
-| rsgc         |        4 | 
-| DIAMOND      |        3 | 
-| Deter        |        2 | 
-| liveobjects2 |        2 | 
-| SWOON        |        2 | 
-| vinci        |        1 | 
-| T1T2         |        1 | 
-| SecureIED    |        1 | 
-| DDoSImpact   |        1 | 
-| Panorama     |        1 | 
-| eWorm        |        1 | 
-+--------------+----------+
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;All activity, ever:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
-select year(last_activity) as yr, month(last_activity) as mo,
-       count(*)
-  from experiment_stats s, projects p
- where s.pid_idx = p.pid_idx and
-       !p.class and batch
- group by yr, mo
- order by yr, mo;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note: y axis is log scale
-[[Image(graph.png)]]&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/AnonymityModule/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/AnonymityModule/</guid>
+      <guid>http://deter-project.github.io/AnonymityModule/</guid>
       <description>
 
 &lt;h1 id=&#34;introduction:49601fcc70443e8a9f263221deee393b&#34;&gt;Introduction&lt;/h1&gt;
@@ -1280,10 +1197,93 @@ onion route the data. As the name suggests onion routing alters the data flow th
     
     <item>
       <title></title>
-      <link>http://localhost:1313/CachePoisonExample/</link>
+      <link>http://deter-project.github.io/BatchStats/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/CachePoisonExample/</guid>
+      <guid>http://deter-project.github.io/BatchStats/</guid>
+      <description>&lt;p&gt;All these stats ignore class projects which are currently banned from creating batch experiments.&lt;/p&gt;
+
+&lt;p&gt;Recent activity:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
+select year(last_activity) as yr, month(last_activity) as mo,
+       p.pid, eid
+  from experiment_stats s, projects p
+ where s.pid_idx = p.pid_idx and
+       !p.class and batch and year(last_activity) &amp;gt;= 2009
+ order by yr, mo, p.pid, eid;
++------+------+--------------+---------------+
+| yr   | mo   | pid          | eid           |
++------+------+--------------+---------------+
+| 2009 |    4 | T1T2         | jdemo         | 
+| 2009 |    5 | SecureIED    | 32hostsmcast  | 
+| 2010 |    1 | liveobjects2 | myexp1        | 
+| 2010 |    3 | DeterTest    | jjh-batch     | 
+| 2010 |    3 | DeterTest    | jjh-batchtest | 
+| 2010 |    3 | liveobjects2 | myexp         | 
+| 2010 |    3 | Panorama     | bitfuzz10-1   | 
+| 2010 |    8 | SOS          | appcomm       | 
++------+------+--------------+---------------+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All batch, by project:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql&amp;gt; 
+select p.pid, count(*)
+  from experiment_stats e, projects p
+ where e.pid_idx = p.pid_idx and
+       !p.class and e.batch
+ group by pid order by count(*) desc;
++--------------+----------+
+| pid          | count(*) |
++--------------+----------+
+| ddos         |     2412 | 
+| Fidran       |      134 | 
+| FloodWatch   |       48 | 
+| MONA         |       29 | 
+| worm         |       12 | 
+| emulab-ops   |       12 | 
+| NSUDDOS      |       11 | 
+| DeterTest    |       10 | 
+| psuworm      |        8 | 
+| SOS          |        6 | 
+| rsgc         |        4 | 
+| DIAMOND      |        3 | 
+| Deter        |        2 | 
+| liveobjects2 |        2 | 
+| SWOON        |        2 | 
+| vinci        |        1 | 
+| T1T2         |        1 | 
+| SecureIED    |        1 | 
+| DDoSImpact   |        1 | 
+| Panorama     |        1 | 
+| eWorm        |        1 | 
++--------------+----------+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All activity, ever:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql&amp;gt;
+select year(last_activity) as yr, month(last_activity) as mo,
+       count(*)
+  from experiment_stats s, projects p
+ where s.pid_idx = p.pid_idx and
+       !p.class and batch
+ group by yr, mo
+ order by yr, mo;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note: y axis is log scale
+[[Image(graph.png)]]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://deter-project.github.io/CachePoisonExample/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://deter-project.github.io/CachePoisonExample/</guid>
       <description>
 
 &lt;p&gt;The attacker poisons a DNS cache to take over authority for a given domain. The attacker then creates a phishing page and tries to steal user&amp;rsquo;s usernames/passwords. There are two classes of experiments that need to be combined:
@@ -1511,59 +1511,10 @@ Attacker att, Auth auth, Name n, FakeIP fIP, fakeAuth fauth, RealIP rIP, victimC
     
     <item>
       <title></title>
-      <link>http://localhost:1313/BnFnotation/</link>
+      <link>http://deter-project.github.io/BotnetExample/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/BnFnotation/</guid>
-      <description>&lt;p&gt;metadescription&amp;gt; ::= declaration dimensions&lt;/p&gt;
-
-&lt;p&gt;declaration ::= &lt;em&gt;define&lt;/em&gt; identifier &amp;ldquo;:&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;dimensions ::= dimension {dimensions}&lt;/p&gt;
-
-&lt;p&gt;dimension ::= logtopo | evtimeline&lt;/p&gt;
-
-&lt;p&gt;logtopo ::= &lt;em&gt;topology&lt;/em&gt; objects cardinality relationships&lt;/p&gt;
-
-&lt;p&gt;evtimeline ::= &lt;em&gt;timeline&lt;/em&gt; definitions timeline invariants&lt;/p&gt;
-
-&lt;p&gt;objects ::= &lt;em&gt;objects&lt;/em&gt; object {object}&lt;/p&gt;
-
-&lt;p&gt;object ::= alias | dobject&lt;/p&gt;
-
-&lt;p&gt;alias ::= obname &amp;ldquo;.&amp;rdquo; obfield&lt;/p&gt;
-
-&lt;p&gt;dobject ::= obtype [obname] &amp;ldquo;:=&amp;rdquo; &amp;ldquo;{&amp;rdquo; obass &amp;ldquo;}&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;obass ::= obass [&amp;ldquo;,&amp;rdquo; obass]&lt;/p&gt;
-
-&lt;p&gt;obass ::= obvar | obstate&lt;/p&gt;
-
-&lt;p&gt;obvar ::= obtype obname [&amp;ldquo;=&amp;rdquo; value]&lt;/p&gt;
-
-&lt;p&gt;obstate ::= state &amp;ldquo;=&amp;rdquo; value&lt;/p&gt;
-
-&lt;p&gt;obname ::= identifier&lt;/p&gt;
-
-&lt;p&gt;obtype from list of object types&lt;/p&gt;
-
-&lt;p&gt;value ::= number | string&lt;/p&gt;
-
-&lt;p&gt;identifier ::=  letter { letter | digit }&lt;/p&gt;
-
-&lt;p&gt;letter
-diggit
-number
-string&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/BotnetExample/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/BotnetExample/</guid>
+      <guid>http://deter-project.github.io/BotnetExample/</guid>
       <description>
 
 &lt;p&gt;A worm infects some vulnerable hosts, they organize into a P2P botnet with some botmaster and start exchanging C&amp;amp;C traffic. Experimenter wants to observe the evolution of the botnet and the amount of traffic that master receives. There are two classes of experiments here that need to be combined together:
@@ -1717,10 +1668,10 @@ each Peer peer1, some Peer peer2:
     
     <item>
       <title></title>
-      <link>http://localhost:1313/CamelCase/</link>
+      <link>http://deter-project.github.io/CamelCase/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/CamelCase/</guid>
+      <guid>http://deter-project.github.io/CamelCase/</guid>
       <description>
 
 &lt;p&gt;New words created by smashing together capitalized words.&lt;/p&gt;
@@ -1753,30 +1704,10 @@ each Peer peer1, some Peer peer2:
     
     <item>
       <title></title>
-      <link>http://localhost:1313/CentOSImage/</link>
+      <link>http://deter-project.github.io/ClassResourceLimits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/CentOSImage/</guid>
-      <description>
-
-&lt;h1 id=&#34;centos-images-at-deter:643973f5900f493d6e180cee39c719ed&#34;&gt;CentOS Images at DETER&lt;/h1&gt;
-
-&lt;h2 id=&#34;centos5:643973f5900f493d6e180cee39c719ed&#34;&gt;CentOS5&lt;/h2&gt;
-
-&lt;p&gt;This is currently at CentOS 5.7.  We support CentOS instead of Fedora because of the longer term of support offered for CentOS.  The CentOS 5 image is a whole disk image with linux installed on partition 1.  This is different from the Emulab tradition of putting Linux on partition 2.&lt;/p&gt;
-
-&lt;h2 id=&#34;centos6-64-std:643973f5900f493d6e180cee39c719ed&#34;&gt;CentOS6-64-STD&lt;/h2&gt;
-
-&lt;p&gt;CentOS 6.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/ClassResourceLimits/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/ClassResourceLimits/</guid>
+      <guid>http://deter-project.github.io/ClassResourceLimits/</guid>
       <description>
 
 &lt;h1 id=&#34;what-are-resource-limits:7bb2e621c260edd8b7b8790aa22b02e6&#34;&gt;What are resource limits?&lt;/h1&gt;
@@ -1806,10 +1737,30 @@ each Peer peer1, some Peer peer2:
     
     <item>
       <title></title>
-      <link>http://localhost:1313/ClassSupport/</link>
+      <link>http://deter-project.github.io/CentOSImage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/ClassSupport/</guid>
+      <guid>http://deter-project.github.io/CentOSImage/</guid>
+      <description>
+
+&lt;h1 id=&#34;centos-images-at-deter:643973f5900f493d6e180cee39c719ed&#34;&gt;CentOS Images at DETER&lt;/h1&gt;
+
+&lt;h2 id=&#34;centos5:643973f5900f493d6e180cee39c719ed&#34;&gt;CentOS5&lt;/h2&gt;
+
+&lt;p&gt;This is currently at CentOS 5.7.  We support CentOS instead of Fedora because of the longer term of support offered for CentOS.  The CentOS 5 image is a whole disk image with linux installed on partition 1.  This is different from the Emulab tradition of putting Linux on partition 2.&lt;/p&gt;
+
+&lt;h2 id=&#34;centos6-64-std:643973f5900f493d6e180cee39c719ed&#34;&gt;CentOS6-64-STD&lt;/h2&gt;
+
+&lt;p&gt;CentOS 6.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://deter-project.github.io/ClassSupport/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://deter-project.github.io/ClassSupport/</guid>
       <description>&lt;p&gt;Classes use DeterLab differently than researchers do. Both groups can use DeterLab&amp;rsquo;s full range of tools and resources, but we limit the amount of accidental sharing students do and assign them accounts that we can reuse. In order to do that we need your help in keeping track of who is using DeterLab for your classes and broadly what resources you will be using. The details are below.&lt;/p&gt;
 
 &lt;p&gt;If you run into a problem when using DeterLab in your classes please let us know. If you come up with a better solution than the ones we described below we&amp;rsquo;d really like to hear about it!&lt;/p&gt;
@@ -1825,6 +1776,134 @@ each Peer peer1, some Peer peer2:
 &lt;p&gt;[wiki:CourseSetup#ac  Access Control] - changes we made to the testbed to enforce students&amp;rsquo; individual work&lt;/p&gt;
 
 &lt;p&gt;[wiki:CourseSetup#rl  Resource Limits] - fair sharing&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://deter-project.github.io/Classes/CodeChanges/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://deter-project.github.io/Classes/CodeChanges/</guid>
+      <description>&lt;p&gt;General&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There is one course per project.&lt;/li&gt;
+&lt;li&gt;The project_head is the primary instructor&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Anybody with group_root permission is assumed to be a TA&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Instructors and TA&amp;rsquo;s are allowed to sudo to any student on the ops node&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Instructors may sudo to a TA but not conversely.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Code changes&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;The instacct utility (described below) has a function which generates an include file
+ for sudo which is copied to the ops node and installed as /usr/local/etc/sudoers.classes.
+ The function is run either by explicit request on the command line, or as a side-effect
+ when students are assigned to a class, and at the end of the semester when a class is wiped.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Experiment Permissions&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;When an experiment is created in the default group, only the
+ student&amp;rsquo;s home directory and /proj/&lt;PID&gt;/exp/&lt;EID&gt; are exported to the
+ nodes in the experiment.&lt;/p&gt;
+
+&lt;p&gt;If the experiment is created in a subgroup of the main project, normal
+ export permissions already isolate students from others (except for those
+ in the group). /proj directory exports are applied as above.&lt;/p&gt;
+
+&lt;p&gt;The ssh public keys of the instructor and TA&amp;rsquo;s are put into the
+ root .ssh/authorized_keys file so that the instructors can log
+ into any node to grade the experiment (as class exercise) or
+ debug it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Code changes&lt;/strong&gt;: tmcd&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Web Interface&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Instructors and TA&amp;rsquo;s are allowed to Freeze, Thaw and SU-as a student
+ and edit a student&amp;rsquo;s profile.  When an instructor &lt;code&gt;removes&lt;/code&gt; a class
+ account from the project, instead of actually removing it, it recycles the account.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Code changes&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;www/user_defs.php defines new routines InstructedBy() and CourseAcct(),
+ referenced in delete_user.php3 moduserinfo.php3 showuser.php3 suuser.php3.
+ There are perl versions of these in db/User.pm.in.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Recyclable student accounts&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Student accounts are not created in the normal manner (create
+ an account, apply to join an existing project) - instead:&lt;/p&gt;
+
+&lt;p&gt;A stem is chosen for the project, say in the case of the
+ project USC558L, sc558, and then a number of accounts are
+ generated of the form sc558[a-z][a-z] as many are need
+ to accommodate the students in the class.&lt;/p&gt;
+
+&lt;p&gt;The instructor provides a list of email address, and
+ one account is assigned per email address.&lt;/p&gt;
+
+&lt;p&gt;At the end of the semester, the student accounts are wiped -
+ all experiments headed by the student are terminated, all files
+ underneath the students home directory are deleted, the passwords
+ changed to something random, all public ssh keys and ssl certs
+ recorded in the database are flushed and then randomly regenerated
+ as in a new account.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Code changes&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;The source for the instacct utility was added to the tree as&lt;/p&gt;
+
+&lt;p&gt;testbed/account/instacct.in, manage_class.in&lt;/p&gt;
+
+&lt;p&gt;The separate perl script manage_class gets installed on the ops node
+ to invoke an sslxmlrpc call so that instructors may do almost anything
+ that a testbed adminstrator could do.&lt;/p&gt;
+
+&lt;p&gt;The two commands reserved to admins are to set the stem for class names, and to generate
+ a number of accounts in advance that are ready to assign - in the same state
+ a previously used and wiped account as in.&lt;/p&gt;
+
+&lt;p&gt;Since our funders require us to provide usage goals and metrics, we track
+ the number of student accounts which were generated, (re-)assigned and wiped
+ by means of a couple of additional tables in the database:&lt;/p&gt;
+
+&lt;p&gt;project_history and project_attributes.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Other peculiarities of student accounts&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Student accounts may not join other projects.&lt;/p&gt;
+
+&lt;p&gt;A student may be taking more than one course and only have
+ one (student) email address; we added a couple of warts to deal
+ with this -&lt;/p&gt;
+
+&lt;p&gt;There is an ancillary table in the database called email_aliases;
+ and when the account is assigned the .forward is set to this&lt;br /&gt;
+ and the students email becomes e.g. sc558ab@users.isi.deterlab.net&lt;/p&gt;
+
+&lt;p&gt;So, for all users, students or not, we require web login by uid only
+ and not email address.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Code changes&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;p&gt;account/tbacct.in was changed so that when it generates a .forward
+ file, the email_aliases entry preempts the usr_email in the users table.&lt;/p&gt;
+
+&lt;p&gt;An unresolved bug is letting an instructor correct a students email, now that
+ it is kept in a separate place.&lt;/p&gt;
 </description>
     </item>
     

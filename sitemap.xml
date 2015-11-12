@@ -2,943 +2,943 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://deter-project.github.io/</loc>
     <lastmod>2015-11-12T07:54:14-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CoreQuickstart/</loc>
+    <loc>http://deter-project.github.io/CoreQuickstart/</loc>
     <lastmod>2015-11-12T07:54:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CoreGuide/</loc>
+    <loc>http://deter-project.github.io/CoreGuide/</loc>
     <lastmod>2015-11-12T07:54:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/SignUp/</loc>
+    <loc>http://deter-project.github.io/SignUp/</loc>
     <lastmod>2015-11-12T07:54:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Topologies/</loc>
+    <loc>http://deter-project.github.io/Topologies/</loc>
     <lastmod>2015-11-12T07:54:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/UsingNodes/</loc>
+    <loc>http://deter-project.github.io/UsingNodes/</loc>
     <lastmod>2015-11-12T07:54:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiStart/</loc>
+    <loc>http://deter-project.github.io/WikiStart/</loc>
     <lastmod>2015-11-12T07:54:14-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://localhost:1313/BatchStats/</loc>
+    <loc>http://deter-project.github.io/AnonymityModule/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/AnonymityModule/</loc>
+    <loc>http://deter-project.github.io/BatchStats/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CachePoisonExample/</loc>
+    <loc>http://deter-project.github.io/CachePoisonExample/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/BnFnotation/</loc>
+    <loc>http://deter-project.github.io/BotnetExample/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/BotnetExample/</loc>
+    <loc>http://deter-project.github.io/CamelCase/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CamelCase/</loc>
+    <loc>http://deter-project.github.io/ClassResourceLimits/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CentOSImage/</loc>
+    <loc>http://deter-project.github.io/CentOSImage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassResourceLimits/</loc>
+    <loc>http://deter-project.github.io/ClassSupport/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassSupport/</loc>
+    <loc>http://deter-project.github.io/Classes/CodeChanges/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Classes/CodeChanges/</loc>
+    <loc>http://deter-project.github.io/Classes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Classes/</loc>
+    <loc>http://deter-project.github.io/ClassesFall2010/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassesFall2010/</loc>
+    <loc>http://deter-project.github.io/ClassesFall2011/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassesFall2011/</loc>
+    <loc>http://deter-project.github.io/ClassesFall2012/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassesFall2012/</loc>
+    <loc>http://deter-project.github.io/ClassesSpring2011/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassesSpring2011/</loc>
+    <loc>http://deter-project.github.io/ClassesSpring2012/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassesSpring2013/</loc>
+    <loc>http://deter-project.github.io/ClassesSpring2013/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClassesSpring2012/</loc>
+    <loc>http://deter-project.github.io/ClickImage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClickImage/</loc>
+    <loc>http://deter-project.github.io/ClonezillaInfo/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ClonezillaInfo/</loc>
+    <loc>http://deter-project.github.io/ConnectTeachers/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ConnectTeachers/</loc>
+    <loc>http://deter-project.github.io/Contact/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Contact/</loc>
+    <loc>http://deter-project.github.io/ContainersQuickstart/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ContainersQuickstart/</loc>
+    <loc>http://deter-project.github.io/ContainersGuide/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ContainersGuide/</loc>
+    <loc>http://deter-project.github.io/ContainersReference/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ContainersReference/</loc>
+    <loc>http://deter-project.github.io/CoreReference/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CoreReference/</loc>
+    <loc>http://deter-project.github.io/CourseSetup/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CourseSetup/</loc>
+    <loc>http://deter-project.github.io/CurrentlyProposedLanguage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CustomOS/</loc>
+    <loc>http://deter-project.github.io/BnFnotation/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/CurrentlyProposedLanguage/</loc>
+    <loc>http://deter-project.github.io/CustomOS/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DETERIntro/</loc>
+    <loc>http://deter-project.github.io/DETERIntro/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DETERSSH/</loc>
+    <loc>http://deter-project.github.io/DETERSSH/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DETERTopology/</loc>
+    <loc>http://deter-project.github.io/DETERTopology/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DellSerialConsole/</loc>
+    <loc>http://deter-project.github.io/DellSerialConsole/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Deter/NewExDesc/</loc>
+    <loc>http://deter-project.github.io/Deter/NewExDesc/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Deter/Web/Beginners/</loc>
+    <loc>http://deter-project.github.io/Deter/Web/Beginners/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Deter/Web/</loc>
+    <loc>http://deter-project.github.io/Deter/Web/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DeterResources/</loc>
+    <loc>http://deter-project.github.io/DeterLabCommands/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DeterVirtualProject/</loc>
+    <loc>http://deter-project.github.io/DevContainersAPISpec/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DeterLabCommands/</loc>
+    <loc>http://deter-project.github.io/DeterResources/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DevContainersAPISpec/</loc>
+    <loc>http://deter-project.github.io/DeterVirtualProject/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DevAPI/</loc>
+    <loc>http://deter-project.github.io/DevAPI/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Documentation/</loc>
+    <loc>http://deter-project.github.io/DevTestbedAPISpec/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/EARS/</loc>
+    <loc>http://deter-project.github.io/Documentation/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/EducationRestructuring/</loc>
+    <loc>http://deter-project.github.io/ExDescLang/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ElabElabSshProxy/</loc>
+    <loc>http://deter-project.github.io/EARS/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/FreeBSDImage/</loc>
+    <loc>http://deter-project.github.io/EducationRestructuring/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ExperimentAPISPec/</loc>
+    <loc>http://deter-project.github.io/ElabElabSshProxy/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ExDescLang/</loc>
+    <loc>http://deter-project.github.io/ExperimentAPISPec/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/FrequentlyAskedQuestions/</loc>
+    <loc>http://deter-project.github.io/FreeBSDImage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/GettingHelp/</loc>
+    <loc>http://deter-project.github.io/GitTricks/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/GitTricks/</loc>
+    <loc>http://deter-project.github.io/FrequentlyAskedQuestions/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/DevTestbedAPISpec/</loc>
+    <loc>http://deter-project.github.io/GettingHelp/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/GettingStarted/</loc>
+    <loc>http://deter-project.github.io/GettingStarted/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/GoodPractices/</loc>
+    <loc>http://deter-project.github.io/Glossary/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Glossary/</loc>
+    <loc>http://deter-project.github.io/GoodPractices/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/GuidelinesForStudents/</loc>
+    <loc>http://deter-project.github.io/Installation/Build/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/GuidelinesForTeachers/</loc>
+    <loc>http://deter-project.github.io/GuidelinesForStudents/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ISIUCB/</loc>
+    <loc>http://deter-project.github.io/GuidelinesForTeachers/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Build/</loc>
+    <loc>http://deter-project.github.io/ISIUCB/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/DatabaseSetup/</loc>
+    <loc>http://deter-project.github.io/Installation/DatabaseSetup/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Definitions/</loc>
+    <loc>http://deter-project.github.io/Installation/Definitions/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Hardware/</loc>
+    <loc>http://deter-project.github.io/Installation/OSImages/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/LoggingIn/</loc>
+    <loc>http://deter-project.github.io/Installation/Hardware/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Nodes/</loc>
+    <loc>http://deter-project.github.io/Installation/LoggingIn/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/OSImages/</loc>
+    <loc>http://deter-project.github.io/Installation/Nodes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Site/</loc>
+    <loc>http://deter-project.github.io/Installation/Site/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Switch/</loc>
+    <loc>http://deter-project.github.io/Installation/Switch/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Testing/</loc>
+    <loc>http://deter-project.github.io/Installation/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/Updating/</loc>
+    <loc>http://deter-project.github.io/Installation/Testing/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/VM/</loc>
+    <loc>http://deter-project.github.io/Installation/Updating/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Installation/</loc>
+    <loc>http://deter-project.github.io/Installation/VM/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/InterMapTxt/</loc>
+    <loc>http://deter-project.github.io/InterMapTxt/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/InterTrac/</loc>
+    <loc>http://deter-project.github.io/InterTrac/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/InterWiki/</loc>
+    <loc>http://deter-project.github.io/Internal/EmulabInEmulab/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Commands/</loc>
+    <loc>http://deter-project.github.io/InterWiki/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/ControlNetSeparation/</loc>
+    <loc>http://deter-project.github.io/Internal/Commands/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/EmulabInEmulab/</loc>
+    <loc>http://deter-project.github.io/Internal/ControlNetSeparation/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Networks/</loc>
+    <loc>http://deter-project.github.io/Internal/Networks/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Power/</loc>
+    <loc>http://deter-project.github.io/Internal/Power/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Serial/</loc>
+    <loc>http://deter-project.github.io/Internal/SwitchUpgrade/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Servers/</loc>
+    <loc>http://deter-project.github.io/Internal/Serial/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/SharedNAT/</loc>
+    <loc>http://deter-project.github.io/Internal/Servers/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/SwitchUpgrade/</loc>
+    <loc>http://deter-project.github.io/Internal/SharedNAT/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Cisco4/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Cisco4/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Nortel10/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Nortel10/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Nortel10nc1/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Nortel18nc2/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Nortel10nc2/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Nortel10nc1/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Nortel18nc1/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Nortel10nc2/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Nortel18nc2/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Nortel18nc1/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Notrel18ne/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Notrel18ne/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Notrel4nc1/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Notrel4nc1/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/Notrel4nc2/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/hp19/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/Notrel4nc2/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/hp4/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/hp19/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/Switches/</loc>
+    <loc>http://deter-project.github.io/Internal/Switches/hp4/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/ZFS/</loc>
+    <loc>http://deter-project.github.io/Internal/ZFS/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Internal/</loc>
+    <loc>http://deter-project.github.io/Internal/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/January_2011_Demo/</loc>
+    <loc>http://deter-project.github.io/LegacyTools/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/KALI1/</loc>
+    <loc>http://deter-project.github.io/January_2011_Demo/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LayoutAspect/</loc>
+    <loc>http://deter-project.github.io/KALI1/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LegacyTools/</loc>
+    <loc>http://deter-project.github.io/LayoutAspect/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LegoTG/exp_config/</loc>
+    <loc>http://deter-project.github.io/LegoTG/exp_config/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LegoTG/modules/mimic/</loc>
+    <loc>http://deter-project.github.io/LegoTG/modules/mimic/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LegoTG/modules/twosew/</loc>
+    <loc>http://deter-project.github.io/MAGI_Agent_Config/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LegoTG/</loc>
+    <loc>http://deter-project.github.io/LegoTG/modules/twosew/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/LifeCycle/</loc>
+    <loc>http://deter-project.github.io/LegoTG/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Agent_Config/</loc>
+    <loc>http://deter-project.github.io/LifeCycle/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Agent_Library/</loc>
+    <loc>http://deter-project.github.io/MAGI_Agent_Library/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Scaled_Server_Case_Study/</loc>
+    <loc>http://deter-project.github.io/MAGI_Feedback_Case_Study/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Feedback_Case_Study/</loc>
+    <loc>http://deter-project.github.io/MAGI_Tools/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Simple_Client_Case_Study/</loc>
+    <loc>http://deter-project.github.io/MAGI_Scaled_Server_Case_Study/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_System_Files_and_Logs/</loc>
+    <loc>http://deter-project.github.io/MAGI_Simple_Client_Case_Study/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MakingNewImages/</loc>
+    <loc>http://deter-project.github.io/MAGI_System_Files_and_Logs/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MAGI_Tools/</loc>
+    <loc>http://deter-project.github.io/MakingNewImages/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MalwareRepositoryDiscussion/</loc>
+    <loc>http://deter-project.github.io/MalwareRepositoryDiscussion/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Metasploitable2/</loc>
+    <loc>http://deter-project.github.io/NetFPGA/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MicroCloud/</loc>
+    <loc>http://deter-project.github.io/Metasploitable2/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/MitmExample/</loc>
+    <loc>http://deter-project.github.io/MicroCloud/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NetFPGA/</loc>
+    <loc>http://deter-project.github.io/MitmExample/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NetFPGA_nodes/</loc>
+    <loc>http://deter-project.github.io/NetFPGA_nodes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewAPI/</loc>
+    <loc>http://deter-project.github.io/NewAPI/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewContainersAPISpec/</loc>
+    <loc>http://deter-project.github.io/NewImpl/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewExperimentAPI/</loc>
+    <loc>http://deter-project.github.io/NewContainersAPISpec/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewImpl/</loc>
+    <loc>http://deter-project.github.io/NewDelayNodeNs/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewDelayNodeNs/</loc>
+    <loc>http://deter-project.github.io/NewExperimentAPI/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewImplNotes/</loc>
+    <loc>http://deter-project.github.io/NewImplNotes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NodeTypes/</loc>
+    <loc>http://deter-project.github.io/NewTestbedAPISpec/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OSImages/</loc>
+    <loc>http://deter-project.github.io/OrchestratorCaseStudies/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OperationsVisualization/</loc>
+    <loc>http://deter-project.github.io/NodeTypes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OrchestratorCaseStudies/</loc>
+    <loc>http://deter-project.github.io/OSImages/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OrchestratorGuide/</loc>
+    <loc>http://deter-project.github.io/OperationsVisualization/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OrchestratorQuickstart/</loc>
+    <loc>http://deter-project.github.io/OrchestratorGuide/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/NewTestbedAPISpec/</loc>
+    <loc>http://deter-project.github.io/OrchestratorQuickstart/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OrchestratorReference/</loc>
+    <loc>http://deter-project.github.io/Passwords/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/OrchestratorWritingAgents/</loc>
+    <loc>http://deter-project.github.io/OrchestratorReference/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/PageTemplates/</loc>
+    <loc>http://deter-project.github.io/OrchestratorWritingAgents/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Passwords/</loc>
+    <loc>http://deter-project.github.io/PageTemplates/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Policy/</loc>
+    <loc>http://deter-project.github.io/Policy/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Quotas/</loc>
+    <loc>http://deter-project.github.io/Quotas/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/RecentChanges/</loc>
+    <loc>http://deter-project.github.io/RubotSoftware/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/RubotSoftware/</loc>
+    <loc>http://deter-project.github.io/SandBox/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/SandBox/</loc>
+    <loc>http://deter-project.github.io/SerialConsole/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/SerialConsole/</loc>
+    <loc>http://deter-project.github.io/SPIDocs/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Sharing/</loc>
+    <loc>http://deter-project.github.io/RecentChanges/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/SourceControlPolicy/</loc>
+    <loc>http://deter-project.github.io/Sharing/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/SwapInTricks/</loc>
+    <loc>http://deter-project.github.io/SourceControlPolicy/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/SPIDocs/</loc>
+    <loc>http://deter-project.github.io/SwapInTricks/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Swapping/</loc>
+    <loc>http://deter-project.github.io/TechnicalSupport/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TechnicalSupport/</loc>
+    <loc>http://deter-project.github.io/Swapping/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TitleIndex/</loc>
+    <loc>http://deter-project.github.io/T1T2/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/T1T2/</loc>
+    <loc>http://deter-project.github.io/TitleIndex/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TopologyDescription/</loc>
+    <loc>http://deter-project.github.io/TopologyDescription/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracAccessibility/</loc>
+    <loc>http://deter-project.github.io/TracAccessibility/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracAdmin/</loc>
+    <loc>http://deter-project.github.io/TracAdmin/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracBackup/</loc>
+    <loc>http://deter-project.github.io/TracCgi/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracBrowser/</loc>
+    <loc>http://deter-project.github.io/TracBackup/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracCgi/</loc>
+    <loc>http://deter-project.github.io/TracBrowser/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracChangeset/</loc>
+    <loc>http://deter-project.github.io/TracChangeset/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracEnvironment/</loc>
+    <loc>http://deter-project.github.io/TracEnvironment/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracGuide/</loc>
+    <loc>http://deter-project.github.io/TracFastCgi/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracFastCgi/</loc>
+    <loc>http://deter-project.github.io/TracFineGrainedPermissions/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracFineGrainedPermissions/</loc>
+    <loc>http://deter-project.github.io/TracGuide/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracImport/</loc>
+    <loc>http://deter-project.github.io/TracImport/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracIni/</loc>
+    <loc>http://deter-project.github.io/TracLinks/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracInterfaceCustomization/</loc>
+    <loc>http://deter-project.github.io/TracIni/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracInstall/</loc>
+    <loc>http://deter-project.github.io/TracInstall/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracLinks/</loc>
+    <loc>http://deter-project.github.io/TracInterfaceCustomization/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracLogging/</loc>
+    <loc>http://deter-project.github.io/TracLogging/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracModPython/</loc>
+    <loc>http://deter-project.github.io/TracModPython/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracModWSGI/</loc>
+    <loc>http://deter-project.github.io/TracPermissions/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracNavigation/</loc>
+    <loc>http://deter-project.github.io/TracModWSGI/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracNotification/</loc>
+    <loc>http://deter-project.github.io/TracNavigation/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracPermissions/</loc>
+    <loc>http://deter-project.github.io/TracNotification/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracPlugins/</loc>
+    <loc>http://deter-project.github.io/TracPlugins/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracQuery/</loc>
+    <loc>http://deter-project.github.io/TracQuery/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracReports/</loc>
+    <loc>http://deter-project.github.io/TracRoadmap/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracRepositoryAdmin/</loc>
+    <loc>http://deter-project.github.io/TracReports/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracRevisionLog/</loc>
+    <loc>http://deter-project.github.io/TracRepositoryAdmin/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracRss/</loc>
+    <loc>http://deter-project.github.io/TracRevisionLog/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracRoadmap/</loc>
+    <loc>http://deter-project.github.io/TracRss/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracSearch/</loc>
+    <loc>http://deter-project.github.io/TracSearch/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracSupport/</loc>
+    <loc>http://deter-project.github.io/TracTickets/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracStandalone/</loc>
+    <loc>http://deter-project.github.io/TracStandalone/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracSyntaxColoring/</loc>
+    <loc>http://deter-project.github.io/TracSupport/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracTickets/</loc>
+    <loc>http://deter-project.github.io/TracSyntaxColoring/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracTicketsCustomFields/</loc>
+    <loc>http://deter-project.github.io/TracTicketsCustomFields/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracTimeline/</loc>
+    <loc>http://deter-project.github.io/TracTimeline/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracUnicode/</loc>
+    <loc>http://deter-project.github.io/TracWorkflow/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracUpgrade/</loc>
+    <loc>http://deter-project.github.io/TracUnicode/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracWiki/</loc>
+    <loc>http://deter-project.github.io/TracUpgrade/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/TracWorkflow/</loc>
+    <loc>http://deter-project.github.io/TracWiki/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tracing/</loc>
+    <loc>http://deter-project.github.io/Tracing/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/Advanced/</loc>
+    <loc>http://deter-project.github.io/Tutorial/Advanced/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/BatchExperiments/</loc>
+    <loc>http://deter-project.github.io/Tutorial/GettingTheJavaGUIToWork/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/CreatingExperiments/</loc>
+    <loc>http://deter-project.github.io/Tutorial/BatchExperiments/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/CustomOS/</loc>
+    <loc>http://deter-project.github.io/Tutorial/CreatingExperiments/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/GettingTheJavaGUIToWork/</loc>
+    <loc>http://deter-project.github.io/Tutorial/CustomOS/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/UsingNodes/</loc>
+    <loc>http://deter-project.github.io/Tutorial/UsingNodes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/WalkThrough/</loc>
+    <loc>http://deter-project.github.io/Tutorial/WalkThrough/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Tutorial/</loc>
+    <loc>http://deter-project.github.io/UserGuidelines/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/UIImplNotes/</loc>
+    <loc>http://deter-project.github.io/Tutorial/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/UbuntuImage/</loc>
+    <loc>http://deter-project.github.io/UIImplNotes/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/UserGuidelines/</loc>
+    <loc>http://deter-project.github.io/UbuntuImage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WINXPImage/</loc>
+    <loc>http://deter-project.github.io/WINXPImage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiDeletePage/</loc>
+    <loc>http://deter-project.github.io/WikiMacros/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiFormatting/</loc>
+    <loc>http://deter-project.github.io/WikiDeletePage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiHtml/</loc>
+    <loc>http://deter-project.github.io/WikiFormatting/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiMacros/</loc>
+    <loc>http://deter-project.github.io/WikiHtml/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiNewPage/</loc>
+    <loc>http://deter-project.github.io/WikiNewPage/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiPageNames/</loc>
+    <loc>http://deter-project.github.io/WikiPageNames/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiProcessors/</loc>
+    <loc>http://deter-project.github.io/WikiProcessors/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiRestructuredText/</loc>
+    <loc>http://deter-project.github.io/WikiRestructuredText/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/WikiRestructuredTextLinks/</loc>
+    <loc>http://deter-project.github.io/WikiRestructuredTextLinks/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/ZFS/</loc>
+    <loc>http://deter-project.github.io/Windows/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/Windows/</loc>
+    <loc>http://deter-project.github.io/ZFS/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/assign&#43;/</loc>
+    <loc>http://deter-project.github.io/dl380g3/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/bpc2800/</loc>
+    <loc>http://deter-project.github.io/assign&#43;/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/bvx2200/</loc>
+    <loc>http://deter-project.github.io/bpc2800/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/dl380g3/</loc>
+    <loc>http://deter-project.github.io/bvx2200/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/gatekeeper.isi.deterlab.net/</loc>
+    <loc>http://deter-project.github.io/gatekeeper.isi.deterlab.net/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/infrastructure/</loc>
+    <loc>http://deter-project.github.io/infrastructure/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/linkdelays/</loc>
+    <loc>http://deter-project.github.io/pc3000/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/pc2133/</loc>
+    <loc>http://deter-project.github.io/linkdelays/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/pc3000/</loc>
+    <loc>http://deter-project.github.io/nscommands/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/nscommands/</loc>
+    <loc>http://deter-project.github.io/pc2133/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/scratch/</loc>
+    <loc>http://deter-project.github.io/scratch/</loc>
   </url>
   
   <url>
-    <loc>http://localhost:1313/sitemap/</loc>
+    <loc>http://deter-project.github.io/sitemap/</loc>
   </url>
   
 </urlset>

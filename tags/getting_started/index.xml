@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Getting_started on The Deter Project</title>
-    <link>http://localhost:1313/tags/getting_started/</link>
+    <link>http://deter-project.github.io/tags/getting_started/</link>
     <description>Recent content in Getting_started on The Deter Project</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Nov 2015 07:54:14 -0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/getting_started/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://deter-project.github.io/tags/getting_started/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Sign Up</title>
-      <link>http://localhost:1313/SignUp/</link>
+      <link>http://deter-project.github.io/SignUp/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/SignUp/</guid>
+      <guid>http://deter-project.github.io/SignUp/</guid>
       <description>
 
 &lt;h1 id=&#34;getting-an-account:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Getting an Account&lt;/h1&gt;
@@ -77,10 +77,10 @@
     
     <item>
       <title>Core Quickstart</title>
-      <link>http://localhost:1313/CoreQuickstart/</link>
+      <link>http://deter-project.github.io/CoreQuickstart/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/CoreQuickstart/</guid>
+      <guid>http://deter-project.github.io/CoreQuickstart/</guid>
       <description>
 
 &lt;p&gt;This page describes basic information about DeterLab and its core functionality.&lt;/p&gt;
@@ -173,10 +173,10 @@ $ns run
     
     <item>
       <title>Core Guide</title>
-      <link>http://localhost:1313/CoreGuide/</link>
+      <link>http://deter-project.github.io/CoreGuide/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/CoreGuide/</guid>
+      <guid>http://deter-project.github.io/CoreGuide/</guid>
       <description>
 
 &lt;p&gt;In this tutorial we begin with a small 3-5 node experiment, so that you will become familiar with NS syntax and the practical aspects of DeterLab operation. Usually, you will want to incorporate another system such as the [wiki:OrchestratorQuickstart MAGI Orchestrator] for more fully fleshed out experiments. But this is a good starting point for those new to DeterLab.&lt;/p&gt;
@@ -608,10 +608,10 @@ When you are completely finished with your experiment and have no intention of r
     
     <item>
       <title>Sample Topologies</title>
-      <link>http://localhost:1313/Topologies/</link>
+      <link>http://deter-project.github.io/Topologies/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/Topologies/</guid>
+      <guid>http://deter-project.github.io/Topologies/</guid>
       <description>
 
 &lt;p&gt;The following are various topologies you can use to experiment with DeterLab Core.&lt;/p&gt;
@@ -752,10 +752,10 @@ $ns run
     
     <item>
       <title>Using Nodes</title>
-      <link>http://localhost:1313/UsingNodes/</link>
+      <link>http://deter-project.github.io/UsingNodes/</link>
       <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
       
-      <guid>http://localhost:1313/UsingNodes/</guid>
+      <guid>http://deter-project.github.io/UsingNodes/</guid>
       <description>
 
 &lt;h1 id=&#34;know-your-deter-servers:346b9e50ca891863d0f276733701095f&#34;&gt;Know your DETER servers&lt;/h1&gt;
