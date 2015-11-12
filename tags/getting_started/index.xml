@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting_started on The Deter Project</title>
+    <link>http://localhost:1313/tags/getting_started/</link>
+    <description>Recent content in Getting_started on The Deter Project</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Nov 2015 07:54:14 -0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/getting_started/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sign Up</title>
+      <link>http://localhost:1313/SignUp/</link>
+      <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
+      
+      <guid>http://localhost:1313/SignUp/</guid>
+      <description>
+
+&lt;h1 id=&#34;getting-an-account:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Getting an Account&lt;/h1&gt;
+
+&lt;h2 id=&#34;who-may-apply-for-a-deter-project-or-request-a-user-account:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Who may apply for a DETER project or request a user account?&lt;/h2&gt;
+
+&lt;p&gt;Researchers from academia, government, and industry &amp;ndash; as well as educators from academic institutions &amp;ndash; may apply for a DeterLab project account. A student must have their professor or appropriate faculty member apply for an account, and once it is activated the student can then apply for membership to that project.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt; For more information on using DeterLab for education, please refer to the  &lt;a href=&#34;https://education.deterlab.net&#34; target=&#34;_blank&#34;&gt;DeterLab Education Site&lt;/a&gt;. &lt;/small&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;to-register:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;To Register&lt;/h2&gt;
+
+&lt;p&gt;DETER accounts are grouped by projects, therefore the project leader or PI must first request a project, then other users apply for membership to that project.&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt; If you already have a DeterLab account, please login in first. This will help streamline the process. &lt;/small&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;requesting-a-new-project:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Requesting a New Project&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you are a PI, project leader or instructor who wants to request a new project on DeterLab, fill out the &lt;a href=&#34;https://www.isi.deterlab.net/newproject.php&#34; target=&#34;_blank&#34;&gt;New Project Application Form&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You will be asked a number of questions about your project and how you intend to use DETER. Please be detailed, especially with respect to any possible risks from your experiment. A DETER staff member may contact you to discuss or clarify any potential issues.&lt;/li&gt;
+&lt;li&gt;The project leader is responsible for ensuring that the project adheres to the Project Plan included in the application form.&lt;/li&gt;
+&lt;li&gt;Instructors should indicate this project is for educational purposes. Once the project is created, you will receive further instructions including how to create accounts for your students.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Upon submission, your application must be approved by the DETER Executive Committee; this generally takes a few days. They may contact you and ask for clarification.&lt;/li&gt;
+&lt;li&gt;You will receive an email notification upon approval and your user account will be active. You may log in with the username and password you entered on the form.&lt;/li&gt;
+&lt;li&gt;If you are curious about the progress on your application, you may &lt;a href=&#34;http://www.deter-project.org/contact_deter&#34; target=&#34;_blank&#34;&gt;contact us&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;getting-a-user-account-to-join-an-existing-project:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Getting a User Account to Join an Existing Project&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you are a team member who needs to join an existing project, submit the &lt;a href=&#34;https://www.isi.deterlab.net/joinproject.php&#34; target=&#34;_blank&#34;&gt;Apply for Project Membership Form&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The project leader will be informed via email of your request and will be required to log in to approve your account.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;note-to-students:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Note to Students&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you are a student who wants to use DeterLab for your own research:
+
+&lt;ul&gt;
+&lt;li&gt;A faculty sponsor must first fill out the &lt;a href=&#34;https://www.isi.deterlab.net/newproject.php&#34; target=&#34;_blank&#34;&gt;New Project Application Form&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Once this has been done, the sponsor will instruct you to &lt;a href=&#34;https://www.isi.deterlab.net/joinproject.php&#34; target=&#34;_blank&#34;&gt;apply for project membership&lt;/a&gt; which will create your DeterLab account. You must obtain the name of the DeterLab project from your sponsor to correctly fill out the form.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;If you are a student taking a class that uses DeterLab:
+
+&lt;ul&gt;
+&lt;li&gt;You do not need to take any action – your instructor will create accounts and assign them to students.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;getting-help:be6bb6cac7b36defc6fd573e81b159b3&#34;&gt;Getting Help&lt;/h2&gt;
+
+&lt;p&gt;If you run into trouble, please &lt;a href=&#34;http://www.deter-project.org/contact_deter&#34; target=&#34;_blank&#34;&gt;contact us&lt;/a&gt; and we will be happy to assist.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Core Quickstart</title>
+      <link>http://localhost:1313/CoreQuickstart/</link>
+      <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
+      
+      <guid>http://localhost:1313/CoreQuickstart/</guid>
+      <description>
+
+&lt;p&gt;This page describes basic information about DeterLab and its core functionality.&lt;/p&gt;
+
+&lt;h1 id=&#34;what-is-deterlab:eac272858d0eda260fb9992444171bba&#34;&gt;What is DeterLab?&lt;/h1&gt;
+
+&lt;p&gt;The DeterLab testbed is a security and education-enhanced version of &lt;a href=&#34;https://www.emulab.net/&#34;&gt;Emulab&lt;/a&gt;. Funded by the National Science Foundation and the Department of Homeland Security, DeterLab is hosted by USC/ISI and UC Berkeley.&lt;/p&gt;
+
+&lt;p&gt;DeterLab (like Emulab) offers user accounts with assorted permissions associated with different experiment groups. Each group can have its own pre-configured experimental environments running on Linux, BSD, Windows, or other operating systems. Users running DeterLab experiments have full control of real hardware and networks running preconfigured software packages.&lt;/p&gt;
+
+&lt;h1 id=&#34;how-does-it-work:eac272858d0eda260fb9992444171bba&#34;&gt;How does it work?&lt;/h1&gt;
+
+&lt;p&gt;The software running DeterLab loads operating system images (low level disk copies) onto free nodes in the testbed, and then reconfigures programmable switches to create VLANs with the newly-imaged nodes connected according to the topology specified by the experiment creator.&lt;/p&gt;
+
+&lt;p&gt;After the system is fully imaged and configured, DeterLab executes specified scripts, unpacks tarballs, and/or installs RPM files according to the experiment&amp;rsquo;s configuration. The end result is a live network of real machines, accessible via the Internet.&lt;/p&gt;
+
+&lt;p&gt;Work in DeterLab is based on &lt;em&gt;projects_&amp;rsquo; that include individual &amp;lsquo;_experiments&lt;/em&gt; and is accomplished either via the browser-based web interface (isi.deterlab.net) or via commandline on the DeterLab nodes.&lt;/p&gt;
+
+&lt;p&gt;To access DeterLab, you need to create an account, which provides credentials for accessing both the web interface and nodes.&lt;/p&gt;
+
+&lt;h1 id=&#34;how-do-i-get-a-deterlab-account:eac272858d0eda260fb9992444171bba&#34;&gt;How do I get a DeterLab account?&lt;/h1&gt;
+
+&lt;p&gt;You may obtain a DeterLab account by either starting a new project (if you are a PI or instructor) or joining an existing project (if you are a project member or a student).&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you are the project investigator or instructor&lt;/em&gt;, you must create a project and invite your team members or students to join.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you are the member of a team using DeterLab&lt;/em&gt;, your project leader will invite you to join the appropriate DeterLab project.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;If you are a student&lt;/em&gt;, you may not create a project. Your instructor must create the project and, once approved, will give you information for joining the project.&lt;/p&gt;
+
+&lt;p&gt;See [wiki:GettingStarted Getting Started] for more information.&lt;/p&gt;
+
+&lt;h1 id=&#34;how-do-i-use-deterlab:eac272858d0eda260fb9992444171bba&#34;&gt;How do I use DeterLab?&lt;/h1&gt;
+
+&lt;p&gt;In general, once you have a DeterLab account, you follow these steps. The [wiki:CoreGuide DeterLab Core Guide] will walk you through a basic tutorial of these steps.&lt;/p&gt;
+
+&lt;h2 id=&#34;1-design-the-topology:eac272858d0eda260fb9992444171bba&#34;&gt;1. Design the topology&lt;/h2&gt;
+
+&lt;p&gt;Every experiment in DeterLab is based on a network topology file written in NS format and saved on the users node. The following is a very basic example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# This is a simple ns script. Comments start with #.
+set ns [new Simulator]                 
+source tb_compat.tcl
+
+set nodeA [$ns node]
+set nodeB [$ns node]
+set nodeC [$ns node]
+set nodeD [$ns node]
+
+set link0 [$ns duplex-link $nodeB $nodeA 30Mb 50ms DropTail]
+tb-set-link-loss $link0 0.01
+
+set lan0 [$ns make-lan &amp;quot;$nodeD $nodeC $nodeB &amp;quot; 100Mb 0ms]
+
+# Set the OS on a couple.
+tb-set-node-os $nodeA FBSD7-STD
+tb-set-node-os $nodeC Ubuntu1004-STD         
+
+$ns rtproto Static
+
+# Go!
+$ns run                                 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;2-create-start-and-swap-in-allocate-resources-for-an-experiment:eac272858d0eda260fb9992444171bba&#34;&gt;2. Create, start and swap in (allocate resources for) an experiment&lt;/h2&gt;
+
+&lt;p&gt;Using your topology file, you start a new experiment via menu options in the DeterLab web interface.&lt;/p&gt;
+
+&lt;p&gt;[[Image(create_experiment_screenshot.png)]]&lt;/p&gt;
+
+&lt;h2 id=&#34;3-generate-traffic-for-your-nodes:eac272858d0eda260fb9992444171bba&#34;&gt;3. Generate traffic for your nodes&lt;/h2&gt;
+
+&lt;p&gt;Now you can experiment and start generating traffic for your nodes. We provide a [wiki:LegoTG flexible framework] to pull together the software you&amp;rsquo;ll need.&lt;/p&gt;
+
+&lt;h2 id=&#34;4-view-results-by-accessing-nodes-modify-the-experiment-as-needed:eac272858d0eda260fb9992444171bba&#34;&gt;4. View results by accessing nodes, modify the experiment as needed.&lt;/h2&gt;
+
+&lt;p&gt;Once your experiment has started, you now can access nodes via SSH and conduct your desired experiments in your new environment.&lt;/p&gt;
+
+&lt;p&gt;You may modify aspects of a running experiment through the &amp;ldquo;Modify experiment&amp;rdquo; page in the web interface or by making changes to the NS file.&lt;/p&gt;
+
+&lt;h2 id=&#34;5-save-your-work-and-swap-out-your-experiment-release-the-resources:eac272858d0eda260fb9992444171bba&#34;&gt;5. Save your work and swap out your experiment (release the resources)&lt;/h2&gt;
+
+&lt;p&gt;When you are ready to stop working on an experiment but know you will want to work on it again, save your files in specific protected directories and swap-out (via web interface or commandline) to release resources back to the testbed. This helps ensure there are enough resources for all DeterLab users.&lt;/p&gt;
+
+&lt;p&gt;This is just a high-level overview. Go to the [wiki:CoreGuide Core Guide] for a basic hands-on example of using DeterLab Core.&lt;/p&gt;
+
+&lt;p&gt;[wiki:Documentation &amp;lt; Documentation] | [wiki:CoreGuide Core Guide &amp;gt;]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Core Guide</title>
+      <link>http://localhost:1313/CoreGuide/</link>
+      <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
+      
+      <guid>http://localhost:1313/CoreGuide/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial we begin with a small 3-5 node experiment, so that you will become familiar with NS syntax and the practical aspects of DeterLab operation. Usually, you will want to incorporate another system such as the [wiki:OrchestratorQuickstart MAGI Orchestrator] for more fully fleshed out experiments. But this is a good starting point for those new to DeterLab.&lt;/p&gt;
+
+&lt;p&gt;Note, if you are a student, go to the &lt;a href=&#34;http://education.deterlab.net&#34;&gt;education.deterlab.net&lt;/a&gt; site for classroom-specific instructions.&lt;/p&gt;
+
+&lt;p&gt;[[TOC]]&lt;/p&gt;
+
+&lt;h1 id=&#34;node-use-policy:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Node Use Policy&lt;/h1&gt;
+
+&lt;p&gt;Please make sure to read our [wiki:UserGuidelines guidelines for using nodes in DeterLab]. These guidelines help keep DeterLab an effective environment for all users.&lt;/p&gt;
+
+&lt;h1 id=&#34;deterlab-environment:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;DeterLab Environment&lt;/h1&gt;
+
+&lt;p&gt;Your experiment is made up of one or more machines on the internal DeterLab network, which is behind a firewall.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;users.deterlab.net&lt;/code&gt; (or &lt;code&gt;users&lt;/code&gt; for short) is the &amp;ldquo;control server&amp;rdquo; for DeterLab. From &lt;code&gt;users&lt;/code&gt;, you can contact all your nodes, reboot them, connect to their serial ports, etc. Each user has a home directory on this server and you may SSH into it with your username and password for your DeterLab account.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;myboss.isi.deterlab.net&lt;/code&gt; ( or &lt;code&gt;boss&lt;/code&gt; for short) is the main testbed server that runs DeterLab. Users are not allowed to log directly into it.&lt;/p&gt;
+
+&lt;h1 id=&#34;basic-tutorial:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Basic Tutorial&lt;/h1&gt;
+
+&lt;h2 id=&#34;getting-started:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;Work in DeterLab is organized by &lt;em&gt;experiments_&amp;rsquo; within &amp;lsquo;_projects&lt;/em&gt;. Each project is created and managed by a leader - usually the Principal Investigator (PI) of a research project or the instructor of a class on cybersecurity. The project leader then invites members to join by providing them with the project name and sending them the link to the &amp;lsquo;Join a Project&amp;rsquo; page.&lt;/p&gt;
+
+&lt;p&gt;Before you can take the following tutorial, you need an active account in a project in DeterLab. See [wiki:GettingStarted How to Register] to make sure if you&amp;rsquo;re qualified, and then follow the directions to create a project or ask to join an existing project - if you go through either process for the first time, your account is created as a result.&lt;/p&gt;
+
+&lt;p&gt;If you already have an account, proceed to the next step.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-1-design-the-topology:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Step 1: Design the topology&lt;/h2&gt;
+
+&lt;p&gt;Part of DeterLab&amp;rsquo;s power lies in its ability to assume many different topologies; the description of a such a topology is a necessary part
+of an experiment.  Before you can start your experiment, you must model the elements of the experiment&amp;rsquo;s network with a topology.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;For this basic tutorial, use this [attachment:basic.ns?format=raw NS file] which includes a simple topology and save it to a directory called &lt;em&gt;basicExp&lt;/em&gt; in your local directory on &lt;code&gt;users.deterlab.net&lt;/code&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The rest of this section describes NS format and walks you through the different parts of the sample file.&lt;/p&gt;
+
+&lt;h3 id=&#34;ns-format:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;NS Format&lt;/h3&gt;
+
+&lt;p&gt;DeterLab uses the &amp;ldquo;NS&amp;rdquo; (&amp;ldquo;Network Simulator&amp;rdquo;) format to describe network topologies. This is substantially the same &lt;a href=&#34;http://www.scriptics.com/software/tcltk/&#34;&gt;Tcl&lt;/a&gt;-based format used by &lt;a href=&#34;http://www.isi.edu/nsnam/ns/&#34;&gt;ns-2&lt;/a&gt;. Since DeterLab offers emulation, rather than simulation, these files are interpreted in a somewhat different manner than ns-2. Therefore, some ns-2 functionality may work differently than you expect, or may not be implemented at all. Please look for warnings of the form:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    *** WARNING: Unsupported NS Statement!
+        Link type BAZ, using DropTail!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you feel there is useful functionality missing, please [wiki:GettingHelp let us know]. Also, some [wiki:nscommands testbed-specific syntax] has been added, which, with the inclusion of the compatibility module &lt;code&gt;tb_compat.tcl&lt;/code&gt;, will be ignored by the NS simulator. This allows the same NS file to work on both DeterLab and ns-2, most of the time.&lt;/p&gt;
+
+&lt;h3 id=&#34;ns-example:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;NS Example&lt;/h3&gt;
+
+&lt;p&gt;In our example, we are creating a test network which looks like the following:&lt;/p&gt;
+
+&lt;p&gt;[[Image(abcd.png)]]&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Figure 1: A is connected to B, and B to C and D with a LAN.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s how to describe this topology:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Declare a simulator and include a file that allows you to use the special &lt;code&gt;tb-&lt;/code&gt; commands.&lt;/em&gt;
+First off, all NS files start with a simple prologue, declaring a simulator and including a file that allows you to use the special &lt;code&gt;tb-&lt;/code&gt; commands:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    # This is a simple ns script. Comments start with #.
+    set ns [new Simulator]
+        source tb_compat.tcl
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Define the 4 nodes in the topology.&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    set nodeA [$ns node]
+    set nodeB [$ns node]
+    set nodeC [$ns node]
+    set nodeD [$ns node]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;nodeA&lt;/code&gt; and so on are the virtual names (&lt;em&gt;vnames&amp;rdquo;) of the nodes in your topology. When your experiment is swapped in (has allocated resources), they will be assigned to physical node names like &amp;ldquo;pc45&lt;/em&gt;, probably different ones each time.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;NOTE:&amp;ldquo;&amp;rsquo; Avoid vnames that clash with the physical node names in the testbed.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Define the link and the LAN that connect the nodes.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;NS syntax permits you to specify the bandwidth, latency, and queue type. Note that since NS can&amp;rsquo;t impose artificial losses like DeterLab can, we use a separate &lt;code&gt;tb-&lt;/code&gt; command to add loss on a link. For our example, we will define a full speed LAN between B, C, and D, and a shaped link from node A to B.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    set link0 [$ns duplex-link $nodeB $nodeA 30Mb 50ms DropTail]
+    tb-set-link-loss $link0 0.01
+    set lan0 [$ns make-lan &amp;quot;$nodeD $nodeC $nodeB &amp;quot; 100Mb 0ms]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In addition to the standard NS syntax above, a number of [wiki:nscommands extensions] are available in DeterLab that allow you to better control your experiment.&lt;/p&gt;
+
+&lt;p&gt;For example, you may specify what Operating System is booted on your nodes. For the versions of FreeBSD, Linux, and Windows we currently support, please refer to the [wiki:OSImages Operating System Images] page.&lt;/p&gt;
+
+&lt;p&gt;Click &lt;a href=&#34;https://www.isi.deterlab.net/showosid_list.php3&#34;&gt;List ImageIDs and OSIDs&lt;/a&gt; in the DeterLab web interface &lt;em&gt;Interaction&lt;/em&gt; pane to see the current list of DeterLab-supplied operating systems. By default, our most recent Linux image is selected.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    tb-set-node-os $nodeA FBSD7-STD
+    tb-set-node-os $nodeC Ubuntu1004-STD
+    tb-set-node-os $nodeC WINXP-UPDATE
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;Enable routing.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;In a topology like this, you will likely want to communicate between all the nodes, including nodes that aren&amp;rsquo;t directly connected, like &lt;code&gt;A&lt;/code&gt; and &lt;code&gt;C&lt;/code&gt;. In order for that to happen, we must enable routing in our experiment, so &lt;code&gt;B&lt;/code&gt; can route packets for the other nodes.&lt;/p&gt;
+
+&lt;p&gt;The typical way to do this is with Static routing. (Other options are detailed in the [wiki:#Routing Routing section below]).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ns rtproto Static
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;em&gt;End with an epilogue that instructs the simulator to start.&lt;/em&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    # Go!
+    $ns run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;step-2-create-a-new-experiment:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Step 2: Create a new experiment&lt;/h2&gt;
+
+&lt;p&gt;For this tutorial, we will use the web interface to create a new experiment. You could also use the [wiki:DeterLabCommands DeterLab Shell Commands].&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Log into &lt;a href=&#34;https://www.isi.deterlab.net&#34;&gt;DeterLab&lt;/a&gt; with your account credentials (see [wiki:GettingStarted How to Register]).&lt;/li&gt;
+&lt;li&gt;Click the &lt;em&gt;Experimentation&amp;rdquo; menu item, then click &amp;ldquo;Begin an Experiment&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Select Project&amp;rdquo; and choose your project. This is also know as your &lt;em&gt;project name&lt;/em&gt; or Project ID (PID). This is used as an argument in many commands. Most people will be a member of just one project, and will not have a choice. If you are a member of multiple projects, be sure to select the correct project from the menu. In this example, we will refer to the project as &amp;ldquo;DeterTest&lt;/em&gt;.&lt;/li&gt;
+&lt;li&gt;Leave the &lt;em&gt;Group&amp;rdquo; field set to &amp;ldquo;Default Group&lt;/em&gt; unless otherwise instructed.&lt;/li&gt;
+&lt;li&gt;Enter the &lt;em&gt;Name&amp;rdquo; field with an easily identifiable name for the experiment. The Name should be a single word (no spaces) identifier. For this tutorial, use &amp;ldquo;basic-experiment&lt;/em&gt;. This is also known as your &lt;em&gt;experiment name&lt;/em&gt; or Experiment ID (EID) and is used as an argument in many commands.&lt;/li&gt;
+&lt;li&gt;Enter the &lt;em&gt;Description&lt;/em&gt; field with a brief description of the experiment.&lt;/li&gt;
+&lt;li&gt;In the &lt;em&gt;Your NS File&lt;/em&gt; field, enter the local path to the basic.ns file you downloaded. This file will be uploaded through your browser when you choose &amp;ldquo;Submit.&amp;rdquo;
+ The rest of the settings depend on the goals of your experiment. In this case, you may simply set the &lt;em&gt;Idle Swap&amp;rdquo; field to &amp;ldquo;1 h&amp;rdquo; and leave the rest of the settings for &amp;ldquo;Swapping&amp;rdquo;, &amp;ldquo;Linktest Option&amp;rdquo;, and &amp;ldquo;BatchMode&lt;/em&gt; at their default for now.&lt;/li&gt;
+&lt;li&gt;Check the &lt;em&gt;Swap In Immediately&lt;/em&gt; box to start your lab now. If you did not check this box, you would follow the directions for [starting an experiment] to allocate resources later.&lt;/li&gt;
+&lt;li&gt;Click &lt;em&gt;Submit&lt;/em&gt;.&lt;br /&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;After submission, DeterLab will begin processing your request. This process can take several minutes, depending on how large your topology is, and what other features (such as delay nodes and bandwidth limits) you are using. While you are waiting, you may watch the swap in process displayed in your web browser.&lt;/p&gt;
+
+&lt;p&gt;Assuming all goes well, you will receive an email message indicating success or failure, and if successful, a listing of the nodes and IP address that were allocated to your experiment.&lt;/p&gt;
+
+&lt;p&gt;For the NS file in this example, you should receive a listing that looks similar to this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Experiment: DeterTest/basic-experiment
+State: swapped
+
+Virtual Node Info:
+ID              Type         OS              Qualified Name
+--------------- ------------ --------------- --------------------
+nodeA           pc           FBSD7-STD       nodeA.basic-experiment.DeterTest.isi.deterlab.net
+nodeB           pc                           nodeB.basic-experiment.DeterTest.isi.deterlab.net
+nodeC           pc           Ubuntu1004-STD  nodeC.basic-experiment.DeterTest.isi.deterlab.net
+nodeD           pc                           nodeD.basic-experiment.DeterTest.isi.deterlab.net
+
+Virtual Lan/Link Info:
+ID              Member/Proto    IP/Mask         Delay     BW (Kbs)  Loss Rate
+--------------- --------------- --------------- --------- --------- ---------
+lan0            nodeB:1         10.1.2.4        0.00      100000    0.00000000
+                ethernet        255.255.255.0   0.00      100000    0.00000000
+lan0            nodeC:0         10.1.2.3        0.00      100000    0.00000000
+                ethernet        255.255.255.0   0.00      100000    0.00000000
+lan0            nodeD:0         10.1.2.2        0.00      100000    0.00000000
+                ethernet        255.255.255.0   0.00      100000    0.00000000
+link0           nodeA:0         10.1.1.3        25.00     30000     0.00501256
+                ethernet        255.255.255.0   25.00     30000     0.00501256
+link0           nodeB:0         10.1.1.2        25.00     30000     0.00501256
+                ethernet        255.255.255.0   25.00     30000     0.00501256
+
+Virtual Queue Info:
+ID              Member          Q Limit    Type    weight/min_th/max_th/linterm
+--------------- --------------- ---------- ------- ----------------------------
+lan0            nodeB:1         100 slots  Tail    0/0/0/0
+lan0            nodeC:0         100 slots  Tail    0/0/0/0
+lan0            nodeD:0         100 slots  Tail    0/0/0/0
+link0           nodeA:0         100 slots  Tail    0/0/0/0
+link0           nodeB:0         100 slots  Tail    0/0/0/0
+
+Event Groups:
+Group Name      Members
+--------------- ---------------------------------------------------------------
+link0-tracemon  link0-nodeB-tracemon,link0-nodeA-tracemon
+__all_lans      lan0,link0
+__all_tracemon  link0-nodeB-tracemon,link0-nodeA-tracemon,lan0-nodeD-tracemon,lan0-nodeC-tracemon,lan0-nodeB-tracemon
+lan0-tracemon   lan0-nodeB-tracemon,lan0-nodeC-tracemon,lan0-nodeD-tracemon
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here is a breakdown of the results:
+    * A single delay node was allocated and inserted into the link between &lt;em&gt;nodeA&amp;rdquo; and &amp;ldquo;nodeB&lt;/em&gt;. This link is invisible from your perspective, except for the fact that it adds latency, error, or reduced bandwidth. However, the information for the delay links are included so that you can modify the delay parameters after the experiment has been created (Note that you cannot convert a non-shaped link into a shaped link; you can only modify the traffic shaping parameters of a link that is already being shaped). [[BR]]
+    * Delays of less than 2ms (per trip) are too small to be accurately modeled at this time, and will be silently ignored. A delay of 0ms can be used to indicate that you do not want added delay; the two interfaces will be &amp;ldquo;directly&amp;rdquo; connected to each other. [[BR]]
+    * Each link in the &lt;em&gt;Virtual Lan/Link&amp;rdquo; section has its delay, etc., split between two entries. One is for traffic coming into the link from the node, and the other is for traffic leaving the link to the node. In the case of links, the four entries often get optimized to two entries in a &amp;ldquo;Physical Lan/Link&lt;/em&gt; section. [[BR]]
+    * The names in the &lt;em&gt;Qualified Name&amp;rdquo; column refer to the control network interfaces for each of your allocated nodes. These names are added to the DeterLab nameserver map on the fly, and are immediately available for you to use so that you do not have to worry about the actual physical node names that were chosen. In the names listed above, &lt;em&gt;DeterTest&amp;rdquo;&amp;rsquo; is the name of the project that you chose to work in, and &amp;ldquo;&amp;lsquo;basic-experiment&lt;/em&gt; is the name of the experiment that you provided on the &amp;ldquo;Begin an Experiment&lt;/em&gt; page. [[BR]]
+    * Please don&amp;rsquo;t use the &lt;em&gt;Qualified Name&lt;/em&gt; from within nodes in your experiment, since it will contact them over the control network, bypassing the link shaping we configured.&lt;/p&gt;
+
+&lt;h3 id=&#34;starting-an-experiment-swap-in:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Starting an experiment (Swap-in)&lt;/h3&gt;
+
+&lt;p&gt;If you want to go back to an existing experiment to start it and swap-in (allocate resources):&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go to your dashboard by clicking the &lt;em&gt;My DeterLab&lt;/em&gt; link in the top menu.&lt;/li&gt;
+&lt;li&gt;In the &lt;em&gt;Current Experiments&lt;/em&gt; table, click on the EID (Experiment ID) of the experiment you want to start.&lt;/li&gt;
+&lt;li&gt;In the left sidebar, click &lt;em&gt;Swap Experiment In&amp;rdquo;, then click &amp;ldquo;Confirm&lt;/em&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The swap in process will take 5 to 10 minutes; you will receive an email notification when it is complete. While you are waiting, you can watch the swap in process displayed in your web browser.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-3-access-nodes-in-your-lab-environment:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Step 3: Access nodes in your lab environment&lt;/h2&gt;
+
+&lt;p&gt;To access your experimental nodes, you&amp;rsquo;ll need to first [wiki:DETERSSH SSH] into &lt;code&gt;users.deterlab.net&lt;/code&gt; using your DeterLab username and password.&lt;/p&gt;
+
+&lt;p&gt;Once you log in to &lt;code&gt;users&lt;/code&gt;, you&amp;rsquo;ll need to SSH again to your actual experimental nodes. Since your nodes addresses may change every time you swap them in, it&amp;rsquo;s best to SSH to the permanent network names of the nodes.&lt;/p&gt;
+
+&lt;p&gt;As we mentioned in the previous step, the Qualified Names are included in the output after the experiment is swapped in. Here is another way to find them after swap-in:&lt;/p&gt;
+
+&lt;p&gt;a. &lt;em&gt;Navigate to the experiment you just created in the web interface&lt;/em&gt;.  This location is usually called the &lt;em&gt;experiment page&lt;/em&gt;.
+     * If you just swapped in your experiment, the quickest way to find your node names is to click on the experiment name in the table under &lt;em&gt;Swap Control&lt;/em&gt;.
+     * You can also get there by clicking &lt;em&gt;My DeterLab&amp;rdquo; in the top navigation. Your experiment is listed as &amp;ldquo;active&amp;rdquo; in the &amp;ldquo;State&amp;rdquo; column. Click on the experiment&amp;rsquo;s name in the &amp;ldquo;EID&lt;/em&gt; column to display the experiment page..
+b. &lt;em&gt;Click on the &lt;em&gt;Details&lt;/em&gt; tab&lt;/em&gt;.
+     * Your nodes&amp;rsquo; network names are listed under the heading &lt;em&gt;Qualified Name&lt;/em&gt;. For example, &lt;code&gt;node1.basic-experiment.DeterTest.isi.deterlab.net&lt;/code&gt;.
+     * You should familiarize yourself with the information available on this page, but for now we just need to know the long DNS qualified name(s) node(s) you just swapped in.
+     * If you are curious, you should also look at the &lt;em&gt;Settings&amp;rdquo; (generic info), &amp;ldquo;Visualization&amp;rdquo;, and &amp;ldquo;NS File&lt;/em&gt; tabs. (The topology mapplet may be disabled for some labs, so these last two may not be visible).
+c. &lt;em&gt;SSH from &lt;code&gt;users&lt;/code&gt; to your experimental nodes by running a command with the following syntax&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ssh node1.ExperimentName.ProjectName.isi.deterlab.net
+
+ * You will not need to re-authenticate.
+ * You may need to wait a few more minutes. Once DeterLab is finished setting up the experiment, the nodes still need a minute or two to boot and complete their configuration. If you get a message about &amp;quot;server configuration&amp;quot; when you try to log in, wait a few minutes and try again.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;d. If you need to create new users on your experimental nodes, you may log in as them by running the following from the experimental node:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  ssh newuser@node1.basicExp.ProjectName.isi.deterlab.net
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  ssh newuser@localhost
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;step-4-view-results-and-modify-the-experiment:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Step 4: View results and modify the experiment&lt;/h2&gt;
+
+&lt;p&gt;You can visualize the experiment by going to your experiment page (from My DeterLab, click the EID link for your experiment) and clicking the &lt;em&gt;Visualization&amp;rdquo; tab. From this page you can also change the NS file by clicking on the &amp;ldquo;NS File&amp;rdquo; tab or modify parameters by clicking &amp;ldquo;Modify Traffic Shaping&lt;/em&gt; in the left sidebar.&lt;/p&gt;
+
+&lt;p&gt;An alternative method is to log into &lt;code&gt;users.isi.deterlab.net&lt;/code&gt; and use the [wiki:DeterLabCommands#delay_config:ChangethelinkshapingcharacteristicsforalinkorLAN delay_config] program. This program requires that you know the symbolic names of the individual links. This information is available on the experiment page.&lt;/p&gt;
+
+&lt;h2 id=&#34;step-5-configure-and-run-your-experiment:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Step 5: Configure and run your experiment.&lt;/h2&gt;
+
+&lt;p&gt;Once you have all link modifications to your liking, you now need to install any additional tools you need (tools not included in the OS images you chose in Step 1), configure your tools and coordinate these tools to create events in your experiment.&lt;/p&gt;
+
+&lt;p&gt;For simple experiments, installation, configuration and triggering events can be done by hand or through small scripts. To accomplish this, log into your machines (see Step 3), perform the OS-specific steps needed to install and configure your tools, and run these tools by hand or through scripts, such as shell scripts or remote scripts such as Fabric-based scripts (&lt;a href=&#34;http://www.fabfile.org&#34;&gt;http://www.fabfile.org&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;For more complicated experiments, you may need more automated ways to install and configure tools as well as coordinate events within your experiment. For fine-grained control over events and event triggers, see the [wiki:OrchestratorQuickstart MAGI Orchestrator].&lt;/p&gt;
+
+&lt;p&gt;A large part of many experiments is traffic generation: the generation and modulation of packets on experiment links. Tools for such generation include the [wiki:OrchestratorQuickstart MAGI Orchestrator] and [wiki:LegoTG LegoTG], as well as [wiki:LegacyTools#LegitimateTrafficGenerators many other possibilities].&lt;/p&gt;
+
+&lt;h2 id=&#34;step-6-save-your-work-and-swap-out-release-resources:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Step 6: Save your work and swap-out (release resources)&lt;/h2&gt;
+
+&lt;p&gt;When you are done working with your nodes, it is best practice to save your work and swap out the experiment so that other users have access to the physical machines.&lt;/p&gt;
+
+&lt;h3 id=&#34;saving-and-securing-your-files-on-deterlab:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Saving and securing your files on DeterLab&lt;/h3&gt;
+
+&lt;p&gt;Every user on DeterLab has a home directory on &lt;code&gt;users.deterlab.net&lt;/code&gt; which is mounted via NFS to experimental nodes. This means that anything you place in your home directory on one experimental node (or the &lt;code&gt;users&lt;/code&gt; machine) is visible in your home directory on your other experimental nodes. Your home directory is private and will not be overwritten, so you may save your work in that directory. &lt;em&gt;However, everything else on experimental nodes is permanently lost when an experiment is swapped out.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Remember: Make sure you save your work in your home directory before swapping out your experiment!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Another place you may save your files would be &lt;code&gt;/proj/YourProject&lt;/code&gt;. This directory is also NFS-mounted to all experimental nodes, so the same rules apply about writing to it a lot, as for your home directory. It is shared by all members of your project/class.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Again, on DeterLab, files ARE NOT SAVED between swap-ins. Additionally, experiments may be forcibly swapped out after a certain number of idle hours (or some maximum amount of time).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;You must manually save copies of any files you want to keep in your home directory. Any files left elsewhere on the experimental nodes will be erased and lost forever. This means that if you want to store progress for a lab and come back to it later, you will need to put it in your home directory before swapping out the experiment.&lt;/p&gt;
+
+&lt;h3 id=&#34;swap-out-vs-terminate:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Swap Out vs Terminate&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;When to Swap Out&lt;/em&gt;
+When you are done with your experiment for the time being, make sure you save your work into an appropriate location and then swap out your experiment. Swapping out is the equivalent of temporarily stopping the experiment and relinquishing the testbed resources. Swapping out is what you want to do when you are taking a break from the work, but coming back later.&lt;/p&gt;
+
+&lt;p&gt;To do this, click &lt;em&gt;Swap Experiment Out&lt;/em&gt; link on the experiment page. This allows the resources to be de-allocated so that someone else can use them.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;When to Terminate&lt;/em&gt;
+When you are completely finished with your experiment and have no intention of running it again, use the &lt;em&gt;Terminate Experiment&lt;/em&gt; link in the sidebar of the experiment page. Be careful: &lt;em&gt;termination will erase the experiment&lt;/em&gt; and you won&amp;rsquo;t be able to swap it back in without recreating it. DeterLab will then tear down your experiment, and send you an email message when the process is complete. At this point you are allowed to reuse the experiment name (say, if you wanted to create a similar experiment with different parameters).&lt;/p&gt;
+
+&lt;p&gt;Terminating says &amp;ldquo;I won&amp;rsquo;t need this experiment ever again.&amp;rdquo; Just remember to Swap In/Out, and never &amp;ldquo;Terminate&amp;rdquo; unless you&amp;rsquo;re sure you&amp;rsquo;re completely done with the experiment. If you do end up terminating an experiment, you can always go back and recreate it.&lt;/p&gt;
+
+&lt;h3 id=&#34;scheduling-experiment-swapout-termination-halting:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Scheduling experiment swapout/termination #Halting&lt;/h3&gt;
+
+&lt;p&gt;If you expect that your experiment should run for a set period of time, but you will not be around to terminate or swap the experiment out, then you should use the scheduled swapout/termination feature. This allows you to specify a maximum running time in your NS file so that you will not hold scarce resources when you are offline. To schedule a swapout or termination in your NS file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;     $ns at 2000.0 &amp;quot;$ns terminate&amp;quot;
+   or
+     $ns at 2000.0 &amp;quot;$ns swapout&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This will cause your experiment to either be terminated or swapped out after 2000 seconds of wallclock time.&lt;/p&gt;
+
+&lt;h1 id=&#34;why-can-t-i-log-in-to-deterlab:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Why can&amp;rsquo;t I log in to DeterLab?&lt;/h1&gt;
+
+&lt;p&gt;DeterLab has an automatic blacklist mechanism. If you enter the wrong username and password combination too many times, your account will no longer be accessible from your current IP address.&lt;/p&gt;
+
+&lt;p&gt;If you think that this has happened to you, try logging in from another address (if you know how), or create an issue (see [wiki:GettingHelp Getting Help]), which will relay the request to the testbed-ops group that this specific blacklist entry should be erased.&lt;/p&gt;
+
+&lt;h1 id=&#34;installing-rpms-automatically:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Installing RPMs automatically&lt;/h1&gt;
+
+&lt;p&gt;The DeterLab NS extension &lt;code&gt;tb-set-node-rpms&lt;/code&gt; allows you to specify a (space-separated) list of RPMs to install on each of your nodes when it boots:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  tb-set-node-rpms $nodeA /proj/myproj/rpms/silly-freebsd.rpm
+  tb-set-node-rpms $nodeB /proj/myproj/rpms/silly-linux.rpm
+  tb-set-node-rpms $nodeC /proj/myproj/rpms/silly-windows.rpm
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above NS code says to install the &lt;code&gt;silly-freebsd.rpm&lt;/code&gt; file on &lt;code&gt;nodeA&lt;/code&gt;, the &lt;code&gt;silly-linux.rpm&lt;/code&gt; on &lt;code&gt;nodeB&lt;/code&gt;, and the &lt;code&gt;silly-windows.rpm&lt;/code&gt; on &lt;code&gt;nodeC&lt;/code&gt;. RPMs are installed as root, and must reside in either the project&amp;rsquo;s &lt;code&gt;/proj&lt;/code&gt; directory, or if the experiment has been created in a subgroup, in the &lt;code&gt;/groups&lt;/code&gt; directory. You may not place your RPMs in your home directory.&lt;/p&gt;
+
+&lt;h1 id=&#34;installing-tar-files-automatically:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Installing TAR files automatically&lt;/h1&gt;
+
+&lt;p&gt;The DeterLab NS extension [wiki:nscommands#tb-set-node-tarfiles tb-set-node-tarfiles] allows you to specify a set of tarfiles to install on each of your nodes when it boots.&lt;/p&gt;
+
+&lt;p&gt;While similar to the [wiki:nscommands#tb-set-node-rpms tb-set-node-rpms] command, the format of this command is slightly different in that you must specify a directory in which to unpack the tar file. This avoids problems with having to specify absolute pathnames in your tarfile, which many modern tar programs balk at.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  tb-set-node-tarfiles $nodeA /usr/site /proj/projectName/tarfiles/silly.tar.gz
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above NS code says to install the &lt;code&gt;silly.tar.gz&lt;/code&gt; tar file on &lt;code&gt;nodeA&lt;/code&gt; from the working directory &lt;code&gt;/usr/site&lt;/code&gt; when the node first boots. The tarfile must reside in either the project&amp;rsquo;s &lt;code&gt;/proj&lt;/code&gt; directory, or if the experiment has been created in a subgroup, in the &lt;code&gt;/groups&lt;/code&gt; directory. You may not place your tarfiles in your home directory. You may specify as many tarfiles as you wish, as long as each one is preceded by the directory it should be unpacked in, all separated by spaces.&lt;/p&gt;
+
+&lt;h1 id=&#34;starting-your-application-automatically:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Starting your application automatically&lt;/h1&gt;
+
+&lt;p&gt;You may start your application automatically when your nodes boot for the first time (when an experiment is started or swapped in) by using the &lt;code&gt;tb-set-node-startcmd&lt;/code&gt; NS extension. The argument is a command string (pathname of a script or program, plus arguments) that is run as the &lt;code&gt;UID&lt;/code&gt; of the experiment creator, after the node has reached multiuser mode.&lt;/p&gt;
+
+&lt;p&gt;The command is invoked using &lt;code&gt;/bin/csh&lt;/code&gt;, and the working directory is undefined (your script should &lt;code&gt;cd&lt;/code&gt; to the directory you need). You can specify the same program for each node, or a different program. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;  tb-set-node-startcmd $nodeA &amp;quot;/proj/projectName/runme.nodeA&amp;quot;
+  tb-set-node-startcmd $nodeB &amp;quot;/proj/projectName/runme.nodeB&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will run &lt;code&gt;/proj/projectName/runme.nodeA&lt;/code&gt; on nodeA and &lt;code&gt;/proj/projectName/runme.nodeB&lt;/code&gt; on nodeB. The programs must reside on the node&amp;rsquo;s local filesystem, or in a directory that can be reached via NFS. This is either the project&amp;rsquo;s &lt;code&gt;/proj&lt;/code&gt; directory, in the &lt;code&gt;/groups&lt;/code&gt; directory if the experiment has been created in a subgroup, or a project member&amp;rsquo;s home directory in &lt;code&gt;/users&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you need to see the output of your command, be sure to redirect the output into a file. You may place the file on the local node, or in one of the NFS mounted directories mentioned above. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;     tb-set-node-startcmd $nodeB &amp;quot;/proj/myproj/runme &amp;gt;&amp;amp; /tmp/foo.log&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that the syntax and function of &lt;code&gt;/bin/csh&lt;/code&gt; differs from other shells (including bash), specifically in redirection syntax.  Be sure to use &lt;code&gt;csh&lt;/code&gt; syntax or your start command will fail silently.&lt;/p&gt;
+
+&lt;p&gt;The exit value of the start command is reported back to the Web Interface, and is made available to you via the experiment page. There is a listing for all of the nodes in the experiment, and the exit value is recorded in this listing. The special symbol &lt;code&gt;none&lt;/code&gt; indicates that the node is still running the start command.&lt;/p&gt;
+
+&lt;h1 id=&#34;notifying-the-start-program-when-all-other-nodes-have-started:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Notifying the start program when all other nodes have started&lt;/h1&gt;
+
+&lt;p&gt;It is often necessary for your start program to determine when all of the other nodes in the experiment have started, and are ready to proceed. Sometimes called a &lt;em&gt;barrier&lt;/em&gt;, this allows programs to wait at a specific point, and then all proceed at once. DeterLab provides a simple form of this mechanism using a synchronization server that runs on a node of your choice.&lt;/p&gt;
+
+&lt;p&gt;Specify the node in your NS file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    tb-set-sync-server $nodeB
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When nodeB boots, the synchronization server will automatically start. Your software can then synchronize using the &lt;code&gt;emulab-sync&lt;/code&gt; program that is installed on your nodes. For example, your node start command might look like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;   #!/bin/sh
+   if [ &amp;quot;$1&amp;quot; = &amp;quot;master&amp;quot; ]; then
+       /usr/testbed/bin/emulab-sync -i 4
+   else
+       /usr/testbed/bin/emulab-sync fi /usr/site/bin/dosilly
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In this example, there are five nodes in the experiment, one of which must be configured to operate as the master, initializing the barrier to the number of clients (four in the above example) that are expected to rendezvous at the barrier. The master will by default wait for all of the clients to reach the barrier. Each client of the barrier also waits until all of the clients have reached the barrier (and of course, until the master initializes the barrier to the proper count). Any number of clients may be specified (any subset of nodes in your experiment can wait). If the master does not need to wait for the clients, you may use the &lt;em&gt;async&lt;/em&gt; option which releases the master immediately:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    /usr/testbed/bin/emulab-sync -a -i 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You may also specify the &lt;em&gt;name&lt;/em&gt; of the barrier.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    /usr/testbed/bin/emulab-sync -a -i 4 -n mybarrier
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This allows multiple barriers to be in use at the same time. Scripts on nodeA and nodeB can be waiting on a barrier named &amp;ldquo;foo&amp;rdquo; while (other) scripts on nodeA and nodeC can be waiting on a barrier named &amp;ldquo;bar.&amp;rdquo; You may reuse an existing barrier (including the default barrier) once it has been released (all clients arrived and woken up).&lt;/p&gt;
+
+&lt;h1 id=&#34;setting-up-ip-routing-between-nodes-routing:a35512dd4ffeaf2a562e3f9451f73393&#34;&gt;Setting up IP routing between nodes #Routing&lt;/h1&gt;
+
+&lt;p&gt;As DETER strives to make all aspects of the network controllable by the user, we do not attempt to impose any IP routing architecture or protocol by default. However, many users are more interested in end-to-end aspects and don&amp;rsquo;t want to be bothered with setting up routes. For those users we provide an option to automatically set up routes on nodes which run one of our provided FreeBSD, Linux or [wiki:Windows  Windows XP] disk images.&lt;/p&gt;
+
+&lt;p&gt;You can use the NS &lt;code&gt;rtproto&lt;/code&gt; syntax in your NS file to enable routing:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $ns rtproto protocolOption
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where the &lt;code&gt;protocolOption&lt;/code&gt; is limited to one of &lt;em&gt;Session&amp;rdquo;, &amp;ldquo;Static&amp;rdquo;, &amp;ldquo;Static-old&amp;rdquo;, or &amp;ldquo;Manual&lt;/em&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Session&lt;/em&gt; routing provides fully automated routing support, and is implemented by enabling &lt;code&gt;gated&lt;/code&gt; running of the OSPF protocol on all nodes in the experiment. This is not supported on [wiki:Windows#Routing Windows XP] nodes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Static&lt;/em&gt; routing also provides automatic routing support, but rather than computing the routes dynamically, the routes are precomputed by a distributed route computation algorithm running in parallel on the experiment nodes.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Static-old&lt;/em&gt; specifies use of the older centralized route computation algorithm, precomputing the nodes when the experiment is created, and then loading them onto each node when it boots.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Manual&lt;/em&gt; routing allows you to explicitly specify per-node routing information in the NS file. To do this, use the &lt;code&gt;Manual&lt;/code&gt; routing option to &lt;code&gt;rtproto&lt;/code&gt;, followed by a list of routes using the &lt;code&gt;add-route&lt;/code&gt; command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$node add-route $dst $nexthop
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;where the &lt;code&gt;dst&lt;/code&gt; can be either a node, a link, or a LAN. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $client add-route $server $router
+    $client add-route [$ns link $server $router] $router
+    $client add-route $serverlan $router
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that you would need a separate &lt;code&gt;add-route&lt;/code&gt; command to establish a route for the reverse direction; thus allowing you to specify differing forward and reverse routes if so desired. These statements are converted into appropriate &lt;code&gt;route(8)&lt;/code&gt; commands on your experimental nodes when they boot.&lt;/p&gt;
+
+&lt;p&gt;In the above examples, the first form says to set up a manual route between &lt;code&gt;$client&lt;/code&gt; and &lt;code&gt;$server&lt;/code&gt;, using &lt;code&gt;$router&lt;/code&gt; as the nexthop; &lt;code&gt;$client&lt;/code&gt; and &lt;code&gt;$router&lt;/code&gt; should be directly connected, and the interface on &lt;code&gt;$server&lt;/code&gt; should be unambiguous; either directly connected to the router, or an edge node that has just a single interface.&lt;/p&gt;
+
+&lt;p&gt;[[Image(routing.png)]]&lt;/p&gt;
+
+&lt;p&gt;If the destination has multiple interfaces configured, and it is not connected directly to the nexthop, the interface that you are intending to route to is ambiguous. In the topology shown to the right, &lt;code&gt;$nodeD&lt;/code&gt; has two interfaces configured. If you attempted to set up a route like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $nodeA add-route $nodeD $nodeB
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;you would receive an error since DeterLab staff would not easily be able to determine which of the two links on &lt;code&gt;$nodeD&lt;/code&gt; you are referring to. Fortunately, there is an easy solution. Instead of a node, specify the link directly:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    $nodeA add-route [$ns link $nodeD $nodeC] $nodeB
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This tells us exactly which link you mean, enabling us to convert that information into a proper &lt;code&gt;route&lt;/code&gt; command on &lt;code&gt;$nodeA&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The last form of the &lt;code&gt;add-route&lt;/code&gt; command is used when adding a route to an entire LAN. It would be tedious and error prone to specify a route to each node in a LAN by hand. Instead, just route to the entire network:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    set clientlan [$ns make-lan &amp;quot;$nodeE $nodeF $nodeG&amp;quot; 100Mb 0ms]
+    $nodeA add-route $clientlan $nodeB
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In general, it is still best practice to use either &lt;em&gt;Session&amp;rdquo; or &amp;ldquo;Static&lt;/em&gt; routing for all but small, simple topologies. Explicitly setting up all the routes in even a moderately-sized experiment is extremely error prone. Consider this: a recently created experiment with 17 nodes and 10 subnets &lt;em&gt;required 140 hand-created routes in the NS file&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Two final, cautionary notes on routing:
+    * The default route &lt;em&gt;must&lt;/em&gt; be set to use the control network interface. You might be tempted to set the default route on your nodes to reduce the number of explicit routes used. &lt;em&gt;Please avoid this.&lt;/em&gt; That would prevent nodes from contacting the outside world, i.e., you.
+    * If you use your own routing daemon, you must avoid using the control network interface in the configuration. Since every node in the testbed is directly connected to the control network LAN, a naive routing daemon configuration will discover that any node is just one hop away, via the control network, from any other node and &lt;em&gt;all&lt;/em&gt; inter-node traffic will be routed via that interface.&lt;/p&gt;
+
+&lt;p&gt;[wiki:CoreQuickstart &amp;lt; Core Quick Start] | [wiki:Topologies Sample Topologies &amp;gt;]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sample Topologies</title>
+      <link>http://localhost:1313/Topologies/</link>
+      <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
+      
+      <guid>http://localhost:1313/Topologies/</guid>
+      <description>
+
+&lt;p&gt;The following are various topologies you can use to experiment with DeterLab Core.&lt;/p&gt;
+
+&lt;h1 id=&#34;toy-topologies:d3fbf34d48fc7486fe81021cd7fc167c&#34;&gt;Toy topologies&lt;/h1&gt;
+
+&lt;h2 id=&#34;lan:d3fbf34d48fc7486fe81021cd7fc167c&#34;&gt;LAN&lt;/h2&gt;
+
+&lt;p&gt;[[Image(lan.png)]]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set ns [new Simulator]
+source tb_compat.tcl
+
+# Change this to a number of nodes you want
+set NODES 5
+
+set lanstr &amp;quot;&amp;quot;
+for {set i 0} {$i &amp;lt; $NODES} {incr i} {
+    set node($i) [$ns node]
+    append lanstr &amp;quot;$node($i) &amp;quot;
+}
+
+# Change the BW and delay if you want
+set lan0 [$ns make-lan &amp;quot;$lanstr&amp;quot; 100Mb 0ms]
+
+$ns rtproto Static
+$ns run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;ring:d3fbf34d48fc7486fe81021cd7fc167c&#34;&gt;Ring&lt;/h2&gt;
+
+&lt;p&gt;[[Image(ring.png)]]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set ns [new Simulator]
+source tb_compat.tcl
+
+# Change this to a number of nodes you want
+set NODES 5
+
+set node(0) [$ns node]
+for {set i 1} {$i &amp;lt; $NODES} {incr i} {
+    set node($i) [$ns node]
+    set lastindex [expr $i-1]
+
+    # Change BW and delay if you want
+    set Link$i [$ns duplex-link $node($i) $node($lastindex) 100Mb 0ms DropTail]
+}
+
+set lastindex [expr $i-1]
+
+# Change BW and delay if you want
+set Link$i [$ns duplex-link $node(0) $node($lastindex) 100Mb 0ms DropTail]
+
+$ns rtproto Static
+$ns run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;dumbbell:d3fbf34d48fc7486fe81021cd7fc167c&#34;&gt;Dumbbell&lt;/h2&gt;
+
+&lt;p&gt;[[Image(dumbbell.png)]]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set ns [new Simulator]
+source tb_compat.tcl
+
+# Change this to a number of nodes you want
+set NODES 10
+
+set rem 0
+set l 0
+for {set i 0} {$i &amp;lt; 2} {incr i} {
+   set node($rem) [$ns node]
+   for {set j 1} {$j &amp;lt; $NODES/2} {incr j} {
+    set index [expr $rem+$j]
+    set node($index) [$ns node]
+
+    # Change BW and delay if you want
+    set Link$l [$ns duplex-link $node($rem) $node($index) 100Mb 0ms DropTail]
+
+    set l [expr $l+1]
+   }
+  set rem [expr $rem+$NODES/2]
+}
+set rem [expr $NODES/2]
+
+# Change BW and delay if you want
+set Link$l [$ns duplex-link $node($rem) $node(0) 100Mb 0ms DropTail]
+
+$ns rtproto Static
+$ns run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;tree:d3fbf34d48fc7486fe81021cd7fc167c&#34;&gt;Tree&lt;/h2&gt;
+
+&lt;p&gt;[[Image(tree.png)]]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;set ns [new Simulator]
+source tb_compat.tcl
+
+# Change fanout if you want but bear in mind that some of
+# our nodes have only 5 interfaces, so max # of experimental
+# interfaces (and fan out) is 4
+set FANOUT 3
+
+# Change depth if you want
+set DEPTH 3
+
+set node(0) [$ns node]
+set lastj 0
+set f $FANOUT
+set lastl 0
+for {set i 0} {$i &amp;lt; $DEPTH} {incr i} {
+    for {set j 1} {$j &amp;lt;= $f} {incr j} {
+    set index [expr $lastj+$j]
+    set node($index) [$ns node]
+    set lastindex [expr ($index-1)/$FANOUT]
+
+    # Change BW and delay if you want
+    set Link$lastl [$ns duplex-link $node($index) $node($lastindex) 100Mb 0ms DropTail]
+    set lastl [expr $lastl+1]
+   }
+set f [expr $f*$FANOUT]
+set lastj [expr $lastj+$j-1]
+}
+
+$ns rtproto Static
+$ns run
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;real-as-topologies:d3fbf34d48fc7486fe81021cd7fc167c&#34;&gt;Real AS topologies&lt;/h1&gt;
+
+&lt;p&gt;Because most of our PCs have up to 4 experimental interfaces, note that some of these topologies may have to be modified to have a fan out of at most 4.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.cs.purdue.edu/homes/fahmy/software/rf2ns/topo/&#34;&gt;http://www.cs.purdue.edu/homes/fahmy/software/rf2ns/topo/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[wiki:CoreGuide &amp;lt; Core Guide] | [wiki:UsingNodes Using Your Nodes &amp;gt;]&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Nodes</title>
+      <link>http://localhost:1313/UsingNodes/</link>
+      <pubDate>Thu, 12 Nov 2015 07:54:14 -0800</pubDate>
+      
+      <guid>http://localhost:1313/UsingNodes/</guid>
+      <description>
+
+&lt;h1 id=&#34;know-your-deter-servers:346b9e50ca891863d0f276733701095f&#34;&gt;Know your DETER servers&lt;/h1&gt;
+
+&lt;p&gt;Here are the most important things to know.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;www.isi.deterlab.net&lt;/code&gt; is the primary web interface for the testbed.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;users.isi.deterlab.net&lt;/code&gt; is the host through which the testbed nodes are accessed and it is primary file server.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scratch&lt;/code&gt; is the local package mirror for CentOS, Ubuntu, and FreeBSD.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;hostnames-for-your-nodes:346b9e50ca891863d0f276733701095f&#34;&gt;Hostnames for your nodes&lt;/h1&gt;
+
+&lt;p&gt;We set up names for your nodes in DNS and &lt;code&gt;/etc/hosts&lt;/code&gt; files for use on the nodes in the experiment. Since our nodes have multiple interfaces (the control network, and, depending on the experiment, possibly several experimental interfaces) determining which name refers to which interface can be somewhat confusing. The rules below should help you figure this out.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;From users.isi.deterlab.net&lt;/em&gt; - We set up names in the form of &lt;code&gt;node.expt.proj.isi.deterlab.net&lt;/code&gt; in DNS, so that they are visible anywhere on the Internet. This name always refers to the node&amp;rsquo;s control network interface, which is the only one reachable from &lt;code&gt;users.isi.deterlab.net&lt;/code&gt;. You can use &lt;code&gt;node.expt.proj&lt;/code&gt; as a shorthand.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;On the nodes themselves&lt;/em&gt; - There are three basic ways to refer to the interfaces of a node. The first is stored in DNS, and the second two are stored on the node in the &lt;code&gt;/etc/hosts&lt;/code&gt; file.
+
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Fully-qualified hostnames&amp;rdquo; - These names are the same ones visible from the outside world, and referred to by attaching the full domain name: ie. &lt;code&gt;node.expt.proj.isi.deterlab.net&lt;/code&gt;. (Note that, since we put &amp;ldquo;.isi.deterlab.net&lt;/em&gt; in the nodes&amp;rsquo; domain search paths, you can use &lt;code&gt;node.expt.proj&lt;/code&gt; as a shorthand.) This name always refers to the control network.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;node-link form&lt;/em&gt; - You can refer to an individual experimental interface by suffixing it with the name of the link or LAN (as defined in your NS file) that it is a member of. For example, &lt;code&gt;nodeA-link0&lt;/code&gt; or &lt;code&gt;server-serverLAN&lt;/code&gt;. This is the preferred way to refer to experimental interfaces, since it uniquely and unambiguously identifies an interface.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Short form&amp;rdquo; - If a node is directly connected to the node you&amp;rsquo;re on, you can refer to that node simply with its name (eg. &lt;code&gt;nodeA&lt;/code&gt;.) Note that this differs from the fully- qualified name in that no domain is given. We also create short names for nodes you are not directly connected to. However, if two nodes are connected with more than one interface, or there is more than one route between them, there is no guarantee that the short name has been associated with the one is on the best (ie. shortest or highest bandwidth) path - so, if there is ambiguity, we strongly suggest that you use the &amp;ldquo;node-link&lt;/em&gt; form.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;NOTE:&lt;/em&gt; It is a bad idea to pick virtual node names in your topology that clash with the physical node names in the testbed, such as &amp;ldquo;pc45&amp;rdquo;.&lt;/p&gt;
+
+&lt;h1 id=&#34;logging-into-your-node:346b9e50ca891863d0f276733701095f&#34;&gt;Logging into your Node&lt;/h1&gt;
+
+&lt;p&gt;By the time you receive the email message listing your nodes, the DETER configuration system will have ensured that your nodes are fully configured and ready to use. If you have selected one of the DETER-supported operating system images ([wiki:OSImages see supported images]), this configuration process includes:
+    * loading fresh disk images so that each node is in a known clean state;
+    * rebooting each node so that it is running the OS specified in the NS script;
+    * configuring each of the network interfaces so that each one is &amp;ldquo;up&amp;rdquo; and talking to its virtual LAN (VLAN);
+    * creating user accounts for each of the project members;
+    * mounting the projects NFS directory in /proj so that project files are easily shared amongst all the nodes in the experiment;
+    * creating a /etc/hosts file on each node so that you may refer to the experimental interfaces of other nodes by name instead of IP number;
+    * configuring all of the delay parameters;
+    * configuring the serial console lines so that project members may access the console ports from users.isi.deterlab.net.&lt;/p&gt;
+
+&lt;p&gt;As this point you may log into any of the nodes in your experiment. You will need to use [wiki:DETERSSH Secure Shell (ssh)] to log into &lt;em&gt;users.isi.deterlab.net&lt;/em&gt;
+Your login name and password will be the same as your Web Interface login and password.  &lt;em&gt;Please note that although you can log into the web interface using your email address instead of your login name, you must use your login name when logging into users.isi.deterlab.net.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Once logged into users you can then [wiki:DETERSSH ssh] to your nodes.  You should use the `qualified name&amp;rsquo; from the nodes mapping table so that you do not form dependencies on any particular physical node.  For more information on using SSH with DETER, please take a look at the [wiki:DETERSSH DETER SSH] wiki page.&lt;/p&gt;
+
+&lt;h1 id=&#34;how-do-i-install-software-onto-my-node:346b9e50ca891863d0f276733701095f&#34;&gt;How do I install software onto my node?&lt;/h1&gt;
+
+&lt;p&gt;Each [wiki:OSImages Supported Operating System] have packages mirrored on a host called scratch and each operating system is configured to use this system to fetch packages from.  Information for specific operating systems is documented there.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-do-i-copy-files-onto-my-node:346b9e50ca891863d0f276733701095f&#34;&gt;How do I copy files onto my node?&lt;/h2&gt;
+
+&lt;p&gt;Your home directory on users is automatically mounted via NFS on every node in your experiment.  As are your project directory in /proj and a special filesystem called /share.&lt;/p&gt;
+
+&lt;h1 id=&#34;i-need-root-access:346b9e50ca891863d0f276733701095f&#34;&gt;I need &lt;em&gt;root&lt;/em&gt; access!&lt;/h1&gt;
+
+&lt;p&gt;If you need to customize the configuration, or perhaps reboot nodes, you can use the &amp;ldquo;sudo&amp;rdquo; command, located in &lt;code&gt;/usr/local/bin&lt;/code&gt; on FreeBSD and &amp;lsquo;/usr/bin&amp;rsquo; Linux. All users are added to the Administrators group on [wiki:Windows Windows XP] nodes. Our policy is very liberal; you can customize the configuration in any way you like, provided it does not interfere with the operation of the testbed. As as example, to reboot a node that is running FreeBSD:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    /usr/local/bin/sudo reboot
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Also, every testbed node has an automatically generated root password.  Simply click on a node in the &amp;ldquo;Reserved Nodes&amp;rdquo; for your experiment and look at the &amp;ldquo;root_password&amp;rdquo; attribute.&lt;/p&gt;
+
+&lt;h1 id=&#34;can-i-access-the-nodes-console-serialconsole:346b9e50ca891863d0f276733701095f&#34;&gt;Can I access the nodes console? #SerialConsole&lt;/h1&gt;
+
+&lt;p&gt;Yes. Each of the PCs has its own serial console line connected to a [wiki:Tutorial/WalkThrough#serialserver serial server].  You can connect to a nodes serial console through the &amp;ldquo;users&amp;rdquo; machine, using our &lt;code&gt;console&lt;/code&gt; program located in &amp;lsquo;/usr/testbed/bin&amp;rsquo;. For example, to connect over serial line to &amp;ldquo;pc001&amp;rdquo; in your experiment, ssh into &lt;em&gt;users.isi.deterlab.net&lt;/em&gt;, and then type &lt;code&gt;console pc001&lt;/code&gt; at the Unix prompt. You may then interact with the serial console (hit &amp;ldquo;enter&amp;rdquo; to elicit output from the target machine).&lt;/p&gt;
+
+&lt;p&gt;To exit the console program, type &lt;code&gt;Ctrl-]&lt;/code&gt;; its just a telnet session.&lt;/p&gt;
+
+&lt;p&gt;In any case, all console output from each node is saved so that you may look at it it later. For each node, the console log is stored as &lt;code&gt;/var/log/tiplogs/pcXXX.run&lt;/code&gt;. This &lt;em&gt;run&lt;/em&gt; file is created when nodes are first allocated to an experiment, and the Unix permissions of the run files permit only members of the project to view them. When the nodes are deallocated, the run files are cleared, so if you want to save them, you must do so before terminating the experiment.&lt;/p&gt;
+
+&lt;p&gt;In addition, you can view the console logs from the web interface, on the Show Experiment page. Of course, you may not interact with the console, but you can at least view the current log.&lt;/p&gt;
+
+&lt;p&gt;Escape codes for Dell serial consoles are documented [wiki:DellSerialConsole here].&lt;/p&gt;
+
+&lt;h1 id=&#34;my-node-is-wedged:346b9e50ca891863d0f276733701095f&#34;&gt;My node is wedged!&lt;/h1&gt;
+
+&lt;p&gt;Power cycling a node is easy since every node on the testbed is connected to a [wiki:Tutorial/WalkThrough#powercontroller power controller].  If you need to power cycle a node, log on to users.isi.deterlab.net and use the &amp;ldquo;node_reboot&amp;rdquo; command:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    node_reboot &amp;lt;node&amp;gt; [node ... ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where &lt;code&gt;node&lt;/code&gt; is the physical name, as listed in the node mapping table. You may provide more than one node on the command line. Be aware that you may power cycle only nodes in projects that you are member of. Also, &lt;code&gt;node_reboot&lt;/code&gt; does its very best to perform a clean reboot before resorting to cycling the power to the node. This is to prevent the damage that can occur from constant power cycling over a long period of time. For this reason, &lt;code&gt;node_reboot&lt;/code&gt; may delay a minute or two if it detects that the machine is still responsive to network transmission. In any event, please try to reboot your nodes first (see above).
+You may also reboot all the nodes in an experiment by using the &lt;code&gt;-e&lt;/code&gt; option to specify the project and experiment names. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    node_reboot -e testbed,multicast
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;will reboot all of the nodes reserved in the &amp;ldquo;multicast&amp;rdquo; experiment in the &amp;ldquo;testbed&amp;rdquo; project. This option is provided as a shorthand method for rebooting large groups of nodes.&lt;/p&gt;
+
+&lt;h1 id=&#34;i-want-to-load-a-fresh-operating-system-on-my-node:346b9e50ca891863d0f276733701095f&#34;&gt;I want to load a fresh operating system on my node&lt;/h1&gt;
+
+&lt;p&gt;Scrogging your disk is certainly not as common, but it does happen. You can either swap your experiment out and then back in (which will allocate another group of nodes), or if you prefer you can reload the disk image yourself. You will of course lose anything you have stored on that disk; it is a good idea to store only data that can be easily recreated, or else store it in your project directory in &lt;code&gt;/proj&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Reloading your disk with a fresh copy of an image is easy, and requires no intervention by DETER staff:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    os_load [-i ImageName] [-p Project] &amp;lt;node&amp;gt; [node ... ]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you do not specify an image name, the default image for that node type will be loaded (typically Ubuntu1004-STD).  For testbed wide images, you do not have to specify a project.  The os_load command will wait (not exit) until the nodes have been reloaded, so that you do not need to check the console lines of each node to determine when the load is done.&lt;/p&gt;
+
+&lt;p&gt;For example, to load the image &amp;lsquo;testpc167&amp;rsquo; which is in the project &amp;lsquo;DeterTest&amp;rsquo; onto pc167, we type:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;users &amp;gt; os_load -i testpc167 -p DeterTest pc167
+osload (pc167): Changing default OS to [OS 998: DeterTest,testpc167]
+osload: Updating image signature.
+Setting up reload for pc167 (mode: Frisbee)
+osload: Issuing reboot for pc167 and then waiting ...
+reboot (pc167): Attempting to reboot ...
+reboot (pc167): Successful!
+reboot: Done. There were 0 failures.
+reboot (pc167): child returned 0 status.
+osload (pc167): still waiting; it has been 1 minute(s)
+osload (pc167): still waiting; it has been 2 minute(s)
+osload (pc167): still waiting; it has been 3 minute(s)
+osload (pc167): still waiting; it has been 4 minute(s)
+osload: Done! There were 0 failures.
+users &amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&#34;i-only-want-certain-types-of-nodes-for-my-experiment:346b9e50ca891863d0f276733701095f&#34;&gt;I only want certain types of nodes for my experiment&lt;/h1&gt;
+
+&lt;p&gt;The NS command &lt;em&gt;tb-set-hardware&lt;/em&gt; only lets you pick one type of hardware.  If you are fine with a couple of different kinds of hardware, say you just want nodes that are at ISI part of the testbed, you can define a virtual node type in your NS file.  For more information on virtual types, please refer to the [wiki:nscommands#VirtualTypeCommands Virtual Type Commands] section of the NS command reference.  Here is a quick example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tb-make-soft-vtype ISI {pc2133 pc3000 pc3060 pc3100} 
+tb-make-soft-vtype UCB {bpc2133 bpc3000 bpc3060}
+
+tb-set-hardware $atISI ISI
+tb-set-hardware $atUCB UCB
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;[wiki:Topologies &amp;lt; Sample Topologies] | [wiki:LegoTG Generating Traffic in LegoTG &amp;gt;]&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

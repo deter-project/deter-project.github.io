@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="/css/main.css" />
+<script src="/js/main.js"></script>
+</head>
+<body onload="doLoad()" onhashchange="doLoad()">
+  <div id="topbar">
+    <img src="img/DETER_logo_white.png" width=30 />
+    <h1> Deter Docs </h1>
+  </div>
+  <div id="posts">
+    <ol class="dlist">
+      <li class="navlisthead"><span>Getting Started</span></li>
+      <ol id="doclist">
+      
+      <li class="navlistitem">
+        <span onclick="navItemClick(&#34;/SignUp/&#34;)">Sign Up</span>
+      </li>
+      
+      <li class="navlistitem">
+        <span onclick="navItemClick(&#34;/CoreQuickstart/&#34;)">Core Quickstart</span>
+      </li>
+      
+      <li class="navlistitem">
+        <span onclick="navItemClick(&#34;/CoreGuide/&#34;)">Core Guide</span>
+      </li>
+      
+      <li class="navlistitem">
+        <span onclick="navItemClick(&#34;/Topologies/&#34;)">Sample Topologies</span>
+      </li>
+      
+      <li class="navlistitem">
+        <span onclick="navItemClick(&#34;/UsingNodes/&#34;)">Using Nodes</span>
+      </li>
+      
+      </ol>
+    </ol>
+  </div>
+  <div id="content">
+    <img id="content_logo" src="img/DETER_logotype_White.png" />
+  </div>
+  </div>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
+</html>
