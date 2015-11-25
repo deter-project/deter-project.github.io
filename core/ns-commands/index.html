@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NS Commands Extensions - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "NS Commands Extensions";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">NS Commands Extensions</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#tcl-ns-and-node-names">TCL, NS, and node names</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#captured-ns-file-parameters">Captured NS file parameters</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ordering-issues">Ordering Issues</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#hardware-commands">Hardware Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-hardware">tb-set-hardware</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ip-address-commands">IP Address Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-ip">tb-set-ip</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-ip-link">tb-set-ip-link</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-ip-lan">tb-set-ip-lan</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-ip-interface">tb-set-ip-interface</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-netmask">tb-set-netmask</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#os-commands">OS Commands </a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-os">tb-set-node-os</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-rpms">tb-set-node-rpms</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-startcmd">tb-set-node-startcmd</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-cmdline">tb-set-node-cmdline</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-tarfiles">tb-set-node-tarfiles</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#link-loss-commands">Link Loss Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-link-loss">tb-set-link-loss</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-lan-loss">tb-set-lan-loss</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-lan-delay">tb-set-node-lan-delay</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-lan-bandwidth">tb-set-node-lan-bandwidth</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-lan-loss">tb-set-node-lan-loss</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-lan-params">tb-set-node-lan-params</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-link-simplex-params">tb-set-link-simplex-params</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-lan-simplex-params">tb-set-lan-simplex-params</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-endnodeshaping">tb-set-endnodeshaping</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-noshaping">tb-set-noshaping</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-use-endnodeshaping">tb-use-endnodeshaping</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-force-endnodeshaping">tb-force-endnodeshaping</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-multiplexed">tb-set-multiplexed</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-vlink-emulation">tb-set-vlink-emulation</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#virtual-type-commands">Virtual Type Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-make-soft-vtype">tb-make-soft-vtype</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#misc-commands">Misc. Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-fix-node">tb-fix-node</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-fix-interface">tb-fix-interface</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-uselatestwadata">tb-set-uselatestwadata</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-wasolver-weights">tb-set-wasolver-weights</a></li>
+                
+                    <li><a class="toctree-l4" href="#tb-set-node-failure-action">tb-set-node-failure-action</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core Reference &raquo;</li>
+        
+      
+    
+    <li>NS Commands Extensions</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>In order to use the testbed specific commands, you must include the following line near the top of your NS topology file (before any testbed commands are used):</p>
+<pre><code>    source tb_compat.tcl
+</code></pre>
+
+<p>If you wish to use your file under NS, download <a href="/downloads/tb_compat.tcl">tb_compat.tcl</a> and place it in the same directory as your NS file. When run in this way under NS, the testbed commands will have no effect, but NS will be able to parse your file.</p>
+<hr />
+<h2 id="tcl-ns-and-node-names">TCL, NS, and node names<a class="headerlink" href="#tcl-ns-and-node-names" title="Permanent link"></a></h2>
+<p>In your file, you will be creating nodes with something like the following line:</p>
+<pre><code>    set node1 [$ns node]
+</code></pre>
+
+<p>With this command, the simulator, represented by <code>$ns</code> is creating a new node involving many internal data changes and returning a reference to it which is stored in the variable <code>node1</code>. </p>
+<p>In almost all cases when you need to refer to a node, you will do it as <code>$node1</code>, the <code>$</code> indicating that you want the value of the variable <code>node1</code>, i.e. the reference to the node. Thus you will be issuing commands like:</p>
+<pre><code>    $ns duplex-link $node1 $node2 100Mb 150ms DropTail
+    tb-set-ip $node1 10.1.0.2
+</code></pre>
+
+<p>Note the instances of <code>$</code>.</p>
+<p>You will notice that when your experiment is set up, the node names and such will be <code>node1</code>, <code>node2</code>, <code>node3</code>, etc. This happens because the parser detects what variable you are using to store the node reference and uses that as the node name. In the case that you do something like:</p>
+<pre><code>    set node1 [$ns node2]
+    set A $node1
+</code></pre>
+
+<p>The node will still be called <code>node1</code> as that was the first variable to contain the reference.</p>
+<p>If you are dealing with many nodes you may store them in an array, using a command similar to the following:</p>
+<pre><code>    for {set i 0} {$i &lt; 4} {incr i} {
+       set nodes($i) [$ns node]
+    }
+</code></pre>
+
+<p>In this case, the names of the node will be <code>nodes-0</code>, <code>nodes-1</code>, <code>nodes-2</code>, <code>nodes-3</code>. In other words, the "(" character is replaced with "-", and ")" is removed. This slightly different syntax is used to avoid any problems that "()" may cause later in the process. For example, the "()" characters may not appear in DNS entries.</p>
+<p>As a final note, everything said above for nodes applies equally to LANs, i.e.:</p>
+<pre><code>    set lan0 [$ns make-lan &quot;$node0 $node1&quot; 100Mb 0ms]
+    tb-set-lan-loss $lan0 .02
+</code></pre>
+
+<p>Again, note the instances of <code>$</code>.</p>
+<p>Links may also be named just like nodes and LANs. The names may then be used to set loss rates or IP addresses. This technique is the only way to set such attributes when there are multiple links between two nodes.</p>
+<pre><code>    set link1 [$ns duplex-link $node0 $node1 100Mb 0ms DropTail]
+    tb-set-link-loss $link1 0.05
+    tb-set-ip-link $node0 $link1 10.1.0.128
+</code></pre>
+
+<hr />
+<h2 id="captured-ns-file-parameters">Captured NS file parameters<a class="headerlink" href="#captured-ns-file-parameters" title="Permanent link"></a></h2>
+<p>A common convention when writing NS files is to place any parameters in an array named <code>opt</code> at the beginning of the file. For example:</p>
+<pre><code>    set opt(CLIENT_COUNT) 5
+    set opt(BW) 10mb;    Link bandwidth
+    set opt(LAT) 10ms;   Link latency
+
+   ...
+
+    $ns duplex-link $server $router $opt(BW) $opt(LAT) DropTail
+
+    for {set i 0} {$i &lt; $opt(CLIENT_COUNT)} {incr i} {
+        set nodes($i) [$ns node]
+    ...
+    }
+    set serverprog [$server program-agent -command &quot;starter.sh&quot;]
+</code></pre>
+
+<p>Normally, this convention is only used to help organize the parameters. In DETERLab, however, the contents of the <code>opt</code> array are captured and made available to the emulated environment. For instance, the parameters are added as environment variables to any commands run by program-agents. So in the above example of NS code, the <code>starter.sh</code> script will be able to reference parameters by name, like so:</p>
+<pre><code>    #! /bin/sh
+
+    echo &quot;Testing with $CLIENT_COUNT clients.&quot;
+    ...
+</code></pre>
+
+<p>Note that the contents of the <code>opt</code> array are not ordered, so you should not reference other parameters and expect the shell to expand them appropriately:</p>
+<pre><code>    set opt(prefix) &quot;/foo/bar&quot;
+    set opt(BINDIR) '$prefix/bin'; # BAD
+
+    set opt(prefix) &quot;/foo/bar&quot;
+    set opt(BINDIR) &quot;$opt(prefix)/bin&quot;; # Good
+</code></pre>
+
+<hr />
+<h2 id="ordering-issues">Ordering Issues<a class="headerlink" href="#ordering-issues" title="Permanent link"></a></h2>
+<p><code>tb-</code> commands have the same status as all other Tcl and NS commands. Thus <strong>the order matters</strong> not only relative to each other but also relative to other commands. One common example of this is that IP commands must be issued <em>after</em> the links or LANs are created.</p>
+<hr />
+<h2 id="hardware-commands">Hardware Commands<a class="headerlink" href="#hardware-commands" title="Permanent link"></a></h2>
+<h3 id="tb-set-hardware">tb-set-hardware<a class="headerlink" href="#tb-set-hardware" title="Permanent link"></a></h3>
+<pre><code>tb-set-hardware node type [args]
+
+tb-set-hardware $node3 pc
+tb-set-hardware $node4 shark
+</code></pre>
+
+<p>where:</p>
+<p><code>node</code> = The name of the node.</p>
+<p><code>type</code> = The type of the node.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Please see the <a href="https://www.isi.deterlab.net/nodecontrol_list.php3">Node Status</a> page for a list of available types. <code>pc</code> is the default type.</li>
+<li>No current types have any additional arguments.</li>
+</ul>
+</div>
+<hr />
+<h2 id="ip-address-commands">IP Address Commands<a class="headerlink" href="#ip-address-commands" title="Permanent link"></a></h2>
+<p>Each node will be assigned an IP address for each interface that is in use. The following commands will allow you to explicitly set those IP addresses. IP addresses will be automatically generated for all nodes for which you do not explicitly set IP addresses.</p>
+<p>In most cases, the IP addresses on either side of a link must be in the same subnet. Likewise, all IP addresses on a LAN should be in the same subnet. Generally the same subnet should not be used for more than one link or LAN in a given experiment, nor should one node have multiple interfaces in the same subnet. Automatically generated IP addresses will conform to these requirements. If part of a link or LAN is explicitly specified with the commands below then the remainder will be automatically generated under the same subnet.</p>
+<p>IP address assignment is deterministic and tries to fill lower IP's first, starting at 2. Except in the partial specification case (see above), all automatic IP addresses are in the network <code>10</code>.</p>
+<h3 id="tb-set-ip">tb-set-ip<a class="headerlink" href="#tb-set-ip" title="Permanent link"></a></h3>
+<pre><code>tb-set-ip node ip
+
+tb-set-ip $node1 142.3.4.5
+</code></pre>
+
+<p>where:</p>
+<p><code>node</code> = The node to assign the IP address to</p>
+<p><code>ip</code> = The IP address.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command should only be used for nodes that have a single link. For nodes with multiple links the following commands should be used. Mixing <code>tb-set-ip</code> and any other IP command on the same node will result in an error.</li>
+</ul>
+</div>
+<h3 id="tb-set-ip-link">tb-set-ip-link<a class="headerlink" href="#tb-set-ip-link" title="Permanent link"></a></h3>
+<pre><code>tb-set-ip-link node link ip
+
+tb-set-ip-link $node0 $link0 142.3.4.6
+</code></pre>
+
+<p>where:</p>
+<p><code>node</code> = The node to set the IP for.</p>
+<p><code>link</code> = The link to set the IP for.</p>
+<p><code>ip</code> = The IP address.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>One way to think of the arguments is a link with the node specifying which side of the link to set the IP for.</li>
+<li>This command cannot be mixed with <code>tb-set-ip</code> on the same node.</li>
+</ul>
+</div>
+<h3 id="tb-set-ip-lan">tb-set-ip-lan<a class="headerlink" href="#tb-set-ip-lan" title="Permanent link"></a></h3>
+<pre><code>tb-set-ip-lan node lan ip
+tb-set-ip-lan $node1 $lan0 142.3.4.6
+</code></pre>
+
+<p>where:</p>
+<p><code>node</code> = The node to set the IP for.</p>
+<p><code>lan</code> = The lan the IP is on.</p>
+<p><code>ip</code> = The IP address.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>One way to think of the arguments is a node with the LAN specifying which port to set the IP address for.</li>
+<li>This command cannot be mixed with <code>tb-set-ip</code> on the same node.</li>
+</ul>
+</div>
+<h3 id="tb-set-ip-interface">tb-set-ip-interface<a class="headerlink" href="#tb-set-ip-interface" title="Permanent link"></a></h3>
+<pre><code>tb-set-ip-interface node dst ip
+tb-set-ip-interface $node2 $node1 142.3.4.6
+</code></pre>
+
+<p>where:</p>
+<p><code>node</code> = The node to set the IP for.</p>
+<p><code>dst</code> = The destination of the link to set the IP for.</p>
+<p><code>IP</code> = The IP address.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command cannot be mixed on the same node with <code>tb-set-ip</code>. (See above)</li>
+<li>In the case of multiple links between the same pair of nodes, there is no way to distinguish which link to the set the IP for. This should be fixed soon.</li>
+<li>This command is converted internally to either <code>tb-set-ip-link</code> or <code>tb-set-ip-lan</code>. It is possible that error messages will report either of those commands instead of <code>tb-set-ip-interface</code>.</li>
+</ul>
+</div>
+<h3 id="tb-set-netmask">tb-set-netmask<a class="headerlink" href="#tb-set-netmask" title="Permanent link"></a></h3>
+<pre><code>tb-set-netmask lanlink netmask
+
+tb-set-netmask $link0 &quot;255.255.255.248&quot;
+</code></pre>
+
+<p>where:</p>
+<p><code>lanlink</code> = The lan or link to set the netmask for.</p>
+<p><code>netmask</code> = The netmask in dotted notation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command sets the netmask for a LAN or link. The mask must be big enough to support all of the nodes on the LAN or link!</li>
+<li>You may play with the bottom three octets (0xFFFFFXXX) of the mask; attempts to change the upper octets will cause an error.</li>
+</ul>
+</div>
+<hr />
+<h2 id="os-commands">OS Commands <a name="OS"></a><a class="headerlink" href="#os-commands" title="Permanent link"></a></h2>
+<h3 id="tb-set-node-os">tb-set-node-os<a class="headerlink" href="#tb-set-node-os" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-os node os
+
+tb-set-node-os $node1 FBSD-STD
+tb-set-node-os $node1 MY_OS
+</code></pre>
+
+<p>where:</p>
+<p><code>node</code> = The node to set the OS for.</p>
+<p><code>os</code> = The id of the OS for that node.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The OSID may either by one of the standard OS's we provide or a custom OSID, created via the web interface.</li>
+<li>If no OS is specified for a node, a default OS is chosen based on the nodes type. This is currently <code>'Ubuntu1004-STD</code>' for PCs.</li>
+<li>The currently available standard OS types are listed in the <a href="/core/os-images/">OS Images</a> page.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-rpms">tb-set-node-rpms<a class="headerlink" href="#tb-set-node-rpms" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-rpms node rpms...
+
+tb-set-node-rpms $node0 rpm1 rpm2 rpm3
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command sets which RPMs are to be installed on the node when it first boots after being assigned to an experiment.</li>
+<li>Each RPM can be either a path to a file or a URL. Paths must be to files that reside in the <code>/proj</code> or <code>/groups</code> directory. You are not allowed to place your RPMs in your home directory. <code>http(s)://</code> and <code>ftp://</code> URLs will be fetched into the experiment's directory, and re-distributed from there.</li>
+<li>See the <a href="/core/core-guide/#installing-rpms-automatically">Core Guide</a> for more information.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-startcmd">tb-set-node-startcmd<a class="headerlink" href="#tb-set-node-startcmd" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-startcmd node startupcmd
+
+tb-set-node-startcmd $node0 &quot;mystart.sh -a &gt;&amp; /tmp/node0.log&quot;
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Specify a script or program to be run when the node is booted.</li>
+<li>See the <a href="/core/core-guide/">Core Guide</a> for more information.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-cmdline">tb-set-node-cmdline<a class="headerlink" href="#tb-set-node-cmdline" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-cmdline node cmdline
+
+tb-set-node-cmdline $node0 {???}
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Set the commandline to be passed to the <code>kernel</code> when it is booted.</li>
+<li>Currently, this is supported on OSKit kernels only.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-tarfiles">tb-set-node-tarfiles<a class="headerlink" href="#tb-set-node-tarfiles" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-tarfiles node install-dir1 tarfile1 ...
+</code></pre>
+
+<p>The <code>tb-set-node-tarfiles</code> command is used to install one or more tar files onto a node's local disk. This command is useful for installing files that are used frequently, but will change very little during the course of your experiments. For example, if your software depends on a third-party library not provided in the standard disk images, you can produce a tarball and have the library ready for use on all the experimental nodes. </p>
+<p>Another example would be the data sets for your software. The benefit of installing files using this method is that they will reside on the node's local disk, so your experimental runs will not be disrupted by NFS traffic. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Avoid using this command if the files are changing frequently because the tars are only (re)installed when the nodes boot.</p>
+</div>
+<p>Installing individual tar files or RPMs is a midpoint in the spectrum of getting software onto the experimental nodes. At one extreme, you can read everything over NFS, which works well if the files are changing constantly, but can generate a great deal of strain on the control network and disrupt your experiment. The tar files and RPMs are also read over NFS when the nodes initially boot; however, there won't be any extra NFS traffic while you are running your experiment. Finally, if you need a lot of software installed on a large number of nodes, say greater than 20, it might be best to create a <a href="/core/custom-images/">custom disk image</a>. Using a disk image is easier on the control network since it is transferred using multicast, thus greatly reducing the amount of NFS traffic when the experiment is swapped in. </p>
+<p><strong>Required Parameters:</strong></p>
+<ul>
+<li><code>node</code> - The node where the files should be installed. Each node has its own tar file list, which may or may not be different from the others.</li>
+<li>One or more <code>install-dir</code> and <code>tarfile</code> pairs are then listed in the order you wish them to be installed:<ul>
+<li><code>install-dir</code> - An existing directory on the node where the tar file should be unarchived (e.g. <code>/</code>, <code>/usr</code>, <code>/usr/local</code>). The <code>tar</code> command will be run as "root" [#tb-set-node-tarfiles Note1], so all of the node's directories will be accessible to you. If the directory does not exist on the image or was not created by the unarchiving of a previous tar file, the installation will fail [#tb-set-node-tarfiles Note2].</li>
+<li><code>tarfile</code> - An existing tar file located in a project directory (e.g. <code>/proj</code> or <code>/groups</code>) or an <code>http</code>, <code>https</code>, or <code>ftp</code> URL. In the case of URLs, they are downloaded when the experiment is swapped in and cached in the experiment's directory for future use. In either case, the tar file name is <code>required</code> to have one of the following extensions: .tar, .tar.Z, .tar.gz, or .tgz. Note that the tar file could have been created anywhere; however, if you want the unarchived files to have valid DETERLab user and group id's, you should create the tar file on <code>ops</code> or an experimental node.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example usage:</strong></p>
+<pre><code>    # Overwrite files in /bin and /sbin.
+    tb-set-node-tarfiles $node0 /bin /proj/foo/mybinmods.tar /sbin /proj/foo/mysbinmods.tar
+
+    # Programmatically generate the list of tarballs.
+    set tb [list]
+    # Add a tarball located on a web site.
+    lappend tb / http://foo.bar/bazzer.tgz
+    # Add a tarball located in the DETER NFS space.
+    lappend tb /usr/local /proj/foo/tarfiles/bar.tar.gz
+    # Use 'eval' to expand the 'tb' list into individual
+    # arguments to the tb-set-node-tarfiles command.
+    eval tb-set-node-tarfiles $node1 $tb
+</code></pre>
+
+<p><strong>See also:</strong></p>
+<ul>
+<li><a href="#tb-set-node-rpms"><code>tb-set-node-rpms</code></a></li>
+<li><a href="/core/custom-images/">Custom disk images</a></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Because the files are installed as root, care must be taken to protect the tar file so it cannot be replaced with a trojan that allowed less privileged users to become root.</li>
+<li>Currently, you can only tell how/why an installation failed by examining the node's console log on bootup.</li>
+</ul>
+</div>
+<hr />
+<h2 id="link-loss-commands">Link Loss Commands<a class="headerlink" href="#link-loss-commands" title="Permanent link"></a></h2>
+<p>This is the NS syntax for creating a link:</p>
+<pre><code>$ns duplex-link $node1 $node2 100Mb 150ms DropTail
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This does not allow for specifying link loss rates. DETERLab does, however, support link loss. The following commands can be used to specify link loss rates.</p>
+</div>
+<h3 id="tb-set-link-loss">tb-set-link-loss<a class="headerlink" href="#tb-set-link-loss" title="Permanent link"></a></h3>
+<pre><code>tb-set-link-loss src dst loss
+tb-set-link-loss link loss
+
+tb-set-link-loss $node1 $node2 0.05
+tb-set-link-loss $link1 0.02
+</code></pre>
+
+<p>where:</p>
+<p><code>src</code>, <code>dst</code> = Two nodes to describe the link.</p>
+<p><code>link</code> = The link to set the rate for.</p>
+<p><code>loss</code> = The loss rate (between 0 and 1).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>There are two syntaxes available. The first specifies a link by a source/destination pair. The second explicitly specifies the link.</li>
+<li>The source/destination pair is incapable of describing an individual link in the case of multiple links between two nodes. Use the second syntax for this case.</li>
+</ul>
+</div>
+<h3 id="tb-set-lan-loss">tb-set-lan-loss<a class="headerlink" href="#tb-set-lan-loss" title="Permanent link"></a></h3>
+<pre><code>tb-set-lan-loss lan loss
+
+tb-set-lan-loss $lan1 0.3
+</code></pre>
+
+<p>Where:</p>
+<p><code>lan</code> = The lan to set the loss rate for.</p>
+<p><code>loss</code> = The loss rate (between 0 and 1).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This command sets the loss rate for the entire LAN.</p>
+</div>
+<h3 id="tb-set-node-lan-delay">tb-set-node-lan-delay<a class="headerlink" href="#tb-set-node-lan-delay" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-lan-delay node lan delay
+
+tb-set-node-lan-delay $node0 $lan0 40ms
+</code></pre>
+
+<p>Where:</p>
+<p><code>node</code> = The node we are modifying the delay for.</p>
+<p><code>lan</code> = Which LAN the node is in that we are affecting.</p>
+<p><code>delay</code> = The new node to switch delay (see below).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command changes the delay between the node and the switch of the LAN. This is only half of the trip a packet must take. The packet will also traverse the switch to the destination node, possibly incurring additional latency from any delay parameters there.</li>
+<li>If this command is not used to overwrite the delay, then the delay for a given node to switch link is taken as one half of the delay passed to <code>make-lan</code>. Thus in a LAN where no <code>tb-set-node-delay</code> calls are made, the node-to-node latency will be the latency passed to <code>make-lan</code>.</li>
+<li>The behavior of this command is not defined when used with nodes that are in the same LAN multiple times.</li>
+<li>Delays of less than 2ms (per trip) are too small to be accurately modeled at this time, and will be silently ignored. As a convenience, a delay of 0ms can be used to indicate that you do not want added delay; the two interfaces will be "directly" connected to each other.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-lan-bandwidth">tb-set-node-lan-bandwidth<a class="headerlink" href="#tb-set-node-lan-bandwidth" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-lan-bandwidth node lan bandwidth
+
+tb-set-node-lan-bandwidth $node0 $lan0 20Mb
+</code></pre>
+
+<p>Where:</p>
+<p><code>node</code> = The node we are modifying the bandwidth for.</p>
+<p><code>lan</code> = Which LAN the node is in that we are affecting.</p>
+<p><code>bandwidth</code> = The new node to switch bandwidth (see below).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command changes the bandwidth between the node and the switch of the LAN. This is only half of the trip a packet must take. The packet will also traverse the switch to the destination node which may have a lower bandwidth.</li>
+<li>If this command is not used to overwrite the bandwidth, then the bandwidth for a given node to switch link is taken directly from the bandwidth passed to <code>make-lan</code>.</li>
+<li>The behavior of this command is not defined when used with nodes that are in the same LAN multiple times.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-lan-loss">tb-set-node-lan-loss<a class="headerlink" href="#tb-set-node-lan-loss" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-lan-loss node lan loss
+
+tb-set-node-lan-loss $node0 $lan0 0.05
+</code></pre>
+
+<p>Where:</p>
+<p><code>node</code> = The node we are modifying the loss for.</p>
+<p><code>lan</code> = Which LAN the node is in that we are affecting.</p>
+<p><code>loss</code> = The new node to switch loss (see below).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command changes the loss probability between the node and the switch of the LAN. This is only half of the trip a packet must take. The packet will also traverse the switch to the destination node which may also have a loss chance. Thus for packet going to switch with loss chance <code>A</code> and then going on the destination with loss chance <code>B</code>, the node-to-node loss chance is <code>(1-(1-A)(1-B))</code>.</li>
+<li>If this command is not used to overwrite the loss, then the loss for a given node to switch link is taken from the loss rate passed to the <code>make-lan</code> command. If a loss rate of <code>L</code> is passed to <code>make-lan</code> then the node to switch loss rate for each node is set to <code>(1-sqrt(1-L))</code>. Because each packet will have two such chances to be lost, the node-to-loss rate comes out as the desired <code>L</code>.</li>
+<li>The behavior of this command is not defined when used with nodes that are in the same LAN multiple times.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-lan-params">tb-set-node-lan-params<a class="headerlink" href="#tb-set-node-lan-params" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-lan-params node lan delay bandwidth loss
+
+tb-set-node-lan-params $node0 $lan0 40ms 20Mb 0.05
+</code></pre>
+
+<p>Where:</p>
+<p><code>node</code> = The node we are modifying the loss for.</p>
+<p><code>lan</code> = Which LAN the node is in that we are affecting.</p>
+<p><code>delay</code> = The new node to switch delay.</p>
+<p><code>bandwidth</code> = The new node to switch bandwidth.</p>
+<p><code>loss</code> = The new node to switch loss.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This command is exactly equivalent to calling each of the above three commands appropriately. See above for more information.</p>
+</div>
+<h3 id="tb-set-link-simplex-params">tb-set-link-simplex-params<a class="headerlink" href="#tb-set-link-simplex-params" title="Permanent link"></a></h3>
+<pre><code>tb-set-link-simplex-params link src delay bw loss
+
+tb-set-link-simplex-params $link1 $srcnode 100ms 50Mb 0.2
+</code></pre>
+
+<p>Where:</p>
+<p><code>link</code> = The link we are modifying.</p>
+<p><code>src</code> = The source, defining which direction we are modifying.</p>
+<p><code>delay</code> = The source to destination delay.</p>
+<p><code>bw</code> = The source to destination bandwidth.</p>
+<p><code>loss</code> = The source to destination loss.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This commands modifies the delay characteristics of a link in a single direction. The other direction is unchanged.</li>
+<li>This command only applies to links. Use <code>tb-set-lan-simplex-params</code> below for LANs.</li>
+</ul>
+</div>
+<h3 id="tb-set-lan-simplex-params">tb-set-lan-simplex-params<a class="headerlink" href="#tb-set-lan-simplex-params" title="Permanent link"></a></h3>
+<pre><code>tb-set-lan-simplex-params lan node todelay tobw toloss fromdelay frombw fromloss
+
+tb-set-lan-simplex-params $lan1 $node1 100ms 10Mb 0.1 5ms 100Mb 0
+</code></pre>
+
+<p>Where:</p>
+<p><code>lan</code> = The lan we are modifying.</p>
+<p><code>node</code> = The member of the lan we are modifying.</p>
+<p><code>todelay</code> = Node to lan delay.</p>
+<p><code>tobw</code> = Node to lan bandwidth.</p>
+<p><code>toloss</code> = Node to lan loss.</p>
+<p><code>fromdelay</code> = Lan to node delay.</p>
+<p><code>frombw</code> = Lan to node bandwidth.</p>
+<p><code>fromloss</code> = Lan to node loss.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This command is exactly like <code>tb-set-node-lan-params</code> except that it allows the characteristics in each direction to be chosen separately. See all the notes for <code>tb-set-node-lan-params</code>.</p>
+</div>
+<h3 id="tb-set-endnodeshaping">tb-set-endnodeshaping<a class="headerlink" href="#tb-set-endnodeshaping" title="Permanent link"></a></h3>
+<pre><code>tb-set-endnodeshaping link-or-lan enable
+
+tb-set-endnodeshaping $link1 1
+tb-set-endnodeshaping $lan1 1
+</code></pre>
+
+<p>Where:</p>
+<p><code>link-or-lan</code> = The link or LAN we are modifying.</p>
+<p><code>enable</code> = Set to 1 to enable, 0 to disable.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command specifies whether <a href="/core/link-delays/">end node shaping</a> is used on the specified link or LAN (instead of a delay node).</li>
+<li>Disabled by default for all links and LANs.</li>
+<li>Only available when running the standard DETERLab FreeBSD or Linux kernels.</li>
+<li>See <a href="/core/link-delays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
+</ul>
+</div>
+<h3 id="tb-set-noshaping">tb-set-noshaping<a class="headerlink" href="#tb-set-noshaping" title="Permanent link"></a></h3>
+<pre><code>tb-set-noshaping link-or-lan enable
+
+tb-set-noshaping $link1 1
+tb-set-noshaping $lan1 1
+</code></pre>
+
+<p>Where:</p>
+<p><code>link-or-lan</code> = The link or LAN we are modifying.</p>
+<p><code>enable</code> = Set to 1 to disable bandwidth shaping, 0 to enable.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command specifies whether link bandwidth shaping should be enforced on the specified link or LAN. When enabled, bandwidth limits indicated for a link or LAN will not be enforced.</li>
+<li>Disabled by default for all links and LANs. That is, link bandwidth shaping <code>is</code> enforced on all links and LANs by default.</li>
+<li>If the delay and loss values for a <code>tb-set-noshaping</code> link are zero (the default), then no delay node or end-node delay pipe will be associated with the link or LAN.</li>
+<li><strong>This command is a hack.</strong> The primary purpose for this command is to subvert the topology mapper (<code>assign</code>). <code>Assign</code> always observes the physical bandwidth constraints of the testbed. By using <code>tb-set-noshaping</code>, you can convince <code>assign</code> that links are low-bandwidth and thus get your topology mapped, but then not actually have the links shaped.</li>
+</ul>
+</div>
+<h3 id="tb-use-endnodeshaping">tb-use-endnodeshaping<a class="headerlink" href="#tb-use-endnodeshaping" title="Permanent link"></a></h3>
+<pre><code>tb-use-endnodeshaping enable
+
+tb-use-endnodeshaping 1
+</code></pre>
+
+<p>Where:</p>
+<p><code>enable</code> = Set to 1 to enable end-node traffic shaping on all links and LANs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command allows you to use end-node traffic shaping globally, without having to specify per link or LAN with <code>tb-set-endnodeshaping</code>.</li>
+<li>See <a href="/core/linkdelays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
+</ul>
+</div>
+<h3 id="tb-force-endnodeshaping">tb-force-endnodeshaping<a class="headerlink" href="#tb-force-endnodeshaping" title="Permanent link"></a></h3>
+<pre><code>tb-force-endnodeshaping enable
+
+tb-force-endnodeshaping 1
+</code></pre>
+
+<p>Where:</p>
+<p><code>enable</code> = Set to 1 to force end-node traffic shaping on all links and LANs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command allows you to specify non-shaped links and LANs at creation time, but still control the shaping parameters later (e.g., increase delay, decrease bandwidth) after the experiment is swapped in.</li>
+<li>This command forces allocation of end-node shaping infrastructure for all links. There is no equivalent to force delay node allocation.</li>
+<li>See <a href="/core/linkdelays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
+</ul>
+</div>
+<h3 id="tb-set-multiplexed">tb-set-multiplexed<a class="headerlink" href="#tb-set-multiplexed" title="Permanent link"></a></h3>
+<pre><code>tb-set-multiplexed link allow
+
+tb-set-multiplexed $link1 1
+</code></pre>
+
+<p>Where:</p>
+<p><code>link</code> = The link we are modifying.</p>
+<p>'allow` = Set to 1 to allow multiplexing of the link, 0 to disallow.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command allows a link to be multiplexed over a physical link along with other links.</li>
+<li>Disabled by default for all links.</li>
+<li>Only available when running the standard DETER FreeBSD (not Linux) and only for links (not LANs).</li>
+<li>See <a href="/core/linkdelays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
+</ul>
+</div>
+<h3 id="tb-set-vlink-emulation">tb-set-vlink-emulation<a class="headerlink" href="#tb-set-vlink-emulation" title="Permanent link"></a></h3>
+<pre><code>tb-set-vlink-emulation style
+
+tb-set-vlink-emulation $link1 vlan
+</code></pre>
+
+<p>Where:</p>
+<p><code>style</code> = One of "vlan" or "veth-ne"</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It seems to be necessary to set the virtual link emulation style to vlan for multiplexed links to work under linux.</p>
+</div>
+<hr />
+<h2 id="virtual-type-commands">Virtual Type Commands<a class="headerlink" href="#virtual-type-commands" title="Permanent link"></a></h2>
+<p>Virtual Types are a method of defining fuzzy types, i.e. types that can be fulfilled by multiple different physical types. The advantage of virtual types, also known as <code>'vtypes</code>', is that all nodes of the same vtype will usually be the same physical type of node. In this way, vtypes allows logical grouping of nodes.</p>
+<p>As an example, imagine we have a network with internal routers connecting leaf nodes. We want the routers to all have the same hardware, and the leaf nodes to all have the same hardware, but the specifics do not matter. We have the following fragment in our NS file:</p>
+<pre><code>...
+tb-make-soft-vtype router {pc600 pc850}
+tb-make-soft-vtype leaf {pc600 pc850}
+
+tb-set-hardware $router1 router
+tb-set-hardware $router2 router
+tb-set-hardware $leaf1 leaf
+tb-set-hardware $leaf2 leaf
+</code></pre>
+
+<p>Here we have set up two soft (see below) vtypes: router and leaf. Our router nodes are then specified to be of type <code>router</code>, and the leaf nodes of type <code>leaf</code>. When the experiment is swapped in, the testbed will attempt to make router1 and router2 be of the same type, and similarly, leaf1 and leaf2 of the same type. However, the routers/leafs may be pc600s or they may be pc850s, whichever is easier to fit in to the available resources.</p>
+<p>As a basic use, vtypes can be used to request nodes that are all the same type, but can be of any available type:</p>
+<pre><code>...
+tb-make-soft-vtype N {pc600 pc850}
+
+tb-set-hardware $node1 N
+tb-set-hardware $node2 N
+</code></pre>
+
+<p>Vtypes come in two varieties: hard and soft. 
+<em> <code>'Soft</code>' - With soft vtypes, the testbed will try to make all nodes of that vtype the same physical type, but may do otherwise if resources are tight. 
+</em> <code>'Hard</code>' - Hard vtypes behave just like soft vtypes except that the testbed will give higher priority to vtype consistency and swapping in will fail if the vtypes cannot be satisfied. </p>
+<p>Therefore, if you use soft vtypes you are more likely to swap in but there is a chance your node of a specific vtype will not all be the same. If you use hard vtypes, all nodes of a given vtype will be the same, but swapping in may fail.</p>
+<p>Further, you can have weighted soft vtypes. Here you assign a weight from 0 to 1 exclusive to your vtype. The testbed will give higher priority to consistency in the higher weighted vtypes. The primary use of this is to rank multiple vtypes by importance of consistency. Soft vtypes have a weight of 0.5 by default.</p>
+<p>As a final note, when specifying the types of a vtype, use the most specific type possible. For example, the following command is not very useful: </p>
+<pre><code>tb-make-soft-vtype router {pc pc600}
+</code></pre>
+
+<p>This is because pc600 is a sub type of pc. You may very well end up with two routers as type pc with different hardware, as pc covers multiple types of hardware.</p>
+<h3 id="tb-make-soft-vtype">tb-make-soft-vtype<a class="headerlink" href="#tb-make-soft-vtype" title="Permanent link"></a></h3>
+<pre><code>tb-make-soft-vtype vtype {types}
+tb-make-hard-vtype vtype {types}
+tb-make-weighted-vtype vtype weight {types}
+
+tb-make-soft-vtype router {pc600 pc850}
+tb-make-hard-vtype leaf {pc600 pc850}
+tb-make-weighted-vtype A 0.1 {pc600 pc850}
+</code></pre>
+
+<p>Where:</p>
+<p><code>vtype</code> = The name of the vtype to create.</p>
+<p><code>types</code> = One or more physical types.</p>
+<p><code>weight</code> = The weight of the vtype, 0 &lt; <code>weight</code> &lt; 1.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>These commands create vtypes. See notes above for a description of vtypes and the difference between soft and hard.</li>
+<li><code>tb-make-soft-vtype</code> creates vtypes with weight 0.5.</li>
+<li>vtype commands must appear before <code>tb-set-hardware</code> commands that use them.</li>
+<li>Do not use <code>tb-fix-node</code> with nodes that have a vtype.</li>
+</ul>
+</div>
+<h2 id="misc-commands">Misc. Commands<a class="headerlink" href="#misc-commands" title="Permanent link"></a></h2>
+<h3 id="tb-fix-node">tb-fix-node<a class="headerlink" href="#tb-fix-node" title="Permanent link"></a></h3>
+<pre><code>tb-fix-node vnode pnode
+
+tb-fix-node $node0 pc42
+</code></pre>
+
+<p>Where:</p>
+<p><code>vnode</code> = The node we are fixing.</p>
+<p><code>pnode</code> = The physical node we want used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command forces the virtual node to be mapped to the specified physical node. Swap in will fail if this cannot be done.</li>
+<li>Do not use this command on nodes that are a virtual type.</li>
+</ul>
+</div>
+<h3 id="tb-fix-interface">tb-fix-interface<a class="headerlink" href="#tb-fix-interface" title="Permanent link"></a></h3>
+<pre><code>tb-fix-interface vnode vlink iface 
+
+tb-fix-interface $node0 $link0 &quot;eth0&quot;
+</code></pre>
+
+<p>Where:</p>
+<p><code>vnode</code> = The node we are fixing.</p>
+<p><code>vlink</code> = The link connecting to that node that we want to set.</p>
+<p><code>iface</code> = The DETERLab name for the interface that is to be used.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>The interface names used are the ones in the DETERLab database - we can make no guarantee that the OS image that boots on the node assigns the same name.</li>
+<li>Different types of nodes have different sets of interfaces, so this command is most useful if you are also using <code>tb-fix-node</code> and/or <code>tb-set-hardware</code> on the <code>vnode</code>.</li>
+</ul>
+</div>
+<h3 id="tb-set-uselatestwadata">tb-set-uselatestwadata<a class="headerlink" href="#tb-set-uselatestwadata" title="Permanent link"></a></h3>
+<pre><code>tb-set-uselatestwadata 0
+tb-set-uselatestwadata 1
+</code></pre>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command indicates which widearea data to use when mapping widearea nodes to links. The default is 0, which says to use the aged data. Setting it to 1 says to use the most recent data.</li>
+</ul>
+</div>
+<h3 id="tb-set-wasolver-weights">tb-set-wasolver-weights<a class="headerlink" href="#tb-set-wasolver-weights" title="Permanent link"></a></h3>
+<pre><code>tb-set-wasolver-weights delay bw plr
+
+tb-set-wasolver-weights 1 10 500
+</code></pre>
+
+<p>Where:</p>
+<p><code>delay</code> = The weight to give delay when solving.</p>
+<p><code>bw</code> = The weight to give bandwidth when solving.</p>
+<p><code>plr</code> = The weight to give lossrate when solving.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command sets the relative weights to use when assigning widearea nodes to links. Specifying a zero says to ignore that particular metric when doing the assignment. Setting all three to zero results in an essentially random selection.</li>
+</ul>
+</div>
+<h3 id="tb-set-node-failure-action">tb-set-node-failure-action<a class="headerlink" href="#tb-set-node-failure-action" title="Permanent link"></a></h3>
+<pre><code>tb-set-node-failure-action node action
+
+tb-set-node-failure-action $nodeA &quot;fatal&quot;
+tb-set-node-failure-action $nodeB &quot;nonfatal&quot;
+</code></pre>
+
+<p>Where:</p>
+<p><code>node</code> = The node name.</p>
+<p><code>action</code> = One of "fatal" or "nonfatal".</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This command sets the failure mode for a node. When an experiment is swapped in, the default action is to abort the swapin if any nodes fail to come up normally. This is the "fatal" mode. You may also set a node to "nonfatal" which will cause node bootup failures to be reported, but otherwise ignored during swapin. Note that this can result in your experiment not working properly if a dependent node fails, but typically you can arrange your software to deal with this.</p>
+</div>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../swapping/" class="btn btn-neutral float-right" title="Understanding Swapping (Node Use Policies)"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../deterlab-commands/" class="btn btn-neutral" title="DETERLab Commands"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../deterlab-commands/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../swapping/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

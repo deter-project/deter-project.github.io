@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>MAGI Agent Library - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "MAGI Agent Library";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">MAGI Agent Library</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#agent-execution-models">Agent Execution Models</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#interface-description-language-idl">Interface Description Language (IDL)</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#agent-library">Agent Library</a></li>
+                
+                    <li><a class="toctree-l4" href="#agent">Agent</a></li>
+                
+                    <li><a class="toctree-l4" href="#dispatchagent">DispatchAgent</a></li>
+                
+                    <li><a class="toctree-l4" href="#nonblockingdispatchagent">NonBlockingDispatchAgent</a></li>
+                
+                    <li><a class="toctree-l4" href="#reportingdispatchagent">ReportingDispatchAgent</a></li>
+                
+                    <li><a class="toctree-l4" href="#sharedserver">SharedServer</a></li>
+                
+                    <li><a class="toctree-l4" href="#trafficclientagent">TrafficClientAgent</a></li>
+                
+                    <li><a class="toctree-l4" href="#probabilistictrafficclientagent">ProbabilisticTrafficClientAgent</a></li>
+                
+                    <li><a class="toctree-l4" href="#connectedtrafficclientagent">ConnectedTrafficClientAgent</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#agent-load-and-execution-chain-for-threaded-agents">Agent Load and Execution Chain (for threaded agents)</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Orchestrator &raquo;</li>
+        
+      
+    
+    <li>MAGI Agent Library</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Every node has a daemon running with a series of Agents on it. These Agents are each executed in their own thread or process. They are provided with a defined interface with which to send and receive messages to other objects in the experiment. The MAGI daemon will route messages to the agent based on the routing information in the message. The daemon supports group-based, name-based, and “dock”-based routing. (A dock is like a port for a traditional daemon; an agent listens on a dock.) Once a message is delivered to an agent, the format of the message data is then up to the agent itself.</p>
+<p>Most agents will not need to parse messages directly, however, because the MAGI Agent Library supports a number of useful abstractions implemented in base classes from which Agent authors can derive. These are described in detail below.</p>
+<h3 id="agent-execution-models">Agent Execution Models<a class="headerlink" href="#agent-execution-models" title="Permanent link"></a></h3>
+<p>There are two execution models supported by the daemon for Agents: 
+<em> <strong> Thread-based</strong>  - A thread-based Agent is loaded and runs in the process space of the daemon. The daemon communicates with a thread-based agent directly
+</em> <strong> Process-based</strong>  - A process-based Agent is started as a separate process. The daemon communicates with it via standard interprocess communication techniques: a pipe or a socket.</p>
+<p>Here is a list outlining the differences between the execution models.</p>
+<p><strong> Threads</strong> </p>
+<ul>
+<li><strong> Pro</strong> : Lightweight</li>
+<li><strong> Pro</strong> : Messages passed as objects without need for serialization</li>
+<li><strong> Con</strong> : Must be written in Python</li>
+<li><strong> Con</strong> : Must be aware of other threads when it comes to file descriptors or other shared memory</li>
+</ul>
+<p><strong> Process</strong>  (Pipe or Socket)</p>
+<ul>
+<li><strong> Pro</strong> : Agents may be written in languages other than Python.</li>
+<li><strong> Pro</strong> : May kill off agent individually from the shell</li>
+<li><strong> Con</strong> : Heavier weight if invoking a new interpreter for each Agent for scripted languages</li>
+<li><strong> Con</strong> : Message transceiver is more complex, in particular if a library for the language has not been written. (</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As of now, only Python is supported. We are working on adding support for other languages.)</p>
+</div>
+<h3 id="interface-description-language-idl">Interface Description Language (IDL)<a class="headerlink" href="#interface-description-language-idl" title="Permanent link"></a></h3>
+<p>Agent authors must write an IDL that matches the interface exported by their agent. This IDL is used by MAGI to validate the interface of the agent (and in the future to generate GUIs for agent execution and configuration.) </p>
+<p>The IDL should specify: 
+<em> agent execution model (thread or process);
+</em> any public agent variables and their types, ranges, or enumerated values; 
+<em> any public methods and the method arguments and their types; 
+</em> “help” strings for each method and agent variable which explain their purpose; 
+* and finally any Agent library from which they derive.</p>
+<p>This may seem like a lot to specify, but the Agent Library supplies IDL for base Agents --  so in practice much of the IDL specification will be supplied to the Agent author.</p>
+<p>The IDL format and keywords are given in a table below. </p>
+<p>(TBD - Coming soon)</p>
+<h3 id="agent-library">Agent Library<a class="headerlink" href="#agent-library" title="Permanent link"></a></h3>
+<p>In this section we describe the Agent Library and give brief examples for usage. Classes are organized from the bottom up, that is, starting with the class from which the others derive.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When using the Orchestrator to run your experiment, the Orchestrator will, by default, handle a return value of <em>False</em> from an Agent method as a reason to unload all Agents, break down communication groups and exit. Thus your Agent may stop an experiment by returning <em>False</em>.</p>
+</div>
+<h4 id="agent"><code>Agent</code><a class="headerlink" href="#agent" title="Permanent link"></a></h4>
+<p>This is the base Agent class. It implements a <code>setConfiguration</code> method. If derived from, the user may call <code>setConfiguration</code> to set any <code>self</code> variables in your class. </p>
+<p>Agent also implements an empty <code>confirmConfiguration</code> method that is called once the <code>self</code> variables are set. You may implement your own <code>confirmConfiguration</code> if you need to make sure the user has set your internal variables to match any constraints you may want to impose. Returning <em>False</em> from this method will signal to the Orchestrator that something is wrong and the Orchestrator should handle this as an error. The default implementation of <code>confirmConfiguration</code> simply returns <em>True</em>. </p>
+<p>The method signature for <code>confirmConfiguration()</code> is</p>
+<pre><code>def confirmConfiguration(self):
+</code></pre>
+
+<p>It takes no arguments. </p>
+<p>In your <code>confirmConfiguration</code> method, you should confirm that your agent internal variables are the correct type and in the expected range.</p>
+<p>In the following example, imagine an agent has a variable that is an integer and the range of the value must be between 1 and 10. An agent can use the <code>Agent</code> class to implement this as so:</p>
+<pre><code>from magi.util.agent import Agent
+
+class myAgent(Agent):
+    def __init__(self):
+        self.value = None
+
+    def confirmConfiguration():
+        if not isinstance(self.value, int):
+            return False
+
+        if not 1 &lt;= self.value &lt;= 10:
+            return False
+
+        return True
+</code></pre>
+
+<p>If the variable <code>self.value</code> is not an integer or is not between 1 and 10, <code>confirmConfiguration</code> returns <em>False</em>. If running this agent with the Orchestrator, the <em>False</em> value will get returned to the Orchestrator which will unload all agents, destroy all group communications, then exit. Thus your agent may cause the experiment to stop and be reset when it is not given the correct inputs.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the future, this functionality of enforcing correct input will be handled outside of the agent code. The IDL associated with the agent already specifies correct input and the Orchestrator (or other Montage/MAGI front end tool) will enforce proper input.</p>
+</div>
+<p>All classes in the <code>AgentLibrary</code> inherit from <code>Agent</code>.</p>
+<p>The <code>Agent</code> documentation can seen <a href="http://montage.deterlab.net/backend/python/util.html#magi.util.agent.Agent">here</a>.</p>
+<h4 id="dispatchagent"><code>DispatchAgent</code><a class="headerlink" href="#dispatchagent" title="Permanent link"></a></h4>
+<p>The <code>DispatchAgent</code> implements the simple remote procedure call (RPC) mechanism used by the Orchestrator (and available through the MAGI python API). This allows any method in a class derived from <code>DispatchAgent</code> to be invoked in an AAL file (or by a <code>MagiMessage</code> if using the MAGI python interface directly). </p>
+<p>You almost always want to derive your agent from <code>DispatchAgent</code>. The <code>DispatchAgent</code> code simply loops, parsing incoming messages, looking for an event message. When it finds one, it attempts to call the method specified in the message with the arguments given in the message, thus implementing a basic RPC functionality in your agent.</p>
+<p>The first argument to your RPC-enabled method is the received message. It is accompanied by the optional named-parameters, sent as part of the <code>MagiMessage</code>. The Agent Library exports a function decorator for <code>DispatchAgent</code>-callable methods named <code>agentmethod</code>. It is not currently used for anything, but it is suggested that agent developers use it anyway.</p>
+<p>The <code>DispatchAgent</code> reads incoming messages and invokes the required method synchronously, i.e., it waits for a method call to return before reading the next message.</p>
+<p>Here is a simple example:</p>
+<pre><code>from magi.util.agent import DispatchAgent, agentmethod
+
+def myAgent(DispatchAgent):
+    def __init__(self):
+        DispatchAgent.__init__(self)
+
+    @agentmethod()
+    def doAction(self, msg):
+        pass
+</code></pre>
+
+<p>Given the agent <code>myAgent</code> above and the AAL fragment below, the method <code>doAction</code> will be called on all test nodes associated with <code>myAgentGroup</code>.</p>
+<pre><code>eventstreams:
+    myStream:
+        - type: event
+          agent: myAgentGroup
+          method: doAction
+          args: { }
+</code></pre>
+
+<p>The <code>DispatchAgent</code> documentation may seen <a href="http://montage.deterlab.net/backend/python/util.html#magi.util.agent.DispatchAgent">here</a>. </p>
+<h4 id="nonblockingdispatchagent"><code>NonBlockingDispatchAgent</code><a class="headerlink" href="#nonblockingdispatchagent" title="Permanent link"></a></h4>
+<p>The <code>NonBlockingDispatchAgent</code> is similar to <code>DispatchAgent</code>. The only difference is that <code>NonBlockingDispatchAgent</code> invokes the methods <em>asynchronously</em>, i.e., it forks a new thread for each method call and does not wait for the call to return. It invokes the required method and moves on to read the next message.</p>
+<h4 id="reportingdispatchagent"><code>ReportingDispatchAgent</code><a class="headerlink" href="#reportingdispatchagent" title="Permanent link"></a></h4>
+<p>You will note that the <code>DispatchAgent</code> only allows an outside source to send commands to the agent. There is no communication backwards. The <code>ReportingDispatchAgent</code> base class has a slightly different run loop. Rather than blocking forever on incoming messages, it will also call its own method, <code>periodic</code>, to allow other operations to occur.</p>
+<p>The call to <code>periodic</code> will return the amount of time in seconds (as a float) that it will wait until calling <code>periodic</code> again. The <code>periodic</code> function therefore controls how often it is called. The first call will happen as soon as the run is called.</p>
+<p>The method signature of the <code>periodic</code> method is:</p>
+<pre><code>def periodic(self, now):
+</code></pre>
+
+<p>If <code>periodic</code> is not implemented in the subclass, an exception is raised.</p>
+<p>This example code writes the current time to a file once a second. Note the explicit use of the <code>Agent</code> class to set the file name.</p>
+<pre><code>import os.path
+from magi.util.agent import ReportingDispatchAgent, agentmethod
+
+class myTimeTracker(ReportingDispatchAgent):
+    def __init__(self):
+        ReportingDispatchAgent.__init__(self)
+        self.filename = None
+
+    def confirmConfiguration(self):
+        if not os.path.exists(self.filename):
+            return False
+
+    def periodic(self, now):
+        with open(self.filename, 'a') as fd:
+            fd.write('%f\n' % now)
+
+        # call again one second from now
+        return 1.0
+
+</code></pre>
+
+<p>The <code>ReportingDispatchAgent</code> documentation may seen here. http://montage.deterlab.net/backend/python/util.html#magi.util.agent.ReportingDispatchAgent</p>
+<h4 id="sharedserver"><code>SharedServer</code><a class="headerlink" href="#sharedserver" title="Permanent link"></a></h4>
+<p>The <code>SharedServer</code> class inherits from <code>DispatchAgent</code> and expects the subclass to implement the methods <code>runserver</code> and <code>terminateserver</code> to start or stop a local server process. </p>
+<p>The <code>SharedServer</code> class takes care of multiple agents requesting use of the server and only calls <code>runserver</code> or <code>terminateserver</code> when required. This ensures that there is ever only one instance of the server running at once on a given host. A canonical example of this would be a web server running a single instance of Apache. The methods <code>runserver</code> and <code>stopserver</code> take no arguments.</p>
+<p>Below is an example of a simple agent that starts and stops Apache on the local host. If there are other agents running on the machine that require Apache to be running, they may inherit from <code>SharedServer</code> as well, thus ensuring that there is only ever one instance of Apache running.</p>
+<pre><code>from subprocess import check_call, CalledProcessError
+from magi.util.agent import SharedServer
+
+class ApacheServerAgent(SharedServer):
+    def __init__(self):
+        SharedServer.__init__(self)
+
+    def runserver(self):
+        try:
+            check_call('apachectl start'.split())
+
+        except CalledProcessError:
+            return False
+
+        return True
+
+    def stopserver(self):
+        try:
+            check_call('apachectl stop'.split())
+
+        except CalledProcessError:
+            return False
+
+        return True
+</code></pre>
+
+<p>The <code>SharedServer</code> documentation may seen <a href="http://montage.deterlab.net/backend/python/util.html#magi.util.agent.SharedServer">here</a>. </p>
+<h4 id="trafficclientagent"><code>TrafficClientAgent</code><a class="headerlink" href="#trafficclientagent" title="Permanent link"></a></h4>
+<p><code>TrafficClientAgent</code> models an agent that periodically generates traffic. It must implement the <code>getCmd</code> method, returning a string to execute on the commandline to generate traffic. For example, the <code>getCmd</code> could return a <code>curl</code> or <code>wget</code> command to generate client-side HTML traffic. The signature of <code>getCmd</code> is:</p>
+<pre><code>def getCmd(self, destination)
+</code></pre>
+
+<p>Where <code>destination</code> is a server host name from which the agent should request traffic. </p>
+<p>The <code>TrafficClientAgent</code> class implements the following event-callable methods: <code>startClient()</code> and ```stopClient()}}. Neither method takes any arguments. These methods may be invoked from an AAL and start and stop the client respectively.</p>
+<p>The base class contains a number of variables which control how often <code>getCmd</code> is called and which servers should be contacted: 
+<em> <code>servers</code>: A list of server hostnames
+</em> <code>interval</code>: A distribution variable</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A distribution variable is any valid python expression that returns a float. It may be as simple as an integer, “1”, or an actual distribution function. The Agent Library provides <code>minmax</code>, <code>gamma</code>, <code>pareto</code>, and <code>expo</code> in the distributions module. Thus a valid value for the <code>TrafficClientAgent</code> interval value could be <code>minmax(1,10)</code>, which returns a value between 1 and 10 inclusive. The signatures of these distributions are:</p>
+<pre><code>minmax(min, max)
+gamma(alpha, rate, cap = None)
+pareto(alpha, scale = 1.0, cap = None)
+expo(lambd, scale = 1.0, cap = None)
+</code></pre>
+</div>
+<p>Below is a sample <code>TrafficClientAgent</code> which implements a simple HTTP client-side traffic agent. It assumes the destinations have been set correctly (via the <code>Agent setConfiguration</code> method) and there are web servers already running there.</p>
+<pre><code>from magi.util.agent import TrafficClientAgent
+
+class mySimpleHTTPClient(TrafficClientAgent):
+    def __init__(self):
+        TrafficClientAgent.__init__(self)
+
+    def getCmd(self, destination):
+        cmd = 'curl -s -o /dev/null http://%s/index.html' % destination
+        return cmd
+</code></pre>
+
+<p>When this agent is used with the following AAL clauses, the servers <strong> server_1</strong>  and <strong> server_2</strong>  are used as HTTP traffic generation servers and traffic is generated once an interval where the interval ranges randomly between 5 and 10 seconds, inclusive. The first event sets the agent’s internal configuration. The second event starts the traffic generation.</p>
+<pre><code>eventstreams:
+    myStream:
+        - type: event
+          agent: myHTTPClients
+          method: setConfiguration
+          args:
+                interval: 'minmax(5, 10)'
+                servers: ['server_1', 'server_2']
+
+        - type: event
+          agent: myHTTPClients
+          method: startClient
+          args: { }
+</code></pre>
+
+<p>The <code>TrafficClientAgent</code> documentation may seen here. http://montage.deterlab.net/backend/python/util.html#magi.util.agent.TrafficClientAgent</p>
+<h4 id="probabilistictrafficclientagent"><code>ProbabilisticTrafficClientAgent</code><a class="headerlink" href="#probabilistictrafficclientagent" title="Permanent link"></a></h4>
+<p><code>ProbabilisticTrafficClientAgent</code> provides the same service as <code>TrafficAgent</code>, but <code>getCmd</code> is called only when the configured probability function evaluates to a non-zero value.</p>
+<h4 id="connectedtrafficclientagent"><code>ConnectedTrafficClientAgent</code><a class="headerlink" href="#connectedtrafficclientagent" title="Permanent link"></a></h4>
+<p><code>ConnectedTrafficClientAgent</code> is a base for an agent that controls a set of agents that have standing connections to, and traffic between, a set of servers. </p>
+<p><code>connect()</code> and <code>disconnect()</code> are called periodically when a given client should connect or disconnect to a given server. </p>
+<p><code>generateTraffic()</code> is called when the given client should generate traffic between itself and the server it is connected to. The sequence of calls is: </p>
+<pre><code>[period], connect(), [period], generateTraffic(), [period], generateTraffic(), ..., disconnect()
+</code></pre>
+
+<p>This sequence may be repeated.</p>
+<p>Derived classes should implement <code>connect()</code>, <code>disconnect()</code>, and <code>generateTraffic()</code>.</p>
+<h3 id="agent-load-and-execution-chain-for-threaded-agents">Agent Load and Execution Chain (for threaded agents)<a class="headerlink" href="#agent-load-and-execution-chain-for-threaded-agents" title="Permanent link"></a></h3>
+<p>(TBD - Coming soon)</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../magi-tools/" class="btn btn-neutral float-right" title="MAGI Tools"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../system-files/" class="btn btn-neutral" title="MAGI System Files"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../system-files/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../magi-tools/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

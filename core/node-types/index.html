@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DETERLab Node Types - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "DETERLab Node Types";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">DETERLab Node Types</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#dl380g3">dl380g3</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#microcloud">MicroCloud</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#pc2133">pc2133</a></li>
+                
+                    <li><a class="toctree-l4" href="#cpu-flags">CPU flags:</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#pc3000">pc3000</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#bvx2200">bvx2200</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#bpc2800">bpc2800</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#cpu-flags_1">CPU flags</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#netfpga2">netfpga2</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core Reference &raquo;</li>
+        
+      
+    
+    <li>DETERLab Node Types</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This is not a complete list of all node types available at DETERLab, but below are the primary types.</p>
+<ul>
+<li><a href="#dl380g3">dl380g3</a></li>
+<li><a href="#MicroCloud">MicroCloud</a></li>
+<li><a href="#pc2133">pc2133</a> (including pc2133 and bpc2133)</li>
+<li><a href="#pc3000">pc3000</a> (including pc3000, bpc3000, pc3060, bpc3060, and pc3100)</li>
+<li><a href="#bvx2200">bvx2200</a></li>
+<li><a href="#bpc2800">bpc2800</a></li>
+<li><a href="#netfpga2">netfpga2</a></li>
+</ul>
+<h2 id="dl380g3">dl380g3<a class="headerlink" href="#dl380g3" title="Permanent link"></a></h2>
+<p>There are 120 dl380g3 class nodes available at <a href="/ISIUCB/">ISI</a>.</p>
+<p>Machine: <a href="http://www8.hp.com/us/en/products/proliant-servers/product-detail.html?oid=5177953">HP Proliant DL360 G8 Server</a></p>
+<p>Each node has:</p>
+<ul>
+<li>Dual <a href="http://ark.intel.com/products/75784/Intel-Xeon-Processor-E5-2420-v2-15M-Cache-2_20-GHz">Intel(R) Xeon(R)</a> hexa-core processors running at 2.2 Ghz with 15MB cache<ul>
+<li>Intel VT-x support</li>
+</ul>
+</li>
+<li>24GB of RAM</li>
+<li>One 1Tb SATA HP Proliant Disk Drive 7.2k rpm G8 (boot priority)</li>
+<li>One 240Gb SATA HP Proliant Solid State Drive G8</li>
+<li>Two experimental interfaces:<ul>
+<li>One Dual port PCIe Intel Ten Gigabit Ethernet card for experimental ports</li>
+<li>One Quad port PCIe Intel Gigabit Ethernet card, presently with one port wired to the control network</li>
+</ul>
+</li>
+</ul>
+<h2 id="microcloud">MicroCloud<a class="headerlink" href="#microcloud" title="Permanent link"></a></h2>
+<p>There are 128 MicroCloud nodes at <a href="/ISIUCB/">ISI</a>.</p>
+<p>Machine: High Density <a href="http://www.supermicro.com/products/system/3U/5037/SYS-5037MC-H8TRF.cfm">SuperMicro MicroCloud</a> Chassis that fits 8 nodes in 3u of rack space.</p>
+<p>Each node has:</p>
+<ul>
+<li>One <a href="http://ark.intel.com/products/52275/Intel-Xeon-Processor-E3-1260L-(8M-Cache-2_40-GHz)">Intel(R) Xeon(R) E3-1260L</a> quad-core processor running at 2.4 Ghz<ul>
+<li>Intel VT-x and VT-d support</li>
+</ul>
+</li>
+<li>16GB of RAM</li>
+<li>One 250Gb SATA Western Digital RE4 Disk Drive</li>
+<li>5 experimental interfaces<ul>
+<li>One Dual port PCIe Intel Gigabit Ethernet card for the control network and an experimental port</li>
+<li>One Quad port PCIe Intel Gigabit Ethernet card for experimental network</li>
+</ul>
+</li>
+</ul>
+<h2 id="pc2133">pc2133<a class="headerlink" href="#pc2133" title="Permanent link"></a></h2>
+<p>This node type includes pc2133 and bpc2133:</p>
+<ul>
+<li>There are 63 pc2133 nodes at <a href="/ISIUCB/">ISI</a>.</li>
+<li>There are 64 bpc2133 nodes at <a href="/ISIUCB/">UCB</a>.</li>
+</ul>
+<p>The pc2133 and bpc2133 machines have the following features:</p>
+<ul>
+<li>Dell PowerEdge 860 Chasis</li>
+<li>One Intel(R) Xeon(R) CPU X3210 quad core processor running at 2.13 Ghz</li>
+<li>4GB of RAM</li>
+<li>One 250Gb SATA Disk Drive</li>
+<li>One Dual port PCI-X Intel Gigabit Ethernet card for the control network (only one port is used).</li>
+<li>One Quad port PCIe Intel Gigabit Ethernet card for experimental network.</li>
+</ul>
+<h3 id="cpu-flags">CPU flags:<a class="headerlink" href="#cpu-flags" title="Permanent link"></a></h3>
+<p>fpu vme de pse tsc msr pae mce cx8 apic mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx lm constant_tsc pni monitor ds_cpl '''vmx''' est tm2 ssse3 cx16 xtpr lahf_lm</p>
+<h2 id="pc3000">pc3000<a class="headerlink" href="#pc3000" title="Permanent link"></a></h2>
+<p>This node type includes pc3000, bpc3000, pc3060, bpc3060, and pc3100.</p>
+<p>There are:</p>
+<ul>
+<li>0 pc3000 nodes at <a href="/ISIUCB/">ISI</a></li>
+<li>32 bpc3000 nodes at <a href="/ISIUCB/">UCB</a></li>
+<li>17 pc3060 nodes at <a href="/ISIUCB/">ISI</a></li>
+<li>32 bpc3060 nodes at <a href="/ISIUCB/">UCB</a></li>
+<li>4 pc3100 nodes at <a href="/ISIUCB/">ISI</a></li>
+</ul>
+<p>pc3000 and bpc3000 have the following features:</p>
+<ul>
+<li>Dell PowerEdge 1850 Chassis.</li>
+<li>Dual 3Ghz Intel Xeon processors.</li>
+<li>2 GB of RAM</li>
+<li>One 36Gb 15k RPM SCSI drive (bpc machines may be configured with two).</li>
+<li>4 Intel Gigabit experimental network ports.</li>
+<li>1 Intel Gigabit experimental network port.</li>
+</ul>
+<p>pc3060 and bpc3060 machines are the same as the pc3000/bpc3000 machines except that they have one more experimental network interface.</p>
+<p>pc3100 machines have a total of 9 experimental interfaces and 1 control network interface.  There are only 4 of these type of machine.</p>
+<h2 id="bvx2200">bvx2200<a class="headerlink" href="#bvx2200" title="Permanent link"></a></h2>
+<p>There are 31 bvx2200 nodes at <a href="/ISIUCB/">UCB</a>.</p>
+<p>bvx2200 has the following features:</p>
+<ul>
+<li>Sun Microsystems Sun Fire X2100 M2 Chassis.</li>
+<li>Dual-Core 1.8 Ghz AMD Opteron(tm) Processor 1210.</li>
+<li>One 250Gb 7200 RPM SATA drive.</li>
+<li>1 Broadcom NetXtreme Gigabit experimental network port.</li>
+<li>2 Nvidia nForce MCP55 experimental network ports.</li>
+<li>2 Intel Gigabit experimental network ports.</li>
+</ul>
+<h2 id="bpc2800">bpc2800<a class="headerlink" href="#bpc2800" title="Permanent link"></a></h2>
+<p>There are 30 bpc2800 at <a href="/ISIUCB/">UCB</a>.</p>
+<p>The bpc2800 machines have the following features:</p>
+<ul>
+<li>Sun Microsystems Sun Fire V60 Chassis</li>
+<li>One Intel(R) Xeon(R) CPU dual core processor running at 2.8 GHz</li>
+<li>2 GB of RAM</li>
+<li>One 36 GB SCSI Disk Drive</li>
+<li>Two Dual port PCI-X Intel Gigabit Ethernet cards, 1 port for control network and 3 ports for experimental network</li>
+<li>One Single port PCI-X Intel Gigabit Ethernet card for experimental network</li>
+</ul>
+<h2 id="cpu-flags_1">CPU flags<a class="headerlink" href="#cpu-flags_1" title="Permanent link"></a></h2>
+<p>fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe pebs bts cid xtpr</p>
+<h2 id="netfpga2">netfpga2<a class="headerlink" href="#netfpga2" title="Permanent link"></a></h2>
+<p>There are 10 netfpga2 class nodes in the testbed. These are pc2133 class machines. Each of these nodes has a single <a href="http://netfpga.org/">NetFPGA card</a> installed.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../serial-console/" class="btn btn-neutral float-right" title="Using the Serial Console"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../DETERSSH/" class="btn btn-neutral" title="Accessing testbeds using SSH"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../DETERSSH/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../serial-console/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

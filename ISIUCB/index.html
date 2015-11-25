@@ -1,23 +1,495 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="/css/main.css" />
-</head>
-<body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DETERLab Rooms - DETERLab Documentation</title>
   
 
-<h1 id="the-two-deter-machine-rooms:e4add3691afa4a1d7ecf16f0addab926">The two DETER machine rooms</h1>
+  <link rel="shortcut icon" href="../favicon.ico">
+  
 
-<p>DETER has two machine rooms.  Nodes are split more or less evenly between the two machine rooms which are seamlessly bridged together over a gigabit link.</p>
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-<h2 id="isi:e4add3691afa4a1d7ecf16f0addab926">ISI</h2>
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../css/extra.css" rel="stylesheet">
 
-<p>The primary machine room is located in Southern California at <a href="http://www.isi.edu">The University of Southern California Information Sciences Institute (ISI)</a>.  This is where users.isi.deterlab.net and www.isi.deterlab.net are located.</p>
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "DETERLab Rooms";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script>
+  <script src="../js/theme.js"></script> 
 
-<h2 id="ucb:e4add3691afa4a1d7ecf16f0addab926">UCB</h2>
+  
+</head>
 
-<p>The other machine room is located in Northern California at <a href="http://www.berkeley.edu/">The University of California Berkeley (UCB)</a>.  Nodes that start with the letter &lsquo;b&rsquo; are located at UCB.</p>
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core/legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator/magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">DETERLab Rooms</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#isi">ISI</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#ucb">UCB</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Miscellaneous &raquo;</li>
+        
+      
+    
+    <li>DETERLab Rooms</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>DETERLab has two machine rooms.  Nodes are split more or less evenly between the two, which are seamlessly bridged together over a Gigabit link.</p>
+<h2 id="isi">ISI<a class="headerlink" href="#isi" title="Permanent link"></a></h2>
+<p>The primary machine room is located in Southern California at <a href="http://www.isi.edu">The University of Southern California Information Sciences Institute (ISI)</a>.  This is where <code>users.isi.deterlab.net</code> and <code>www.isi.deterlab.net</code> are located.</p>
+<h2 id="ucb">UCB<a class="headerlink" href="#ucb" title="Permanent link"></a></h2>
+<p>The other machine room is located in Northern California at <a href="http://www.berkeley.edu/">The University of California Berkeley (UCB)</a>.  Nodes that start with the letter <strong>b</strong> are located at UCB.  </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../about/release-notes/" class="btn btn-neutral float-right" title="Release Notes"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../abac/" class="btn btn-neutral" title="ABAC"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../abac/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../about/release-notes/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
 
 </body>
 </html>

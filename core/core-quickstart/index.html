@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Core Quickstart - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Core Quickstart";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Core Quickstart</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#what-is-deterlab">What is DETERLab?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#how-does-it-work">How does it work?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#how-do-i-get-a-deterlab-account">How do I get a DETERLab account?</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#how-do-i-use-deterlab">How do I use DETERLab?</a></li>
+                
+                    <li><a class="toctree-l4" href="#1-design-the-topology">1. Design the topology</a></li>
+                
+                    <li><a class="toctree-l4" href="#2-create-start-and-swap-in-allocate-resources-for-an-experiment">2. Create, start and swap in (allocate resources for) an experiment</a></li>
+                
+                    <li><a class="toctree-l4" href="#3-generate-traffic-for-your-nodes">3. Generate traffic for your nodes</a></li>
+                
+                    <li><a class="toctree-l4" href="#4-view-results-by-accessing-nodes-modify-the-experiment-as-needed">4. View results by accessing nodes, modify the experiment as needed.</a></li>
+                
+                    <li><a class="toctree-l4" href="#5-save-your-work-and-swap-out-your-experiment-release-the-resources">5. Save your work and swap out your experiment (release the resources)</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>DETERLab Core &raquo;</li>
+        
+      
+    
+    <li>Core Quickstart</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>This page describes basic information about DETERLab and its core functionality.</p>
+<h2 id="what-is-deterlab">What is DETERLab?<a class="headerlink" href="#what-is-deterlab" title="Permanent link"></a></h2>
+<p>The DETERLab testbed is a security and education-enhanced version of Emulab. Funded by the National Science Foundation and the Department of Homeland Security, DETERLab is hosted by USC/ISI and UC Berkeley.</p>
+<p>DETERLab (like Emulab) offers user accounts with assorted permissions associated with different experiment groups. Each group can have its own pre-configured experimental environments running on Linux, BSD, Windows, or other operating systems. Users running DETERLab experiments have full control of real hardware and networks running preconfigured software packages.</p>
+<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link"></a></h2>
+<p>The software running DETERLab loads operating system images (low level disk copies) onto free nodes in the testbed, and then reconfigures programmable switches to create VLANs with the newly-imaged nodes connected according to the topology specified by the experiment creator.</p>
+<p>After the system is fully imaged and configured, DETERLab executes specified scripts, unpacks tarballs, and/or installs RPM files according to the experiment's configuration. The end result is a live network of real machines, accessible via the Internet.</p>
+<p>Work in DETERLab is based on projects that include individual experiments and is accomplished either via the browser-based web interface (isi.deterlab.net) or via commandline on the DETERLab nodes.</p>
+<p>To access DETERLab, you need to create an account, which provides credentials for accessing both the web interface and nodes.</p>
+<h2 id="how-do-i-get-a-deterlab-account">How do I get a DETERLab account?<a class="headerlink" href="#how-do-i-get-a-deterlab-account" title="Permanent link"></a></h2>
+<p>You may obtain a DETERLab account by either starting a new project (if you are a PI or instructor) or joining an existing project (if you are a project member or a student).</p>
+<p><strong>If you are the project investigator or instructor,</strong> you must create a project and invite your team members or students to join.</p>
+<p><strong>If you are the member of a team using DETERLab,</strong> your project leader will invite you to join the appropriate DETERLab project.</p>
+<p><strong>If you are a student,</strong> you may not create a project. Your instructor must create the project and, once approved, will give you information for joining the project.</p>
+<p>See Getting Started for more information.</p>
+<h2 id="how-do-i-use-deterlab">How do I use DETERLab?<a class="headerlink" href="#how-do-i-use-deterlab" title="Permanent link"></a></h2>
+<p>In general, once you have a DETERLab account, you follow these steps. The DETERLab Core Guide will walk you through a basic tutorial of these steps.</p>
+<h3 id="1-design-the-topology">1. Design the topology<a class="headerlink" href="#1-design-the-topology" title="Permanent link"></a></h3>
+<p>Every experiment in DETERLab is based on a network topology file written in NS format and saved on the users node. The following is a very basic example:</p>
+<pre><code># This is a simple ns script. Comments start with #.
+set ns [new Simulator]                 
+source tb_compat.tcl
+
+set nodeA [$ns node]
+set nodeB [$ns node]
+set nodeC [$ns node]
+set nodeD [$ns node]
+
+set link0 [$ns duplex-link $nodeB $nodeA 30Mb 50ms DropTail]
+tb-set-link-loss $link0 0.01
+
+set lan0 [$ns make-lan "$nodeD $nodeC $nodeB " 100Mb 0ms]
+
+# Set the OS on a couple.
+tb-set-node-os $nodeA FBSD7-STD
+tb-set-node-os $nodeC Ubuntu1004-STD
+
+$ns rtproto Static
+
+# Go!
+$ns run
+</code></pre>
+<h3 id="2-create-start-and-swap-in-allocate-resources-for-an-experiment">2. Create, start and swap in (allocate resources for) an experiment<a class="headerlink" href="#2-create-start-and-swap-in-allocate-resources-for-an-experiment" title="Permanent link"></a></h3>
+<p>Using your topology file, you start a new experiment via menu options in the DETERLab web interface.</p>
+<p><img alt="Screenshot of the Create an Experiment page in the DETERLab web interface." src="../../img/create_experiment_screenshot.png" title="Screenshot of the Create an Experiment page in the DETERLab web interface." /></p>
+<h3 id="3-generate-traffic-for-your-nodes">3. Generate traffic for your nodes<a class="headerlink" href="#3-generate-traffic-for-your-nodes" title="Permanent link"></a></h3>
+<p>Now you can experiment and start generating traffic for your nodes. We provide a flexible framework to pull together the software you'll need.</p>
+<h3 id="4-view-results-by-accessing-nodes-modify-the-experiment-as-needed">4. View results by accessing nodes, modify the experiment as needed.<a class="headerlink" href="#4-view-results-by-accessing-nodes-modify-the-experiment-as-needed" title="Permanent link"></a></h3>
+<p>Once your experiment has started, you now can access nodes via SSH and conduct your desired experiments in your new environment.</p>
+<p>You may modify aspects of a running experiment through the "Modify experiment" page in the web interface or by making changes to the NS file.</p>
+<h3 id="5-save-your-work-and-swap-out-your-experiment-release-the-resources">5. Save your work and swap out your experiment (release the resources)<a class="headerlink" href="#5-save-your-work-and-swap-out-your-experiment-release-the-resources" title="Permanent link"></a></h3>
+<p>When you are ready to stop working on an experiment but know you will want to work on it again, save your files in specific protected directories and swap-out (via web interface or commandline) to release resources back to the testbed. This helps ensure there are enough resources for all DETERLab users.</p>
+<p>This is just a high-level overview. Go to the Core Guide for a basic hands-on example of using DETERLab Core. </p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../core-guide/" class="btn btn-neutral float-right" title="Core Guide"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../glossary/" class="btn btn-neutral" title="Glossary"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../glossary/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../core-guide/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DETERLab Commands - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "DETERLab Commands";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">DETERLab Commands</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#transport-layers">Transport Layers</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#operational-commands">Operational Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#startexp-start-an-deterlab-experiment">startexp: Start an DETERLab experiment </a></li>
+                
+                    <li><a class="toctree-l4" href="#batchexp-synonym-for-startexp">batchexp: Synonym for startexp </a></li>
+                
+                    <li><a class="toctree-l4" href="#endexp-terminate-an-experiment">endexp: Terminate an experiment </a></li>
+                
+                    <li><a class="toctree-l4" href="#delay_config-change-the-link-shaping-characteristics-for-a-link-or-lan">delay_config: Change the link shaping characteristics for a link or LAN </a></li>
+                
+                    <li><a class="toctree-l4" href="#modexp-modify-experiment">modexp: Modify experiment </a></li>
+                
+                    <li><a class="toctree-l4" href="#swapexp-swap-experiment-in-or-out">swapexp: Swap experiment in or out </a></li>
+                
+                    <li><a class="toctree-l4" href="#create_image-create-a-disk-image-from-a-node">create_image: Create a disk image from a node </a></li>
+                
+                    <li><a class="toctree-l4" href="#eventsys_control-startstoprestart-the-event-system">eventsys_control: Start/Stop/Restart the event system </a></li>
+                
+                    <li><a class="toctree-l4" href="#loghole-downloads-and-manages-an-experiments-log-files">loghole: Downloads and manages an experiment's log files </a></li>
+                
+                    <li><a class="toctree-l4" href="#os_load-reload-disks-on-selected-nodes-or-all-nodes-in-an-experiment">os_load: Reload disks on selected nodes or all nodes in an experiment </a></li>
+                
+                    <li><a class="toctree-l4" href="#portstats-get-portstats-from-the-switches">portstats: Get portstats from the switches </a></li>
+                
+                    <li><a class="toctree-l4" href="#node_reboot-reboot-selected-nodes-or-all-nodes-in-an-experiment">node_reboot: Reboot selected nodes or all nodes in an experiment </a></li>
+                
+                    <li><a class="toctree-l4" href="#expwait-wait-for-experiment-to-reach-a-state">expwait: Wait for experiment to reach a state </a></li>
+                
+            
+                <li class="toctree-l3"><a href="#informational-commands">Informational Commands</a></li>
+                
+                    <li><a class="toctree-l4" href="#node_list-print-physical-mapping-of-nodes-in-an-experiment">node_list: Print physical mapping of nodes in an experiment </a></li>
+                
+                    <li><a class="toctree-l4" href="#expinfo-get-information-about-an-experiment">expinfo: Get information about an experiment </a></li>
+                
+                    <li><a class="toctree-l4" href="#node_avail-print-free-node-counts">node_avail: Print free node counts </a></li>
+                
+                    <li><a class="toctree-l4" href="#node_avail_list-print-physical-node_ids-of-available-nodes">node_avail_list: Print physical node_ids of available nodes </a></li>
+                
+                    <li><a class="toctree-l4" href="#nscheck-check-and-ns-file-for-parser-errors">nscheck: Check and NS file for parser errors </a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core Reference &raquo;</li>
+        
+      
+    
+    <li>DETERLab Commands</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>The following commands are available from the commandline on <code>users.isi.deterlab.net</code>. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Commands should be pre-pended with the path: <code>/usr/testbed/bin</code>.</p>
+</div>
+<p>For example, to start an experiment, you would use:
+<code>/usr/testbed/bin/startexp [options]</code></p>
+<h2 id="transport-layers">Transport Layers<a class="headerlink" href="#transport-layers" title="Permanent link"></a></h2>
+<p>The DETERLab XMLRPC server can be accessed via two different transport layers: SSH and SSL.</p>
+<p><strong>How to use SSH keys</strong>
+Follow <a href="../../core/DETERSSH/">these directions</a> if you are unfamiliar with using SSH.</p>
+<p><strong>How to use SSL</strong>
+You need to request a certificate from the <a href="https://www.isi.deterlab.net/index.php3">DETERLab website</a> in order to use the SSL based server. </p>
+<ul>
+<li>Click the ''My DETERLab'' menu item in the navbar, click the ''Profile'' tab on the page and then click on the ''Generate SSL Certificate'' link. </li>
+<li>Enter a passphrase to use to encrypt the private key. </li>
+<li>Once the key has been created, you will be given a link to download a text version (in PEM format). Simply provide this certificate as an input to your SSL client. </li>
+</ul>
+<h2 id="operational-commands">Operational Commands<a class="headerlink" href="#operational-commands" title="Permanent link"></a></h2>
+<h3 id="startexp-start-an-deterlab-experiment"><code>startexp</code>: Start an DETERLab experiment <a name="startexp"></a><a class="headerlink" href="#startexp-start-an-deterlab-experiment" title="Permanent link"></a></h3>
+<pre><code>startexp [-q] [-i [-w]] [-f] [-N] [-E description] [-g gid]
+         [-S reason] [-L reason] [-a &lt;time&gt;] [-l &lt;time&gt;]
+         -p &lt;pid&gt; -e &lt;eid&gt; &lt;nsfile&gt;
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-i</code> Swapin immediately; by default, the experiment is batched.</p>
+<p><code>-w</code> Wait for non-batchmode experiment to preload or swapin.</p>
+<p><code>-f</code> Preload experiment (do not swapin or queue yet).</p>
+<p><code>-q</code> Be less verbose.</p>
+<p><code>-S</code> Experiment cannot be swapped; must provide reason.</p>
+<p><code>-L</code> Experiment cannot be IDLE swapped; must provide reason.</p>
+<p><code>-a</code> Auto swapout NN minutes after experiment is swapped in.</p>
+<p><code>-l</code> Auto swapout NN minutes after experiment goes idle.</p>
+<p><code>-E</code> A concise sentence describing your experiment.</p>
+<p><code>-g</code> The subgroup in which to create the experiment.</p>
+<p><code>-p</code> The project in which to create the experiment.</p>
+<p><code>-e</code> The experiment name (unique, alphanumeric, no blanks).</p>
+<p><code>-N</code> Suppress most email to the user and testbed-ops.</p>
+<p><code>nsfile</code> NS file to parse for experiment</p>
+<hr />
+<h3 id="batchexp-synonym-for-startexp"><code>batchexp</code>: Synonym for startexp <a name="batchexp"></a><a class="headerlink" href="#batchexp-synonym-for-startexp" title="Permanent link"></a></h3>
+<p>This is a legacy command. See command description for startexp.</p>
+<hr />
+<h3 id="endexp-terminate-an-experiment"><code>endexp</code>: Terminate an experiment <a name="endexp"></a><a class="headerlink" href="#endexp-terminate-an-experiment" title="Permanent link"></a></h3>
+<pre><code>endexp [-w] [-N] -e pid,eid
+endexp [-w] [-N] pid eid
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-w</code>  Wait for experiment to finish terminating.</p>
+<p><code>-e</code>  Project and Experiment ID.</p>
+<p><code>-N</code>  Suppress most email to the user and testbed-ops.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li><strong>Use with caution!</strong> This will tear down your experiment and you will not be able to swap it back in.</li>
+<li>By default, <code>endexp</code> runs in the background, sending you email when the transition has completed. Use the <code>-w</code> option to wait in the foreground, returning exit status. Email is still sent.</li>
+<li>The experiment may be terminated when it is currently swapped in ''or'' swapped out.</li>
+</ul>
+</div>
+<hr />
+<h3 id="delay_config-change-the-link-shaping-characteristics-for-a-link-or-lan"><code>delay_config</code>: Change the link shaping characteristics for a link or LAN <a name="delay_config"></a><a class="headerlink" href="#delay_config-change-the-link-shaping-characteristics-for-a-link-or-lan" title="Permanent link"></a></h3>
+<pre><code>delay_config [options] -e pid,eid link PARAM#value ...
+delay_config [options] pid eid link PARAM#value ...
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-m</code> Modify virtual experiment as well as current state.</p>
+<p><code>-s</code> Select the source of the link to change.</p>
+<p><code>-e</code> Project and Experiment ID to operate on.</p>
+<p><code>link</code> Name of link from your NS file (ie: <code>link1</code>).</p>
+<p><strong>Parameters:</strong></p>
+<p><code>BANDWIDTH#NNN</code> N#bandwidth (10-100000 Kbits per second)</p>
+<p><code>PLR#NNN</code> N#lossrate (0 &lt;# plr &lt; 1)</p>
+<p><code>DELAY#NNN</code> N#delay (one-way delay in milliseconds &gt; 0)</p>
+<p><code>LIMIT#NNN</code> The queue size in bytes or packets</p>
+<p><code>QUEUE-IN-BYTES#N</code> 0 means in packets, 1 means in bytes</p>
+<p><strong>RED/GRED Options:</strong> (only if link was specified as RED/GRED)</p>
+<p><code>MAXTHRESH#NNN</code> Maximum threshold for the average Q size</p>
+<p><code>THRESH#NNN</code> Minimum threshold for the average Q size</p>
+<p><code>LINTERM#NNN</code> Packet dropping probability</p>
+<p><code>Q_WEIGHT#NNN</code> For calculating the average queue size</p>
+<hr />
+<h3 id="modexp-modify-experiment"><code>modexp</code>: Modify experiment <a name="modexp"></a><a class="headerlink" href="#modexp-modify-experiment" title="Permanent link"></a></h3>
+<pre><code>modexp [-r] [-s] [-w] [-N] -e pid,eid nsfile
+modexp [-r] [-s] [-w] [-N] pid eid nsfile
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-w</code> Wait for experiment to finish swapping.</p>
+<p><code>-e</code> Project and Experiment ID.</p>
+<p><code>-r</code> Reboot nodes (when experiment is active).</p>
+<p><code>-s</code> Restart event scheduler (when experiment is active).</p>
+<p><code>-N</code> Suppress most email to the user and testbed-ops</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>By default, <code>modexp</code> runs in the background, sending you email when the transition has completed. Use the <code>-w</code> option to wait in the foreground, returning exit status. Email is still sent.</li>
+<li>The experiment can be either swapped in ''or'' swapped out.<ul>
+<li>If the experiment is swapped out, the new NS file replaces the existing NS file (the virtual topology is updated). </li>
+<li>If the experiment is swapped in (active), the physical topology is also updated, subject to the <code>-r</code> and <code>-s</code> options above.</li>
+</ul>
+</li>
+</ul>
+</div>
+<hr />
+<h3 id="swapexp-swap-experiment-in-or-out"><code>swapexp</code>: Swap experiment in or out <a name="swapexp"></a><a class="headerlink" href="#swapexp-swap-experiment-in-or-out" title="Permanent link"></a></h3>
+<pre><code>swapexp -e pid,eid in|out
+swapexp pid eid in|out
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-w</code> Wait for experiment to finish swapping.</p>
+<p><code>-e</code> Project and Experiment ID.</p>
+<p><code>-N</code> Suppress most email to the user and testbed-ops.</p>
+<p><code>in</code> Swap experiment in  (must currently be swapped out).</p>
+<p><code>out</code> Swap experiment out (must currently be swapped in)</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>By default, <code>swapexp</code> runs in the background, sending you email when the transition has completed. Use the <code>-w</code> option to wait in the foreground, returning exit status. Email is still sent.</li>
+</ul>
+</div>
+<hr />
+<h3 id="create_image-create-a-disk-image-from-a-node"><code>create_image</code>: Create a disk image from a node <a name="create_image"></a><a class="headerlink" href="#create_image-create-a-disk-image-from-a-node" title="Permanent link"></a></h3>
+<pre><code>create_image [options] imageid node
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-w</code> Wait for image to be created.</p>
+<p><code>-p</code> Project ID of imageid.</p>
+<p><code>imageid</code> Name of the image.</p>
+<p><code>node</code> Node to create image from (pcXXX).</p>
+<p><strong>Example:</strong></p>
+<p>The following command creates or re-creates an image for a particular project:</p>
+<pre><code>create_image -p &lt;proj&gt; &lt;imageid&gt; &lt;node&gt;
+</code></pre>
+
+<hr />
+<h3 id="eventsys_control-startstoprestart-the-event-system"><code>eventsys_control</code>: Start/Stop/Restart the event system <a name="eventsys_control"></a><a class="headerlink" href="#eventsys_control-startstoprestart-the-event-system" title="Permanent link"></a></h3>
+<pre><code>eventsys_control -e pid,eid start|stop|replay
+eventsys_control pid eid start|stop|replay
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-e</code> Project and Experiment ID.</p>
+<p><code>stop</code> Stop the event scheduler.</p>
+<p><code>start</code> Start the event stream from time index 0.</p>
+<p><code>replay</code> Replay the event stream from time index 0</p>
+<hr />
+<h3 id="loghole-downloads-and-manages-an-experiments-log-files"><code>loghole</code>: Downloads and manages an experiment's log files <a name="loghole"></a><a class="headerlink" href="#loghole-downloads-and-manages-an-experiments-log-files" title="Permanent link"></a></h3>
+<p>This utility downloads log files from certain directories on the experimental nodes (e.g. <code>/local/logs</code>) to the DETERLab <code>users</code> machine. After downloading, it can also be used to produce and manage archives of the log files.</p>
+<p>Using this utility to manage an experiment's log files is encouraged because it will transfer the logs in a network-friendly manner and is already integrated with the rest of DETERLab. For example, any programs executed using the DETERLab event-system will have their standard output/error automatically placed in the <code>/local/logs</code> directory. The tool can also be used to preserve multiple trials of an experiment by producing and managing zip archives of the logs. </p>
+<pre><code>loghole [-hVdqva] [-e pid/eid] [-s server] [-P port] action [...]
+
+loghole sync [-nPs] [-r remotedir] [-l localdir] [node1 node2 ...]
+
+loghole validate
+
+loghole  archive [-k (i-delete|space-is-needed)] [-a days] [-c comment]
+    [-d] [archive-name]
+
+loghole change [-k (i-delete|space-is-needed)] [-a days]  [-c  comment]
+    archive-name1 [archive-name2 ...]
+
+loghole list [-O1!Xo] [-m atmost] [-s megabytes]
+
+loghole show [archive-name]
+
+loghole clean [-fne] [node1 node2 ...]
+
+loghole gc [-n] [-m atmost] [-s megabytes]
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-h, --help</code> Print  the  usage message for the loghole utility as a whole or, if an action is given, the usage message for that action.</p>
+<p><code>-V, --version</code> Print out version information and exit.</p>
+<p><code>-d, --debug</code> Output debugging messages.</p>
+<p><code>-q, --quiet</code> Decrease the level of verbosity, this is subtractive, so multiple uses of this option will make the utility quieter and quieter. The default level of verbosity is human-readable, below that is machine-readable, and below that is silent. For example, the default output from the "list" action looks like:</p>
+<pre><code>  [ ] foobar.1.zip   10/15
+  [!] foobar.0.zip   10/13
+</code></pre>
+
+<p>Using a single <code>-q</code> option changes the output to look like: </p>
+<pre><code>          foobar.1.zip
+          foobar.0.zip
+</code></pre>
+
+<p><code>-e, --experiment#PID/EID</code> Specify the experiment(s) to operate on using the Project ID (or project name) and Experiment ID (or experiment name).  If multiple <code>-e</code> options are  given,  the  action will apply to all of them.  This option overrides the default behavior of inferring the experiment  from (Note: this sentence was cut off in the Emulab documentation).</p>
+<p><strong>Examples:</strong></p>
+<p>To synchronize the log directory for experiment <code>neptune/myexp</code> with the log holes on the experimental nodes:</p>
+<pre><code>[vmars@users ~] loghole -e neptune/myexp sync
+</code></pre>
+
+<p>To archive the newly recovered logs and print out just the name of the new log file:</p>
+<pre><code>[vmars@users ~] loghole -e neptune/myexp -q archive
+</code></pre>
+
+<p><strong>More information:</strong></p>
+<p>To see the detailed documentation of <code>loghole</code>, view the man page on <code>users</code>:</p>
+<pre><code>loghole man
+</code></pre>
+
+<hr />
+<h3 id="os_load-reload-disks-on-selected-nodes-or-all-nodes-in-an-experiment"><code>os_load</code>: Reload disks on selected nodes or all nodes in an experiment <a name="os_load"></a><a class="headerlink" href="#os_load-reload-disks-on-selected-nodes-or-all-nodes-in-an-experiment" title="Permanent link"></a></h3>
+<pre><code>os_load [options] node [node ...]
+os_load [options] -e pid,eid
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-i</code> Specify image name; otherwise load default image.</p>
+<p><code>-p</code> Specify project for finding image name (<code>-i</code>).</p>
+<p><code>-s</code> Do <em>not</em> wait for nodes to finish reloading.</p>
+<p><code>-m</code> Specify internal image id (instead of <code>-i</code> and <code>-p</code>).</p>
+<p><code>-r</code> Do <em>not</em> reboot nodes; do that yourself.</p>
+<p><code>-e</code> Reboot all nodes in an experiment.</p>
+<p><code>node</code> Node to reboot (pcXXX).</p>
+<hr />
+<h3 id="portstats-get-portstats-from-the-switches"><code>portstats</code>: Get portstats from the switches <a name="portstats"></a><a class="headerlink" href="#portstats-get-portstats-from-the-switches" title="Permanent link"></a></h3>
+<pre><code>portstats &lt;-p | pid eid&gt; [vname ...] [vname:port ...]
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-e</code> Show only error counters.</p>
+<p><code>-a</code> Show all stats.</p>
+<p><code>-z</code> Zero out counts for selected counters after printing.</p>
+<p><code>-q</code> Quiet: don't actually print counts - useful with <code>-z</code>.</p>
+<p><code>-c</code> Print absolute, rather than relative, counts.</p>
+<p><code>-p</code> The machines given are physical, not virtual, node IDs. <strong>No pid and eid should be given with this option.</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If only the pid and eid are given, this command prints out information about all ports in the experiment. Otherwise, output is limited to the nodes and/or ports given.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>Statistics are reported from the switch's perspective. This means that ''In'' packets are those sent FROM the node, and ''Out'' packets are those sent TO the node.</li>
+<li>In the output, packets described as 'NUnicast' or 'NUcast' are non-unicast (broadcast or multicast) packets.</li>
+</ul>
+</div>
+<hr />
+<h3 id="node_reboot-reboot-selected-nodes-or-all-nodes-in-an-experiment"><code>node_reboot</code>: Reboot selected nodes or all nodes in an experiment <a name="node_reboot"></a><a class="headerlink" href="#node_reboot-reboot-selected-nodes-or-all-nodes-in-an-experiment" title="Permanent link"></a></h3>
+<p>Use this if you need to powercycle a node.</p>
+<pre><code>node_reboot [options] node [node ...]
+node_reboot [options] -e pid,eid
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-w</code> Wait for nodes is come back up.</p>
+<p><code>-c</code> Reconfigure nodes instead of rebooting.</p>
+<p><code>-f</code> Power cycle nodes (skip reboot!)</p>
+<p><code>-e</code> Reboot all nodes in an experiment.</p>
+<p><code>node</code> Node to reboot (pcXXX).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>You may provide more than one node on the command line. </li>
+<li>Be aware that you may power cycle only nodes in projects that you are member of. </li>
+<li><code>node_reboot</code> does its very best to perform a clean reboot before resorting to cycling the power to the node. This is to prevent the damage that can occur from constant power cycling over a long period of time. For this reason, <code>node_reboot</code> may delay a minute or two if it detects that the machine is still responsive to network transmission. In any event, please try to reboot your nodes first (see above). </li>
+<li>You may reboot all the nodes in an experiment by using the <code>-e</code> option to specify the project and experiment names. This option is provided as a shorthand method for rebooting large groups of nodes. </li>
+</ul>
+</div>
+<p><strong>Example:</strong></p>
+<p>The following command will reboot all of the nodes reserved in the "multicast" experiment in the "testbed" project. </p>
+<pre><code>    node_reboot -e testbed,multicast
+</code></pre>
+
+<hr />
+<h3 id="expwait-wait-for-experiment-to-reach-a-state"><code>expwait</code>: Wait for experiment to reach a state <a name="expwait"></a><a class="headerlink" href="#expwait-wait-for-experiment-to-reach-a-state" title="Permanent link"></a></h3>
+<pre><code>expwait [-t timeout] -e pid,eid state
+expwait [-t timeout] pid eid state
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-e</code> Project and Experiment ID in format <code>&lt;projectID&gt;/&lt;experimentID&gt;</code>.</p>
+<p><code>-t</code> Maximum time to wait (in seconds).</p>
+<h2 id="informational-commands">Informational Commands<a class="headerlink" href="#informational-commands" title="Permanent link"></a></h2>
+<h3 id="node_list-print-physical-mapping-of-nodes-in-an-experiment"><code>node_list</code>: Print physical mapping of nodes in an experiment <a name="node_list"></a><a class="headerlink" href="#node_list-print-physical-mapping-of-nodes-in-an-experiment" title="Permanent link"></a></h3>
+<pre><code>node_list [options] -e pid,eid
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-e</code> Project and Experiment ID to list.</p>
+<p><code>-p</code> Print physical (DETER database) names (default).</p>
+<p><code>-P</code> Like <code>-p</code>, but include node type.</p>
+<p><code>-v</code> Print virtual (experiment assigned) names.</p>
+<p><code>-h</code> Print physical name of host for virtual nodes.</p>
+<p><code>-c</code> Print container VMs and physical nodes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This command now queries the XMLRPC interface as it used to do. Users who had been using <code>script_wrapper.py node_list</code> to access this function should use <code>/usr/testbed/bin/node_list</code> instead.</li>
+<li>The <code>-c</code> flag that outputs containerized node names has been modified in two ways. <ul>
+<li>Names are produced without the DNS qualifiers as node names provided by other options of this command are. A node in a VM container named <code>a</code> will be reported as <code>a</code> not <code>a.exp.proj</code> as earlier versions of this feature did.</li>
+<li>This option now reports embedded_pnode containers as well (physical machines). If no containers VMs are present in an experiment, <code>node_list -c</code> and <code>node_list -v</code> produce identical output.</li>
+</ul>
+</li>
+<li>The <code>node_list</code> command is now available as <code>node_summary</code>.</li>
+</ul>
+</div>
+<hr />
+<h3 id="expinfo-get-information-about-an-experiment"><code>expinfo</code>: Get information about an experiment <a name="expinfo"></a><a class="headerlink" href="#expinfo-get-information-about-an-experiment" title="Permanent link"></a></h3>
+<pre><code>expinfo [-n] [-m] [-l] [-d] [-a] -e pid,eid
+expinfo [-n] [-m] [-l] [-d] [-a] pid eid
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-e</code> Project and Experiment ID.</p>
+<p><code>-n</code> Show node information.</p>
+<p><code>-m</code> Show node mapping.</p>
+<p><code>-l</code> Show link information.</p>
+<p><code>-a</code> Show all of the above.</p>
+<hr />
+<h3 id="node_avail-print-free-node-counts"><code>node_avail</code>: Print free node counts <a name="node_avail"></a><a class="headerlink" href="#node_avail-print-free-node-counts" title="Permanent link"></a></h3>
+<pre><code>node_avail [-p project] [-c class] [-t type]
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-p project</code> Specify project credentials for node types that are restricted.</p>
+<p><code>-c class</code> The node class (Default: pc).</p>
+<p><code>-t type</code> The node type.</p>
+<p><strong>Example:</strong></p>
+<p>The following command will print free nodes on pc850 nodes:</p>
+<pre><code>    $ node_avail -t pc850
+</code></pre>
+
+<hr />
+<h3 id="node_avail_list-print-physical-node_ids-of-available-nodes"><code>node_avail_list</code>: Print physical node_ids of available nodes <a name="node_avail_list"></a><a class="headerlink" href="#node_avail_list-print-physical-node_ids-of-available-nodes" title="Permanent link"></a></h3>
+<pre><code>node_avail_list [-p project] [-c class] [-t type] [-n nodes]
+</code></pre>
+
+<p><strong>Options:</strong></p>
+<p><code>-p project</code> Specify project credentials for node types that are restricted.</p>
+<p><code>-c class</code> The node class (Default: pc).</p>
+<p><code>-t type</code> The node type.</p>
+<p><code>-n pcX,pcY,...,pcZ</code> A list of physical node_ids.</p>
+<p><strong>Example:</strong></p>
+<p>The following command will print the physical node_ids for available pc850 nodes:</p>
+<pre><code>    $ node_avail_list -t pc850
+</code></pre>
+
+<hr />
+<h3 id="nscheck-check-and-ns-file-for-parser-errors"><code>nscheck</code>: Check and NS file for parser errors <a name="nscheck"></a><a class="headerlink" href="#nscheck-check-and-ns-file-for-parser-errors" title="Permanent link"></a></h3>
+<pre><code>nscheck nsfile
+</code></pre>
+
+<p><strong>Option:</strong></p>
+<p><code>nsfile</code> Path to NS file you to wish check for parse errors.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../ns-commands/" class="btn btn-neutral float-right" title="NS Commands Extensions"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../sharing/" class="btn btn-neutral" title="Using Shared Materials"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../sharing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../ns-commands/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Configuring a MAGI Agent at Runtime - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuring a MAGI Agent at Runtime";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Configuring a MAGI Agent at Runtime</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#setting-agent-configuration">Setting Agent Configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#confirming-valid-configuration">Confirming Valid Configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#triggers-and-event-stream-sequence-points">Triggers and Event Stream Sequence Points</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Orchestrator &raquo;</li>
+        
+      
+    
+    <li>Configuring a MAGI Agent at Runtime</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>In <a href="/orchestrator/writing-agents/">Writing MAGI Agents</a>, you saw how to create a basic agent. The sample agent created a single file on a test node. This document will explain how to use configuration in the AAL file to configure an agent at runtime.</p>
+<h2 id="setting-agent-configuration">Setting Agent Configuration<a class="headerlink" href="#setting-agent-configuration" title="Permanent link"></a></h2>
+<p>This document will expand the sample code of our <code>FileCreator</code> example. For reference, here is the agent code:</p>
+<pre><code>  from magi.util.agent import DispatchAgent, agentmethod
+  from magi.util.processAgent import initializeProcessAgent
+
+  # The FileCreator agent implementation, derived from DispatchAgent.
+  class FileCreator(DispatchAgent):
+      def __init__(self):
+          DispatchAgent.__init__(self)
+          self.filename = '/tmp/newfile'
+
+      # A single method which creates the file named by self.filename.
+      # (The @agentmethod() decorator is not required, but is encouraged.
+      #  it does nothing of substance now, but may in the future.)
+      @agentmethod()
+      def createFile(self, msg):
+          **Create a file on the host.**
+          # open and immediately close the file to create it.
+          open(self.filename, 'w').close()
+
+  # the getAgent() method must be defined somewhere for all agents.
+  # The Magi daemon invokes this mehod to get a reference to an
+  # agent. It uses this reference to run and interact with an agent
+  # instance.
+  def getAgent():
+      agent = FileCreator()
+      return agent
+
+  # In case the agent is run as a separate process, we need to
+  # create an instance of the agent, initialize the required
+  # parameters based on the received arguments, and then call the
+  # run method defined in DispatchAgent.
+  if __name__ &quot;__main__&quot;:
+      agent = FileCreator()
+      initializeProcessAgent(agent, sys.argv)
+      agent.run()
+
+</code></pre>
+
+<p>If we reset the <code>self.filename</code> variable in the agent <em>before</em> invoking <code>createFile</code> in the AAL, we can change the file that is created. </p>
+<p>The base class <code>DispatchAgent</code> itself is derived from a class that will let us do this. The Agent class implements two methods: </p>
+<ul>
+<li><code>setConfiguration</code> -  Sets the passed parameters as class instance variables.</li>
+<li><code>confirmConfiguration</code> - This method is meant to be re-implemented in your agent if you need confirm the variables set are valid for your agent.</li>
+</ul>
+<p>To set the <code>self.filename</code> variable in the FileCreator Agents, we modify the AAL to include a call to the Agent method <code>setConfiguration</code>, passing in a list of key-value pairs. (In the following example, it is a single key-value pair.)</p>
+<pre><code>- type: event
+  agent: myFileCreators
+  method: setConfiguration
+  args:
+     filename: /tmp/myCreatedFile
+
+</code></pre>
+
+<p>Note that you do not specify self when referencing an Agent variable. We make sure to place this event in the AAL event stream prior to the <code>createFile</code> event. The complete AAL file is:</p>
+<pre><code>  streamstarts: [main]
+
+  groups:
+      myFileCreatorGroup: [NODES]
+
+  agents:
+      myFileCreators:
+          group: myFileCreatorGroup
+          # (note: the &quot;PATH&quot; argument is the agent directory. The
+          # directory must contain an IDL and agent implementation. It must
+          # also contain a *__init__.py* file, which is required
+          # for it to be considered as a valid python package.)
+          path: PATH/FileCreator
+          execargs: []
+
+  eventstreams:
+      main:
+          - type: event
+            agent: myFileCreators
+            method: setConfiguration
+            args:
+               filename: /tmp/myCreatedFile
+
+          - type: event
+            agent: myFileCreators
+            method: createFile
+            args: {}
+
+</code></pre>
+
+<p>Now when we run the Agent again (possibly using <code>agentTool</code> to restart the Magi daemons), we see the following events:</p>
+<pre><code>  $ magi_orchestrator.py --project $project --experiment $experiment --events ./myEvents.aal -o run.log -v
+  stream initialization : sent : joinGroup myFileCreatorGroup --&gt; __ALL__
+  stream initialization : done : trigger GroupBuildDone myFileCreatorGroup  complete.
+  stream initialization : sent : loadAgent myFileCreators --&gt; myFileCreatorGroup
+  stream initialization : done : trigger AgentLoadDone  myFileCreators complete.
+  stream initialization : DONE : complete.
+  stream main           : sent : setConfiguration(['/tmp/myCreatedFile ... ) --&gt; myFileCreatorGroup
+  stream main           : sent : createFile(None) --&gt; myFileCreatorGroup
+  stream main           : DONE : complete.
+  $ ssh myNode.myExperiment.myGroup ls -l /tmp/myCreatedFile
+  -rw-r--r-- 1 root root 0 Mar  5 13:55 /tmp/myCreatedFile
+  $
+</code></pre>
+
+<p>And we see that our specified file, <strong>/tmp/myCreatedFile</strong> was created.</p>
+<h2 id="confirming-valid-configuration">Confirming Valid Configuration<a class="headerlink" href="#confirming-valid-configuration" title="Permanent link"></a></h2>
+<p>This works well, but the input to the Agent is free-form. What if the user gives invalid input, like the wrong type or data that is not in a valid range? This is where the Agent <code>confirmConfiguration</code> method comes into play.</p>
+<p><code>confirmConfiguration</code> should be written for any Agent that wants to validate its state. It gets invoked in the AAL file after the user invokes <code>setConfiguration</code>.</p>
+<p><strong>Note:</strong> The concept of an Agent confirming user input will change in future releases of MAGI. The Orchestrator (or other MAGI/Montage components) will use the interface specification in the Agent’s IDL file to ensure the input to the agent is valid.</p>
+<p>Suppose our sample agent wanted to allow the user to create a file in only the <strong>/local</strong> directory on the host machine. The <code>confirmConfiguration</code> method that does this is:</p>
+<pre><code>  def confirmConfiguration(self):
+      **Make sure the user input is a string value and starts with
+      &quot;/local&quot;.**
+      if not isinstance(self.filename, (str, unicode)):
+          return False
+
+      if not self.filename.startswith('/local'):
+          return False
+
+      return True
+</code></pre>
+
+<p>When we add this method to our sample Agent, and run the experiment with the existing AAL file, which contains configuration that does not start with <strong>/local</strong>, the Orchestrator gives us an error while executing the event stream:</p>
+<pre><code>  $ magi_orchestrator.py --project $project --experiment $experiment --events ./myEvents.aal -o run.log -v
+  stream initialization : sent : joinGroup myFileCreatorGroup --&gt; __ALL__
+  stream initialization : done : trigger GroupBuildDone myFileCreatorGroup  complete.
+  stream initialization : sent : loadAgent myFileCreators --&gt; myFileCreatorGroup
+  stream initialization : done : trigger AgentLoadDone  myFileCreators complete.
+  stream initialization : DONE : complete.
+  stream main           : sent : setConfiguration(['/tmp/myCreatedFile ... ) --&gt; myFileCreatorGroup
+  stream unknown        : exit : method setConfiguration returned False on agent unknown in group unknown and on node(s): moat.
+  $
+</code></pre>
+
+<p>The Orchestrator exited with an error, as it should.</p>
+<p>If we now modify the AAL file to include a valid configuration, the Orchestrator succeeds. The updated AAL fragment is:</p>
+<pre><code>  - type: event
+    agent: myFileCreators
+    method: setConfiguration
+    args:
+       filename: /local/myGreatFile
+</code></pre>
+
+<p>When we run the Orchestrator with the modified AAL, it succeeds as the agent configuration is now valid:</p>
+<pre><code>  $ magi_orchestrator.py --project $project --experiment $experiment --events ./myEvents.aal -o run.log -v
+  stream initialization : sent : joinGroup myFileCreatorGroup --&gt; __ALL__
+  stream initialization : done : trigger GroupBuildDone myFileCreatorGroup  complete.
+  stream initialization : sent : loadAgent myFileCreators --&gt; myFileCreatorGroup
+  stream initialization : done : trigger AgentLoadDone  myFileCreators complete.
+  stream initialization : DONE : complete.
+  stream main           : sent : setConfiguration(['/local/myGreatFile ... ) --&gt; myFileCreatorGroup
+  stream main           : sent : createFile(None) --&gt; myFileCreatorGroup
+  stream main           : DONE : complete.
+  $
+</code></pre>
+
+<p>And the “valid” file has been created on the machine:</p>
+<pre><code>  $ ssh myNode.myExperiment.myGroup ls -l /local
+  total 4
+  drwxrwxr-x 2 glawler Deter 4096 Mar  5 08:35 logs
+  -rw-r--r-- 1 root    root     0 Mar  5 14:33 myGreatFile
+  $
+
+</code></pre>
+
+<h2 id="triggers-and-event-stream-sequence-points">Triggers and Event Stream Sequence Points<a class="headerlink" href="#triggers-and-event-stream-sequence-points" title="Permanent link"></a></h2>
+<p>If you run the AAL and Agent code above, you may see that it does not actually work. One small needed detail has been left out of the AAL file. Normally the Orchestrator will run through the events in the AAL as fast is it can. If we used the event streams in the AAL file as it now stands:</p>
+<pre><code>  eventstreams:
+      main:
+          - type: event
+            agent: myFileCreators
+            method: setConfiguration
+            args:
+                filename: /local/myGreatFile
+
+          - type: event
+            agent: myFileCreators
+            method: createFile
+            args: {}
+</code></pre>
+
+<p>The Orchestrator will send two messages to the Agents in rapid succession: the <code>setConfiguration</code> and <code>createFile</code> event messages. If the <code>setConfiguration</code> call returns <em>False</em>, which it will given invalid input, the Orchestrator will not receive the message because would have sent the messages and exited. </p>
+<p>Therefore, we need a way to tell the Orchestrator to wait for a response from <code>setConfiguration</code> before continuing. This is done by inserting a small pause, using a trigger which times out after 3 seconds:</p>
+<pre><code>  # Wait 3 seconds for a response to setConfiguration
+  # timeout value is in milliseconds.
+  - type: trigger
+    triggers: [{timeout: 3000}]
+</code></pre>
+
+<p>If we insert this trigger between <code>setConfiguration</code> and <code>createFile</code>, the Orchestrator will receive the error message from the agent and exit on error.</p>
+<p>The full AAL file now is:</p>
+<pre><code>  streamstarts: [main]
+
+  groups:
+      myFileCreatorGroup: [witch, moat]
+
+  agents:
+      myFileCreators:
+          group: myFileCreatorGroup
+          path: PATH/FileCreator
+          execargs: []
+
+  eventstreams:
+      main:
+          - type: event
+            agent: myFileCreators
+            method: setConfiguration
+            args:
+                filename: /local/myGreatFile
+
+          - type: trigger
+            triggers: [{timeout: 3000}]
+
+          - type: event
+            agent: myFileCreators
+            method: createFile
+            args: {}
+
+</code></pre>
+
+<p>But how do we know that waiting for 3 seconds is a long enough time to wait? Wouldn’t it be better if we could tell the Orchestrator to wait for a response from the agent before continuing? </p>
+<p>We can do this using a named trigger. We add a trigger statement to the <code>setConfiguration</code> event clause and modify the trigger to wait for that event before continuing to process the event stream:</p>
+<pre><code>- type: event
+  agent: myFileCreators
+  trigger: configDone
+  method: setConfiguration
+  args:
+      filename: /local/myGreatFile
+
+# Wait for the event &quot;configDone&quot; from all fileCreator agents.
+- type: trigger
+  triggers: [{event: configDone, agent: myFileCreators}]
+
+</code></pre>
+
+<p>Now when <code>setConfiguration</code> is called on the Agent, the daemon will send a trigger with the event <code>configDone</code> after the method has returned. With this modified trigger, the Orchestrator will wait for the trigger event <code>configDone</code> before processing the next event in the event stream.</p>
+<p>Here is the Orchestrator output now. Note that <code>setConfiguration</code> now “fires” a trigger (sends a trigger) and the Orchestrator waits until the trigger is resolved before moving on.</p>
+<pre><code>  $ magi_orchestrator.py --project $project --experiment $experiment --events ./myEvents.aal -o run.log -v
+  stream initialization : sent : joinGroup myFileCreatorGroup --&gt; __ALL__
+  stream initialization : done : trigger GroupBuildDone myFileCreatorGroup  complete.
+  stream initialization : sent : loadAgent myFileCreators --&gt; myFileCreatorGroup
+  stream initialization : done : trigger AgentLoadDone  myFileCreators complete.
+  stream initialization : DONE : complete.
+  stream main           : sent : setConfiguration(['/local/myGreatFile ... ) --&gt; myFileCreatorGroup  (fires trigger: configDone)
+  stream main           : done : trigger configDone  complete.
+  stream main           : sent : createFile(None) --&gt; myFileCreatorGroup
+  stream main           : DONE : complete.
+  $
+</code></pre>
+
+<p>For reference, the new agent implementation, AAL file, and IDL, file can be downloaded as a tar file here: <a href="/downloads/FileCreator-withconfig.tbz">FileCreator-withconfig.tbz</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../orchestrator-reference/" class="btn btn-neutral float-right" title="Orchestrator Reference"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../writing-agents/" class="btn btn-neutral" title="Writing Your Own MAGI Agents"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../writing-agents/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../orchestrator-reference/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,944 +1,282 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>http://deter-project.github.io/</loc>
-    <lastmod>2015-11-12T07:54:14-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CoreQuickstart/</loc>
-    <lastmod>2015-11-12T07:54:14-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CoreGuide/</loc>
-    <lastmod>2015-11-12T07:54:14-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/SignUp/</loc>
-    <lastmod>2015-11-12T07:54:14-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Topologies/</loc>
-    <lastmod>2015-11-12T07:54:14-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/UsingNodes/</loc>
-    <lastmod>2015-11-12T07:54:14-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiStart/</loc>
-    <lastmod>2015-11-12T07:54:14-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/AnonymityModule/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/BatchStats/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CachePoisonExample/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/BotnetExample/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CamelCase/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassResourceLimits/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CentOSImage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassSupport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Classes/CodeChanges/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Classes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassesFall2010/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassesFall2011/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassesFall2012/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassesSpring2011/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassesSpring2012/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClassesSpring2013/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClickImage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ClonezillaInfo/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ConnectTeachers/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Contact/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ContainersQuickstart/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ContainersGuide/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ContainersReference/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CoreReference/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CourseSetup/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CurrentlyProposedLanguage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/BnFnotation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/CustomOS/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DETERIntro/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DETERSSH/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DETERTopology/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DellSerialConsole/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Deter/NewExDesc/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Deter/Web/Beginners/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Deter/Web/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DeterLabCommands/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DevContainersAPISpec/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DeterResources/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DeterVirtualProject/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DevAPI/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/DevTestbedAPISpec/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Documentation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ExDescLang/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/EARS/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/EducationRestructuring/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ElabElabSshProxy/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ExperimentAPISPec/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/FreeBSDImage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/GitTricks/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/FrequentlyAskedQuestions/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/GettingHelp/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/GettingStarted/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Glossary/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/GoodPractices/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Build/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/GuidelinesForStudents/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/GuidelinesForTeachers/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ISIUCB/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/DatabaseSetup/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Definitions/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/OSImages/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Hardware/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/LoggingIn/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Nodes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Site/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Switch/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Testing/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/Updating/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Installation/VM/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/InterMapTxt/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/InterTrac/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/EmulabInEmulab/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/InterWiki/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Commands/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/ControlNetSeparation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Networks/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Power/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/SwitchUpgrade/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Serial/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Servers/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/SharedNAT/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Cisco4/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Nortel10/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Nortel18nc2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Nortel10nc1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Nortel10nc2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Nortel18nc1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Notrel18ne/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Notrel4nc1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/Notrel4nc2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/hp19/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/Switches/hp4/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/ZFS/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Internal/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/LegacyTools/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/January_2011_Demo/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/KALI1/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/LayoutAspect/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/LegoTG/exp_config/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/LegoTG/modules/mimic/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MAGI_Agent_Config/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/LegoTG/modules/twosew/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/LegoTG/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/LifeCycle/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MAGI_Agent_Library/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MAGI_Feedback_Case_Study/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MAGI_Tools/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MAGI_Scaled_Server_Case_Study/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MAGI_Simple_Client_Case_Study/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MAGI_System_Files_and_Logs/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MakingNewImages/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MalwareRepositoryDiscussion/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NetFPGA/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Metasploitable2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MicroCloud/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/MitmExample/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NetFPGA_nodes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NewAPI/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NewImpl/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NewContainersAPISpec/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NewDelayNodeNs/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NewExperimentAPI/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NewImplNotes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NewTestbedAPISpec/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/OrchestratorCaseStudies/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/NodeTypes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/OSImages/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/OperationsVisualization/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/OrchestratorGuide/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/OrchestratorQuickstart/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Passwords/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/OrchestratorReference/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/OrchestratorWritingAgents/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/PageTemplates/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Policy/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Quotas/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/RubotSoftware/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/SandBox/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/SerialConsole/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/SPIDocs/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/RecentChanges/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Sharing/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/SourceControlPolicy/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/SwapInTricks/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TechnicalSupport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Swapping/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/T1T2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TitleIndex/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TopologyDescription/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracAccessibility/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracAdmin/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracCgi/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracBackup/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracBrowser/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracChangeset/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracEnvironment/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracFastCgi/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracFineGrainedPermissions/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracGuide/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracImport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracLinks/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracIni/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracInstall/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracInterfaceCustomization/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracLogging/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracModPython/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracPermissions/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracModWSGI/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracNavigation/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracNotification/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracPlugins/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracQuery/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracRoadmap/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracReports/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracRepositoryAdmin/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracRevisionLog/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracRss/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracSearch/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracTickets/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracStandalone/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracSupport/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracSyntaxColoring/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracTicketsCustomFields/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracTimeline/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracWorkflow/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracUnicode/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracUpgrade/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/TracWiki/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tracing/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/Advanced/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/GettingTheJavaGUIToWork/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/BatchExperiments/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/CreatingExperiments/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/CustomOS/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/UsingNodes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/WalkThrough/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/UserGuidelines/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Tutorial/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/UIImplNotes/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/UbuntuImage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WINXPImage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiMacros/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiDeletePage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiFormatting/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiHtml/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiNewPage/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiPageNames/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiProcessors/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiRestructuredText/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/WikiRestructuredTextLinks/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/Windows/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/ZFS/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/dl380g3/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/assign&#43;/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/bpc2800/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/bvx2200/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/gatekeeper.isi.deterlab.net/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/infrastructure/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/pc3000/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/linkdelays/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/nscommands/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/pc2133/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/scratch/</loc>
-  </url>
-  
-  <url>
-    <loc>http://deter-project.github.io/sitemap/</loc>
-  </url>
-  
+
+    
+    <url>
+     <loc>None/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>None/glossary/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>None/core/core-quickstart/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/core-guide/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/sample-topologies/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/using-nodes/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/generating-traffic/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/link-delays/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/sharing/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/core/deterlab-commands/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/ns-commands/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/swapping/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/DETERSSH/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/node-types/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/serial-console/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/dell-serial-console/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/os-images/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/custom-images/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/windows/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/core/legacy-tools/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/orchestrator/orchestrator-quickstart/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/orchestrator-guide/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/orchestrator-case-studies/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/simple-client-server/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/scaled-client-server/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/feedback/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/writing-agents/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/agent-configuration/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/orchestrator-reference/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/system-files/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/agent-library/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/orchestrator/magi-tools/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/containers/containers-quickstart/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/containers/containers-guide/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/containers/containers-reference/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/federation/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/abac/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/ISIUCB/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>None/about/release-notes/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/about/contributing/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>None/about/license/</loc>
+     <lastmod>2015-11-25</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
 </urlset>

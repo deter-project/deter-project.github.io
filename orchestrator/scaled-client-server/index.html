@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Scaled Client Server Case Study - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Scaled Client Server Case Study";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Scaled Client Server Case Study</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#event-streams">Event Streams</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#mapping-to-the-topology">Mapping to the Topology</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#configuring-the-agents">Configuring the Agents</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#server-stream">Server Stream</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#client-stream">Client Stream</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#running-the-experiment">Running the Experiment</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-1-swap-in-the-experiment">Step 1: Swap in the experiment</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-2-set-up-your-environment">Step 2: Set up your environment</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-3-run-the-orchestrator">Step 3: Run the Orchestrator</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#visualizing-experiment-results">Visualizing Experiment Results</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Orchestrator &raquo;</li>
+        
+      
+    
+    <li>Scaled Client Server Case Study</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>In this example we demonstrate how to set up client server traffic generators in a larger topology.</p>
+<p>This case study is identical to <a href="/orchestrator/simple-client-server/">Simple Client Case Study</a> except the topology is significantly larger.</p>
+<h2 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link"></a></h2>
+<p>As in the <a href="/orchestrator/simple-client-server/">simpler case</a>, this example has three events streams; the server stream, the client stream, and the cleanup stream.</p>
+<h2 id="mapping-to-the-topology">Mapping to the Topology<a class="headerlink" href="#mapping-to-the-topology" title="Permanent link"></a></h2>
+<p>The groups directive in the AAL file allows mapping an agent behavior to one or more nodes.</p>
+<pre><code>groups:
+   client_group: [clientnode-1, clientnode-2, clientnode-3, clientnode-4, clientnode-5,
+                     clientnode-6, clientnode-7, clientnode-8, clientnode-9, clientnode-10,
+                     clientnode-11, clientnode-12, clientnode-13, clientnode-14, clientnode-15,
+                     clientnode-16, clientnode-17, clientnode-18, clientnode-19, clientnode-20,
+                     clientnode-21, clientnode-22, clientnode-23, clientnode-24, clientnode-25,
+                     clientnode-26, clientnode-27, clientnode-28, clientnode-29, clientnode-30,
+                     clientnode-31, clientnode-32, clientnode-33, clientnode-34, clientnode-35,
+                     clientnode-36, clientnode-37, clientnode-38, clientnode-39, clientnode-40,
+                     clientnode-41, clientnode-42, clientnode-43, clientnode-44, clientnode-45,
+                     clientnode-46, clientnode-47, clientnode-48, clientnode-49, clientnode-50 ]
+   server_group: &amp;slist [ servernode-1, servernode-2, servernode-3, servernode-4, servernode-5 ]
+</code></pre>
+
+<p>In this example, we observe that there are two groups: <strong>client_group</strong> which consists of all 50 clientnodes, and <strong>server_group</strong> which consists of 5 servernodes.</p>
+<p>Additionally, we use YAML pointers to annotate the server_group as <strong>slist</strong>. The slist annotation is used to refer to the list of servers for configuring the client_agent in the section below.</p>
+<h2 id="configuring-the-agents">Configuring the Agents<a class="headerlink" href="#configuring-the-agents" title="Permanent link"></a></h2>
+<p>There are two types of agents, a client_agent and a server_agent. Each agent description consists of at least three directives; group, path and execargs.</p>
+<ul>
+<li><code>group</code>: indicates the set of nodes that the client_agent should be deployed on.</li>
+<li><code>path</code>: indicates the path to the agent code (also called an agent module).</li>
+<li><code>execargs</code>: can be used to parameterize the agents at load time. The agents may be reconfigured later in the AAL also using the <code>setConfiguration</code> method.</li>
+</ul>
+<pre><code>agents:
+  client_agent:
+    group: client_group
+    path: /share/magi/modules/http_client/http_client.tar.gz
+    execargs: {servers: *slist, interval: '5', sizes: 'minmax(1000,10000)'}
+
+  server_agent:
+    group: server_group
+    path: /share/magi/modules/apache/apache.tar.gz
+    execargs: []
+</code></pre>
+
+<h2 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link"></a></h2>
+<p>The server event stream consists of three states. </p>
+<ol>
+<li>The <strong>start</strong> state which generates a trigger, called <code>serverStarted</code>, once all the server agents are activated on the experiment nodes.</li>
+<li>It then enters the <strong>wait</strong> state where it waits for a trigger from the client event stream.</li>
+<li>Once the trigger is received, it enters the <strong>stop</strong> state, where the server is deactivated or terminated.</li>
+</ol>
+<p>The AAL description is the same as the one used in the <a href="/downloads/casestudy_clientserver.aal">Simple Client case study</a>.</p>
+<h2 id="client-stream">Client Stream<a class="headerlink" href="#client-stream" title="Permanent link"></a></h2>
+<p>The client event stream consists of five states. </p>
+<ol>
+<li>First, the client agent implementation is parameterized by the configuration state. This occurs as part of the agent loading process on all 50 nodes.</li>
+<li>The client stream then synchronizes with the server stream by waiting for the <code>serverStarted</code> trigger from the server nodes. </li>
+<li>Once it receives the trigger the client agent is activated in the start state. Each client_agent fetches web pages for one of the listed servers.</li>
+<li>Next, the client stream waits for a period (\Delta) t and then terminates the client agents in the stop state.</li>
+<li>On termination, the client agents sends a <code>clientStopped</code> trigger that allows the server stream to synchronize and terminate the servers only after all the client have terminated.</li>
+</ol>
+<h2 id="running-the-experiment">Running the Experiment<a class="headerlink" href="#running-the-experiment" title="Permanent link"></a></h2>
+<h3 id="step-1-swap-in-the-experiment">Step 1: Swap in the experiment<a class="headerlink" href="#step-1-swap-in-the-experiment" title="Permanent link"></a></h3>
+<p>Swap in the experiment using this network description file: <a href="/downloads/cs55_topology.tcl">cs55_topology.tcl</a></p>
+<h3 id="step-2-set-up-your-environment">Step 2: Set up your environment<a class="headerlink" href="#step-2-set-up-your-environment" title="Permanent link"></a></h3>
+<p>Set up your environment. Assuming your experiment is named <em>myExp</em>, your DETER project is <em>myProj</em>, and the AAL file is called <em>procedure.aal</em>.</p>
+<pre><code>PROJ=myExp
+EXP=myProj
+AAL=procedure.aal
+</code></pre>
+
+<h3 id="step-3-run-the-orchestrator">Step 3: Run the Orchestrator<a class="headerlink" href="#step-3-run-the-orchestrator" title="Permanent link"></a></h3>
+<p>Once the experiment is swapped in, run the orchestrator, giving it the AAL above and the experiment and project name. </p>
+<pre><code>&gt; /share/magi/current/magi_orchestrator.py --experiment $EXP --project $PROJ --events $AAL
+</code></pre>
+
+<p>Once run, you will see the orchestrator step through the events in the AAL file. The example output below uses the project “montage” with experiment “caseClientServer”:</p>
+<p><img alt="Example of Orchestrator output" src="../../img/cs55_orch.png" /></p>
+<ol>
+<li>The Orchestrator enacts an internally defined stream called <code>initilization</code> that is responsible for establishing the server_group and the client_group and loading the agents. Once the agents are loaded, as indicated by the received trigger <code>AgentLoadDone</code>, The initialization stream is complete.</li>
+<li>Now the serverstream, clientstream and the cleanup stream start concurrently. The serverstream sends the startServer event to the server_group. All members of the server_group start the server and fire a trigger serverStarted.</li>
+<li>The clienstream on receiving the trigger serverStarted from the server_group, sends the startClient event to the client_group. One minute later, the clientstream sends the event stopClient to the client_group and terminates the clientstream. All members of the client_group, terminate the client_agent and generate a clientStopped trigger which is sent back to the orchestrator.</li>
+<li>Once the serverstream receives the clientStopped trigger from the client_group, it sends out the stopServer event on the server_group. Once all the servers are stopped, the members of the server_group respond with a serverStopped trigger, which is forwarded to the cleanupstream.</li>
+<li>On receiving the serverStopped trigger, the cleanupstream enacts an internally define stream called exit that is responsible for unloading agents and tearing down the groups.</li>
+</ol>
+<p>The experiment artifacts, the procedure and topology file that were used for the casestudy are attached below. Additionally, we have attached a detailed orchestration log that lists triggers from the clientnodes and the servernodes in the experiment.</p>
+<ul>
+<li><strong>Procedure:</strong> <a href="/downloads/casestudy_clientserver55.aal">casestudy_clientserver55.aal</a></li>
+<li><strong>Topology:</strong> <a href="/downloads/casestudy_clientserver55.tcl">casestudy_clientserver55.tcl</a></li>
+<li><strong>Archive Logs:</strong> <a href="/downloads/casestudy_clientserver55.tar.gz">casestudy_clientserver55.tar.gz</a></li>
+<li><strong>Orchestration:</strong> <a href="/downloads/casestudy_clientserver55.orch.log">casestudy_clientserver55.orch.log</a></li>
+</ul>
+<h2 id="visualizing-experiment-results">Visualizing Experiment Results<a class="headerlink" href="#visualizing-experiment-results" title="Permanent link"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This process is the same as for the Simple Client case - we are reproducing here for your convenience.</p>
+</div>
+<p>In order to visualize the traffic on the network, modify the above mentioned procedure to add another stream called “monitorstream”. This stream deploys a packet sensor agent on the router node to measure the aggregated traffic between the server nodes and the client nodes. The packet sensor agent records the traffic data using MAGI’s data management layer.</p>
+<pre><code>monitor_group: [router]
+
+monitor_agent:
+  group: monitor_group
+  path: /share/magi/modules/pktcounters/pktCountersAgent.tar.gz
+  execargs: {}
+
+monitorstream:
+    - type: trigger
+      triggers: [ { event: serverStarted } ]
+
+    - type: event
+      agent: monitor_agent
+      method: startCollection
+      trigger: collectionServer
+      args: {}
+
+    - type: trigger
+      triggers: [ { event: clientStopped } ]
+
+    - type: event
+      agent: monitor_agent
+      method: stopCollection
+      args: {}
+</code></pre>
+
+<p>The recorded data is then pulled out by the below mentioned tools to create a traffic plot.</p>
+<p>In order to populate the traffic data, re-run the experiment using the updated procedure. The updated procedure file and the corresponding logs are attached below.</p>
+<p>The aggregated traffic can then be plotted in two ways:</p>
+<p>Offline: A plot of the traffic flowing through the router node connecting the clients and the servers can be generated using the MAGI Graph Creation Tool.</p>
+<pre><code>&gt; GRAPHCONF=cs55_magi_graph.conf
+&gt; /share/magi/current/magi_graph.py -e $EXP -p $PROJ -c $GRAPHCONF -o cs_traffic_plot.png
+</code></pre>
+
+<p><img alt="Example of traffice plot" src="../../img/cs55_traffic_plot.png" /></p>
+<p>Real Time: A real time simulated traffic plot using canned data from a pre-run experiment can be visualized <a href="http://tau.isi.edu/magidemos/casestudy/clientserver55/traffic.html">here</a>.</p>
+<p>A similar plot using live data can be plotted by visiting the same web page, and additionally passing it the hostname of the database config node of your experiment.</p>
+<p>You can find the database config node for your experiment by reading your experiment’s configuration file, similar to the following.</p>
+<pre><code>&gt; cat /proj/myProject/exp/myExperiment/experiment.conf
+</code></pre>
+
+<pre><code>dbdl:
+  configHost: node-1
+
+expdl:
+  experimentName: myExperiment
+  projectName: myProject
+</code></pre>
+
+<p>Then edit the simulated traffic plot URL, passing it the hostname.</p>
+<pre><code>host=node-1.myExperiment.myProject
+
+http://&lt;web-host&gt;/traffic.html?host=node-1.myExperiment.myProject
+</code></pre>
+
+<p>The procedure, graph configuration, and archived log files that were used for the visualization of this case study are attached below.</p>
+<ul>
+<li><strong>Procedure:</strong> <a href="/downloads/casestudy_clientserver55_monitor.aal">casestudy_clientserver55_monitor.aal</a></li>
+<li><strong>Topology:</strong> <a href="/downloads/cs55_topology.tcl">cs55_topology.tcl</a></li>
+<li><strong>Archived Logs:</strong> <a href="/downloads/casestudy_clientserver55_monitor.tar.gz">casestudy_clientserver55_monitor.tar.gz</a></li>
+<li><strong>Graph Config:</strong> <a href="/downloads/casestudy_clientserver55_magi_graph.conf">casestudy_clientserver55_magi_graph.conf</a></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../feedback/" class="btn btn-neutral float-right" title="Feedback Case Study"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../simple-client-server/" class="btn btn-neutral" title="Simple Client Server Case Study"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../simple-client-server/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../feedback/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

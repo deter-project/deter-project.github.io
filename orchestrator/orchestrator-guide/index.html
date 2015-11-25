@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Orchestrator Guide - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Orchestrator Guide";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Orchestrator Guide</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#basic-magi-tutorial">Basic MAGI Tutorial</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#step-1-write-the-aal-file">Step 1. Write the AAL file</a></li>
+                
+                    <li><a class="toctree-l4" href="#aal-file-overview">AAL File Overview</a></li>
+                
+                    <li><a class="toctree-l4" href="#groups">Groups</a></li>
+                
+                    <li><a class="toctree-l4" href="#agents">Agents</a></li>
+                
+                    <li><a class="toctree-l4" href="#event-streams">Event Streams</a></li>
+                
+                    <li><a class="toctree-l4" href="#events">Events</a></li>
+                
+                    <li><a class="toctree-l4" href="#triggers">Triggers</a></li>
+                
+                    <li><a class="toctree-l4" href="#our-aal-example">Our AAL Example</a></li>
+                
+                    <li><a class="toctree-l4" href="#event-streams_1">Event Streams</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-2-swap-in-the-the-physical-experiment-using-topology-with-magi-start-command">Step 2: Swap in the the physical experiment using topology with MAGI start command</a></li>
+                
+                    <li><a class="toctree-l4" href="#step-2-set-up-your-environment">Step 2: Set up your environment</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#createuse-an-experiment-in-deterlab">Create/Use an experiment in DETERLab</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#run-the-magi_orchestratorpy-tool">Run the magi_orchestrator.py tool</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Orchestrator &raquo;</li>
+        
+      
+    
+    <li>Orchestrator Guide</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>In this tutorial we walk you through setting up a basic orchestrated experiment. This page also includes common advanced topics. Detailed descriptions of the commands and configuration files are available in the <a href="/orchestrator/orchestrator-reference/">reference section</a>. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are a student, go to the <a href="http://education.deterlab.net">education.deterlab.net</a> site for classroom-specific instructions.</p>
+</div>
+<h2 id="basic-magi-tutorial">Basic MAGI Tutorial<a class="headerlink" href="#basic-magi-tutorial" title="Permanent link"></a></h2>
+<p>In this tutorial, we demonstrate how to set up client and server traffic generators with only one server and one client. (For more complex examples, see the <a href="/orchestrator/orchestrator-case-studies/">Case Studies</a>.)</p>
+<p>The basic steps in creating an orchestrated experiment are:</p>
+<ol>
+<li>Write the AAL file that describes the experiment's workflows.</li>
+<li>Include a special start command in your topology.</li>
+<li>Create or use a physical experiment in DETERLab.</li>
+<li>Run the Orchestrator tool on a physical experiment on <code>users.isi.deterlab.net</code>.</li>
+</ol>
+<p>The following sections describe each step in detail.</p>
+<h2 id="step-1-write-the-aal-file">Step 1. Write the AAL file<a class="headerlink" href="#step-1-write-the-aal-file" title="Permanent link"></a></h2>
+<p>Describe the experiment procedure (ie, workflow) in an AAL (.aal) file. First we'll cover the parts of an AAL file and then we'll walk through writing the AAL file for this tutorial (we also provide the AAL file itself).</p>
+<h3 id="aal-file-overview">AAL File Overview<a class="headerlink" href="#aal-file-overview" title="Permanent link"></a></h3>
+<p>Agent Activation Language (AAL) is a YAML-based descriptive language that describes an experiment’s workflow. It identifies groups (nodes with similar behaviors), agents (a set of behaviors that may be invoked as events) and events/triggers (the different things you want agents to do and the things that trigger them).  </p>
+<p>An AAL specification has mainly three parts: groups, agents and event streams.</p>
+<h3 id="groups">Groups<a class="headerlink" href="#groups" title="Permanent link"></a></h3>
+<p><strong>Groups</strong> define sets of one or more nodes with the same behavior and enable a coupling between the experiment procedure and the experiment nodes.</p>
+<p>Example:</p>
+<pre><code>groups:
+   clients: [ node1, node2, node7 ]
+   defender: [ router3 ]
+
+</code></pre>
+
+<h3 id="agents">Agents<a class="headerlink" href="#agents" title="Permanent link"></a></h3>
+<p><strong>Agents</strong> map a functional behavior onto a set of experiment nodes. An agent provides a set of behaviors that may be invoked with events. The agent directive requires the following keys:</p>
+<ul>
+<li>
+<p><strong><code>agent</code></strong></p>
+<p>Name for the set of nodes that represent the behavior</p>
+</li>
+<li>
+<p><strong><code>group</code></strong></p>
+<p>A set of experiment nodes the will functional as the agent</p>
+</li>
+<li>
+<p><strong><code>path</code></strong></p>
+<p>The path to the agent implementation code</p>
+</li>
+<li>
+<p><strong><code>code</code></strong></p>
+<p>Directory name of the agent implementation. The code directive is used in the absence of a path directive. MAGI requires the agent implementation to be part of the python distribution if the path directive is not specified.</p>
+</li>
+<li>
+<p><strong><code>execargs</code></strong></p>
+<p>Zero or more arguments that will be passed to the agent during initialization.</p>
+</li>
+</ul>
+<p>Example:</p>
+<pre><code>agents:
+   smallwebclient:
+      group: smallclients
+      path: /share/magi/modules/http_client/http_client.tar.gz
+      execargs: { servers: [ servernode ], interval: '2', sizes: 'minmax(300,500)'}
+</code></pre>
+
+<h3 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link"></a></h3>
+<p><strong>Event Streams</strong> are lists of events and triggers that are parsed and executed by the Orchestrator tool. A procedure typically contains multiple event streams. Different event streams execute concurrently and are synchronized with each other using triggers.</p>
+<p>The set of event streams listed using the <code>streamstarts</code> directive are invoked at the start of procedure. However, note that the Orchestrator will perform several setup actions, such as create groups, load agents, get status, before the event streams start.</p>
+<h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link"></a></h3>
+<p><strong>Events</strong> invoke a procedure implemented in an agent. An event is sent to a group. An event directive requires the following keys:</p>
+<p><code>agent</code>:: The agent to send the event.
+ <code>method</code>:: The method to be invoked.
+ <code>args</code>:: Zero or more arguments required by the method.</p>
+<p>Additionally, it may also contain the <code>trigger</code> key to flag the return status from the method. The return status may be either <em>True</em> or <em>False</em>.</p>
+<p>Example:</p>
+<pre><code>- type: event
+  agent: server_agent
+  method: startServer
+  trigger: serverStartedSuccessfully
+  args: {}
+</code></pre>
+
+<h3 id="triggers">Triggers<a class="headerlink" href="#triggers" title="Permanent link"></a></h3>
+<p><strong>Triggers</strong> are used as a synchronization mechanism, guard points, or rendezvous points in an experiment procedure. There are two types of triggers that may be combined in several different ways:</p>
+<ul>
+<li>
+<p><strong>Event-based triggers</strong> are received from agents after a method. The <code>serverStartedSuccessfully</code> is an example of an event-based trigger. The Orchestrator keeps track of outstanding triggers to follow the experiment execution state space. When the server_agent returns <em>True</em> after the method <code>startServer</code>, the Orchestrator tags it as a received trigger.</p>
+<p>Example:</p>
+<pre><code>- type: trigger
+  triggers: [ {event: ClientStopped} ]
+</code></pre>
+</li>
+<li>
+<p><strong>Time-based triggers</strong> wait for a specified amount time to elapse at the Orchestrator before proceeding.</p>
+<p>Example:</p>
+<pre><code>- type: trigger
+  triggers: { [ timeout: 60000 ] }  # wait for 60 seconds
+</code></pre>
+</li>
+</ul>
+<p>You may find several specific examples of declaring groups, agents, events, and triggers in the <a href="/orchestrator/orchestrator-case-studies/">Case Studies</a>. </p>
+<p>For this basic tutorial, save this code to a file named <code>procedure.aal</code> and save it to the experiment folder.</p>
+<h3 id="our-aal-example">Our AAL Example<a class="headerlink" href="#our-aal-example" title="Permanent link"></a></h3>
+<p>Now we'll write an AAL that demonstrates three aspects of MAGI: specifying multiple event streams, synchronizing with triggers, and a special target called <code>exit</code> to unload agents.</p>
+<h3 id="event-streams_1">Event Streams<a class="headerlink" href="#event-streams_1" title="Permanent link"></a></h3>
+<p>This example has three events streams; the server stream, the client stream, and the cleanup stream.</p>
+<p>The coordination between the events can be illustrated as follows:</p>
+<p><img alt="Example of events streams in Orchestrator" src="../../img/cs_workflow.png" /></p>
+<p>Event streams can be synchronized using <em>event-based triggers</em> (such as after the server has started) or <em>time-based triggers</em> (such as wait for 30 seconds). The triggers are indicated as <em>wait</em> states (in gray). Forming the groups and loading the agents, which are also automated by the orchestrator tool, are not illustrated above.</p>
+<h4 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link"></a></h4>
+<p>The server event stream consists of three states. </p>
+<ol>
+<li>
+<p>The <strong>start</strong> state generates a trigger, called <code>serverStarted</code>, once the server agent is activated on the experiment nodes.</p>
+</li>
+<li>
+<p>It then enters the <strong>wait</strong> state where it waits for a trigger from the client event stream.</p>
+</li>
+<li>
+<p>Once the trigger is received, it enters the <strong>stop</strong> state, when the server is deactivated or terminated.</p>
+</li>
+</ol>
+<p>Here is the relevant AAL description:</p>
+<pre><code>serverstream:
+    - type: event
+      agent: server_agent
+      method: startServer
+        trigger: serverStarted
+      args: {}
+
+    - type: trigger
+      triggers: [ {event: ClientStopped} ]
+
+    - type: event
+      agent: server_agent
+      method: stopServer
+      trigger: ServerStopped
+      args: {}
+</code></pre>
+
+<h4 id="client-stream">Client Stream<a class="headerlink" href="#client-stream" title="Permanent link"></a></h4>
+<p>The client event stream consists of five states. </p>
+<ol>
+<li>First, the client agent implementation is <strong>parameterized</strong> by the configuration state. This occurs as part of the agent loading process.</li>
+<li>The client stream then <strong>synchronizes</strong> with the server stream by waiting for the <code>serverStarted</code> trigger from the server nodes. </li>
+<li>Once it receives the trigger, the client agent is <strong>activated</strong> in the start state.</li>
+<li>Next, the client stream <strong>waits</strong> for a period of time and then <strong>terminates</strong> the client agents in the stop state.</li>
+<li>On termination, the client agents send a <code>clientStopped</code> trigger that allows the server stream to synchronize and terminate the servers only after all the client have terminated.</li>
+</ol>
+<p>Here is the relevant AAL description:</p>
+<pre><code>clientstream:
+    - type: trigger
+      triggers: [ {event: ServerStarted} ]
+
+    - type: event
+      agent: client_agent
+      method: startClient
+      args: {}
+
+    - type: trigger
+      triggers: [ {timeout: 60000} ]
+
+    - type: event
+      agent: client_agent
+      method: stopClient
+      trigger: clientStopped
+      args: {}
+
+</code></pre>
+
+<h4 id="cleanup-stream">Cleanup Stream<a class="headerlink" href="#cleanup-stream" title="Permanent link"></a></h4>
+<p>The last event stream, the cleanup stream consists of two states. </p>
+<ol>
+<li>First, it <strong>waits</strong> for all the servers to stop.</li>
+<li>Then it enters the <strong>exit</strong> state.</li>
+</ol>
+<p>The exit state unloads and tears down all the communication mechanisms between the agents. The exit state is entered by the key target and is used to transfer control to a reserved state internal to the Orchestrator.</p>
+<p>It causes the Orchestrator to send agent <code>unload</code> and <code>disband</code> group messages to all of the experiment nodes and then it exits the Orchestrator.</p>
+<p>Here is the relevant AAL code:</p>
+<pre><code>
+cleanup:
+    - type: trigger
+      triggers: [ {event: ServerStopped, target: exit} ]
+
+</code></pre>
+
+<p>You can see all of the code together in this file: <a href="/downloads/casestudy_clientserver.aal">casestudy_clientserver.aal</a>.</p>
+<h3 id="step-2-swap-in-the-the-physical-experiment-using-topology-with-magi-start-command">Step 2: Swap in the the physical experiment using topology with MAGI start command<a class="headerlink" href="#step-2-swap-in-the-the-physical-experiment-using-topology-with-magi-start-command" title="Permanent link"></a></h3>
+<p>Swap in the experiment using this network description file: <a href="/downloads/casestudy_clientserver.tcl">casestudy_clientserver.tcl</a>.</p>
+<p>This start command installs MAGI and supporting tools on all nodes at startup.</p>
+<p>The normal syntax is as follows:</p>
+<pre><code>tb-set-node-startcmd $NodeName &quot;sudo python /share/magi/current/magi_bootstrap.py&quot;
+</code></pre>
+
+<p>where <code>$NodeName</code> is the control node.</p>
+<p>If you look at this file, you'll see the MAGI start command is added as a variable and then used for two nodes: the clientnode and servernode. </p>
+<p>In this example, we set the start command as a variable:</p>
+<pre><code>set magi_start &quot;sudo python /share/magi/current/magi_bootstrap.py&quot;
+</code></pre>
+
+<p>and then use it </p>
+<h3 id="step-2-set-up-your-environment">Step 2: Set up your environment<a class="headerlink" href="#step-2-set-up-your-environment" title="Permanent link"></a></h3>
+<p>Set up environment variables for your environment, replacing the value for <code>myExp</code> with your experiment name and <code>myProj</code> with your project name.</p>
+<pre><code>PROJ=myExp
+EXP=myProj
+AAL=casestudy_clientserver.aal
+</code></pre>
+
+<h2 id="createuse-an-experiment-in-deterlab">Create/Use an experiment in DETERLab<a class="headerlink" href="#createuse-an-experiment-in-deterlab" title="Permanent link"></a></h2>
+<p>MAGI needs to be enabled on a new or existing swapped-in DETERLab experiment (via interface or using <code>startexp</code> on the commandline). You will need its Experiment Name and Project Name when you run the Orchestrator in the next step. </p>
+<p>Make sure you’ve swapped-in resources before the next step.</p>
+<h2 id="run-the-magi_orchestratorpy-tool">Run the <code>magi_orchestrator.py</code> tool<a class="headerlink" href="#run-the-magi_orchestratorpy-tool" title="Permanent link"></a></h2>
+<p>The MAGI Orchestrator tool, <code>magi_orchestrator.py</code>, is a tool that reads the procedure's AAL file and orchestrates an experiment based on the specified procedures. The Orchestrator does the following in this order:</p>
+<ol>
+<li><strong>Joins Groups</strong> - The Orchestrator iterates over the list of groups and for each group sends a request to all the mapped nodes to join the group. A corresponding reply adds the replier to the group. Messages addressed to a group are sent to all the nodes that are part of the group.</li>
+<li><strong>Loads Agents</strong> - The Orchestrator iterates over the list of agents and for each agent sends an agent load request to the mapped groups. An agent load message tells the Orchestrator to start an instance of the agent implementation and to put it in a listening mode, where the instance waits for further messages.</li>
+<li><strong>Executes Event Streams</strong> - Next, the Orchestrator concurrently executes all the event streams listed as part of <code>streamstarts</code>.
+The Orchestrator has a predefined event stream called <code>exit</code>. The purpose of this event stream is to unload all the agents and disjoin groups. All workflows should end with executing this stream for a clean exit.</li>
+</ol>
+<p>From your home directory on <code>users.isi.deterlab.net</code>, run the following command:</p>
+<pre><code>/share/magi/current/magi_orchestrator.py --control clientnode.myExp.myProj --events procedure.aal
+</code></pre>
+
+<p>where:</p>
+<ul>
+<li><code>clientnode</code> equals the node you want to start with</li>
+<li><code>myExp</code> is the Experiment Name</li>
+<li><code>myProj</code> is the Project Name</li>
+<li><code>procedural.aal</code> is the name of the AAL file.</li>
+</ul>
+<p>The various command line options are as follows</p>
+<pre><code>Usage: magi_orchestrator.py [options]
+
+Options:
+     -h, --help
+                     show this help message and exit
+     -c CONTROL, --control=CONTROL
+                     The control node to connect to (i.e. control.exp.proj)
+     -f EVENTS, --events=EVENTS
+                     The events.aal file(s) to use. Can be specified
+                     multiple times for multiple AAL files
+     -l LOGLEVEL, --loglevel=LOGLEVEL
+                     The level at which to log. Must be one of none, debug,
+                     info, warning, error, or critical. Default is info.
+     -o LOGFILE, --logfile=LOGFILE
+                     If given, log to the file instead of the console
+                     (stdout).
+    -e EXITONFAILURE, --exitOnFailure=EXITONFAILURE
+                     If any method call fails (returns False), then exit
+                     all streams, unload all agents, and exit the
+                     orchestrator. Default value is True
+    -g GROUPBUILDTIMEOUT, --groupBuildTimeout=GROUPBUILDTIMEOUT
+                     When building the initial groups for agents in the
+                     given AAL, use the timeout given (in milliseconds)
+                     when waiting for group formation to complete.
+    --nocolor
+                     If given, do not use color in output.
+    -v, --verbose
+                     Tell orchestrator to print info about what its doing
+   -n, --tunnel
+                    Tell orchestrator to tunnel data through Deter Ops
+                     (users.deterlab.net).
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../orchestrator-case-studies/" class="btn btn-neutral float-right" title="Orchestrator Case Studies"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../orchestrator-quickstart/" class="btn btn-neutral" title="Orchestrator Quickstart"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../orchestrator-quickstart/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../orchestrator-case-studies/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Accessing testbeds using SSH - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Accessing testbeds using SSH";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Accessing testbeds using SSH</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#uploading-files-to-deter">Uploading files to DETER</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#an-example-session-with-windows-and-putty">An Example Session with Windows and Putty</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#tips-and-tricks">Tips and Tricks</a></li>
+                
+                    <li><a class="toctree-l4" href="#listing-your-nodes-from-the-command-line">Listing your nodes from the command line</a></li>
+                
+                    <li><a class="toctree-l4" href="#ssh-port-forwarding">SSH port forwarding</a></li>
+                
+                    <li><a class="toctree-l4" href="#ssh-port-forwarding-with-putty">SSH port forwarding with Putty</a></li>
+                
+                    <li><a class="toctree-l4" href="#uploading-your-ssh-key-from-os-x">Uploading your SSH key from OS X </a></li>
+                
+                    <li><a class="toctree-l4" href="#openssh-configuration-for-directly-logging-into-testbed-nodes">OpenSSH Configuration for Directly Logging into testbed nodes</a></li>
+                
+                    <li><a class="toctree-l4" href="#accelerating-multiple-connections-using-openssh-connection-multplexing">Accelerating Multiple Connections using OpenSSH Connection Multplexing</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/writing-agents/">Writing Your Own MAGI Agents</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/system-files/">MAGI System Files</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>About</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/release-notes/">Release Notes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/contributing/">Contributing</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../about/license/">License</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Core Reference &raquo;</li>
+        
+      
+    
+    <li>Accessing testbeds using SSH</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>Each node on the testbed is reachable via <a href="http://en.wikipedia.org/wiki/Secure_Shell">SSH</a>.  One main difference between DETER and Emulab is that DETER nodes are not accessible directly from the internet.  In order to log into your nodes, you must first log into '''users.isi.deterlab.net''' using your DETER username (not your email address) and password (or your SSH public key).  From users you can log into your nodes.  To save on connections, you might want to look into using <a href="http://en.wikipedia.org/wiki/GNU_Screen">GNU screen</a> on <code>users</code>.  Also refer to the <a href="#tips-and-tricks">Tips and Tricks</a> section below for ways to make accessing DETER easier.</p>
+<h2 id="uploading-files-to-deter">Uploading files to DETER<a class="headerlink" href="#uploading-files-to-deter" title="Permanent link"></a></h2>
+<p>You can upload files to users.isi.deterlab.net via <a href="http://en.wikipedia.org/wiki/Secure_Shell#File_transfer_protocols_using_SSH">SCP</a>  or <a href="http://en.wikipedia.org/wiki/Secure_Shell#File_transfer_protocols_using_SSH">SFTP</a>.  Files in your home directory and in your project directory will be made available to you on all of your testbed nodes via <a href="http://en.wikipedia.org/wiki/Network_File_System_%28protocol%29">NFS</a>.</p>
+<h2 id="an-example-session-with-windows-and-putty">An Example Session with Windows and Putty<a class="headerlink" href="#an-example-session-with-windows-and-putty" title="Permanent link"></a></h2>
+<p><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a> is a free, lightweight SSH client for Windows.  Here is an example session in which I connect to my experimental node "node0" in my experiment "jjh-ubuntu1004" in the project "DeterTest".</p>
+<p>First we connect to '''users.isi.deterlab.net''':</p>
+<p><img alt="" src="../../img/putty_session_one.png" title="Screenshot of default Putty session." /></p>
+<p>We then enter in our just our username and password (the same password as the DETERLab web interface).  Trying to use your email address or something like <em>jjh@users.isi.deterlab.net</em> will '''not''' work:</p>
+<p><img alt="" src="../../img/putty_session_two.png" /></p>
+<p>Now we have successfully logged into users.isi.deterlab.net:</p>
+<p><img alt="" src="../../img/putty_session_three.png" /></p>
+<p>From users, we now ssh into our experimental node, "node0.jjh-ubuntu.detertest":</p>
+<p><img alt="" src="../../img/putty_session_four.png" /></p>
+<h2 id="tips-and-tricks">Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permanent link"></a></h2>
+<h3 id="listing-your-nodes-from-the-command-line">Listing your nodes from the command line<a class="headerlink" href="#listing-your-nodes-from-the-command-line" title="Permanent link"></a></h3>
+<p>When logged into <code>users.isi.deterlab.net</code>, the <code>node_list</code> command will list the names of all your nodes.  You can log into your nodes using either the pcXXX name or the full experimental name.</p>
+<pre><code>  [jhickey@users ~]$ node_list
+  DeterTest/jjh-ubuntu
+      node1.jjh-ubuntu.DeterTest / pc118
+      node0.jjh-ubuntu.DeterTest / pc054
+      node2.jjh-ubuntu.DeterTest / pc167
+  DeterTest/jjh-ubuntu1004
+      node0.jjh-ubuntu1004.DeterTest / pc026
+  [jhickey@users ~]$ 
+</code></pre>
+
+<h3 id="ssh-port-forwarding">SSH port forwarding<a class="headerlink" href="#ssh-port-forwarding" title="Permanent link"></a></h3>
+<p>If you are, for example, running an internal web server on one of your DETER nodes, you can access it via SSH through users.  For example to redirect port 80 on pcXXX to your local machine on port 8080 you would do:</p>
+<pre><code>    ssh -L 8080:pcXXX:80 username@users.isi.deterlab.net
+</code></pre>
+
+<p>Once logged in, you should be able to access the web server on your DETER node by going to http://localhost:8080.  For more information on port forwarding with SSH, please refer to the SSH man page.</p>
+<h3 id="ssh-port-forwarding-with-putty">SSH port forwarding with Putty<a class="headerlink" href="#ssh-port-forwarding-with-putty" title="Permanent link"></a></h3>
+<p>To use putty for port forwarding, configure putty to open a connection to <code>users.isi.deterlab.net</code></p>
+<p><img alt="" src="../../img/putty1.png" /></p>
+<p>before you make that connection, set up the tunneling parameters.  This example forwards local port 12345 to a remode desktop protocol server (port 3389) on a testbed node.  select the <code>Tunnels</code> menu from under the <code>SSH</code> choice in the <code>Connection</code> menu on the left hand side.  Add a forwarded port using the <code>Local</code> type, a local port number (12345 in the image) and the DETER hostname and port in the <code>Destination</code> field.  In the example we are forwarding the connection to port 3389 (the remote desktop protocol) on <code>pc102</code>. </p>
+<p><img alt="" src="../../img/putty2.png" /></p>
+<p>Be sure to press <code>Add</code> to add the port.  The putty window will look like this:</p>
+<p><img alt="" src="../../img/putty3.png" /></p>
+<p>Now open that connection.  You will see a login prompt, and you should log in to users.</p>
+<p><img alt="" src="../../img/login.png" /></p>
+<p>Now you should be able to point your local remote desktop viewer to localhost port 12345 and see the login screen of pc102.  If the node is a Windows node, you will see something like this:</p>
+<p><img alt="" src="../../img/tunnel.png" /></p>
+<p>Be sure that your local machine does not firewall the local port 12345.  Replace <code>pc102</code> with a node in your experiment and the forwarded port with the port your service uses.</p>
+<h3 id="uploading-your-ssh-key-from-os-x">Uploading your SSH key from OS X <a name="OSX"></a><a class="headerlink" href="#uploading-your-ssh-key-from-os-x" title="Permanent link"></a></h3>
+<p>The Upload File dialog in Macintosh OS X does not show hidden directories by default.  This creates and extra hassle when uploading SSH public keys from an OS X machine.  </p>
+<p>In the "Upload File" dialog, use the shortcut '''Shift-Command-G''' and type in "~/.ssh" to navigate to the contents of your .ssh directory.</p>
+<p><img alt="" src="../../img/os_x_key_upload_one.png" /></p>
+<p>Then you will be presented with the contents of your .ssh directory and will be able to upload your id_rsa.pub file to DETER:</p>
+<p><img alt="" src="../../img/os_x_key_upload_two.png" /></p>
+<h3 id="openssh-configuration-for-directly-logging-into-testbed-nodes">OpenSSH Configuration for Directly Logging into testbed nodes<a class="headerlink" href="#openssh-configuration-for-directly-logging-into-testbed-nodes" title="Permanent link"></a></h3>
+<p>These configuration tweaks should work for any operating system that runs OpenSSH (Linux, BSD, and OS X typically use OpenSSH as the default SSH client).</p>
+<p>It is possible to log directly into testbed nodes with a little SSH configuration tweaking.  Adding the following statement to '''~/.ssh/config''' will allow you to skip logging into users in order to access a particular testbed node.  Change MyProject to the name of your project.</p>
+<pre><code>    Host pc*.isi.deterlab.net
+        ProxyCommand ssh users.isi.deterlab.net nc %h %p
+        StrictHostKeyChecking no
+
+    Host *.MyProject.isi.deterlab.net
+        ProxyCommand ssh users.isi.deterlab.net nc %h %p
+        StrictHostKeyChecking no
+</code></pre>
+
+<p>With this configuration change and a proper SSH key setup, you will be able to directly log into nodes in your experiment.</p>
+<p>You will now be able to log into nodes in your experiment using either the actual node name, e.g. pc025.isi.deterlab.net, or [host].[experiment].[project].isi.deterlab.net.</p>
+<p>For example:</p>
+<pre><code>    jjhs-mac-mini:~ jjh$ ssh node0.jjh-ubuntu1004.DeterTest.isi.deterlab.net
+    Warning: Permanently added 'node0.jjh-ubuntu1004.detertest.isi.deterlab.net' (RSA) to the list of known hosts.
+    Linux node0.jjh-ubuntu1004.detertest.isi.deterlab.net 2.6.32-25-generic-pae #45-Ubuntu SMP Sat Oct 16 21:01:33 UTC 2010 i686 GNU/Linux
+    Ubuntu 10.04.1 LTS
+
+    Welcome to Ubuntu!
+     * Documentation:  https://help.ubuntu.com/
+
+      System information as of Wed Nov 10 20:41:19 PST 2010
+
+      System load:  0.0                Processes:           116
+      Usage of /:   12.3% of 14.67GB   Users logged in:     0
+      Memory usage: 1%                 IP address for eth1: 192.168.1.26
+      Swap usage:   0%
+
+      Graph this data and manage this system at https://landscape.canonical.com/
+
+    4 packages can be updated.
+    2 updates are security updates.
+
+    Last login: Wed Nov 10 20:13:15 2010 from users.isi.deterlab.net
+    node0:~&gt; 
+</code></pre>
+
+<h3 id="accelerating-multiple-connections-using-openssh-connection-multplexing">Accelerating Multiple Connections using OpenSSH Connection Multplexing<a class="headerlink" href="#accelerating-multiple-connections-using-openssh-connection-multplexing" title="Permanent link"></a></h3>
+<p>You can log in multiple times using the same SSH connection.  This dramatically speeds up creating new connections.  To enable SSH connection multiplexing, add the following lines to ~/.ssh/config.  If you are on a multiuser machine, you may want to store the control socket someplace other than /tmp.</p>
+<pre><code>    Host users.isi.deterlab.net
+        ControlMaster auto
+        ControlPath /tmp/%r@%h:%p
+</code></pre>
+
+<p>To verify that it is working, you can use the '''-v''' option:</p>
+<pre><code>    jjhs-mac-mini:~ jjh$ ssh -v pc026.isi.deterlab.net
+    OpenSSH_5.2p1, OpenSSL 0.9.8l 5 Nov 2009
+    debug1: Reading configuration data /Users/jjh/.ssh/config
+    debug1: Applying options for *isi.deterlab.net
+    debug1: Applying options for pc*.isi.deterlab.net
+    debug1: Applying options for *
+    debug1: Reading configuration data /etc/ssh_config
+    debug1: auto-mux: Trying existing master
+    Last login: Wed Nov 10 20:51:43 2010 from users.isi.deterlab.net
+    node0:~&gt; 
+</code></pre>
+
+<p>If you try to close your master connection while other connections are active, the connection will stay running until the other sessions end.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../node-types/" class="btn btn-neutral float-right" title="DETERLab Node Types"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../swapping/" class="btn btn-neutral" title="Understanding Swapping (Node Use Policies)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../swapping/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../node-types/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+
+</body>
+</html>
