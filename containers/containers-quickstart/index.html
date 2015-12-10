@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Containers Quickstart - DETERLab Documentation</title>
+  
+  
+  <title>Containers Quickstart - DETERLab Docs</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -23,6 +25,8 @@
   <script>
     // Current page data
     var mkdocs_page_name = "Containers Quickstart";
+    var mkdocs_page_input_path = "containers/containers-quickstart.md";
+    var mkdocs_page_url = "/containers/containers-quickstart/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -35,12 +39,16 @@
 
 <body class="wy-body-for-nav" role="document">
 
+	<header>
+		<h1 class="logo"><a href="/">DETERLab Docs</a></h1>
+	</header>
+
   <div class="wy-grid-for-nav">
 
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon icon-home"> DETERLab Documentation</a>
+        <a href="../.." class="icon icon-home"> DETERLab Docs</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -431,12 +439,13 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Documentation</a>
+        <a href="../..">DETERLab Docs</a>
       </nav>
 
       
       <div class="wy-nav-content">
         <div class="rst-content">
+          <!--
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../..">Docs</a> &raquo;</li>
@@ -454,6 +463,20 @@
   </ul>
   <hr/>
 </div>
+        -->
+          <div role="navigation" aria-label="breadcrumbs navigation">
+            <!--
+            
+              
+
+                
+                  <h1>Containers &raquo;</h1>
+                
+              
+            
+          -->
+            <h1>Containers Quickstart</h1>
+          </div>
           <div role="main">
             <div class="section">
               
@@ -465,7 +488,7 @@
 <p>An experimenter comes to DETERLab with an experimental topology of computers and networks and an experiment to carry out on that topology, and the Containers system allocates resources in the configuration specified.  The experimenter may directly access the computers in order to carry out the experiment.  The computers themselves are either physical computers or some virtual computers that emulate a computer at an acceptable level of fidelity.  Multiple experiments may be in progress at once using DETER resources, and they are protected from interfering with one another.</p>
 <p>Containers present researchers with more resources while preserving the DETERLab interfaces. The process of converting a topology description to an isolated collection of networked computers is basically the same as when an experimenter creates a physical topology on DETERLab.  The difference is that a containerized experiment is configured to present more experimental resources than physical ones, preserving the DETERLab interface.</p>
 <p>A little more completely, the Containers system lays out the virtual computers into a physical layout of computers and uses the resource allocation system to allocate that physical layout.  Then the system installs and configures the appropriate virtualization technologies in that environment to create the virtual environment.</p>
-<p><img alt="Model of a DETERLab Container" src="../img/container-model.png" /></p>
+<p><img alt="Model of a DETERLab Container" src="../../img/container-model.png" /></p>
 <p>As in physical DETERLab experiments, the experiment's topology is written in an extended version of DETER's ns2 syntax, or in <a href="http://fedd.deterlab.net/wiki/TopDl">topdl</a>, a topology description language.  </p>
 <p>Currently experimenters pick containers directly using those languages.</p>
 <h2 id="kinds-of-containers">Kinds of Containers<a class="headerlink" href="#kinds-of-containers" title="Permanent link"></a></h2>

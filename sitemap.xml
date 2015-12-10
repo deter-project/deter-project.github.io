@@ -4,7 +4,7 @@
     
     <url>
      <loc>None/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>None/glossary/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -21,43 +21,43 @@
         
     <url>
      <loc>None/core/core-quickstart/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/core-guide/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/sample-topologies/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/using-nodes/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/generating-traffic/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/link-delays/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/sharing/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -67,67 +67,67 @@
         
     <url>
      <loc>None/core/deterlab-commands/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/ns-commands/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/swapping/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/DETERSSH/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/node-types/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/serial-console/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/dell-serial-console/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/os-images/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/custom-images/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/windows/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/core/legacy-tools/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -137,73 +137,73 @@
         
     <url>
      <loc>None/orchestrator/orchestrator-quickstart/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/orchestrator-guide/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/orchestrator-case-studies/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/simple-client-server/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/scaled-client-server/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/feedback/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/writing-agents/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/agent-configuration/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/orchestrator-reference/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/system-files/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/agent-library/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/orchestrator/magi-tools/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -213,19 +213,19 @@
         
     <url>
      <loc>None/containers/containers-quickstart/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/containers/containers-guide/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/containers/containers-reference/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -235,13 +235,13 @@
         
     <url>
      <loc>None/federation/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/abac/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -251,7 +251,7 @@
         
     <url>
      <loc>None/ISIUCB/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -261,19 +261,19 @@
         
     <url>
      <loc>None/about/release-notes/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/about/contributing/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>None/about/license/</loc>
-     <lastmod>2015-11-25</lastmod>
+     <lastmod>2015-12-10</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
