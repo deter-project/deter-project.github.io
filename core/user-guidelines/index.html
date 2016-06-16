@@ -7,7 +7,7 @@
   
   
   
-  <title>Core Quickstart - DETERLab Docs</title>
+  <title>User Do's and Don'ts - DETERLab Docs</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -24,9 +24,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Core Quickstart";
-    var mkdocs_page_input_path = "core/core-quickstart.md";
-    var mkdocs_page_url = "/core/core-quickstart/";
+    var mkdocs_page_name = "User Do's and Don'ts";
+    var mkdocs_page_input_path = "core/user-guidelines.md";
+    var mkdocs_page_url = "/core/user-guidelines/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -79,34 +79,8 @@
 
         
             
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Core Quickstart</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#what-is-deterlab">What is DETERLab?</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#how-does-it-work">How does it work?</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#how-do-i-get-a-deterlab-account">How do I get a DETERLab account?</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#how-do-i-use-deterlab">How do I use DETERLab?</a></li>
-                
-                    <li><a class="toctree-l4" href="#1-design-the-topology">1. Design the topology</a></li>
-                
-                    <li><a class="toctree-l4" href="#2-create-start-and-swap-in-allocate-resources-for-an-experiment">2. Create, start and swap in (allocate resources for) an experiment</a></li>
-                
-                    <li><a class="toctree-l4" href="#3-generate-traffic-for-your-nodes">3. Generate traffic for your nodes</a></li>
-                
-                    <li><a class="toctree-l4" href="#4-view-results-by-accessing-nodes-modify-the-experiment-as-needed">4. View results by accessing nodes, modify the experiment as needed.</a></li>
-                
-                    <li><a class="toctree-l4" href="#5-save-your-work-and-swap-out-your-experiment-release-the-resources">5. Save your work and swap out your experiment (release the resources)</a></li>
-                
-            
-            </ul>
+    <li class="toctree-l1 ">
+        <a class="" href="../core-quickstart/">Core Quickstart</a>
         
     </li>
 
@@ -154,8 +128,21 @@
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../user-guidelines/">User Do's and Don'ts</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">User Do's and Don'ts</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#preserving-our-control-network">Preserving our Control Network</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#preserving-our-file-system">Preserving our File System</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#preserving-cpu-cycles-on-users">Preserving CPU Cycles on users</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -503,7 +490,7 @@
         
       
     
-    <li>Core Quickstart</li>
+    <li>User Do's and Don'ts</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -513,59 +500,72 @@
           <div role="main">
             <div class="section">
               
-                <p>This page describes basic information about DETERLab and its core functionality.</p>
-<h2 id="what-is-deterlab">What is DETERLab?<a class="headerlink" href="#what-is-deterlab" title="Permanent link"></a></h2>
-<p>The DETERLab testbed is a security and education-enhanced version of Emulab. Funded by the National Science Foundation and the Department of Homeland Security, DETERLab is hosted by USC/ISI and UC Berkeley.</p>
-<p>DETERLab (like Emulab) offers user accounts with assorted permissions associated with different experiment groups. Each group can have its own pre-configured experimental environments running on Linux, BSD, Windows, or other operating systems. Users running DETERLab experiments have full control of real hardware and networks running preconfigured software packages.</p>
-<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link"></a></h2>
-<p>The software running DETERLab loads operating system images (low level disk copies) onto free nodes in the testbed, and then reconfigures programmable switches to create VLANs with the newly-imaged nodes connected according to the topology specified by the experiment creator.</p>
-<p>After the system is fully imaged and configured, DETERLab executes specified scripts, unpacks tarballs, and/or installs RPM files according to the experiment's configuration. The end result is a live network of real machines, accessible via the Internet.</p>
-<p>Work in DETERLab is based on projects that include individual experiments and is accomplished either via the browser-based web interface (isi.deterlab.net) or via commandline on the DETERLab nodes.</p>
-<p>To access DETERLab, you need to create an account, which provides credentials for accessing both the web interface and nodes.</p>
-<h2 id="how-do-i-get-a-deterlab-account">How do I get a DETERLab account?<a class="headerlink" href="#how-do-i-get-a-deterlab-account" title="Permanent link"></a></h2>
-<p>You may obtain a DETERLab account by either starting a new project (if you are a PI or instructor) or joining an existing project (if you are a project member or a student).</p>
-<p><strong>If you are the project investigator or instructor,</strong> you must create a project and invite your team members or students to join.</p>
-<p><strong>If you are the member of a team using DETERLab,</strong> your project leader will invite you to join the appropriate DETERLab project.</p>
-<p><strong>If you are a student,</strong> you may not create a project. Your instructor must create the project and, once approved, will give you information for joining the project.</p>
-<p>See Getting Started for more information.</p>
-<h2 id="how-do-i-use-deterlab">How do I use DETERLab?<a class="headerlink" href="#how-do-i-use-deterlab" title="Permanent link"></a></h2>
-<p>In general, once you have a DETERLab account, you follow these steps. The DETERLab Core Guide will walk you through a basic tutorial of these steps.</p>
-<h3 id="1-design-the-topology">1. Design the topology<a class="headerlink" href="#1-design-the-topology" title="Permanent link"></a></h3>
-<p>Every experiment in DETERLab is based on a network topology file written in NS format and saved on the users node. The following is a very basic example:</p>
-<pre><code># This is a simple ns script. Comments start with #.
-set ns [new Simulator]                 
-source tb_compat.tcl
-
-set nodeA [$ns node]
-set nodeB [$ns node]
-set nodeC [$ns node]
-set nodeD [$ns node]
-
-set link0 [$ns duplex-link $nodeB $nodeA 30Mb 50ms DropTail]
-tb-set-link-loss $link0 0.01
-
-set lan0 [$ns make-lan "$nodeD $nodeC $nodeB " 100Mb 0ms]
-
-# Set the OS on a couple.
-tb-set-node-os $nodeA FBSD7-STD
-tb-set-node-os $nodeC Ubuntu1004-STD
-
-$ns rtproto Static
-
-# Go!
-$ns run
-</code></pre>
-<h3 id="2-create-start-and-swap-in-allocate-resources-for-an-experiment">2. Create, start and swap in (allocate resources for) an experiment<a class="headerlink" href="#2-create-start-and-swap-in-allocate-resources-for-an-experiment" title="Permanent link"></a></h3>
-<p>Using your topology file, you start a new experiment via menu options in the DETERLab web interface.</p>
-<p><img alt="Screenshot of the Create an Experiment page in the DETERLab web interface." src="../../img/create_experiment_screenshot.png" title="Screenshot of the Create an Experiment page in the DETERLab web interface." /></p>
-<h3 id="3-generate-traffic-for-your-nodes">3. Generate traffic for your nodes<a class="headerlink" href="#3-generate-traffic-for-your-nodes" title="Permanent link"></a></h3>
-<p>Now you can experiment and start generating traffic for your nodes. We provide a flexible framework to pull together the software you'll need.</p>
-<h3 id="4-view-results-by-accessing-nodes-modify-the-experiment-as-needed">4. View results by accessing nodes, modify the experiment as needed.<a class="headerlink" href="#4-view-results-by-accessing-nodes-modify-the-experiment-as-needed" title="Permanent link"></a></h3>
-<p>Once your experiment has started, you now can access nodes via SSH and conduct your desired experiments in your new environment.</p>
-<p>You may modify aspects of a running experiment through the "Modify experiment" page in the web interface or by making changes to the NS file.</p>
-<h3 id="5-save-your-work-and-swap-out-your-experiment-release-the-resources">5. Save your work and swap out your experiment (release the resources)<a class="headerlink" href="#5-save-your-work-and-swap-out-your-experiment-release-the-resources" title="Permanent link"></a></h3>
-<p>When you are ready to stop working on an experiment but know you will want to work on it again, save your files in specific protected directories and swap-out (via web interface or commandline) to release resources back to the testbed. This helps ensure there are enough resources for all DETERLab users.</p>
-<p>This is just a high-level overview. Go to the Core Guide for a basic hands-on example of using DETERLab Core. </p>
+                <p><strong>If you are a student: DO read the <a href="../../education/student-intro/">Student Introduction to DETERLab</a>.</strong></p>
+<h2 id="preserving-our-control-network">Preserving our Control Network<a class="headerlink" href="#preserving-our-control-network" title="Permanent link"></a></h2>
+<ul>
+<li>
+<p>DON'T use control network unless absolutely necessary. This means:</p>
+<ul>
+<li>
+<p>DON'T use full node names such as <code>ping node1.YourExperiment.YourProject</code></p>
+<ul>
+<li>DO use short names such as <code>ping node1</code>. This ensures that traffic goes over experimental network.</li>
+</ul>
+</li>
+<li>
+<p>DON'T generate traffic to <code>192.168.x.x</code> network.</p>
+<ul>
+<li>DO use addresses of experimental interfaces. These can be from any IPv4 address range, depending on your NS file, but are often from the <code>10.10.x.x</code> address range.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="preserving-our-file-system">Preserving our File System<a class="headerlink" href="#preserving-our-file-system" title="Permanent link"></a></h2>
+<ul>
+<li>
+<p>DON'T store large files (e.g. uncompressed kernel source) in your home or project directory unless you need them in multiple experiment instances.</p>
+<ul>
+<li>
+<p>DO store these files locally on a node, e.g., in <code>/tmp</code> folder. If you need more disk space on a Linux or FreeBSD node you can mount more to <code>/mnt/local</code> by doing</p>
+<p><code>sudo /usr/local/etc/emulab/mkextrafs.pl /mnt 
+user='whoami' 
+sudo chown $user /mnt/local</code></p>
+<p>or on an XP node, SSH in and set a root password:</p>
+<p><code>% passwd root</code></p>
+<p>then through rdesktop log in as root, and use <em>start -&gt; control panel -&gt; performance and maintenance -&gt; administrative tools -&gt; computer management -&gt; storage -&gt; disk management (local)</em> to create a new partition. After the partition formats, log out of the root account and the storage will be available to your usual identity.</p>
+</li>
+</ul>
+<p>Transfer the files to your home directory before you swap out to save them.</p>
+</li>
+<li>
+<p>DON'T transfer large (&gt;500 MB) files frequently between your home or project directories and a local directory on your experimental machine.</p>
+<ul>
+<li>If you need to regularly save and read large files that persist between experiment instances <a href="https://trac.deterlab.net/wiki/GettingHelp">create a ticket</a> and we will help you use our ZFS storage.</li>
+</ul>
+</li>
+<li>
+<p>DON'T perform large (&gt; 500 MB) or frequent (&lt; 10 s) reads/writes on your experimental nodes into your home or project directory</p>
+<ul>
+<li>DO perform these reads/writes on a local disk (<code>/tmp</code> or <code>/mnt/local</code> on experimental machines)</li>
+</ul>
+</li>
+<li>
+<p>DON'T compile software or kernels in your home directory</p>
+<ul>
+<li>DO compile them on a local disk (<code>/tmp</code> or <code>/mnt/local</code> on experimental machines)</li>
+</ul>
+</li>
+</ul>
+<h2 id="preserving-cpu-cycles-on-users">Preserving CPU Cycles on users<a class="headerlink" href="#preserving-cpu-cycles-on-users" title="Permanent link"></a></h2>
+<ul>
+<li>
+<p>DON'T compile large files or run CPU intensive jobs on <code>users.deterlab.net</code>.</p>
+<ul>
+<li>DO allocate experimental nodes, store files locally and compile/run jobs there.</li>
+</ul>
+</li>
+</ul>
               
             </div>
           </div>
@@ -573,10 +573,10 @@ $ns run
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../core-guide/" class="btn btn-neutral float-right" title="Core Guide"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../deterlab-commands/" class="btn btn-neutral float-right" title="DETERLab Commands"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../../Glossary/" class="btn btn-neutral" title="Glossary"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../sharing/" class="btn btn-neutral" title="Using Shared Materials"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -604,10 +604,10 @@ $ns run
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../../Glossary/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../sharing/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../core-guide/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../deterlab-commands/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -42,9 +42,13 @@
   <div class="wy-grid-for-nav">
 
     
+
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon"><img class="logo" style="float:left" src="/img/doc-logo.png"/> <span class="title">DETERLab Docs</span></a>
+        <a href="../.." class="icon">
+          <!--REPLACE LOGO FILE HERE -->
+          <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
+          <span class="title">DETERLab Docs</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -119,6 +123,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../core/sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/user-guidelines/">User Do's and Don'ts</a>
         
     </li>
 
@@ -382,12 +393,68 @@
           
             <li>
     <ul class="subnav">
-    <li><span>Miscellaneous</span></li>
+    <li><span>Education Materials</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        <a class="" href="../../education/">Education Materials Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/class-support/">Class Support</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/course-setup/">Course Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/student-intro/">Student Introduction to DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/public-materials/">Public Materials</a>
         
     </li>
 
@@ -397,26 +464,12 @@
           
             <li>
     <ul class="subnav">
-    <li><span>About</span></li>
+    <li><span>Miscellaneous</span></li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../about/release-notes/">Release Notes</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../about/contributing/">Contributing</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../about/license/">License</a>
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
         
     </li>
 
@@ -440,7 +493,6 @@
       
       <div class="wy-nav-content">
         <div class="rst-content">
-          <!--
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../..">Docs</a> &raquo;</li>
@@ -458,20 +510,6 @@
   </ul>
   <hr/>
 </div>
-        -->
-          <div role="navigation" aria-label="breadcrumbs navigation">
-            <!--
-            
-              
-
-                
-                  <h1>Orchestrator &raquo;</h1>
-                
-              
-            
-          -->
-            <h1>Orchestrator Quickstart</h1>
-          </div>
           <div role="main">
             <div class="section">
               
@@ -567,6 +605,20 @@
       
     </span>
 </div>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
 
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 120
+    );
+    
+    }
+});
+</script>
 </body>
 </html>
