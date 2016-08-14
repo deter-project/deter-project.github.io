@@ -7,7 +7,7 @@
   
   
   
-  <title>MAGI System Files - DETERLab Docs</title>
+  <title>MAGI System Organization - DETERLab Docs</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -24,7 +24,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MAGI System Files";
+    var mkdocs_page_name = "MAGI System Organization";
     var mkdocs_page_input_path = "orchestrator/system-files.md";
     var mkdocs_page_url = "/orchestrator/system-files/";
   </script>
@@ -271,14 +271,21 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../writing-agents/">Writing Your Own MAGI Agents</a>
+        <a class="" href="../writing-agents/">Specialized User</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        <a class="" href="../data-management/">Orchestrator Data Management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-config/">MAGI Configuration</a>
         
     </li>
 
@@ -292,15 +299,20 @@
         
             
     <li class="toctree-l1 current">
-        <a class="current" href="./">MAGI System Files</a>
+        <a class="current" href="./">MAGI System Organization</a>
         
             <ul>
             
-                <li class="toctree-l3"><a href="#magi-system-organization">MAGI System Organization</a></li>
+                <li class="toctree-l3"><a href="#magicore">magicore</a></li>
                 
-                    <li><a class="toctree-l4" href="#logs">Logs</a></li>
+            
+                <li class="toctree-l3"><a href="#magimodules">magimodules</a></li>
                 
-                    <li><a class="toctree-l4" href="#configuration-files">Configuration Files</a></li>
+            
+                <li class="toctree-l3"><a href="#logs">Logs</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#configuration-files">Configuration Files</a></li>
                 
             
             </ul>
@@ -318,6 +330,20 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-dev/">MAGI Development Codebase</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-desktop/">MAGI Desktop</a>
         
     </li>
 
@@ -488,7 +514,7 @@
         
       
     
-    <li>MAGI System Files</li>
+    <li>MAGI System Organization</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -498,16 +524,25 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="magi-system-organization">MAGI System Organization<a class="headerlink" href="#magi-system-organization" title="Permanent link"></a></h2>
-<p>The MAGI system is divided into <strong>magicore</strong> and <strong>magimodules</strong>.</p>
+                <p>The MAGI system is divided into <strong>magicore</strong> and <strong>magimodules</strong>.</p>
+<h3 id="magicore">magicore<a class="headerlink" href="#magicore" title="Permanent link"></a></h3>
 <p>The <strong>magicore</strong> consists of the group communication, control, and data management infrastructure.</p>
 <p>The latest available version for use on DETERLab may be found on <code>users</code> at:</p>
 <pre><code>/share/magi/current/
 </code></pre>
 
+<p>The MAGI codebase is also available at a publically accessible repository.</p>
+<pre><code>https://github.com/deter-project/magi.git
+</code></pre>
+
+<h3 id="magimodules">magimodules<a class="headerlink" href="#magimodules" title="Permanent link"></a></h3>
 <p>The <strong>magimodules</strong> are agent function implementations that enable a particular behavior on the experiment nodes.</p>
 <p>The agents along with supporting documentation and file are located on <code>users</code> at:</p>
 <pre><code>/share/magi/modules
+</code></pre>
+
+<p>The MAGi modules are also available at a publically accessible repository.</p>
+<pre><code>https://github.com/deter-project/magi-modules.git
 </code></pre>
 
 <h3 id="logs">Logs<a class="headerlink" href="#logs" title="Permanent link"></a></h3>
@@ -557,7 +592,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../agent-library/" class="btn btn-neutral float-right" title="MAGI Agent Library"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../agent-library/" class="btn btn-neutral float-right" title="MAGI Agent Library">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../orchestrator-reference/" class="btn btn-neutral" title="Orchestrator Reference"><span class="icon icon-circle-arrow-left"></span> Previous</a>

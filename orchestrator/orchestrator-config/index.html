@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>MAGI Configuration - DETERLab Docs</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "MAGI Configuration";
+    var mkdocs_page_input_path = "orchestrator/orchestrator-config.md";
+    var mkdocs_page_url = "/orchestrator/orchestrator-config/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon">
+          <!--REPLACE LOGO FILE HERE -->
+          <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
+          <span class="title">DETERLab Docs</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../Glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/user-guidelines/">User Do's and Don'ts</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../writing-agents/">Specialized User</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../data-management/">Orchestrator Data Management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">MAGI Configuration</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#experiment-configuration">Experiment Configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#mesdl-configure-the-magi-control-overlay">MesDL: Configure the MAGI Control Overlay</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#dbdl-configure-the-magi-data-management-layer">DBDL: Configure the MAGI Data Management Layer</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#expdl-other-common-experiment-wide-configuration">ExpDL: Other common experiment wide configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#node-configuration">Node Configuration</a></li>
+                
+            
+                <li class="toctree-l3"><a href="#bootstrap-process">Bootstrap Process</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../system-files/">MAGI System Organization</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-dev/">MAGI Development Codebase</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-desktop/">MAGI Desktop</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Education Materials</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/">Education Materials Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/class-support/">Class Support</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/course-setup/">Course Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/student-intro/">Student Introduction to DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/public-materials/">Public Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Orchestrator &raquo;</li>
+        
+      
+    
+    <li>MAGI Configuration</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="experiment-configuration">Experiment Configuration<a class="headerlink" href="#experiment-configuration" title="Permanent link"></a></h2>
+<p>The MAGI experiment-wide configuration (<code>experiment.conf</code>) is a YAML-based configuration file. A customized <code>experiment.conf</code> can be provided to the MAGI bootstrap process.</p>
+<pre><code>magi_bootstrap.py --expconf /path/to/experiment.conf
+</code></pre>
+
+<p>It is optional for a user to provide one. In case it is not provided, the bootstrap process creates a default configuration file. </p>
+<p>Also, in cases where a user needs to customize a part of the configuration, the user can provide an experiment configuration file with only the parameters that need to be customized. The MAGI configuration validation process would update the user provided configuration to fill in the missing configuration.</p>
+<p>The experiment wide configuration file consists of three sections.</p>
+<ul>
+<li>
+<p><strong>MesDL</strong>: Messaging overlay configuration</p>
+</li>
+<li>
+<p><strong>DBDL</strong>: Data layer configuration</p>
+</li>
+<li>
+<p><strong>ExpDL</strong>: Other experiment information</p>
+</li>
+</ul>
+<h2 id="mesdl-configure-the-magi-control-overlay">MesDL: Configure the MAGI Control Overlay<a class="headerlink" href="#mesdl-configure-the-magi-control-overlay" title="Permanent link"></a></h2>
+<p>The MAGI bootstrap process establishes a networking overlay over which it communicates with the experiment nodes.</p>
+<p>The control overlay provides a control plane across heterogeneous resources, such as containers, federation, and specialized hardware, on the DETERLab testbed.</p>
+<p>The control overlay provides a network to reliably propagate discrete control events across the experiment. Hence, it is critical to establish a robust and scalable overlay to ensure the experiments are orchestrated correctly.</p>
+<p>MAGI provides multi-point to multi-point group communication. A “group” has a set of nodes as members. Each group has a logical name. Any member of the group can send a message to any other member of the group.</p>
+<p>By default, one MAGI overlay is established for the experiment and all the control messages are passed over it.</p>
+<p>However, it may be necessary to establish two or more overlays based on the experiment topology embedding, control and data management requirements. The required overlay structure can be explicitly specified during the experiment bootstrap process.</p>
+<p>The overlay configuration, Messaging Description Language (MesDL), is a configuration of the required overlays and bridges in the experiment. The MesDL section of <code>experiment.conf</code> defines all the overlays and bridges for the experiment.</p>
+<p>The MAGI “overlay” is built on top of the control network on the DETER testbed. Nodes in the overlay can be thought of as being connected by virtual point-to-point links. The overlay provides a way to communicate with all the MAGI-enabled nodes across the testbed boundaries and even over the internet. “bridges” act as meeting places for all the members of the overlay it serves.</p>
+<p>For example:</p>
+<pre><code># Establish two bridges on node3.
+# Typically one is inward facing towards the experiment and one
+# is outward facing towards the experimenter to use with magi tools
+# magi tools can now connect to the experiment overlay through node3,
+# port 18808
+bridges:
+   - { TCPServer: node3, port: 18808 }
+   - { TCPServer: node3, port: 28808 }
+# Establish two overlays for the experiment.
+overlay:
+   # Members of this overlay rendezvous at node3. All experiment nodes
+   # are part of this overlay.
+  - { type: TCPTransport, members: [ '__ALL__' ], server: node3,
+      port: 28808 }
+   # Members of this overlay rendezvous at node2.
+   # node4 and node7 are members of this overlay.
+  - { type: TCPTransport, members: [ 'node4', 'node7' ],
+      server: node2, port: 48808 }
+</code></pre>
+
+<p>In the absence of the MesDL, MAGI creates a single overlay with all the experiment nodes as members. MAGI establishes a bridge node based on the following.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>MAGI establishes one of the nodes in the experiment as a bridge node. MAGI selects the bridge node based on the following rules:</p>
+<ul>
+<li>
+<p>If there is a node named “control”, it uses that node as the bridge node.</p>
+</li>
+<li>
+<p>If not, it establishes the node with the lowest alphanumeric node name as the bridge node.</p>
+</li>
+</ul>
+<p>MAGI expects the selected bridge node to be MAGI-enabled. However, if that is not the case, the user must provide a custom MesDL.</p>
+</div>
+<p>For example, here is the MesDL section of <code>experiment.conf</code> for the Client-Server tutorial</p>
+<pre><code>mesdl:
+  bridges:
+     - {server: clientnode.clientserver.montage, type: TCPServer, port: 18808}
+     - {server: clientnode.clientserver.montage, type: TCPServer, port: 28808}
+  overlay:
+     - members: [__ALL__]
+       port: 28808
+       server: clientnode.clientserver.montage
+       type: TCPTransport
+</code></pre>
+
+<h2 id="dbdl-configure-the-magi-data-management-layer">DBDL: Configure the MAGI Data Management Layer<a class="headerlink" href="#dbdl-configure-the-magi-data-management-layer" title="Permanent link"></a></h2>
+<p>The database configuration contains the following parameters:</p>
+<pre><code>dbdl:
+
+   #whether the database management layer is enabled or not
+   isDBEnabled: true
+
+   #whether the database is sharded or not
+   isDBSharded: false
+
+   # mapping of sensor/data producer nodes to data collector nodes
+   # __DEFAULT__ maps to the default collector node
+   # if the user does not provide one, the first node in the alpha-numerically
+   # sorted list of collectors is selected as the default collector
+   # In case some of the sensor nodes are not mapped to a collector node,
+   # MAGI would map them to the default collector node
+   sensorToCollectorMap: {node1: node1, node2: node1, __DEFAULT__: node3}
+
+   # the port at which the collectors listen
+   collectorPort: 27018
+
+   #if sharded, where does the global server run
+   globalServerHost: node-1
+   globalServerPort: 27017
+</code></pre>
+
+<p>By default, MAGI setups an unsharded setup with a centralized collector. All the sensors collect data at the same collector. However, an experimenter can choose to configure the database whichever way.</p>
+<p>All the collector nodes need to be MAGI-enabled. The data manager configuration needs to have a collector mapping for each of the MAGI-enabled experiment nodes. If one is not provided, any sensors on a node that does not have a mapped collector, would end up collecting at the default collector.</p>
+<p>The <a href="/orchestrator/data-management/">Data Management</a> section has more information about MAGI’s data management layer.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The ports are not configurable, they are only for informational purpose.</p>
+</div>
+<h2 id="expdl-other-common-experiment-wide-configuration">ExpDL: Other common experiment wide configuration<a class="headerlink" href="#expdl-other-common-experiment-wide-configuration" title="Permanent link"></a></h2>
+<p>The ExpDL part of the experiment configuration file contains common experiment-wide configuration that is used by the various MAGI tools. Most of the configuration in this section is automatically generated.</p>
+<p>A user can override the default AAL file location and the default directories for config files, log files, database files and temporary files.</p>
+<pre><code>expdl:
+  aal: /proj/montage/exp/clientserver/procedure.aal
+  nodePaths: {config: /var/log/magi, db: /var/lib/mongodb, logs: /var/log/magi, temp: /tmp}
+  distributionPath: /share/magi/dev
+  experimentName: clientserver
+  projectName: montage
+  nodeList: [clientnode, servernode]
+  testbedPaths: {experimentDir: /proj/montage/exp/clientserver}
+</code></pre>
+
+<h2 id="node-configuration">Node Configuration<a class="headerlink" href="#node-configuration" title="Permanent link"></a></h2>
+<p>The MAGI daemon process runs using a node-specific configuration (<code>node.conf</code>). The experiment wide configuration (<code>experiment.conf</code>) is converted into a node specific configuration as part of the bootstrap process. The node configuration file contains some additional configuration apart from all the node specific configuration from the experiment wide configuration.</p>
+<p>A customized <code>node.conf</code> can be provided as an input to the MAGI bootstrap script, or to the MAGI daemon startup script, directly. Similar to the <code>experiment.conf</code>, a user can provide an incomplete configuration file, containing only customized parameters. The MAGI configuration validation process would fill in the missing configuration.</p>
+<pre><code>transports:
+- {address: 0.0.0.0, class: TCPServer, port: 18808}
+- {address: 0.0.0.0, class: TCPServer, port: 28808}
+
+database:
+  isDBEnabled: true
+  configHost: clientnode
+  sensorToCollectorMap: {clientnode: clientnode, servernode: servernode}
+
+localInfo:
+  configDir: /var/log/magi
+  logDir: /var/log/magi
+  tempDir: /tmp
+  dbDir: /var/lib/mongodb
+  architecture: 32bit
+  controlif: eth0
+  controlip: 172.16.111.95
+  distribution: Ubuntu 10.04 (lucid)
+  nodename: clientnode
+  hostname: clientnode.clientserver.montage.isi.deterlab.net
+  interfaceInfo:
+    eth1:
+      expif: eth1
+      expip: 10.0.0.1
+      expmac: 00:00:00:00:00:01
+      linkname: link
+      peernodes: [servernode]
+
+software:
+- {dir: /share/magi/dev/Linux-Ubuntu10.04-i686, type: rpmfile}
+- {dir: /share/magi/dev/Linux-Ubuntu10.04-i686, type: archive}
+- {type: apt}
+- {dir: /share/magi/dev/source, type: source}
+- {dir: /tmp/src, type: source}
+</code></pre>
+
+<h2 id="bootstrap-process">Bootstrap Process<a class="headerlink" href="#bootstrap-process" title="Permanent link"></a></h2>
+<p>The <code>magi_bootstrap.py</code> is used to configure the overlay and start MAGI on the experiment nodes.</p>
+<p>The <code>magi_bootstrap.py</code> tool is typically called when the node starts as follows:</p>
+<pre><code>tb-set-node-startcmd $NodeName &quot;sudo python /share/magi/current/magi_bootstrap.py&quot;
+</code></pre>
+
+<p>The magi bootstrap script can be used to install, configure, and start MAGI. The various command line options are as follows.</p>
+<pre><code>Usage: magi_bootstrap.py [options]
+
+Bootstrap script that can be used to install, configure, and start MAGI
+
+Options:
+  -h, --help            show this help message and exit
+  -p RPATH, --path=RPATH
+                        Location of the distribution
+  -U, --noupdate        Do not update the system before installing Magi
+  -N, --noinstall       Do not install magi and the supporting libraries
+  -v, --verbose         Include debugging information
+  -e EXPCONF, --expconf=EXPCONF
+                        Path to the experiment wide configuration file
+  -c NODECONF, --nodeconf=NODECONF
+                        Path to the node specific configuration file. Cannot
+                        use along with -f (see below)
+  -n NODEDIR, --nodedir=NODEDIR
+                        Directory to put MAGI daemon specific files
+  -f, --force           Recreate node configuration file, even if present.
+                        Cannot use along with -c (see above)
+  -D, --nodataman       Do not install and setup data manager
+  -o LOGFILE, --logfile=LOGFILE
+                        Log file. Default: /tmp/magi_bootstrap.log
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../orchestrator-reference/" class="btn btn-neutral float-right" title="Orchestrator Reference">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../data-management/" class="btn btn-neutral" title="Orchestrator Data Management"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../data-management/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../orchestrator-reference/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 120
+    );
+    
+    }
+});
+</script>
+</body>
+</html>

@@ -271,14 +271,21 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../writing-agents/">Writing Your Own MAGI Agents</a>
+        <a class="" href="../writing-agents/">Specialized User</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../agent-configuration/">Configuring a MAGI Agent at Runtime</a>
+        <a class="" href="../data-management/">Orchestrator Data Management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../orchestrator-config/">MAGI Configuration</a>
         
     </li>
 
@@ -292,7 +299,7 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../system-files/">MAGI System Files</a>
+        <a class="" href="../system-files/">MAGI System Organization</a>
         
     </li>
 
@@ -311,6 +318,20 @@
             <ul>
             
             </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-dev/">MAGI Development Codebase</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../magi-desktop/">MAGI Desktop</a>
         
     </li>
 
@@ -493,22 +514,59 @@
               
                 <p>The following tools are available for MAGI experiments in DETERLab:</p>
 <ul>
-  <li><a href="#magi_bootstrap.py">magi_bootstrap.py</a></li>
-  <li><a href="#magi_graph.py">magi_graph.py</a></li>
-  <li><a href="#magi_orchestrator.py">magi_orchestrator.py</a></li>
   <li><a href="#magi_status.py">magi_status.py</a></li>
+  <li><a href="#magi_graph.py">magi_graph.py</a></li>
+
 </ul>
 
-<h2 id="magi_bootstrappy-install-magi"><a id="magi_bootstrap.py"></a><code>magi_bootstrap.py</code>: Install MAGI<a class="headerlink" href="#magi_bootstrappy-install-magi" title="Permanent link"></a></h2>
-<p>Used with the testbed start command, <code>magi_bootstrap.py</code> installs MAGI and supporting tools on all nodes at startup.</p>
-<p>In the topology file of the desired experiment, include the following command:</p>
-<pre><code>tb-set-node-startcmd $NodeName &quot;sudo python /share/magi/current/magi_bootstrap.py&quot;
+<h2 id="magi_statuspy-check-status-of-a-magi-experiment-reboot-magi-daemon-download-logs"><a id="magi_status.py"></a><code>magi_status.py</code>: Check status of a MAGI experiment, reboot MAGI daemon, download logs<a class="headerlink" href="#magi_statuspy-check-status-of-a-magi-experiment-reboot-magi-daemon-download-logs" title="Permanent link"></a></h2>
+<p>Use <code>magi_status.py</code> to:
+<em> check MAGI’s status on experiment nodes
+</em> reboot MAGI daemon process
+* download logs from experiment nodes</p>
+<p>This tool is run for one experiment at a time. The user needs to provide the project name and the experiment name to the tool.</p>
+<p>This tool, by default, works for all of the nodes corresponding to the given experiment. However, it can be made to work with a restricted set of nodes, either by directly providing the set of interested nodes, or by providing an AAL (experiment procedure) file to fetch the set of desired nodes.</p>
+<p>This tool by default only informs if the MAGI daemon process on a node is reachable or not. Specific options can be used to fetch group membership details and information about active agents.</p>
+<p>If you want to reboot the MAGI daemon, <code>magi_status.py</code> first reboots MAGI daemon processes on the experiment nodes, and then fetches their status.</p>
+<p>If the tool is asked to download logs, it just does that, and does not fetch the status.</p>
+<pre><code>  Usage: magi_status.py [options]
+
+  Script to get the status of MAGI daemon processes on experiment nodes,
+  to reboot them if required, and to download logs.
+
+  Options:
+    -h, --help            show this help message and exit
+    -p PROJECT, --project=PROJECT
+                          Project name
+    -e EXPERIMENT, --experiment=EXPERIMENT
+                          Experiment name
+    -n NODES, --nodes=NODES
+                          Comma-separated list of the nodes to reboot MAGI
+                          daemon
+    -a AAL, --aal=AAL     The yaml-based procedure file to extract the list of
+                          nodes
+    -l, --logs            Fetch logs. The -o/--logoutdir option is applicable
+                          only when fetching logs.
+    -o LOGOUTDIR, --logoutdir=LOGOUTDIR
+                          Store logs under the given directory. Default: /tmp
+    -g, --groupmembership
+                          Fetch group membership detail
+    -i, --agentinfo       Fetch loaded agent information
+    -t TIMEOUT, --timeout=TIMEOUT
+                          Number of seconds to wait to receive the status reply
+                          from the nodes on the overlay
+    -r, --reboot          Reboot nodes. The following options are applicable
+                          only when rebooting.
+    -d DISTPATH, --distpath=DISTPATH
+                          Location of the distribution
+    -U, --noupdate        Do not update the system before installing MAGI
+    -N, --noinstall       Do not install MAGI and the supporting libraries
+
 </code></pre>
 
-<p>where <code>$NodeName</code> is the control node. </p>
 <h2 id="magi_graphpy-create-graphs-for-a-magi-experiment"><a id="magi_graph.py"></a><code>magi_graph.py</code>: Create graphs for a MAGI experiment<a class="headerlink" href="#magi_graphpy-create-graphs-for-a-magi-experiment" title="Permanent link"></a></h2>
 <p><code>magi_graph.py</code> is a graph generator for experiments executed on DETERLab using MAGI. The tool fetches the required data using MAGI’s data management layer and generates a graph in PNG format. This tool may be executed from either the Deter Ops machine or a remote computer with access to internet. The data to be plotted and other graph features are configurable.</p>
-<p>The various command line options are as follows:</p>
+<p>The various commandline options are as follows:</p>
 <pre><code>  Usage: magi_graph.py [options]
 
   Plots the graph for an experiment based on parameters provided.
@@ -565,101 +623,6 @@
 
 <p>In the above mentioned example, data populated by the agent named “monitor_agent” hosted on the node named “servernode” will be fetched. The data would further be filtered on the configured values of peerNode and trafficDirection, which are agent specific fields.</p>
 <p>Among the fetched data, values corresponding to the fields, created and bytes, will be plotted correspoding to the x and the y axis, respectively.</p>
-<h2 id="magi_orchestratorpy-run-magi"><a id="magi_orchestrator.py"></a><code>magi_orchestrator.py</code>: Run MAGI<a class="headerlink" href="#magi_orchestratorpy-run-magi" title="Permanent link"></a></h2>
-<p><code>magi_orchestrator.py</code> reads the procedure's AAL file and orchestrates an experiment based on the specified procedures. The Orchestrator does the following in this order:</p>
-<ol>
-<li>'''Joins Groups''' - The Orchestrator iterates over the list of groups and for each group sends a request to all the mapped nodes to join the group. A corresponding reply adds the replier to the group. Messages addressed to a group are sent to all the nodes that are part of the group.</li>
-<li>'''Loads Agents''' - The Orchestrator iterates over the list of agents and for each agent sends an agent load request to the mapped groups. An agent load message tells the Orchestrator to start an instance of the agent implementation and to put it in a listening mode, where the instance waits for further messages.</li>
-<li>'''Executes Event Streams''' - Next, the Orchestrator concurrently executes all the event streams listed as part of <code>streamstarts</code>.
-The Orchestrator has a predefined event stream called <code>exit</code>. The purpose of this event stream is to unload all the agents and disjoin groups. All workflows should end with executing this stream for a clean exit.</li>
-</ol>
-<p>From your home directory on <code>users.isi.deterlab.net</code>, run the following command:</p>
-<pre><code>/share/magi/current/magi_orchestrator.py --control clientnode.myExp.myProj --events procedure.aal
-</code></pre>
-
-<p>where 
-<em> <code>clientnode</code> equals the node you want to start with
-</em> <code>myExp</code> is the Experiment Name
-<em> <code>myProj</code> is the Project Name
-</em> <code>procedural.aal</code> is the name of the AAL file.</p>
-<p>The various command line options are as follows:</p>
-<pre><code>  Usage: magi_orchestrator.py [options]
-
-  Options:
-       -h, --help
-                       show this help message and exit
-       -c CONTROL, --control=CONTROL
-                       The control node to connect to (i.e. control.exp.proj)
-       -f EVENTS, --events=EVENTS
-                       The events.aal file(s) to use. Can be specified
-                       multiple times for multiple AAL files
-       -l LOGLEVEL, --loglevel=LOGLEVEL
-                       The level at which to log. Must be one of none, debug,
-                       info, warning, error, or critical. Default is info.
-       -o LOGFILE, --logfile=LOGFILE
-                       If given, log to the file instead of the console
-                       (stdout).
-      -e EXITONFAILURE, --exitOnFailure=EXITONFAILURE
-                       If any method call fails (returns False), then exit
-                       all streams, unload all agents, and exit the
-                       orchestrator. Default value is True
-      -g GROUPBUILDTIMEOUT, --groupBuildTimeout=GROUPBUILDTIMEOUT
-                       When building the initial groups for agents in the
-                       given AAL, use the timeout given (in milliseconds)
-                       when waiting for group formation to complete.
-      --nocolor
-                       If given, do not use color in output.
-      -v, --verbose
-                       Tell orchestrator to print info about what its doing
-     -n, --tunnel
-                      Tell orchestrator to tunnel data through Deter Ops
-                       (users.deterlab.net).
-</code></pre>
-
-<h2 id="magi_statuspy-check-status-of-a-magi-experiment-reboot-magi-daemon-download-logs"><a id="magi_status.py"></a><code>magi_status.py</code>: Check status of a MAGI experiment, reboot MAGI daemon, download logs<a class="headerlink" href="#magi_statuspy-check-status-of-a-magi-experiment-reboot-magi-daemon-download-logs" title="Permanent link"></a></h2>
-<p>Use <code>magi_status.py</code> to:
-<em> check MAGI’s status on experiment nodes
-</em> reboot MAGI daemon process
-* download logs from experiment nodes</p>
-<p>This tool is run for one experiment at a time. The user needs to provide the project name and the experiment name to the tool.</p>
-<p>This tool, by default, works for all of the nodes corresponding to the given experiment. However, it can be made to work with a restricted set of nodes, either by directly providing the set of interested nodes, or by providing an AAL (experiment procedure) file to fetch the set of desired nodes.</p>
-<p>This tool by default only informs if the MAGI daemon process on a node is reachable or not. Specific options can be used to fetch group membership details and information about active agents.</p>
-<p>If you want to reboot the MAGI daemon, <code>magi_status.py</code> first reboots MAGI daemon processes on the experiment nodes, and then fetches their status.</p>
-<p>If the tool is asked to download logs, it just does that, and does not fetch the status.</p>
-<pre><code>  Usage: magi_status.py [options]
-
-  Script to get the status of MAGI daemon processes on experiment nodes,
-  to reboot them if required, and to download logs.
-
-  Options:
-    -h, --help            show this help message and exit
-    -p PROJECT, --project=PROJECT
-                          Project name
-    -e EXPERIMENT, --experiment=EXPERIMENT
-                          Experiment name
-    -n NODES, --nodes=NODES
-                          Comma-separated list of the nodes to reboot MAGI
-                          daemon
-    -a AAL, --aal=AAL     The yaml-based procedure file to extract the list of
-                          nodes
-    -l, --logs            Fetch logs. The -o/--logoutdir option is applicable
-                          only when fetching logs.
-    -o LOGOUTDIR, --logoutdir=LOGOUTDIR
-                          Store logs under the given directory. Default: /tmp
-    -g, --groupmembership
-                          Fetch group membership detail
-    -i, --agentinfo       Fetch loaded agent information
-    -t TIMEOUT, --timeout=TIMEOUT
-                          Number of seconds to wait to receive the status reply
-                          from the nodes on the overlay
-    -r, --reboot          Reboot nodes. The following options are applicable
-                          only when rebooting.
-    -d DISTPATH, --distpath=DISTPATH
-                          Location of the distribution
-    -U, --noupdate        Do not update the system before installing MAGI
-    -N, --noinstall       Do not install MAGI and the supporting libraries
-
-</code></pre>
               
             </div>
           </div>
@@ -667,7 +630,7 @@ The Orchestrator has a predefined event stream called <code>exit</code>. The pur
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../containers/containers-quickstart/" class="btn btn-neutral float-right" title="Containers Quickstart"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../magi-dev/" class="btn btn-neutral float-right" title="MAGI Development Codebase">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../agent-library/" class="btn btn-neutral" title="MAGI Agent Library"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -701,7 +664,7 @@ The Orchestrator has a predefined event stream called <code>exit</code>. The pur
         <span><a href="../agent-library/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../containers/containers-quickstart/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../magi-dev/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
