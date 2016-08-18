@@ -1941,6 +1941,81 @@
             "title": "What is ABAC?"
         }, 
         {
+            "location": "/competitions/", 
+            "text": "Competitions on DETERLab\n\uf0c1\n\n\nDETERLab can be used to run attack/defense exercises between teams of students or researchers. In such an exercise, a given experiment will be accessed by two teams - a blue (defense) team and a red (offense) team. DETERLab competitions UI enables:\n\n\n\n\nEasy creation of experiments and teams\n\n\nSpecification of which teams can access which experiments and which machines in an experiment\n\n\nExperiment setup (swap in, application installation)\n\n\nCompetition scoring\n\n\nExperiment termination\n\n\n\n\nEnabling competitions\n\uf0c1\n\n\nIf you wish to run competitions within your DETERLab project, please submit a ticket and provide rough estimates of how often you would run and how many machines you would need. We will review and enable competitions feature for your project.\n\n\nNew competition\n\uf0c1\n\n\nYou can create a new competition from your \"My DETERLab\" view. There will be a \"Competitions\" tab once you have a competition-enabled project. From that tab, you can click on the left-hand menu option \"New competition\".\n\n\nThe dialogue will ask you for the competition name and folder path. You should specify a unique name, such that no current experiments of your contain it as a prefix (e.g., you can specify 'comp' if you have no experiments whose name starts with 'comp'). The folder path should lead to a folder which has at least two files inside it: (1) cctf.ns file, describing the topology of an experiment that will be used for the competition and (2) start.pl, specifying a script to set up software on and limit access to experimental nodes. There are several competitions in shared materials, which you can reuse. You should also read our \nguide to writing competition scripts\n.\n\n\nThe dialogue will also ask you how many copies of the competition you need and whether team assignment should be \"paired\" or \"circular\". The figures below illustrate these two assignment types.  \n\n\nIn a circular assignment there are as many teams as there are experiments. Each team defends one experiment and attacks one other experiment. This team assignment enables participants on each team to play both defensive and offensive roles.\n\n\n\n\nIn a paired assignment the number of teams is twice that of the experiments. Each team either defends one experiment or attacks one experiment. This team assignment places each participant into either offensive or defensive role. \n\n\n   \n\n\nOnce you click \"Submit\" DETERLab will create a number of experiments and teams for your competition.\n\n\n Writing start up scripts for competitions\n\uf0c1\n\n\nA good start up script for a competition has the following properties:\n- Is project and experiment agnostic - it takes project and experiment names as arguments from command line. This enables scaling and portability.\n- Limits access to specific experiment's nodes to red/blue team or removes access to all teams\n- Installs needed software\n- Starts scoring\n- Makes any changes persist through reboots\n- Ends up with node reboot\n\n\nPlease start from our \nsample script with these features\n and version it to satisfy your needs.\n\n\n\n\nNote\n\n\nDon't forget to make your script executable\n\n\n\n\nManaging your competition\n\uf0c1\n\n\nOnce your competition is created you can see it in the competitions tab. You can set it up, run it or destroy it. \n\n\nSet up\n\uf0c1\n\n\nSet up includes: (1) specifying which teams can access which machines, (2) assigning participants to teams.\n\n\nTeam access\n\uf0c1\n\n\nEach experiment has a number of machines. You can specify which team can access each machine: defense (blue) team, offense (red) team or none. Blue team machines will be defended in a competition, red team machines will be used to launch attacks on blue team. You can use machines with no-team access for scoring or infrastructure set up (e.g. set up DNS root server that can be queried but not modified by teams). When you are finished, click \"Assign\" then \"Done\". You can always repeat this action, as long as the competition is not swapped in. Otherwise, you have to swap it out to change team access.\n\n\nBulding teams\n\uf0c1\n\n\nYou can assign a participant to a team by dragging him/her into the gray blocks for the desired team. A participant can belong to at most one team. When you are finished click \"Assign\" then \"Done\". You can always repeat this action, as long as the competition is not swapped in. If a participant shows up after you have swapped in the competition, you have to swap out, add the participant, and swap in again.\n\n\nRun\n\uf0c1\n\n\nRunning a competition requires that machines be assigned to it, and software set up on those machines.\n\n\nAllocating machines\n\uf0c1\n\n\nWhen you click \"Allocate\" in the \"Run\" screen for your competition all related experiments will start swap-in. All experiments must successfully swap in before you can proceed.\n\n\nSetting up software\n\uf0c1\n\n\nYou can set up necessary software for the competition manually but this does not scale. A better option is to put all your set up commands into start.pl script in your competition folder path. This script will be run when you click \"Install\" button in the \"Run\" screen. It will be run once per each experiment and the project and experiment names will be passed to the script. Our sample start.pl script in \nguide to writing competition scripts\n sets up limited access to machines, as specified in \"Team access\" option and makes sure that these changes remain in effect after reboots. After all the set up actions are completed, the script reboots the machines. It is also a good idea to start your scoring script at the time when you install the software. The scoring script should run periodically and update the \"score\" file in each experiment's \"tbdata\" directory. Please see \nguide to writing competition scripts\n for a full example. \n\n\nStarting the competition\n\uf0c1\n\n\nWhen teams are ready to start please click the \"Start\" button in the \"Run\" screen to zero out the score. You can also use this button to reset the score.\n\n\nScoring the competition\n\uf0c1\n\n\nIf you followed our \nguide to writing competition scripts\n team scores will be continuously updated. You can see them by clicking on the \"Score\" button. The score will be shown per experiment and broken into \"red\" and \"blue\" parts for offense and defense teams.\n\n\nRetiring the competition\n\uf0c1\n\n\nYou can release the machines (swap out) when your competition is done. This action does not affect any of the competition's software or logs.\n\n\nDestroy\n\uf0c1\n\n\nWhen you are completely done with your competition, click the \"Destroy\" button. This will remove all the experiments and teams. It is important to clean up your competitions when you don't need them anymore to preserve DETERLab's resources.", 
+            "title": "Competitions"
+        }, 
+        {
+            "location": "/competitions/#competitions-on-deterlab", 
+            "text": "DETERLab can be used to run attack/defense exercises between teams of students or researchers. In such an exercise, a given experiment will be accessed by two teams - a blue (defense) team and a red (offense) team. DETERLab competitions UI enables:   Easy creation of experiments and teams  Specification of which teams can access which experiments and which machines in an experiment  Experiment setup (swap in, application installation)  Competition scoring  Experiment termination", 
+            "title": "Competitions on DETERLab"
+        }, 
+        {
+            "location": "/competitions/#enabling-competitions", 
+            "text": "If you wish to run competitions within your DETERLab project, please submit a ticket and provide rough estimates of how often you would run and how many machines you would need. We will review and enable competitions feature for your project.", 
+            "title": "Enabling competitions"
+        }, 
+        {
+            "location": "/competitions/#new-competition", 
+            "text": "You can create a new competition from your \"My DETERLab\" view. There will be a \"Competitions\" tab once you have a competition-enabled project. From that tab, you can click on the left-hand menu option \"New competition\".  The dialogue will ask you for the competition name and folder path. You should specify a unique name, such that no current experiments of your contain it as a prefix (e.g., you can specify 'comp' if you have no experiments whose name starts with 'comp'). The folder path should lead to a folder which has at least two files inside it: (1) cctf.ns file, describing the topology of an experiment that will be used for the competition and (2) start.pl, specifying a script to set up software on and limit access to experimental nodes. There are several competitions in shared materials, which you can reuse. You should also read our  guide to writing competition scripts .  The dialogue will also ask you how many copies of the competition you need and whether team assignment should be \"paired\" or \"circular\". The figures below illustrate these two assignment types.    In a circular assignment there are as many teams as there are experiments. Each team defends one experiment and attacks one other experiment. This team assignment enables participants on each team to play both defensive and offensive roles.   In a paired assignment the number of teams is twice that of the experiments. Each team either defends one experiment or attacks one experiment. This team assignment places each participant into either offensive or defensive role.        Once you click \"Submit\" DETERLab will create a number of experiments and teams for your competition.", 
+            "title": "New competition"
+        }, 
+        {
+            "location": "/competitions/#managing-your-competition", 
+            "text": "Once your competition is created you can see it in the competitions tab. You can set it up, run it or destroy it.", 
+            "title": "Managing your competition"
+        }, 
+        {
+            "location": "/competitions/#set-up", 
+            "text": "Set up includes: (1) specifying which teams can access which machines, (2) assigning participants to teams.", 
+            "title": "Set up"
+        }, 
+        {
+            "location": "/competitions/#team-access", 
+            "text": "Each experiment has a number of machines. You can specify which team can access each machine: defense (blue) team, offense (red) team or none. Blue team machines will be defended in a competition, red team machines will be used to launch attacks on blue team. You can use machines with no-team access for scoring or infrastructure set up (e.g. set up DNS root server that can be queried but not modified by teams). When you are finished, click \"Assign\" then \"Done\". You can always repeat this action, as long as the competition is not swapped in. Otherwise, you have to swap it out to change team access.", 
+            "title": "Team access"
+        }, 
+        {
+            "location": "/competitions/#bulding-teams", 
+            "text": "You can assign a participant to a team by dragging him/her into the gray blocks for the desired team. A participant can belong to at most one team. When you are finished click \"Assign\" then \"Done\". You can always repeat this action, as long as the competition is not swapped in. If a participant shows up after you have swapped in the competition, you have to swap out, add the participant, and swap in again.", 
+            "title": "Bulding teams"
+        }, 
+        {
+            "location": "/competitions/#run", 
+            "text": "Running a competition requires that machines be assigned to it, and software set up on those machines.", 
+            "title": "Run"
+        }, 
+        {
+            "location": "/competitions/#allocating-machines", 
+            "text": "When you click \"Allocate\" in the \"Run\" screen for your competition all related experiments will start swap-in. All experiments must successfully swap in before you can proceed.", 
+            "title": "Allocating machines"
+        }, 
+        {
+            "location": "/competitions/#setting-up-software", 
+            "text": "You can set up necessary software for the competition manually but this does not scale. A better option is to put all your set up commands into start.pl script in your competition folder path. This script will be run when you click \"Install\" button in the \"Run\" screen. It will be run once per each experiment and the project and experiment names will be passed to the script. Our sample start.pl script in  guide to writing competition scripts  sets up limited access to machines, as specified in \"Team access\" option and makes sure that these changes remain in effect after reboots. After all the set up actions are completed, the script reboots the machines. It is also a good idea to start your scoring script at the time when you install the software. The scoring script should run periodically and update the \"score\" file in each experiment's \"tbdata\" directory. Please see  guide to writing competition scripts  for a full example.", 
+            "title": "Setting up software"
+        }, 
+        {
+            "location": "/competitions/#starting-the-competition", 
+            "text": "When teams are ready to start please click the \"Start\" button in the \"Run\" screen to zero out the score. You can also use this button to reset the score.", 
+            "title": "Starting the competition"
+        }, 
+        {
+            "location": "/competitions/#scoring-the-competition", 
+            "text": "If you followed our  guide to writing competition scripts  team scores will be continuously updated. You can see them by clicking on the \"Score\" button. The score will be shown per experiment and broken into \"red\" and \"blue\" parts for offense and defense teams.", 
+            "title": "Scoring the competition"
+        }, 
+        {
+            "location": "/competitions/#retiring-the-competition", 
+            "text": "You can release the machines (swap out) when your competition is done. This action does not affect any of the competition's software or logs.", 
+            "title": "Retiring the competition"
+        }, 
+        {
+            "location": "/competitions/#destroy", 
+            "text": "When you are completely done with your competition, click the \"Destroy\" button. This will remove all the experiments and teams. It is important to clean up your competitions when you don't need them anymore to preserve DETERLab's resources.", 
+            "title": "Destroy"
+        }, 
+        {
             "location": "/education/", 
             "text": "DETERLab is dedicated to supporting cyber security education. Since its inception, DETERLab has been used by 148 classes, from 100 institutions and involving 9012 users. It is currently being used by 24 classes, and 1077 users.\n\n\nDETERLab offers excellent support for teaching. Instructors can:\n\n\n\n\nBenefit from a large collection of publicly available teaching materials\n\n\nAutomatically create student accounts\n\n\nUpload class materials\n\n\nAssign homework/projects to students\n\n\nTrack student progress on assignments\n\n\nDownload assignments for grading\n\n\nHelp students directly with many issues, without involving DETERLab staff\n\n\n\n\nStudents benefit from using DETERLab, too. They develop practical skills in cybersecurity, networking, operating system administration, and coding. These skills make a big difference in job search!", 
             "title": "Education Materials Overview"
