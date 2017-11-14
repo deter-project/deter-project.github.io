@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <title>Risky Experiments - DETERLab Documentation</title>
+  
+
+  <link rel="shortcut icon" href="../../favicon.ico">
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../../css/highlight.css">
+  <link href="../../css/extra.css" rel="stylesheet">
+
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Risky Experiments";
+    var mkdocs_page_input_path = "core/risky-experiment.md";
+    var mkdocs_page_url = "/core/risky-experiment/";
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js"></script>
+  <script src="../../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
+  <script src="../../js/theme.js"></script> 
+
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href="../.." class="icon">
+          <!--REPLACE LOGO FILE HERE -->
+          <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
+          <span class="title">DETERLab Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+        <ul class="current">
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <li class="toctree-l1 ">
+        <a class="" href="../../Glossary/">Glossary</a>
+        
+    </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Support</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/registering/">Registering with DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/getting-help/">Getting Help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/faqs/">FAQs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/passwords/">Passwords</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/usage-policy/">Usage Policy</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DETERLab Core</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-quickstart/">Core Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../core-guide/">Core Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sample-topologies/">Sample Topologies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../using-nodes/">Using Your Nodes</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../generating-traffic/">Generating Traffic</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Risky Experiments</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#risky-experiment-support">Risky Experiment Support</a></li>
+                
+                    <li><a class="toctree-l4" href="#who-is-eligible-to-run-risky-experiments">Who Is Eligible to Run Risky Experiments?</a></li>
+                
+                    <li><a class="toctree-l4" href="#specifying-risk-and-connectivity-options">Specifying Risk and Connectivity Options</a></li>
+                
+                    <li><a class="toctree-l4" href="#logging-on-tunnel-nodes">Logging on Tunnel Nodes</a></li>
+                
+                    <li><a class="toctree-l4" href="#accessing-tunnel-nodes">Accessing Tunnel Nodes</a></li>
+                
+                    <li><a class="toctree-l4" href="#rebooting-and-modifying-experiments-with-tunnel-nodes">Rebooting and Modifying Experiments with Tunnel Nodes</a></li>
+                
+            
+            </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../sharing/">Using Shared Materials</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../user-guidelines/">User Do's and Don'ts</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Core Reference</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../deterlab-commands/">DETERLab Commands</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../ns-commands/">NS Commands Extensions</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../DETERSSH/">Accessing testbeds using SSH</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../node-types/">DETERLab Node Types</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../serial-console/">Using the Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../dell-serial-console/">Dell Serial Console</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../os-images/">OS Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../custom-images/">Creating Custom Images</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../legacy-tools/">Legacy Tools</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Orchestrator</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/feedback/">Feedback Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/flooder/">Flooder Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/writing-agents/">Specialized User</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/data-management/">Orchestrator Data Management</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-config/">MAGI Configuration</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/system-files/">MAGI System Organization</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-tools/">MAGI Tools</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-dev/">MAGI Development Codebase</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/magi-desktop/">MAGI Desktop</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Containers</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DeterLab Tools</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/">Tools Index</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/internet-atlas/">Internet Atlas</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Other Features</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../federation/">Federation</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../abac/">ABAC</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../competitions/">Competitions</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Education Materials</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/">Education Materials Overview</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/class-support/">Class Support</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/course-setup/">Course Setup</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/student-intro/">Student Introduction to DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../education/public-materials/">Public Materials</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Miscellaneous</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>DETERLab Core &raquo;</li>
+        
+      
+    
+    <li>Risky Experiments</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="risky-experiment-support">Risky Experiment Support<a class="headerlink" href="#risky-experiment-support" title="Permanent link"></a></h1>
+<p>We define as a risky experiment each experiment that either uses some type of malware such as DoS tool, a worm, an exploit, etc, even when the malware code is written by the experimenter and/or requires connectivity to the outside directly from experimental nodes. We recognize all these experiment types are interesting and important to facilitate new research in security. At the same time there is potential risk to the testbed and the Internet that must be contained. This risk includes:</p>
+<ul>
+<li>Malware interfering with other experiments on DETER</li>
+<li>Malware escaping to the outside world</li>
+<li>Malware overwhelming critical infrastructure in DETER, such as users and boss machines and control network</li>
+<li>Malware from the outside world infecting experimental machines and spreading in DETER or propagating back to the outside (with implications of DETER unwittingly participating in attacks).</li>
+</ul>
+<p>We have developed strategies to contain experiment risk while allowing users to observe phenomena of interest to them. This means that containment is customized for each experiment. This customization is performed automatically depending on information a user specifies on the "Begin Experiment Web" page.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>A "risky experiment" in DETERLab is a <strong>heavyweight</strong> mechanism. We request that you only implement it if other approaches, such as SSH tunnels, do not work.</p>
+</div>
+<p>Please <a href="https://trac.deterlab.net/newticket">file a ticket</a> (you must log in to Trac with your DETERLab username and password) if you run into any problems. This code is still being developed and we welcome your feedback.</p>
+<h2 id="who-is-eligible-to-run-risky-experiments">Who Is Eligible to Run Risky Experiments?<a class="headerlink" href="#who-is-eligible-to-run-risky-experiments" title="Permanent link"></a></h2>
+<p>To be able to create and run risky experiments you must first request permission from DETERLab. Please <a href="https://trac.deterlab.net/newticket">file a ticket</a> with your project name, a description of your experiment and its risk. We may need to exchange a few emails with you before granting permission to use this feature. Attempts to create risky experiments without approval of DETER staff will fail.</p>
+<h2 id="specifying-risk-and-connectivity-options">Specifying Risk and Connectivity Options<a class="headerlink" href="#specifying-risk-and-connectivity-options" title="Permanent link"></a></h2>
+<p>This section explains how to specify risk and connectivity options and what effect this will have on your experiment. </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Many containment strategies require automated modification of the experiment's NS file. We can currently only parse "simple" NS files, i.e. those that specify each node's features separately rather than using "foreach" option. We expect to extend our parsing ability in the near future. <a href="../../core/parsable.ns">parsable.ns​</a> is a sample file we can parse, and <a href="../../core/unparsable.ns">unparsable.ns​</a> is the same file in a version we <em>cannot</em> parse yet.</p>
+<p>Further, it is unclear yet how containment works with NS options such as traffic generation via NS file, use of templates, use of Planetlab nodes, etc.</p>
+</div>
+<h3 id="configuring-for-malware">Configuring for Malware<a class="headerlink" href="#configuring-for-malware" title="Permanent link"></a></h3>
+<p>This section describes which options to check for malware.</p>
+<p><strong>Experiment uses live malware</strong> If your experiment uses any type of malware such as DoS, worm code, exploit code, scanning code, etc. even if it is written by you, please check this box. You are not likely to experience any adverse effects if this box is checked. If you need no outside connectivity we may not take any special containment action, in addition to those already in place for all experiments. If you need outside connectivity we may log your traffic or filter it based on malware signatures to ensure no malware traffic escapes DETER. The type of containment will depend on your connectivity selections, and on type of malware you are using. Again, you are unlikely to experience any adverse effects from our actions.</p>
+<p><strong>Malware self-propagates?</strong> Check this box if you use malware such as worms that can spread by itself, once launched, through a set of vulnerable nodes without human action. Also check this box if you use email or other types of viruses that spread when a human accesses them through a benign application (e.g. human opens an email, human opens an IM attachment with the virus, etc). Checking this box will increase DETER's monitoring and filtering of traffic generated by your experiment to the control net and the outside.</p>
+<p><strong>Type of malware.</strong> This selection helps us customize our monitoring and filtering to a specific malware you are using. We expect this list to grow in the future. If no selection fits malware you are using, please select Unknown.</p>
+<h3 id="connectivity">Connectivity<a class="headerlink" href="#connectivity" title="Permanent link"></a></h3>
+<p><strong>Experiment needs outside connectivity.</strong> Check this box if you require the ability to initiate conversations with the Internet from your experiment. Connectivity will be provided by adding a special type of node, called tunnel to your topology. We will add this node automatically. Its name - tunnel - becomes a keyword so no other nodes in your topology can be named tunnel if this box is selected. The tunnel node will be linked to a random, well-connected node in your topology. We will also automatically set up routing on your nodes so they know they reach outside via the tunnel node. You will be able to see the added code in the NS file. Do not change it, otherwise you are likely to lose connectivity. You can change other parts of your NS file at will, including changing a link that connects the tunnel node with the topology to reconnect it to another experimental node. <strong>Do not create additional links to the tunnel node, this likely won't work.</strong> If at some point you do not need connectivity anymore, visit the Modify Experiment page and uncheck this box.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You will never get an unlimited outside connectivity. Instead we install a firewall on a tunnel node and open communication between your experiment and remote IPs you have specified on fine-grain basis. The rest of the form allows you to specify allowed communication patterns. If you don't know which nodes you will need to talk to at experiment creation time please file a ticket and explain to us your experiment design. We'll work together with you to find a safe way to support your experiment.</p>
+</div>
+<p><strong>Select type of communication with the outside.</strong> If you plan to communicate with the Internet for benign purposes (e.g., to get rpms, to contact public Web servers in a benign way, to let others talk to a Web server you have set up in DETER) you would select the benign option. If you plan to let malware generate traffic to the outside or you plan to attract malware from the outside select Malware-generated. If you use multiple traffic generators that fall into different categories, select Mixed. Type of communication you select will have direct influence on the level of our monitoring and filtering on tunnel nodes.</p>
+<p><strong>Names and ports of experiment nodes that receive outside connections.</strong> If you plan to set up a server on some of your experimental nodes that will receive communication from the outside specify the nodes, destination ports and protocols here. Names of the nodes are names from your NS file. Only single protocols, not protocol ranges, can be specified. Supported protocols are tcp and udp. This communication is NAT-ed via the tunnel node, thus remote clients will need to contact you on a specific, high-numbered port. You will be notified of NAT specifics in an email once you swap your experiment in. This information can also be viewed on your experiment's Web page.</p>
+<p>For example, let a node n1 in your topology have IP address 1.2.3.4 and wants to run a public Web server. You would specify n1/80/tcp in the textbox for experiment nodes that receive outside connections. NAT may map this into 5.6.7.8 port 10001. Remote clients would then type ​http://5.6.7.8:10001 to access your Web server. If this is confusing please file a ticket for more information.</p>
+<p><strong>IPs and ports of outside nodes that receive connections from the experiment.</strong> If you need to contact remote servers from your experimental nodes (e.g., to send some statistics to a server in your institution) specify the IPs, destination ports and protocols here. Same restrictions for ports (single numbers, not ranges) and protocols (tcp and udp) apply. Note that a lot of public servers have multiple IP addresses. If you want to contact such servers (e.g. Google) you will need to list all IP addresses to ensure that when you try to access them via their URL, the corresponding IP is on our list of allowed remote hosts. Otherwise you could list only one IP for such public servers and contact them using this IP address and not the URL (e.g., you could type 74.125.19.103 instead of www.google.com in your browser's address bar and this would guarantee that you always go to this one specific Google server).</p>
+<h2 id="logging-on-tunnel-nodes">Logging on Tunnel Nodes<a class="headerlink" href="#logging-on-tunnel-nodes" title="Permanent link"></a></h2>
+<p>For security reasons, all prohibited traffic on tunnel nodes is logged. This means that traffic you specifically allowed via our forms for experiment creation and modification will not be logged but any other traffic to/from tunnel nodes and any other transit traffic will be logged.</p>
+<h2 id="accessing-tunnel-nodes">Accessing Tunnel Nodes<a class="headerlink" href="#accessing-tunnel-nodes" title="Permanent link"></a></h2>
+<p>For security reasons, users do not have sudoer access to tunnel nodes.</p>
+<h2 id="rebooting-and-modifying-experiments-with-tunnel-nodes">Rebooting and Modifying Experiments with Tunnel Nodes<a class="headerlink" href="#rebooting-and-modifying-experiments-with-tunnel-nodes" title="Permanent link"></a></h2>
+<p>You can safely reboot tunnel nodes if you want - they should come back up with all the correct settings. If you reboot any other nodes in your experiment you will need to set up routing to the outside. You can do this by logging on the rebooted nodes and running /share/t1t2/set_route if you have sudo privileges on that node. If you run into problems please contact us and we will help restore the connectivity.</p>
+<p>The safest way to change something in your experiment is via Modify Experiment Web page. This should properly set up all the routes, firewall rules, etc. in your experiment. You will not be allowed to modify tunnel node's settings such as OS image and name but you can modify where this node links with your topology. If you need to add some start commands on experiment nodes (except the tunnel node) the best way is to copy the commands we have automatically inserted into your startup script, add commands you want, then replace the start-cmd options in the NS file with the name of your startup script. If you mess up startcmd options in the NS file routing on experiment nodes will not be set up properly. To amend the problem you can delete the entire "tunnelcode" section of the NS file, make sure that the connectivity box is checked and run Modify Experiment and the proper code for connectivity will be automatically inserted.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../sharing/" class="btn btn-neutral float-right" title="Using Shared Materials"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../link-delays/" class="btn btn-neutral" title="End Node Traffic Shaping"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2017 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+	  
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+<div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../link-delays/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../sharing/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+</body>
+</html>

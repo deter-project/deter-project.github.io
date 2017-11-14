@@ -7,7 +7,7 @@
   
   
   
-  <title>Containers Reference - DETERLab Docs</title>
+  <title>Containers Reference - DETERLab Documentation</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -48,10 +48,10 @@
         <a href="../.." class="icon">
           <!--REPLACE LOGO FILE HERE -->
           <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-          <span class="title">DETERLab Docs</span></a>
+          <span class="title">DETERLab Documentation</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search documentation" />
   </form>
 </div>
       </div>
@@ -71,6 +71,49 @@
         <a class="" href="../../Glossary/">Glossary</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Support</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/registering/">Registering with DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/getting-help/">Getting Help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/faqs/">FAQs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/passwords/">Passwords</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/usage-policy/">Usage Policy</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -116,6 +159,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/risky-experiment/">Risky Experiments</a>
         
     </li>
 
@@ -271,6 +321,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/flooder/">Flooder Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../orchestrator/writing-agents/">Specialized User</a>
         
     </li>
@@ -360,40 +417,42 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#commands">Commands</a></li>
+                <li class="toctree-l3"><a href="#containers-reference">Containers Reference</a></li>
                 
-                    <li><a class="toctree-l4" href="#containerizepy">containerize.py</a></li>
+                    <li><a class="toctree-l4" href="#commands">Commands</a></li>
                 
-                    <li><a class="toctree-l4" href="#container_imagepy">container_image.py</a></li>
+                    <li><a class="toctree-l4" href="#topdl-attributes-for-containers">Topdl Attributes For Containers</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#topdl-attributes-for-containers">Topdl Attributes For Containers</a></li>
+                    <li><a class="toctree-l4" href="#configuration-files">Configuration Files</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#configuration-files">Configuration Files</a></li>
+                    <li><a class="toctree-l4" href="#container-notes">Container Notes</a></li>
                 
-                    <li><a class="toctree-l4" href="#per-experiment-directory">Per-experiment Directory</a></li>
-                
-                    <li><a class="toctree-l4" href="#site-configuration-file">Site Configuration File</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#container-notes">Container Notes</a></li>
-                
-                    <li><a class="toctree-l4" href="#qemu">Qemu</a></li>
-                
-                    <li><a class="toctree-l4" href="#viewos-processes">ViewOS Processes</a></li>
-                
-                    <li><a class="toctree-l4" href="#physical-nodes">Physical Nodes</a></li>
-                
-                    <li><a class="toctree-l4" href="#interconnections-vde-switches-and-local-networking">Interconnections: VDE switches and local networking</a></li>
-                
-            
-                <li class="toctree-l3"><a href="#bootable-qemu-images">Bootable Qemu Images</a></li>
-                
-                    <li><a class="toctree-l4" href="#sudo-configuration">sudo configuration</a></li>
+                    <li><a class="toctree-l4" href="#bootable-qemu-images">Bootable Qemu Images</a></li>
                 
             
             </ul>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DeterLab Tools</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/">Tools Index</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/internet-atlas/">Internet Atlas</a>
         
     </li>
 
@@ -526,7 +585,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Docs</a>
+        <a href="../..">DETERLab Documentation</a>
       </nav>
 
       
@@ -552,11 +611,12 @@
           <div role="main">
             <div class="section">
               
-                <p>This document describes the details of the commands and data structures that make up the Containers system.  The <a href="/containers/containers-guide/">Containers Guide</a> provides useful context about the workflows and goals of the system that inform these technical details.</p>
+                <h1 id="containers-reference">Containers Reference<a class="headerlink" href="#containers-reference" title="Permanent link"></a></h1>
+<p>This document describes the details of the commands and data structures that make up the Containers system.  The <a href="/containers/containers-guide/">Containers Guide</a> provides useful context about the workflows and goals of the system that inform these technical details.</p>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link"></a></h2>
 <p>This section describes the command line interface to the Containers system.</p>
 <h3 id="containerizepy">containerize.py<a class="headerlink" href="#containerizepy" title="Permanent link"></a></h3>
-<p>The <code>containerize.py</code> command creates a DETERLab experiment made up of containers.  The <code>containerize.py</code> program is available from <code>/share/containers/containerize.py</code> on <code>users.isi.deterlab.net</code>.  A sample invocation is:</p>
+<p>The <code>containerize.py</code> command creates a DETERLab experiment made up of containers.  The <code>containerize.py</code> program is available from <code>/share/containers/containerize.py</code> on <code>users.deterlab.net</code>.  A sample invocation is:</p>
 <pre><code>$ /share/containers/containerize.py MyProject MyExperiment ~/mytopology.tcl
 </code></pre>
 
@@ -891,7 +951,7 @@
 <h3 id="site-configuration-file">Site Configuration File<a class="headerlink" href="#site-configuration-file" title="Permanent link"></a></h3>
 <p>The site configuration file controls how all experiments are containerized across DETERLab.  The contents are primarily of interest to developers, but researchers may occasionally find the need to specify their own.  The <code>--config</code> parameter to <a href="#containerize.py">containerize.py</a> does that.</p>
 <p>The site configuration file is an attribute-value pair file parsed by a python ConfigParser that sets overall container parameters.  Many of these have legacy internal names.</p>
-<p>The default site configuration is in <code>/share/containers/site.conf</code> on <code>users.isi.deterlab.net</code>.</p>
+<p>The default site configuration is in <code>/share/containers/site.conf</code> on <code>users.deterlab.net</code>.</p>
 <p>Acceptable values (and their DETERLab defaults) are:</p>
 <ul>
 <li>
@@ -1019,7 +1079,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../../federation/" class="btn btn-neutral float-right" title="Federation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../tools/" class="btn btn-neutral float-right" title="Tools Index"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../containers-guide/" class="btn btn-neutral" title="Containers Guide"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -1032,7 +1092,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+      <p>Copyright &copy; 2017 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
     
   </div>
 
@@ -1053,7 +1113,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
         <span><a href="../containers-guide/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../../federation/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../tools/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -1066,7 +1126,7 @@ $(document).ready(function () {
     scrollTo = $("a.current");
 
     container.scrollTop(
-    scrollTo.offset().top - container.offset().top + container.scrollTop() - 120
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
     );
     
     }

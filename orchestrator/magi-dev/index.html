@@ -7,7 +7,7 @@
   
   
   
-  <title>MAGI Development Codebase - DETERLab Docs</title>
+  <title>MAGI Development Codebase - DETERLab Documentation</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -48,10 +48,10 @@
         <a href="../.." class="icon">
           <!--REPLACE LOGO FILE HERE -->
           <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-          <span class="title">DETERLab Docs</span></a>
+          <span class="title">DETERLab Documentation</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search documentation" />
   </form>
 </div>
       </div>
@@ -71,6 +71,49 @@
         <a class="" href="../../Glossary/">Glossary</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Support</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/registering/">Registering with DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/getting-help/">Getting Help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/faqs/">FAQs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/passwords/">Passwords</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/usage-policy/">Usage Policy</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -116,6 +159,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/risky-experiment/">Risky Experiments</a>
         
     </li>
 
@@ -271,6 +321,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../flooder/">Flooder Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../writing-agents/">Specialized User</a>
         
     </li>
@@ -324,6 +381,9 @@
         
             <ul>
             
+                <li class="toctree-l3"><a href="#magi-development-codebase">MAGI Development Codebase</a></li>
+                
+            
             </ul>
         
     </li>
@@ -361,6 +421,28 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DeterLab Tools</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/">Tools Index</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/internet-atlas/">Internet Atlas</a>
         
     </li>
 
@@ -493,7 +575,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Docs</a>
+        <a href="../..">DETERLab Documentation</a>
       </nav>
 
       
@@ -519,7 +601,8 @@
           <div role="main">
             <div class="section">
               
-                <p>The MAGI codebase is maintained in three branches.</p>
+                <h1 id="magi-development-codebase">MAGI Development Codebase<a class="headerlink" href="#magi-development-codebase" title="Permanent link"></a></h1>
+<p>The MAGI codebase is maintained in three branches.</p>
 <ul>
 <li>
 <p><strong>Current/Released</strong>: Stable released version</p>
@@ -541,7 +624,7 @@
 </code></pre>
 
 <p>This will install MAGI from the development code base.</p>
-<p>Also, if you run MAGI tools from the Deter Ops (<code>users.isi.deterlab.net</code>) machine, then make the tools point to the development code base:</p>
+<p>Also, if you run MAGI tools from the Deter Ops (<code>users.deterlab.net</code>) machine, then make the tools point to the development code base:</p>
 <pre><code>export PYTHONPATH=/share/magi/dev_src
 /share/magi/dev/magi_orchestrator.py -c bridgeNode -f eventsFile
 </code></pre>
@@ -554,7 +637,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../magi-desktop/" class="btn btn-neutral float-right" title="MAGI Desktop">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../magi-desktop/" class="btn btn-neutral float-right" title="MAGI Desktop"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../magi-tools/" class="btn btn-neutral" title="MAGI Tools"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -567,7 +650,7 @@
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+      <p>Copyright &copy; 2017 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
     
   </div>
 
@@ -601,7 +684,7 @@ $(document).ready(function () {
     scrollTo = $("a.current");
 
     container.scrollTop(
-    scrollTo.offset().top - container.offset().top + container.scrollTop() - 120
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
     );
     
     }

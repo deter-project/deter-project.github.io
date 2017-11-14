@@ -32,10 +32,13 @@ body {
 	line-height: 24px;
 }
 
+li.toctree-l3 {
+	display: none;
+}
+
 .wy-breadcrumbs li {
 	font-weight: bold;
 }
-
 
 h3, h4, h5, h6 {
 	color: inherit;
@@ -85,6 +88,40 @@ h3 code {
 	color: #F2F2F2;
 }
 
+.wy-menu-vertical span {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+.wy-menu-vertical li ul li a {
+	font-size: 100%;
+	color: #d8d8d8;
+}
+
+.wy-menu-vertical li.current ul li a {
+	color: #000;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #000;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #000;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #000;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #000;
+  opacity: 1;
+}
+
+/*
+ul.subnav li ul li a:before {
+    content: "- ";
+}
+*/
 .wy-plain-list-disc li, .rst-content .section ul li, .rst-content .toctree-wrapper ul li, article ul li {
 	margin-bottom: 10px;
 	font-size: 16px;
@@ -151,4 +188,12 @@ h3 code {
 
 .wy-menu.wy-menu-vertical {
 	margin-top: 95px;
+}
+
+.rst-content .section ol li p:last-child {
+	margin-bottom: 12px;
+}
+
+#mkdocs-search-results {
+	padding: 20px;
 }

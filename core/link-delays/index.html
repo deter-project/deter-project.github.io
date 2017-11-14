@@ -7,7 +7,7 @@
   
   
   
-  <title>End Node Traffic Shaping - DETERLab Docs</title>
+  <title>End Node Traffic Shaping - DETERLab Documentation</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -48,10 +48,10 @@
         <a href="../.." class="icon">
           <!--REPLACE LOGO FILE HERE -->
           <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-          <span class="title">DETERLab Docs</span></a>
+          <span class="title">DETERLab Documentation</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search documentation" />
   </form>
 </div>
       </div>
@@ -71,6 +71,49 @@
         <a class="" href="../../Glossary/">Glossary</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Support</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/registering/">Registering with DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/getting-help/">Getting Help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/faqs/">FAQs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/passwords/">Passwords</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/usage-policy/">Usage Policy</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -121,17 +164,21 @@
             
                 <li class="toctree-l3"><a href="#per-link-traffic-shaping-linkdelays">Per-Link Traffic Shaping ("linkdelays")</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#multiplexed-links">Multiplexed Links</a></li>
+                    <li><a class="toctree-l4" href="#multiplexed-links">Multiplexed Links</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#freebsd-technical-discussion">FreeBSD Technical Discussion</a></li>
+                    <li><a class="toctree-l4" href="#freebsd-technical-discussion">FreeBSD Technical Discussion</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#linux-technical-discussion">Linux Technical Discussion</a></li>
+                    <li><a class="toctree-l4" href="#linux-technical-discussion">Linux Technical Discussion</a></li>
                 
             
             </ul>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../risky-experiment/">Risky Experiments</a>
         
     </li>
 
@@ -287,6 +334,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../../orchestrator/flooder/">Flooder Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../../orchestrator/writing-agents/">Specialized User</a>
         
     </li>
@@ -373,6 +427,28 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DeterLab Tools</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/">Tools Index</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/internet-atlas/">Internet Atlas</a>
         
     </li>
 
@@ -505,7 +581,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Docs</a>
+        <a href="../..">DETERLab Documentation</a>
       </nav>
 
       
@@ -531,7 +607,7 @@
           <div role="main">
             <div class="section">
               
-                <h2 id="per-link-traffic-shaping-linkdelays">Per-Link Traffic Shaping ("linkdelays")<a class="headerlink" href="#per-link-traffic-shaping-linkdelays" title="Permanent link"></a></h2>
+                <h1 id="per-link-traffic-shaping-linkdelays">Per-Link Traffic Shaping ("linkdelays")<a class="headerlink" href="#per-link-traffic-shaping-linkdelays" title="Permanent link"></a></h1>
 <p>In order to conserve nodes, it is possible to specify that instead of doing traffic shaping on separate delay nodes (which eats up a node for every two shaped links), it be done on the nodes that are actually generating the traffic.</p>
 <p>Under FreeBSD, just like normal delay nodes, end node (sometimes called "per-link") traffic shaping uses IPFW to direct traffic into the proper Dummynet pipe. On each node in a duplex link or LAN, a set of IPFW rules and Dummynet pipes is set up. As traffic enters or leaves your node, IPFW looks at the packet and stuffs it into the proper Dummynet pipe. At the proper time, Dummynet takes the packet and sends it on its way.</p>
 <p>Under Linux, end node traffic shaping is performed by the packet scheduler modules, part of the kernel NET3 implementation. Each packet is added to the appropriate scheduler queue tree and shaped as specified in your NS file. Note that Linux traffic shaping currently only supports the drop-tail queueing discipline; gred and red are not available yet.</p>
@@ -643,7 +719,7 @@ tc qdisc add dev eth0 parent 2:1 handle 3 delay usecs 20000
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../sharing/" class="btn btn-neutral float-right" title="Using Shared Materials">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../risky-experiment/" class="btn btn-neutral float-right" title="Risky Experiments"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../generating-traffic/" class="btn btn-neutral" title="Generating Traffic"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -656,7 +732,7 @@ tc qdisc add dev eth0 parent 2:1 handle 3 delay usecs 20000
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+      <p>Copyright &copy; 2017 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
     
   </div>
 
@@ -677,7 +753,7 @@ tc qdisc add dev eth0 parent 2:1 handle 3 delay usecs 20000
         <span><a href="../generating-traffic/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../sharing/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../risky-experiment/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
@@ -690,7 +766,7 @@ $(document).ready(function () {
     scrollTo = $("a.current");
 
     container.scrollTop(
-    scrollTo.offset().top - container.offset().top + container.scrollTop() - 120
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
     );
     
     }

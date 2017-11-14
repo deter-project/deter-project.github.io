@@ -7,7 +7,7 @@
   
   
   
-  <title>MAGI System Organization - DETERLab Docs</title>
+  <title>MAGI System Organization - DETERLab Documentation</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -48,10 +48,10 @@
         <a href="../.." class="icon">
           <!--REPLACE LOGO FILE HERE -->
           <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-          <span class="title">DETERLab Docs</span></a>
+          <span class="title">DETERLab Documentation</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search documentation" />
   </form>
 </div>
       </div>
@@ -71,6 +71,49 @@
         <a class="" href="../../Glossary/">Glossary</a>
         
     </li>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>Support</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/registering/">Registering with DETERLab</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/getting-help/">Getting Help</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/faqs/">FAQs</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/passwords/">Passwords</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/usage-policy/">Usage Policy</a>
+        
+    </li>
+
+        
+    </ul>
 <li>
           
             <li>
@@ -116,6 +159,13 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/risky-experiment/">Risky Experiments</a>
         
     </li>
 
@@ -271,6 +321,13 @@
         
             
     <li class="toctree-l1 ">
+        <a class="" href="../flooder/">Flooder Case Study</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
         <a class="" href="../writing-agents/">Specialized User</a>
         
     </li>
@@ -303,16 +360,15 @@
         
             <ul>
             
-                <li class="toctree-l3"><a href="#magicore">magicore</a></li>
+                <li class="toctree-l3"><a href="#magi-system-organization">MAGI System Organization</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#magimodules">magimodules</a></li>
+                    <li><a class="toctree-l4" href="#magicore">magicore</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#logs">Logs</a></li>
+                    <li><a class="toctree-l4" href="#magimodules">magimodules</a></li>
                 
-            
-                <li class="toctree-l3"><a href="#configuration-files">Configuration Files</a></li>
+                    <li><a class="toctree-l4" href="#logs">Logs</a></li>
+                
+                    <li><a class="toctree-l4" href="#configuration-files">Configuration Files</a></li>
                 
             
             </ul>
@@ -373,6 +429,28 @@
             
     <li class="toctree-l1 ">
         <a class="" href="../../containers/containers-reference/">Containers Reference</a>
+        
+    </li>
+
+        
+    </ul>
+<li>
+          
+            <li>
+    <ul class="subnav">
+    <li><span>DeterLab Tools</span></li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/">Tools Index</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../tools/internet-atlas/">Internet Atlas</a>
         
     </li>
 
@@ -505,7 +583,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Docs</a>
+        <a href="../..">DETERLab Documentation</a>
       </nav>
 
       
@@ -531,8 +609,9 @@
           <div role="main">
             <div class="section">
               
-                <p>The MAGI system is divided into <strong>magicore</strong> and <strong>magimodules</strong>.</p>
-<h3 id="magicore">magicore<a class="headerlink" href="#magicore" title="Permanent link"></a></h3>
+                <h1 id="magi-system-organization">MAGI System Organization<a class="headerlink" href="#magi-system-organization" title="Permanent link"></a></h1>
+<p>The MAGI system is divided into <strong>magicore</strong> and <strong>magimodules</strong>.</p>
+<h2 id="magicore">magicore<a class="headerlink" href="#magicore" title="Permanent link"></a></h2>
 <p>The <strong>magicore</strong> consists of the group communication, control, and data management infrastructure.</p>
 <p>The latest available version for use on DETERLab may be found on <code>users</code> at:</p>
 <pre><code>/share/magi/current/
@@ -542,7 +621,7 @@
 <pre><code>https://github.com/deter-project/magi.git
 </code></pre>
 
-<h3 id="magimodules">magimodules<a class="headerlink" href="#magimodules" title="Permanent link"></a></h3>
+<h2 id="magimodules">magimodules<a class="headerlink" href="#magimodules" title="Permanent link"></a></h2>
 <p>The <strong>magimodules</strong> are agent function implementations that enable a particular behavior on the experiment nodes.</p>
 <p>The agents along with supporting documentation and file are located on <code>users</code> at:</p>
 <pre><code>/share/magi/modules
@@ -552,7 +631,7 @@
 <pre><code>https://github.com/deter-project/magi-modules.git
 </code></pre>
 
-<h3 id="logs">Logs<a class="headerlink" href="#logs" title="Permanent link"></a></h3>
+<h2 id="logs">Logs<a class="headerlink" href="#logs" title="Permanent link"></a></h2>
 <p>You can find helpful logs in these locations in <code>users</code></p>
 <ul>
 <li>
@@ -572,7 +651,7 @@
 <p><code>$LOG_DIR/mongo.log</code></p>
 </li>
 </ul>
-<h3 id="configuration-files">Configuration Files<a class="headerlink" href="#configuration-files" title="Permanent link"></a></h3>
+<h2 id="configuration-files">Configuration Files<a class="headerlink" href="#configuration-files" title="Permanent link"></a></h2>
 <p>The following configuration files are available in <code>users</code>:</p>
 <ul>
 <li>
@@ -599,7 +678,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../agent-library/" class="btn btn-neutral float-right" title="MAGI Agent Library">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../agent-library/" class="btn btn-neutral float-right" title="MAGI Agent Library"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../orchestrator-reference/" class="btn btn-neutral" title="Orchestrator Reference"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -612,7 +691,7 @@
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2016 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+      <p>Copyright &copy; 2017 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
     
   </div>
 
@@ -646,7 +725,7 @@ $(document).ready(function () {
     scrollTo = $("a.current");
 
     container.scrollTop(
-    scrollTo.offset().top - container.offset().top + container.scrollTop() - 120
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
     );
     
     }
