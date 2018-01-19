@@ -613,9 +613,15 @@
 <p>Every node has a daemon running with a series of Agents on it. These Agents are each executed in their own thread or process. They are provided with a defined interface with which to send and receive messages to other objects in the experiment. The MAGI daemon will route messages to the agent based on the routing information in the message. The daemon supports group-based, name-based, and “dock”-based routing. (A dock is like a port for a traditional daemon; an agent listens on a dock.) Once a message is delivered to an agent, the format of the message data is then up to the agent itself.</p>
 <p>Most agents will not need to parse messages directly, however, because the MAGI Agent Library supports a number of useful abstractions implemented in base classes from which Agent authors can derive. These are described in detail below.</p>
 <h3 id="agent-execution-models">Agent Execution Models<a class="headerlink" href="#agent-execution-models" title="Permanent link"></a></h3>
-<p>There are two execution models supported by the daemon for Agents: 
-<em> <strong> Thread-based</strong>  - A thread-based Agent is loaded and runs in the process space of the daemon. The daemon communicates with a thread-based agent directly
-</em> <strong> Process-based</strong>  - A process-based Agent is started as a separate process. The daemon communicates with it via standard interprocess communication techniques: a pipe or a socket.</p>
+<p>There are two execution models supported by the daemon for Agents: </p>
+<ul>
+<li>
+<p><strong>Thread-based</strong>  - A thread-based Agent is loaded and runs in the process space of the daemon. The daemon communicates with a thread-based agent directly.</p>
+</li>
+<li>
+<p><strong>Process-based</strong>  - A process-based Agent is started as a separate process. The daemon communicates with it via standard interprocess communication techniques: a pipe or a socket.</p>
+</li>
+</ul>
 <p>Here is a list outlining the differences between the execution models.</p>
 <p><strong> Threads</strong> </p>
 <ul>

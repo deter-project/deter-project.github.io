@@ -653,34 +653,46 @@ of an experiment.  Before you can start your experiment, you must model the elem
 <p>Here's how to describe this topology:</p>
 <p><strong>Declare a simulator and include a file that allows you to use the special <code>tb-</code> commands.</strong>
 First off, all NS files start with a simple prologue, declaring a simulator and including a file that allows you to use the special <code>tb-</code> commands:</p>
-<p><code># This is a simple ns script. Comments start with #.
+<pre><code>    # This is a simple ns script. Comments start with #.
     set ns [new Simulator]
-        source tb_compat.tcl</code></p>
-<p><strong>Define the 4 nodes in the topology.</strong>
-<code>set nodeA [$ns node]
+        source tb_compat.tcl
+</code></pre>
+
+<p><strong>Define the 4 nodes in the topology.</strong></p>
+<pre><code>    set nodeA [$ns node]
     set nodeB [$ns node]
     set nodeC [$ns node]
-    set nodeD [$ns node]</code></p>
+    set nodeD [$ns node]
+</code></pre>
+
 <p><code>nodeA</code> and so on are the virtual names (<em>vnames</em>) of the nodes in your topology. When your experiment is swapped in (has allocated resources), they will be assigned to physical node names like <em>pc45</em>, probably different ones each time. </p>
 <p><strong>NOTE:</strong> Avoid vnames that clash with the physical node names in the testbed.**</p>
 <p><strong>Define the link and the LAN that connect the nodes.</strong></p>
-<p>NS syntax permits you to specify the bandwidth, latency, and queue type. Note that since NS can't impose artificial losses like DETERLab can, we use a separate <code>tb-</code> command to add loss on a link. For our example, we will define a full speed LAN between B, C, and D, and a shaped link from node A to B.
-<code>set link0 [$ns duplex-link $nodeB $nodeA 30Mb 50ms DropTail]
+<p>NS syntax permits you to specify the bandwidth, latency, and queue type. Note that since NS can't impose artificial losses like DETERLab can, we use a separate <code>tb-</code> command to add loss on a link. For our example, we will define a full speed LAN between B, C, and D, and a shaped link from node A to B.</p>
+<pre><code>    set link0 [$ns duplex-link $nodeB $nodeA 30Mb 50ms DropTail]
     tb-set-link-loss $link0 0.01
-    set lan0 [$ns make-lan "$nodeD $nodeC $nodeB " 100Mb 0ms]</code>
-In addition to the standard NS syntax above, a number of <a href="/core/ns-commands/">extensions</a> are available in DETERLab that allow you to better control your experiment.</p>
+    set lan0 [$ns make-lan &quot;$nodeD $nodeC $nodeB &quot; 100Mb 0ms]
+</code></pre>
+
+<p>In addition to the standard NS syntax above, a number of <a href="/core/ns-commands/">extensions</a> are available in DETERLab that allow you to better control your experiment.</p>
 <p>For example, you may specify what Operating System is booted on your nodes. For the versions of FreeBSD, Linux, and Windows we currently support, please refer to the <a href="/core/os-images/">Operating System Images</a> page.</p>
-<p>Click <a href="https://www.isi.deterlab.net/showosid_list.php3">List ImageIDs</a> in the DETERLab web interface <em>Interaction</em> pane to see the current list of DETERLab-supplied operating systems. By default, our most recent Linux image is selected.
-<code>tb-set-node-os $nodeA FBSD7-STD
-    tb-set-node-os $nodeC Ubuntu1004-STD
-    tb-set-node-os $nodeC WINXP-UPDATE</code></p>
+<p>Click <a href="https://www.isi.deterlab.net/showosid_list.php3">List ImageIDs</a> in the DETERLab web interface <em>Interaction</em> pane to see the current list of DETERLab-supplied operating systems. By default, our most recent Linux image is selected.</p>
+<pre><code>    tb-set-node-os $nodeA FBSD11-STD
+    tb-set-node-os $nodeC Ubuntu1604-STD
+    tb-set-node-os $nodeC WINXP-UPDATE
+</code></pre>
+
 <p><strong>Enable routing.</strong></p>
 <p>In a topology like this, you will likely want to communicate between all the nodes, including nodes that aren't directly connected, like <code>A</code> and <code>C</code>. In order for that to happen, we must enable routing in our experiment, so <code>B</code> can route packets for the other nodes. </p>
-<p>The typical way to do this is with Static routing. (Other options are detailed in the <a href="#Routing"><em>Routing</em> section below</a>).
-<code>$ns rtproto Static</code></p>
-<p><strong>End with an epilogue that instructs the simulator to start.</strong>
-<code># Go!
-    $ns run</code></p>
+<p>The typical way to do this is with Static routing. (Other options are detailed in the <a href="#Routing"><em>Routing</em> section below</a>).</p>
+<pre><code>    $ns rtproto Static
+</code></pre>
+
+<p><strong>End with an epilogue that instructs the simulator to start.</strong></p>
+<pre><code>    # Go!
+    $ns run
+</code></pre>
+
 <h3 id="step-2-create-a-new-experiment">Step 2: Create a new experiment<a class="headerlink" href="#step-2-create-a-new-experiment" title="Permanent link"></a></h3>
 <p>For this tutorial, we will use the web interface to create a new experiment. You could also use the <a href="/core/deterlab-commands/">DETERLab Shell Commands</a>.</p>
 <ol>
@@ -698,20 +710,21 @@ In addition to the standard NS syntax above, a number of <a href="/core/ns-comma
 <p>After submission, DETERLab will begin processing your request. This process can take several minutes, depending on how large your topology is, and what other features (such as delay nodes and bandwidth limits) you are using. While you are waiting, you may watch the swap in process displayed in your web browser.</p>
 <p>Assuming all goes well, you will receive an email message indicating success or failure, and if successful, a listing of the nodes and IP address that were allocated to your experiment.</p>
 <p>For the NS file in this example, you should receive a listing that looks similar to this:</p>
-<p>`
-Experiment: DeterTest/basic-experiment
-State: swapped</p>
-<p>Virtual Node Info:
-ID              Type         OS              Qualified Name</p>
-<hr />
-<p>nodeA           pc           FBSD7-STD       nodeA.basic-experiment.DeterTest.isi.deterlab.net
+<pre><code>Experiment: DeterTest/basic-experiment
+State: swapped
+
+Virtual Node Info:
+ID              Type         OS              Qualified Name
+--------------- ------------ --------------- --------------------
+nodeA           pc           FBSD11-STD      nodeA.basic-experiment.DeterTest.isi.deterlab.net
 nodeB           pc                           nodeB.basic-experiment.DeterTest.isi.deterlab.net
-nodeC           pc           Ubuntu1004-STD  nodeC.basic-experiment.DeterTest.isi.deterlab.net
-nodeD           pc                           nodeD.basic-experiment.DeterTest.isi.deterlab.net</p>
-<p>Virtual Lan/Link Info:
-ID              Member/Proto    IP/Mask         Delay     BW (Kbs)  Loss Rate</p>
-<hr />
-<p>lan0            nodeB:1         10.1.2.4        0.00      100000    0.00000000
+nodeC           pc           Ubuntu1604-STD  nodeC.basic-experiment.DeterTest.isi.deterlab.net
+nodeD           pc                           nodeD.basic-experiment.DeterTest.isi.deterlab.net
+
+Virtual Lan/Link Info:
+ID              Member/Proto    IP/Mask         Delay     BW (Kbs)  Loss Rate
+--------------- --------------- --------------- --------- --------- ---------
+lan0            nodeB:1         10.1.2.4        0.00      100000    0.00000000
                 ethernet        255.255.255.0   0.00      100000    0.00000000
 lan0            nodeC:0         10.1.2.3        0.00      100000    0.00000000
                 ethernet        255.255.255.0   0.00      100000    0.00000000
@@ -720,23 +733,26 @@ lan0            nodeD:0         10.1.2.2        0.00      100000    0.00000000
 link0           nodeA:0         10.1.1.3        25.00     30000     0.00501256
                 ethernet        255.255.255.0   25.00     30000     0.00501256
 link0           nodeB:0         10.1.1.2        25.00     30000     0.00501256
-                ethernet        255.255.255.0   25.00     30000     0.00501256</p>
-<p>Virtual Queue Info:
-ID              Member          Q Limit    Type    weight/min_th/max_th/linterm</p>
-<hr />
-<p>lan0            nodeB:1         100 slots  Tail    0/0/0/0
+                ethernet        255.255.255.0   25.00     30000     0.00501256
+
+Virtual Queue Info:
+ID              Member          Q Limit    Type    weight/min_th/max_th/linterm
+--------------- --------------- ---------- ------- ----------------------------
+lan0            nodeB:1         100 slots  Tail    0/0/0/0
 lan0            nodeC:0         100 slots  Tail    0/0/0/0
 lan0            nodeD:0         100 slots  Tail    0/0/0/0
 link0           nodeA:0         100 slots  Tail    0/0/0/0
-link0           nodeB:0         100 slots  Tail    0/0/0/0</p>
-<p>Event Groups:
-Group Name      Members</p>
-<hr />
-<p>link0-tracemon  link0-nodeB-tracemon,link0-nodeA-tracemon
-<strong>all_lans      lan0,link0
-</strong>all_tracemon  link0-nodeB-tracemon,link0-nodeA-tracemon,lan0-nodeD-tracemon,lan0-nodeC-tracemon,lan0-nodeB-tracemon
+link0           nodeB:0         100 slots  Tail    0/0/0/0
+
+Event Groups:
+Group Name      Members
+--------------- ---------------------------------------------------------------
+link0-tracemon  link0-nodeB-tracemon,link0-nodeA-tracemon
+__all_lans      lan0,link0
+__all_tracemon  link0-nodeB-tracemon,link0-nodeA-tracemon,lan0-nodeD-tracemon,lan0-nodeC-tracemon,lan0-nodeB-tracemon
 lan0-tracemon   lan0-nodeB-tracemon,lan0-nodeC-tracemon,lan0-nodeD-tracemon
-`</p>
+</code></pre>
+
 <p>Here is a breakdown of the results:
     * A single delay node was allocated and inserted into the link between <em>nodeA</em> and <em>nodeB</em>. This link is invisible from your perspective, except for the fact that it adds latency, error, or reduced bandwidth. However, the information for the delay links are included so that you can modify the delay parameters after the experiment has been created (Note that you cannot convert a non-shaped link into a shaped link; you can only modify the traffic shaping parameters of a link that is already being shaped). [[BR]]
     * Delays of less than 2ms (per trip) are too small to be accurately modeled at this time, and will be silently ignored. A delay of 0ms can be used to indicate that you do not want added delay; the two interfaces will be "directly" connected to each other. [[BR]]
@@ -762,14 +778,17 @@ b. <strong>Click on the <em>Details</em> tab</strong>.
      * Your nodes' network names are listed under the heading <em>Qualified Name</em>. For example, <code>node1.basic-experiment.DeterTest.isi.deterlab.net</code>. 
      * You should familiarize yourself with the information available on this page, but for now we just need to know the long DNS qualified name(s) node(s) you just swapped in. 
      * If you are curious, you should also look at the <em>Settings</em> (generic info), <em>Visualization</em>, and <em>NS File</em> tabs. (The topology mapplet may be disabled for some labs, so these last two may not be visible). 
-c. <strong>SSH from <code>users</code> to your experimental nodes by running a command with the following syntax</strong>: 
-<code>ssh node1.ExperimentName.ProjectName.isi.deterlab.net</code>
-     * You will not need to re-authenticate.
-     * You may need to wait a few more minutes. Once DETERLab is finished setting up the experiment, the nodes still need a minute or two to boot and complete their configuration. If you get a message about "server configuration" when you try to log in, wait a few minutes and try again.
-d. If you need to create new users on your experimental nodes, you may log in as them by running the following from the experimental node:
+c. <strong>SSH from <code>users</code> to your experimental nodes by running a command with the following syntax</strong>: </p>
+<pre><code>ssh node1.ExperimentName.ProjectName.isi.deterlab.net
+</code></pre>
+
+<pre><code> * You will not need to re-authenticate.
+ * You may need to wait a few more minutes. Once DETERLab is finished setting up the experiment, the nodes still need a minute or two to boot and complete their configuration. If you get a message about "server configuration" when you try to log in, wait a few minutes and try again.
+</code></pre>
+<p>d. If you need to create new users on your experimental nodes, you may log in as them by running the following from the experimental node:
   <code>ssh newuser@node1.basicExp.ProjectName.isi.deterlab.net</code>
   or
-  <code>ssh newuser@localhost</code> </p>
+  <code>ssh newuser@localhost</code></p>
 <h3 id="step-4-view-results-and-modify-the-experiment">Step 4: View results and modify the experiment<a class="headerlink" href="#step-4-view-results-and-modify-the-experiment" title="Permanent link"></a></h3>
 <p>You can visualize the experiment by going to your experiment page (from My DETERLab, click the EID link for your experiment) and clicking the <em>Visualization</em> tab. From this page you can also change the NS file by clicking on the <em>NS File</em> tab or modify parameters by clicking <em>Modify Traffic Shaping</em> in the left sidebar.</p>
 <p>An alternative method is to log into <code>users.deterlab.net</code> and use the <a href="/core/deterlab-commands/#delay_config:ChangethelinkshapingcharacteristicsforalinkorLAN">delay_config</a> program. This program requires that you know the symbolic names of the individual links. This information is available on the experiment page. </p>
@@ -794,54 +813,76 @@ When you are done with your experiment for the time being, make sure you save yo
 When you are completely finished with your experiment and have no intention of running it again, use the <em>Terminate Experiment</em> link in the sidebar of the experiment page. Be careful: <strong>termination will erase the experiment</strong> and you won't be able to swap it back in without recreating it. DETERLab will then tear down your experiment, and send you an email message when the process is complete. At this point you are allowed to reuse the experiment name (say, if you wanted to create a similar experiment with different parameters).</p>
 <p>Terminating says "I won't need this experiment ever again." Just remember to Swap In/Out, and never "Terminate" unless you're sure you're completely done with the experiment. If you do end up terminating an experiment, you can always go back and recreate it.</p>
 <h4 id="scheduling-experiment-swapouttermination"><a name="Halting"></a>Scheduling experiment swapout/termination<a class="headerlink" href="#scheduling-experiment-swapouttermination" title="Permanent link"></a></h4>
-<p>If you expect that your experiment should run for a set period of time, but you will not be around to terminate or swap the experiment out, then you should use the scheduled swapout/termination feature. This allows you to specify a maximum running time in your NS file so that you will not hold scarce resources when you are offline. To schedule a swapout or termination in your NS file:
-<code>$ns at 2000.0 "$ns terminate"
-   or
-     $ns at 2000.0 "$ns swapout"</code></p>
+<p>If you expect that your experiment should run for a set period of time, but you will not be around to terminate or swap the experiment out, then you should use the scheduled swapout/termination feature. This allows you to specify a maximum running time in your NS file so that you will not hold scarce resources when you are offline. To schedule a swapout or termination in your NS file:</p>
+<pre><code>     $ns at 2000.0 &quot;$ns terminate&quot;
+</code></pre>
+
+<p>or</p>
+<pre><code>     $ns at 2000.0 &quot;$ns swapout&quot;
+</code></pre>
+
 <p>This will cause your experiment to either be terminated or swapped out after 2000 seconds of wallclock time.</p>
 <h2 id="why-cant-i-log-in-to-deterlab">Why can't I log in to DETERLab?<a class="headerlink" href="#why-cant-i-log-in-to-deterlab" title="Permanent link"></a></h2>
 <p>DETERLab has an automatic blacklist mechanism. If you enter the wrong username and password combination too many times, your account will no longer be accessible from your current IP address. </p>
 <p>If you think that this has happened to you, try logging in from another address (if you know how), or create an issue (see <a href="https://trac.deterlab.net/wiki/GettingHelp">Getting Help</a>), which will relay the request to the <em>testbed-ops</em> group that this specific blacklist entry should be erased.</p>
 <h2 id="installing-rpms-automatically">Installing RPMs automatically<a class="headerlink" href="#installing-rpms-automatically" title="Permanent link"></a></h2>
-<p>The DETERLab NS extension <code>tb-set-node-rpms</code> allows you to specify a (space-separated) list of RPMs to install on each of your nodes when it boots:
-<code>tb-set-node-rpms $nodeA /proj/myproj/rpms/silly-freebsd.rpm
+<p>The DETERLab NS extension <code>tb-set-node-rpms</code> allows you to specify a (space-separated) list of RPMs to install on each of your nodes when it boots:</p>
+<pre><code>  tb-set-node-rpms $nodeA /proj/myproj/rpms/silly-freebsd.rpm
   tb-set-node-rpms $nodeB /proj/myproj/rpms/silly-linux.rpm
-  tb-set-node-rpms $nodeC /proj/myproj/rpms/silly-windows.rpm</code>
-The above NS code says to install the <code>silly-freebsd.rpm</code> file on <code>nodeA</code>, the <code>silly-linux.rpm</code> on <code>nodeB</code>, and the <code>silly-windows.rpm</code> on <code>nodeC</code>. RPMs are installed as root, and must reside in either the project's <code>/proj</code> directory, or if the experiment has been created in a subgroup, in the <code>/groups</code> directory. You may not place your RPMs in your home directory.</p>
+  tb-set-node-rpms $nodeC /proj/myproj/rpms/silly-windows.rpm
+</code></pre>
+
+<p>The above NS code says to install the <code>silly-freebsd.rpm</code> file on <code>nodeA</code>, the <code>silly-linux.rpm</code> on <code>nodeB</code>, and the <code>silly-windows.rpm</code> on <code>nodeC</code>. RPMs are installed as root, and must reside in either the project's <code>/proj</code> directory, or if the experiment has been created in a subgroup, in the <code>/groups</code> directory. You may not place your RPMs in your home directory.</p>
 <h2 id="installing-tar-files-automatically">Installing TAR files automatically<a class="headerlink" href="#installing-tar-files-automatically" title="Permanent link"></a></h2>
 <p>The DETERLab NS extension <a href="/core/ns-commands/#tb-set-node-tarfiles">tb-set-node-tarfiles</a> allows you to specify a set of tarfiles to install on each of your nodes when it boots. </p>
-<p>While similar to the <a href="/core/ns-commands/#tb-set-node-rpms">tb-set-node-rpms</a> command, the format of this command is slightly different in that you must specify a directory in which to unpack the tar file. This avoids problems with having to specify absolute pathnames in your tarfile, which many modern tar programs balk at.
-<code>tb-set-node-tarfiles $nodeA /usr/site /proj/projectName/tarfiles/silly.tar.gz</code>
-The above NS code says to install the <code>silly.tar.gz</code> tar file on <code>nodeA</code> from the working directory <code>/usr/site</code> when the node first boots. The tarfile must reside in either the project's <code>/proj</code> directory, or if the experiment has been created in a subgroup, in the <code>/groups</code> directory. You may not place your tarfiles in your home directory. You may specify as many tarfiles as you wish, as long as each one is preceded by the directory it should be unpacked in, all separated by spaces.</p>
+<p>While similar to the <a href="/core/ns-commands/#tb-set-node-rpms">tb-set-node-rpms</a> command, the format of this command is slightly different in that you must specify a directory in which to unpack the tar file. This avoids problems with having to specify absolute pathnames in your tarfile, which many modern tar programs balk at.</p>
+<pre><code>  tb-set-node-tarfiles $nodeA /usr/site /proj/projectName/tarfiles/silly.tar.gz
+</code></pre>
+
+<p>The above NS code says to install the <code>silly.tar.gz</code> tar file on <code>nodeA</code> from the working directory <code>/usr/site</code> when the node first boots. The tarfile must reside in either the project's <code>/proj</code> directory, or if the experiment has been created in a subgroup, in the <code>/groups</code> directory. You may not place your tarfiles in your home directory. You may specify as many tarfiles as you wish, as long as each one is preceded by the directory it should be unpacked in, all separated by spaces.</p>
 <h2 id="starting-your-application-automatically">Starting your application automatically<a class="headerlink" href="#starting-your-application-automatically" title="Permanent link"></a></h2>
 <p>You may start your application automatically when your nodes boot for the first time (when an experiment is started or swapped in) by using the <code>tb-set-node-startcmd</code> NS extension. The argument is a command string (pathname of a script or program, plus arguments) that is run as the <code>UID</code> of the experiment creator, after the node has reached multiuser mode. </p>
-<p>The command is invoked using <code>/bin/csh</code>, and the working directory is undefined (your script should <code>cd</code> to the directory you need). You can specify the same program for each node, or a different program. For example:
-<code>tb-set-node-startcmd $nodeA "/proj/projectName/runme.nodeA"
-  tb-set-node-startcmd $nodeB "/proj/projectName/runme.nodeB"</code>
-will run <code>/proj/projectName/runme.nodeA</code> on nodeA and <code>/proj/projectName/runme.nodeB</code> on nodeB. The programs must reside on the node's local filesystem, or in a directory that can be reached via NFS. This is either the project's <code>/proj</code> directory, in the <code>/groups</code> directory if the experiment has been created in a subgroup, or a project member's home directory in <code>/users</code>. </p>
-<p>If you need to see the output of your command, be sure to redirect the output into a file. You may place the file on the local node, or in one of the NFS mounted directories mentioned above. For example:
-<code>tb-set-node-startcmd $nodeB "/proj/myproj/runme &gt;&amp; /tmp/foo.log"</code>
-Note that the syntax and function of <code>/bin/csh</code> differs from other shells (including bash), specifically in redirection syntax.  Be sure to use <code>csh</code> syntax or your start command will fail silently.</p>
+<p>The command is invoked using <code>/bin/csh</code>, and the working directory is undefined (your script should <code>cd</code> to the directory you need). You can specify the same program for each node, or a different program. For example:</p>
+<pre><code>  tb-set-node-startcmd $nodeA &quot;/proj/projectName/runme.nodeA&quot;
+  tb-set-node-startcmd $nodeB &quot;/proj/projectName/runme.nodeB&quot;
+</code></pre>
+
+<p>will run <code>/proj/projectName/runme.nodeA</code> on nodeA and <code>/proj/projectName/runme.nodeB</code> on nodeB. The programs must reside on the node's local filesystem, or in a directory that can be reached via NFS. This is either the project's <code>/proj</code> directory, in the <code>/groups</code> directory if the experiment has been created in a subgroup, or a project member's home directory in <code>/users</code>. </p>
+<p>If you need to see the output of your command, be sure to redirect the output into a file. You may place the file on the local node, or in one of the NFS mounted directories mentioned above. For example:</p>
+<pre><code>     tb-set-node-startcmd $nodeB &quot;/proj/myproj/runme &gt;&amp; /tmp/foo.log&quot;
+</code></pre>
+
+<p>Note that the syntax and function of <code>/bin/csh</code> differs from other shells (including bash), specifically in redirection syntax.  Be sure to use <code>csh</code> syntax or your start command will fail silently.</p>
 <p>The exit value of the start command is reported back to the Web Interface, and is made available to you via the experiment page. There is a listing for all of the nodes in the experiment, and the exit value is recorded in this listing. The special symbol <code>none</code> indicates that the node is still running the start command.</p>
 <h2 id="notifying-the-start-program-when-all-other-nodes-have-started">Notifying the start program when all other nodes have started<a class="headerlink" href="#notifying-the-start-program-when-all-other-nodes-have-started" title="Permanent link"></a></h2>
 <p>It is often necessary for your start program to determine when all of the other nodes in the experiment have started, and are ready to proceed. Sometimes called a <em>barrier</em>, this allows programs to wait at a specific point, and then all proceed at once. DETERLab provides a simple form of this mechanism using a synchronization server that runs on a node of your choice. </p>
 <p>Specify the node in your NS file:</p>
-<p><code>tb-set-sync-server $nodeB</code></p>
+<pre><code>    tb-set-sync-server $nodeB
+</code></pre>
+
 <p>When nodeB boots, the synchronization server will automatically start. Your software can then synchronize using the <code>emulab-sync</code> program that is installed on your nodes. For example, your node start command might look like this:</p>
-<p><code>#!/bin/sh
-   if [ "$1" = "master" ]; then
+<pre><code>   #!/bin/sh
+   if [ &quot;$1&quot; = &quot;master&quot; ]; then
        /usr/testbed/bin/emulab-sync -i 4
    else
-       /usr/testbed/bin/emulab-sync fi /usr/site/bin/dosilly</code></p>
-<p>In this example, there are five nodes in the experiment, one of which must be configured to operate as the master, initializing the barrier to the number of clients (four in the above example) that are expected to rendezvous at the barrier. The master will by default wait for all of the clients to reach the barrier. Each client of the barrier also waits until all of the clients have reached the barrier (and of course, until the master initializes the barrier to the proper count). Any number of clients may be specified (any subset of nodes in your experiment can wait). If the master does not need to wait for the clients, you may use the <em>async</em> option which releases the master immediately:
-<code>/usr/testbed/bin/emulab-sync -a -i 4</code>
-You may also specify the <em>name</em> of the barrier.
-<code>/usr/testbed/bin/emulab-sync -a -i 4 -n mybarrier</code></p>
+       /usr/testbed/bin/emulab-sync fi /usr/site/bin/dosilly
+</code></pre>
+
+<p>In this example, there are five nodes in the experiment, one of which must be configured to operate as the master, initializing the barrier to the number of clients (four in the above example) that are expected to rendezvous at the barrier. The master will by default wait for all of the clients to reach the barrier. Each client of the barrier also waits until all of the clients have reached the barrier (and of course, until the master initializes the barrier to the proper count). Any number of clients may be specified (any subset of nodes in your experiment can wait). If the master does not need to wait for the clients, you may use the <em>async</em> option which releases the master immediately:</p>
+<pre><code>    /usr/testbed/bin/emulab-sync -a -i 4
+</code></pre>
+
+<p>You may also specify the <em>name</em> of the barrier.</p>
+<pre><code>    /usr/testbed/bin/emulab-sync -a -i 4 -n mybarrier
+</code></pre>
+
 <p>This allows multiple barriers to be in use at the same time. Scripts on nodeA and nodeB can be waiting on a barrier named "foo" while (other) scripts on nodeA and nodeC can be waiting on a barrier named "bar." You may reuse an existing barrier (including the default barrier) once it has been released (all clients arrived and woken up).</p>
 <h2 id="setting-up-ip-routing-between-nodes"><a name="Routing"></a> Setting up IP routing between nodes<a class="headerlink" href="#setting-up-ip-routing-between-nodes" title="Permanent link"></a></h2>
 <p>As DETER strives to make all aspects of the network controllable by the user, we do not attempt to impose any IP routing architecture or protocol by default. However, many users are more interested in end-to-end aspects and don't want to be bothered with setting up routes. For those users we provide an option to automatically set up routes on nodes which run one of our provided FreeBSD, Linux or <a href="/core/windows/">Windows XP</a> disk images.</p>
 <p>You can use the NS <code>rtproto</code> syntax in your NS file to enable routing:</p>
-<p><code>$ns rtproto protocolOption</code></p>
+<pre><code>    $ns rtproto protocolOption
+</code></pre>
+
 <p>where the <code>protocolOption</code> is limited to one of <em>Session</em>, <em>Static</em>, <em>Static-old</em>, or <em>Manual</em>.</p>
 <ul>
 <li><strong>Session</strong> routing provides fully automated routing support, and is implemented by enabling <code>gated</code> running of the OSPF protocol on all nodes in the experiment. This is not supported on <a href="/core/windows/#Routing">Windows XP</a> nodes.</li>
@@ -849,22 +890,32 @@ You may also specify the <em>name</em> of the barrier.
 <li><strong>Static-old</strong> specifies use of the older centralized route computation algorithm, precomputing the nodes when the experiment is created, and then loading them onto each node when it boots.</li>
 <li><strong>Manual</strong> routing allows you to explicitly specify per-node routing information in the NS file. To do this, use the <code>Manual</code> routing option to <code>rtproto</code>, followed by a list of routes using the <code>add-route</code> command:</li>
 </ul>
-<p><code>$node add-route $dst $nexthop</code></p>
+<pre><code>    $node add-route $dst $nexthop
+</code></pre>
+
 <p>where the <code>dst</code> can be either a node, a link, or a LAN. For example:</p>
-<p><code>$client add-route $server $router
+<pre><code>    $client add-route $server $router
     $client add-route [$ns link $server $router] $router
-    $client add-route $serverlan $router</code></p>
+    $client add-route $serverlan $router
+</code></pre>
+
 <p>Note that you would need a separate <code>add-route</code> command to establish a route for the reverse direction; thus allowing you to specify differing forward and reverse routes if so desired. These statements are converted into appropriate <code>route(8)</code> commands on your experimental nodes when they boot.</p>
 <p>In the above examples, the first form says to set up a manual route between <code>$client</code> and <code>$server</code>, using <code>$router</code> as the nexthop; <code>$client</code> and <code>$router</code> should be directly connected, and the interface on <code>$server</code> should be unambiguous; either directly connected to the router, or an edge node that has just a single interface.</p>
 <p><img alt="Example of routing" src="../../img/routing.png" /></p>
-<p>If the destination has multiple interfaces configured, and it is not connected directly to the nexthop, the interface that you are intending to route to is ambiguous. In the topology shown to the right, <code>$nodeD</code> has two interfaces configured. If you attempted to set up a route like this:
-<code>$nodeA add-route $nodeD $nodeB</code></p>
+<p>If the destination has multiple interfaces configured, and it is not connected directly to the nexthop, the interface that you are intending to route to is ambiguous. In the topology shown to the right, <code>$nodeD</code> has two interfaces configured. If you attempted to set up a route like this:</p>
+<pre><code>    $nodeA add-route $nodeD $nodeB
+</code></pre>
+
 <p>you would receive an error since DETERLab staff would not easily be able to determine which of the two links on <code>$nodeD</code> you are referring to. Fortunately, there is an easy solution. Instead of a node, specify the link directly:</p>
-<p><code>$nodeA add-route [$ns link $nodeD $nodeC] $nodeB</code></p>
+<pre><code>    $nodeA add-route [$ns link $nodeD $nodeC] $nodeB
+</code></pre>
+
 <p>This tells us exactly which link you mean, enabling us to convert that information into a proper <code>route</code> command on <code>$nodeA</code>.</p>
 <p>The last form of the <code>add-route</code> command is used when adding a route to an entire LAN. It would be tedious and error prone to specify a route to each node in a LAN by hand. Instead, just route to the entire network:</p>
-<p><code>set clientlan [$ns make-lan "$nodeE $nodeF $nodeG" 100Mb 0ms]
-    $nodeA add-route $clientlan $nodeB</code></p>
+<pre><code>    set clientlan [$ns make-lan &quot;$nodeE $nodeF $nodeG&quot; 100Mb 0ms]
+    $nodeA add-route $clientlan $nodeB
+</code></pre>
+
 <p>In general, it is still best practice to use either <em>Session</em> or <em>Static</em> routing for all but small, simple topologies. Explicitly setting up all the routes in even a moderately-sized experiment is extremely error prone. Consider this: a recently created experiment with 17 nodes and 10 subnets <strong>required 140 hand-created routes in the NS file</strong>.</p>
 <p>Two final, cautionary notes on routing:
     * The default route <em>must</em> be set to use the control network interface. You might be tempted to set the default route on your nodes to reduce the number of explicit routes used. <strong>Please avoid this.</strong> That would prevent nodes from contacting the outside world, i.e., you. 
