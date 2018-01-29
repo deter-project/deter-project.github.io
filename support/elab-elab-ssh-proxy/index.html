@@ -7,7 +7,7 @@
   
   
   
-  <title>Using the Serial Console - DETERLab Documentation</title>
+  <title>Configuring E-lab in E-lab - DETERLab Documentation</title>
   
 
   <link rel="shortcut icon" href="../../favicon.ico">
@@ -24,9 +24,9 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Using the Serial Console";
-    var mkdocs_page_input_path = "core/serial-console.md";
-    var mkdocs_page_url = "/core/serial-console/";
+    var mkdocs_page_name = "Configuring E-lab in E-lab";
+    var mkdocs_page_input_path = "support/elab-elab-ssh-proxy.md";
+    var mkdocs_page_url = "/support/elab-elab-ssh-proxy/";
   </script>
   
   <script src="../../js/jquery-2.1.1.min.js"></script>
@@ -80,42 +80,51 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../support/registering/">Registering with DETERLab</a>
+        <a class="" href="../registering/">Registering with DETERLab</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../support/getting-help/">Getting Help</a>
+        <a class="" href="../getting-help/">Getting Help</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../support/faqs/">FAQs</a>
+        <a class="" href="../faqs/">FAQs</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../support/passwords/">Passwords</a>
+        <a class="" href="../passwords/">Passwords</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../../support/usage-policy/">Usage Policy</a>
+        <a class="" href="../usage-policy/">Usage Policy</a>
         
     </li>
 
         
             
-    <li class="toctree-l1 ">
-        <a class="" href="../../support/elab-elab-ssh-proxy/">Configuring E-lab in E-lab</a>
+    <li class="toctree-l1 current">
+        <a class="current" href="./">Configuring E-lab in E-lab</a>
+        
+            <ul>
+            
+                <li class="toctree-l3"><a href="#setting-up-foxyproxy">Setting Up FoxyProxy</a></li>
+                
+                    <li><a class="toctree-l4" href="#connecting-to-inner-boss">Connecting to Inner Boss</a></li>
+                
+            
+            </ul>
         
     </li>
 
@@ -130,63 +139,63 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../core-quickstart/">Core Quickstart</a>
+        <a class="" href="../../core/core-quickstart/">Core Quickstart</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../core-guide/">Core Guide</a>
+        <a class="" href="../../core/core-guide/">Core Guide</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../sample-topologies/">Sample Topologies</a>
+        <a class="" href="../../core/sample-topologies/">Sample Topologies</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../using-nodes/">Using Your Nodes</a>
+        <a class="" href="../../core/using-nodes/">Using Your Nodes</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../generating-traffic/">Generating Traffic</a>
+        <a class="" href="../../core/generating-traffic/">Generating Traffic</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../link-delays/">End Node Traffic Shaping</a>
+        <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../risky-experiment/">Risky Experiments</a>
+        <a class="" href="../../core/risky-experiment/">Risky Experiments</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../sharing/">Using Shared Materials</a>
+        <a class="" href="../../core/sharing/">Using Shared Materials</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../user-guidelines/">User Do's and Don'ts</a>
+        <a class="" href="../../core/user-guidelines/">User Do's and Don'ts</a>
         
     </li>
 
@@ -201,92 +210,77 @@
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../deterlab-commands/">DETERLab Commands</a>
+        <a class="" href="../../core/deterlab-commands/">DETERLab Commands</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../ns-commands/">NS Commands Extensions</a>
+        <a class="" href="../../core/ns-commands/">NS Commands Extensions</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+        <a class="" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../DETERSSH/">Accessing testbeds using SSH</a>
+        <a class="" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../node-types/">DETERLab Node Types</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Using the Serial Console</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#using-the-serial-console">Using the Serial Console</a></li>
-                
-                    <li><a class="toctree-l4" href="#determining-which-nodes-to-connect-to">Determining which nodes to connect to</a></li>
-                
-                    <li><a class="toctree-l4" href="#connecting-to-the-serial-console">Connecting to the Serial Console</a></li>
-                
-                    <li><a class="toctree-l4" href="#serial-console-logs">Serial Console Logs</a></li>
-                
-                    <li><a class="toctree-l4" href="#additional-information">Additional information</a></li>
-                
-            
-            </ul>
+        <a class="" href="../../core/node-types/">DETERLab Node Types</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../dell-serial-console/">Dell Serial Console</a>
+        <a class="" href="../../core/serial-console/">Using the Serial Console</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../os-images/">OS Images</a>
+        <a class="" href="../../core/dell-serial-console/">Dell Serial Console</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../custom-images/">Creating Custom Images</a>
+        <a class="" href="../../core/os-images/">OS Images</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../windows/">Windows XP</a>
+        <a class="" href="../../core/custom-images/">Creating Custom Images</a>
         
     </li>
 
         
             
     <li class="toctree-l1 ">
-        <a class="" href="../legacy-tools/">Legacy Tools</a>
+        <a class="" href="../../core/windows/">Windows XP</a>
+        
+    </li>
+
+        
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../core/legacy-tools/">Legacy Tools</a>
         
     </li>
 
@@ -602,11 +596,11 @@
     
       
         
-          <li>Core Reference &raquo;</li>
+          <li>Support &raquo;</li>
         
       
     
-    <li>Using the Serial Console</li>
+    <li>Configuring E-lab in E-lab</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -616,26 +610,62 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="using-the-serial-console">Using the Serial Console<a class="headerlink" href="#using-the-serial-console" title="Permanent link"></a></h1>
-<h2 id="determining-which-nodes-to-connect-to">Determining which nodes to connect to<a class="headerlink" href="#determining-which-nodes-to-connect-to" title="Permanent link"></a></h2>
-<p>You can determine the nodes allocated to your experiment by looking at the <strong>Reserved Nodes</strong> table on the <em>Show Experiment</em> page on the web interface.  DETERLab nodes are generally named 'pcXXX' for nodes at <a href="/ISIUCB/">ISI</a> and 'bpcXXX' for node at <a href="/ISIUCB/">UCB</a>.</p>
-<h2 id="connecting-to-the-serial-console">Connecting to the Serial Console<a class="headerlink" href="#connecting-to-the-serial-console" title="Permanent link"></a></h2>
-<p>Every node on the testbed has serial console access enabled.  </p>
-<p>To connect to a node's serial console, you must first log into <code>users.deterlab.net</code> and use the <strong>console</strong> command located in <code>/usr/testbed/bin</code> (which should be in every user's PATH by default).  </p>
-<p>To connect to a particular node, type <code>console pcXXX</code> where <em>pcXXX</em> is a node allocated to your experiment.</p>
-<p>To disconnect from the console session, type <code>Ctrl</code> and then <code>exit</code>.  The console command is actually a wrapper for telnet.</p>
-<h2 id="serial-console-logs">Serial Console Logs<a class="headerlink" href="#serial-console-logs" title="Permanent link"></a></h2>
-<p>All console output from each node is saved in <code>/var/log/tiplogs/pcXXX.run</code>, where <em>pcXXX</em> is a node allocated to your experiment.  </p>
-<p>This run file is created when nodes are first allocated to an experiment, and the Unix permissions of the run files permit only members of the project to view them.  </p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>When the experiment is swapped out, the run logs are removed.  In order to preserve them, you must make a copy before swapping out your experiment.</p>
-</div>
-<p>Console logs may be viewed through the web interface on the <em>Show Experiment</em> page by clicking on the icon in the Console column of the <em>Reserved Nodes</em> table.</p>
-<h2 id="additional-information">Additional information<a class="headerlink" href="#additional-information" title="Permanent link"></a></h2>
+                <h1 id="setting-up-foxyproxy">Setting Up FoxyProxy<a class="headerlink" href="#setting-up-foxyproxy" title="Permanent link"></a></h1>
+<p>This only needs to be done once.</p>
+<p>Install the <a href="https://addons.mozilla.org/en-US/firefox/addon/2464/">FoxyProxy extension</a> for Firefox. Restart your browser to complete the installation.</p>
+<p>Follow these steps to set up the proxy. Text you should input is '''bold'''.</p>
+<p>Click the "Add New Proxy" button</p>
 <ul>
-<li><a href="/core/dell-serial-console/">Dell Serial Console Information</a></li>
+<li><em>Proxy Details</em> tab:<ul>
+<li>Use "Manual Proxy Configuration".<ul>
+<li>Host: <code>localhost</code> Port: <code>1080</code></li>
+<li>Check the box for SOCKS 5 proxy</li>
 </ul>
+</li>
+</ul>
+</li>
+<li>
+<p><em>URL Patterns</em> tab:</p>
+<ul>
+<li>Click "Add New Pattern"</li>
+<li>Pattern Name: '''elab in elab''' (or anything you want)</li>
+<li>URL pattern: '''https?://myboss..<em>deterlab.net/''' (for MacOS, append '''.</em>''')</li>
+<li>Change "Pattern Contains" to Regular expression</li>
+<li>Click OK</li>
+</ul>
+</li>
+<li>
+<p><em>General</em> tab:</p>
+<ul>
+<li>Give it a good name, like '''Elab in Elab tunnel'''</li>
+<li>Click OK</li>
+</ul>
+</li>
+<li>
+<p>Use the "Move Up" button to move the new pattern to the top of the list</p>
+</li>
+<li>Change the Mode at the top to <code>Use Proxies based on their pre-defined patterns and priorities</code>.</li>
+</ul>
+<h2 id="connecting-to-inner-boss">Connecting to Inner Boss<a class="headerlink" href="#connecting-to-inner-boss" title="Permanent link"></a></h2>
+<p>Once you've set up FoxyProxy, whenever you want to connect to inner boss you must start an SSH SOCKS proxy. </p>
+<p>To do this using the standard OpenSSH command line client on linux, BSD, or OsX:</p>
+<pre><code>ssh -D 1080 username@users.isi.deterlab.net
+</code></pre>
+
+<p>You can also do this under windows using the PuTTY client:</p>
+<p>In the PuTTY configuration window expand "Connection", then "SSH", and click on tunnels.
+Hit the radio button for dynamic, fill in the port 1080, and click ADD.</p>
+<p>Don't specify the host here - do it after clicking on the main Session Category.
+If you save the parameters you won't have to do this again.</p>
+<p>You may then access inner boss using the url:</p>
+<pre><code>http://myboss.${experiment_name}.${project_name}.isi.deterlab.net/
+</code></pre>
+
+<p>Fill in <code>${experiment_name}</code> and <code>${project_name}</code> with your experiment and project. For instance, the experiment <code>test123</code> in the <code>example</code> project would use this URL:</p>
+<pre><code>http://myboss.test123.example.isi.deterlab.net/
+</code></pre>
+
+<p>Once you are done, you may close the SSH tunnel connection. You may have to use Ctrl-C if it does not disconnect after you log out.</p>
               
             </div>
           </div>
@@ -643,10 +673,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../dell-serial-console/" class="btn btn-neutral float-right" title="Dell Serial Console"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../../core/core-quickstart/" class="btn btn-neutral float-right" title="Core Quickstart"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="../node-types/" class="btn btn-neutral" title="DETERLab Node Types"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../usage-policy/" class="btn btn-neutral" title="Usage Policy"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
@@ -674,10 +704,10 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../node-types/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+        <span><a href="../usage-policy/" style="color: #fcfcfc;">&laquo; Previous</a></span>
       
       
-        <span style="margin-left: 15px"><a href="../dell-serial-console/" style="color: #fcfcfc">Next &raquo;</a></span>
+        <span style="margin-left: 15px"><a href="../../core/core-quickstart/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

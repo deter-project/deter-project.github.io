@@ -113,6 +113,13 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/elab-elab-ssh-proxy/">Configuring E-lab in E-lab</a>
+        
+    </li>
+
+        
     </ul>
 <li>
           
@@ -635,20 +642,20 @@
 <li><strong> Pro</strong> : Agents may be written in languages other than Python.</li>
 <li><strong> Pro</strong> : May kill off agent individually from the shell</li>
 <li><strong> Con</strong> : Heavier weight if invoking a new interpreter for each Agent for scripted languages</li>
-<li><strong> Con</strong> : Message transceiver is more complex, in particular if a library for the language has not been written. (</li>
+<li><strong> Con</strong> : Message transceiver is more complex, in particular if a library for the language has not been written.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>As of now, only Python is supported. We are working on adding support for other languages.)</p>
+<p>As of now, only Python is supported. We are working on adding support for other languages.</p>
 </div>
 <h3 id="interface-description-language-idl">Interface Description Language (IDL)<a class="headerlink" href="#interface-description-language-idl" title="Permanent link"></a></h3>
 <p>Agent authors must write an IDL that matches the interface exported by their agent. This IDL is used by MAGI to validate the interface of the agent (and in the future to generate GUIs for agent execution and configuration.) </p>
 <p>The IDL should specify: 
 <em> agent execution model (thread or process);
-</em> any public agent variables and their types, ranges, or enumerated values; 
+</em> any variables exposed by the agent and their types, ranges, or enumerated values; 
 <em> any public methods and the method arguments and their types; 
 </em> “help” strings for each method and agent variable which explain their purpose; 
-* and finally any Agent library from which they derive.</p>
+* any Agent library from which they derive.</p>
 <p>This may seem like a lot to specify, but the Agent Library supplies IDL for base Agents --  so in practice much of the IDL specification will be supplied to the Agent author.</p>
 <p>The IDL format and keywords are given in a table below. </p>
 <p>(TBD - Coming soon)</p>
@@ -788,7 +795,7 @@ class ApacheServerAgent(SharedServer):
 </code></pre>
 
 <p>Where <code>destination</code> is a server host name from which the agent should request traffic. </p>
-<p>The <code>TrafficClientAgent</code> class implements the following event-callable methods: <code>startClient()</code> and ```stopClient()}}. Neither method takes any arguments. These methods may be invoked from an AAL and start and stop the client respectively.</p>
+<p>The <code>TrafficClientAgent</code> class implements the following event-callable methods: <code>startClient()</code> and <code>stopClient()</code>. Neither method takes any arguments. These methods may be invoked from an AAL and start and stop the client respectively.</p>
 <p>The base class contains a number of variables which control how often <code>getCmd</code> is called and which servers should be contacted: 
 <em> <code>servers</code>: A list of server hostnames
 </em> <code>interval</code>: A distribution variable</p>
@@ -863,7 +870,7 @@ class mySimpleHTTPClient(TrafficClientAgent):
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2017 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
     
   </div>
 

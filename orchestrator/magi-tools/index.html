@@ -113,6 +113,13 @@
     </li>
 
         
+            
+    <li class="toctree-l1 ">
+        <a class="" href="../../support/elab-elab-ssh-proxy/">Configuring E-lab in E-lab</a>
+        
+    </li>
+
+        
     </ul>
 <li>
           
@@ -610,10 +617,12 @@
 </ul>
 
 <h2 id="magi_statuspy-check-status-of-a-magi-experiment-reboot-magi-daemon-download-logs"><a id="magi_status.py"></a><code>magi_status.py</code>: Check status of a MAGI experiment, reboot MAGI daemon, download logs<a class="headerlink" href="#magi_statuspy-check-status-of-a-magi-experiment-reboot-magi-daemon-download-logs" title="Permanent link"></a></h2>
-<p>Use <code>magi_status.py</code> to:
-<em> check MAGI’s status on experiment nodes
-</em> reboot MAGI daemon process
-* download logs from experiment nodes</p>
+<p>Use <code>magi_status.py</code> to:</p>
+<ul>
+<li>check MAGI’s status on experiment nodes</li>
+<li>reboot MAGI daemon process</li>
+<li>download logs from experiment nodes</li>
+</ul>
 <p>This tool is run for one experiment at a time. The user needs to provide the project name and the experiment name to the tool.</p>
 <p>This tool, by default, works for all of the nodes corresponding to the given experiment. However, it can be made to work with a restricted set of nodes, either by directly providing the set of interested nodes, or by providing an AAL (experiment procedure) file to fetch the set of desired nodes.</p>
 <p>This tool by default only informs if the MAGI daemon process on a node is reachable or not. Specific options can be used to fetch group membership details and information about active agents.</p>
@@ -655,7 +664,7 @@
 </code></pre>
 
 <h2 id="magi_graphpy-create-graphs-for-a-magi-experiment"><a id="magi_graph.py"></a><code>magi_graph.py</code>: Create graphs for a MAGI experiment<a class="headerlink" href="#magi_graphpy-create-graphs-for-a-magi-experiment" title="Permanent link"></a></h2>
-<p><code>magi_graph.py</code> is a graph generator for experiments executed on DETERLab using MAGI. The tool fetches the required data using MAGI’s data management layer and generates a graph in PNG format. This tool may be executed from either the Deter Ops machine or a remote computer with access to internet. The data to be plotted and other graph features are configurable.</p>
+<p><code>magi_graph.py</code> is a graph generator for experiments executed on DETERLab using MAGI. The tool fetches the required data using MAGI’s data management layer and generates a graph in PNG format. This tool may be executed from either the DETER Ops machine or a remote computer with access to internet. The data to be plotted and other graph features are configurable.</p>
 <p>The various commandline options are as follows:</p>
 <pre><code>  Usage: magi_graph.py [options]
 
@@ -733,7 +742,7 @@
   <div role="contentinfo">
     <!-- Copyright etc -->
     
-      <p>Copyright &copy; 2017 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
     
   </div>
 
