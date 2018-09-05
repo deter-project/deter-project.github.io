@@ -653,10 +653,6 @@
 <td><code>openvz</code></td>
 <td>Openvz Container</td>
 </tr>
-<tr>
-<td><code>process</code></td>
-<td>ViewOS process</td>
-</tr>
 </tbody>
 </table>
 <p>The <code>containerize.py</code> command takes several parameters that can change its behavior:</p>
@@ -687,7 +683,7 @@
 </li>
 <li>
 <p><code>--end-node-shaping</code></p>
-<p>Attempt to do end node traffic shaping even in containers connected by VDE switches.  This works with qemu nodes, but not process nodes.  Topologies that include both openvz nodes and qemu nodes that shape traffic should use this.  See the <a href="#interconnections-vde-switches-and-local-networking">discussion below</a>.</p>
+<p>Attempt to do end node traffic shaping even in containers connected by VDE switches.  This works with qemu nodes.  Topologies that include both openvz nodes and qemu nodes that shape traffic should use this.  See the <a href="#interconnections-vde-switches-and-local-networking">discussion below</a>.</p>
 </li>
 <li>
 <p><code>--vde-switch-shaping</code></p>
@@ -999,7 +995,7 @@
 </li>
 <li>
 <p><code>switched_containers</code></p>
-<p>A list of the containers that are networked with VDE switches.  Default: <code>qemu,process</code></p>
+<p>A list of the containers that are networked with VDE switches.  Default: <code>qemus</code></p>
 </li>
 <li>
 <p><code>openvz_template_dir</code></p>
@@ -1034,12 +1030,6 @@
 <p>Different container types have some quirks.  This section lists limitations of each container, as well as issues in interconnecting them.</p>
 <h3 id="qemu">Qemu<a class="headerlink" href="#qemu" title="Permanent link"></a></h3>
 <p>Qemu nodes are limited to 7 experimental interfaces.  They currently run only Ubuntu 12.04 32 bit operating systems.</p>
-<h3 id="viewos-processes">ViewOS Processes<a class="headerlink" href="#viewos-processes" title="Permanent link"></a></h3>
-<p>These have no way to log in or work as conventional machines.  Process tree rooted in the <a href="/containers/containers-guide/#start-commands">start command</a> is created, so a service will run with its own view of the network.  It does not have an address on the control net.</p>
-<p>Because of a bug in their internal routing, multi-homed processes do not respond correctly for requests on some interfaces.  A ViewOS process does not recognize its other addresses when a packet arrives on a different interface.  A picture makes this clearer:</p>
-<p><img alt="Diagram of a ViewOS process" src="../../img/viewos.png" /></p>
-<p>Container A can ping Interface X (10.0.0.1) of the ViewOS container successfully, but if Container A tries to ping Interface Y (10.0.1.2), the ViewOS container will not reply. In fact it will send ARP requests on Interface Y looking for its own address.</p>
-<p>For this reason, ViewOS processes are best used as lightweight forwarders.</p>
 <h3 id="physical-nodes">Physical Nodes<a class="headerlink" href="#physical-nodes" title="Permanent link"></a></h3>
 <p>Physical nodes can be incorporated into experiments, but should only use modern versions of Ubuntu, to allow the Containers system to run their <a href="/containers/containers-guide/#start-commands">start commands</a> correctly and to initialize their routing tables.</p>
 <h3 id="interconnections-vde-switches-and-local-networking">Interconnections: VDE switches and local networking<a class="headerlink" href="#interconnections-vde-switches-and-local-networking" title="Permanent link"></a></h3>
@@ -1054,7 +1044,6 @@
 <p>That flexibility incurs a cost in overhead.  Each delay element and the VDE switch is a process, do traffic passing from one delayed nodes to the other experiences 7 context switches: container -&gt; switch, switch -&gt; delay, delay -&gt; switch, switch -&gt; delay, delay -&gt; switch, and switch -&gt; container.</p>
 <p>The alternative mechanism is to do the traffic shaping inside the nodes, using <a href="http://www.linuxfoundation.org/collaborate/workgroups/networking/netem">Linux traffic shaping</a>.  In this case, traffic outbound from a container is delayed in the container for the full transit time to the next hop.  The next node does the same.  End-node shaping all happens in the kernel so it is relatively inexpensive at run time.</p>
 <p>Qemu nodes can make use of either end-node shaping or VDE shaping, and use VDE shaping by default.  The <code>--end-node-shaping</code> and <code>--vde-switch-shaping</code> options to <code>containerize.py</code> force the choice in qemu.</p>
-<p>ViewOS processes can only use VDE shaping.  Their network stack emulation is not rich enough to include traffic shaping.</p>
 <p>Openvz nodes only use end-node traffic shaping.  They have no native VDE support so interconnecting openvz containers to VDE switches would include both extra kernel crossings and extra context switches.  Because a primary attraction of VDE switches is their efficiency, the Containers system does not implement VDE interconnections to openvz.</p>
 <p>Similarly embedded physical nodes use only endnode traffic shaping, as routing outgoing traffic through a virtual switch infrastructure that just connects to its physical interfaces is at best confusing.</p>
 <p>Unfortunately, endnode traffic shaping and VDE shaping are incompatible.  Because endnode shaping does not impose delays on arriving traffic, it cannot delay traffic from a VDE delayed node correctly.</p>

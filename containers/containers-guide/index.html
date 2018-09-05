@@ -645,7 +645,7 @@
     }
 
     # Creation boilerplate
-    $ns rtptoto Static
+    $ns rtproto Static
     $ns run
 </code></pre>
 
@@ -800,10 +800,6 @@ rtt min/avg/max/mdev = 40.094/40.318/40.764/0.355 ms
 <td><code>openvz</code></td>
 <td>Openvz Container</td>
 </tr>
-<tr>
-<td><code>process</code></td>
-<td>ViewOS process</td>
-</tr>
 </tbody>
 </table>
 <p>You can try this on our <a href="/downloads/example1.tcl">example topology</a>:</p>
@@ -820,20 +816,19 @@ Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=ex
 </code></pre>
 
 <p>The qemu experiment looks much like the openvz experiment above, at this small scale.  Qemu nodes more completely emulate hardware and the kernels are independent, unlike openvz containers.  For example, a program can load kernel modules in a qemu VM, which it cannot do in an openvz container.  The qemu containers load the Ubuntu 12.04 (32 bit) distribution by default.</p>
-<p>We can also swap in the experiment using ViewOS processes, but processes cannot be manipulated from outside.  They are too lightweight to allow an SSH login, though they will run a start command.</p>
 <h3 id="mixing-containers">Mixing Containers<a class="headerlink" href="#mixing-containers" title="Permanent link"></a></h3>
 <p>Mixing containers requires you to assign container types in the topology description.  This is done by attaching an attribute to nodes.  The attribute is named <code>containers:node_type</code> and it takes the same values as the <a href="/containers/containers-guide#UsingOtherContainerTypes">--default-container parameter to containerize.py</a>.  If the experiment definition is in <a href="http://fedd.isi.deterlab.net/wiki/TopDl">topdl</a>, the attribute can be attached using the <a href="http://fedd.deterlab.net/wiki/TopdlLibrary#SharedFunctions">standard topdl routines</a>.  Attaching the attribute in ns2 is done using the DETERLab <code>tb-add-node-attribute</code> command.</p>
 <pre><code>tb-add-node-attribute $node containers:node_type openvz
 </code></pre>
 
-<p>Using this command in an ns2 topology description will set <code>node</code> to be placed in an openvz container.  Using this feature, we can modify our <a href="/downloads/example1.tcl">first example topology</a> to consist of qemu nodes and a single process container in the center.  Process nodes can have unlimited interfaces, but we cannot log into them.  The <a href="/downloads/example3.tcl">new topology file</a> looks like this:</p>
+<p>Using this command in an ns2 topology description will set <code>node</code> to be placed in an openvz container.  Using this feature, we can modify our <a href="/downloads/example1.tcl">first example topology</a> to consist of qemu nodes and a single OpenVZ container in the center.  The <a href="/downloads/example3.tcl">new topology file</a> looks like this:</p>
 <pre><code>    source tb_compat.tcl
     set ns [new Simulator]
 
     # Create the center node (named by its variable name)
     set center [$ns node]
-    # The center node is a process
-    tb-add-node-attribute $center containers:node_type process
+    # The center node is an openvz VM
+    tb-add-node-attribute $center containers:node_type openvz
 
     # Connect 9 satellites
     for { set i 0} { $i &lt; 9 } { incr i} {
@@ -846,7 +841,7 @@ Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=ex
     }
 
     # Creation boilerplate
-    $ns rtptoto Static
+    $ns rtproto Static
     $ns run
 </code></pre>
 
@@ -856,7 +851,7 @@ Containerized experiment DeterTest/example3 successfully created!
 Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=example3
 </code></pre>
 
-<p>When we swap it in, the experiment will have 10 satellite containers in qemu VMs and a central process that only forwards packets.  Again, you cannot log in to a process container, but you can use the qemu nodes as though they were physical machines.</p>
+<p>When we swap it in, the experiment will have 10 satellite containers in qemu VMs and a central OpenVZ VM that forwards packets.  </p>
 <p>Another interesting mixture of containers is to include a physical node.  Here is a <a href="example4.tcl">modified version of our mixed topology</a> that places the <code>n-8</code> satellite on a physical computer by setting its <code>containers:node_type</code> to <code>embedded_pnode</code>.</p>
 <p>After running that experiment you should have output similar to the following:</p>
 <pre><code>users:~$ /share/containers/containerize.py  DeterTest example4 ~/example4.tcl
@@ -866,9 +861,9 @@ Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=ex
 
 <p>Follow the url to the DETERLab experiment page and look at the <em>Visualization</em> tab:</p>
 <p><img alt="Screenshot of the Visualization tab for this experiment" src="../../img/embedded_pnode.png" /></p>
-<p>The physical node <code>n-8</code> shows up in the DETERLab visualization and otherwise acts as a physical node that is in a 10-node topology.  This experiment uses three different container types: physical nodes, ViewOS processes, and Qemu VMs.</p>
+<p>The physical node <code>n-8</code> shows up in the DETERLab visualization and otherwise acts as a physical node that is in a 10-node topology.  This experiment uses three different container types: physical nodes, ViewOS processes, and Qemu VMs. (Note that ViewOS containers are not currently supported on DETER.)</p>
 <h4 id="limitations-on-mixing-containers">Limitations on Mixing Containers<a class="headerlink" href="#limitations-on-mixing-containers" title="Permanent link"></a></h4>
-<p>At the moment, Qemu VMs and ViewOS processes are the only containers that can share a physical node.  Physical node containers are mapped one-to-one to physical nodes by definition.  Qemu and OpenVZ use different underlying operating system images in DETERLab, therefore they cannot share physical hardware.  Neither ViewOS processes nor Qemu VMs can share a physical machine with OpenVZ VMs.</p>
+<p>Physical node containers are mapped one-to-one to physical nodes by definition.  Qemu and OpenVZ use different underlying operating system images in DETERLab, therefore they cannot share physical hardware.  Qemu VMs cannot share a physical machine with OpenVZ VMs. If these container types are mixed in an experiment, they will always be assigned different physical nodes. </p>
 <p>The first invocation of <code>tb-add-node-attribute</code> takes precedence.  It is best to only call <code>tb-add-node-attribute</code> once per attribute assigned on each node.</p>
 <h3 id="setting-openvz-parameters">Setting Openvz Parameters<a class="headerlink" href="#setting-openvz-parameters" title="Permanent link"></a></h3>
 <p>An advantage of openvz nodes is that you can set the OS flavor and CPU bit-width across experiments and per-node.  Similarly, you can set the size of the disk allocated to each node.  </p>
@@ -893,16 +888,6 @@ Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=ex
 <td>64 bit</td>
 </tr>
 <tr>
-<td>ubuntu-10.04-x86</td>
-<td>Ubuntu 10.04 LTS</td>
-<td>32 bit</td>
-</tr>
-<tr>
-<td>ubuntu-10.04-x86_64</td>
-<td>Ubuntu 10.04 LTS</td>
-<td>64 bit</td>
-</tr>
-<tr>
 <td>ubuntu-12.04-x86</td>
 <td>Ubuntu 12.04 LTS</td>
 <td>32 bit</td>
@@ -912,9 +897,19 @@ Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=ex
 <td>Ubuntu 12.04 LTS</td>
 <td>64 bit</td>
 </tr>
+<tr>
+<td>ubuntu-14.04-x86</td>
+<td>Ubuntu 14.04 LTS</td>
+<td>32 bit</td>
+</tr>
+<tr>
+<td>ubuntu-14.04-x86_64</td>
+<td>Ubuntu 14.04 LTS</td>
+<td>64 bit</td>
+</tr>
 </tbody>
 </table>
-<p>The default template is <code>ubuntu-10.04-x86</code>.</p>
+<p>The default template is <code>ubuntu-14.04-x86_64</code>.</p>
 <p>To set a template across an entire topology, give <code>--openvz-template</code> and the template name from the list above.  Invoking <code>containerize.py</code> on <a href="/downloads/example1.tcl">our original example</a> as below will instantiate the experiment under 64-bit Ubuntu 12.04:</p>
 <pre><code>users:~$ /share/containers/containerize.py --openvz-template ubuntu-12.04-x86_64 DeterTest example1 ~/example1.tcl 
 Containerized experiment DeterTest/example1 successfully created!
@@ -953,8 +948,6 @@ Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=ex
 
     # Create the center node (named by its variable name)
     set center [$ns node]
-    # The center node is a process
-    tb-add-node-attribute $center containers:node_type process
     tb-add-node-attribute $center containers:openvz_template ubuntu-12.04-x86_64
 
     # Connect 9 satellites
@@ -1210,7 +1203,7 @@ Access it via http://www.isi.deterlab.net//showexp.php3?pid=DeterTest&amp;eid=ex
 <p><img alt="An example of mixing and matching sizes and packing factors" src="../../img/example6.4-smaller.png" /></p>
 <p>Remember that <code>--size</code> sets a default pass size and that sizes have precedence over packing.  If you specify <code>--size</code>, no <code>--packing</code> or <code>--pass-packing</code> value will take effect.  To mix packing and sizes, use <code>--pack-size</code> for each sized pass, rather than <code>--size</code>.</p>
 <p>These per-pass variables and user-specified pass specifications give users fine grained control over the paritioning process, even if they do not want to do the partitioning themselves.</p>
-<p>If no <code>containers:PartitionPass</code> attributes are specified in the topology, and no <code>containers:Partition</code> attributes are specified either, ```containerize.py}} carries out -- at most -- two passes.  Pass 0 paritions all openvz containers and pass 1 partitions all qemu and process containers.</p>
+<p>If no <code>containers:PartitionPass</code> attributes are specified in the topology, and no <code>containers:Partition</code> attributes are specified either, ```containerize.py}} carries out -- at most -- two passes.  Pass 0 paritions all openvz containers and pass 1 partitions all qemu containers.</p>
 <h2 id="further-reading">Further Reading<a class="headerlink" href="#further-reading" title="Permanent link"></a></h2>
 <p>Hopefully these illustrative examples have given you an idea of how to use the containers system and what it is capable of.  More details are available from <a href="/containers/containers-reference/">the reference guide</a>.  Please see <a href="https://trac.deterlab.net/wiki/GettingHelp"> Getting Help</a> if you have difficulties.</p>
               
