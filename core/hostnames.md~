@@ -1,0 +1,13 @@
+# Hostnames for your nodes
+
+We set up names for your nodes in DNS and `/etc/hosts` files for use on the nodes in the experiment. Since our nodes have multiple interfaces (the control network, and, depending on the experiment, possibly several experimental interfaces) determining which name refers to which interface can be somewhat confusing. The rules below should help you figure this out.
+
+  * **From users.deterlab.net** - We set up names in the form of `node.expt.proj.isi.deterlab.net` in DNS, so that they are visible anywhere on the Internet. This name always refers to the node's control network interface, which is the only one reachable from `users.deterlab.net`. You can use `node.expt.proj` as a shorthand.
+  * **On the nodes themselves** - There are three basic ways to refer to the interfaces of a node. The first is stored in DNS, and the second two are stored on the node in the `/etc/hosts` file.
+    1. *Fully-qualified hostnames* - These names are the same ones visible from the outside world, and referred to by attaching the full domain name: ie. `node.expt.proj.isi.deterlab.net`. (Note that, since we put *.isi.deterlab.net* in the nodes' domain search paths, you can use `node.expt.proj` as a shorthand.) This name always refers to the control network.
+    1. *node-link form* - You can refer to an individual experimental interface by suffixing it with the name of the link or LAN (as defined in your NS file) that it is a member of. For example, `nodeA-link0` or `server-serverLAN`. This is the preferred way to refer to experimental interfaces, since it uniquely and unambiguously identifies an interface.
+    1. *Short form* - If a node is directly connected to the node you're on, you can refer to that node simply with its name (eg. `nodeA`.) Note that this differs from the fully- qualified name in that no domain is given. We also create short names for nodes you are not directly connected to. However, if two nodes are connected with more than one interface, or there is more than one route between them, there is no guarantee that the short name has been associated with the one is on the best (ie. shortest or highest bandwidth) path - so, if there is ambiguity, we strongly suggest that you use the *node-link* form.
+
+!!! note
+    It is a bad idea to pick virtual node names in your topology that clash with the physical node names in the testbed, such as "pc45".
+

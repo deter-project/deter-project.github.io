@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Logging into your Node - DETERLab Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Logging into your Node";
+    var mkdocs_page_input_path = "core/logging-in.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the DETERLab Documentation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/registering/">Registering with DETERLab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/passwords/">Passwords</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/elab-elab-ssh-proxy/">Configuring E-lab in E-lab</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">DETERLab Core</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../core-quickstart/">Core Quickstart</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../core-guide/">Core Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../using-nodes/">Using Your Nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../generating-traffic/">Generating Traffic</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../link-delays/">End Node Traffic Shaping</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../risky-experiment/">Risky Experiments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sharing/">Using Shared Materials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../user-guidelines/">User Do's and Don'ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Core Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../deterlab-commands/">DETERLab Commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ns-commands/">NS Commands Extensions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../DETERSSH/">Accessing testbeds using SSH</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../node-types/">DETERLab Node Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../serial-console/">Using the Serial Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../dell-serial-console/">Dell Serial Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../os-images/">OS Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../custom-images/">Creating Custom Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../windows/">Windows XP</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../legacy-tools/">Legacy Tools</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Orchestrator</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/feedback/">Feedback Case Study</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/flooder/">Flooder Case Study</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/writing-agents/">Specialized User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/data-management/">Orchestrator Data Management</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-config/">MAGI Configuration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/system-files/">MAGI System Organization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/magi-tools/">MAGI Tools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/magi-dev/">MAGI Development Codebase</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/magi-desktop/">MAGI Desktop</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Containers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-guide/">Containers Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-reference/">Containers Reference</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">DeterLab Tools</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools/">Tools Index</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools/internet-atlas/">Internet Atlas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Other Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../federation/">Federation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../abac/">ABAC</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Education Materials</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/class-support/">Class Support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/course-setup/">Course Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/student-intro/">Student Introduction to DETERLab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../ISIUCB/">DETERLab Rooms</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Logging into your Node</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="logging-into-your-node">Logging into your Node<a class="headerlink" href="#logging-into-your-node" title="Permanent link"></a></h1>
+<p>By the time you receive the email message listing your nodes, the DETER configuration system will have ensured that your nodes are fully configured and ready to use. If you have selected one of the DETER-supported operating system images <a href="/core/os-images/">see supported images</a>), this configuration process includes:
+    * loading fresh disk images so that each node is in a known clean state;
+    * rebooting each node so that it is running the OS specified in the NS script;
+    * configuring each of the network interfaces so that each one is "up" and talking to its virtual LAN (VLAN);
+    * creating user accounts for each of the project members;
+    * mounting the projects NFS directory in /proj so that project files are easily shared amongst all the nodes in the experiment;
+    * creating a /etc/hosts file on each node so that you may refer to the experimental interfaces of other nodes by name instead of IP number;
+    * configuring all of the delay parameters;
+    * configuring the serial console lines so that project members may access the console ports from users.deterlab.net.</p>
+<p>As this point you may log into any of the nodes in your experiment. You will need to use <a href="/core/DETERSSH/">Secure Shell (ssh)</a> to log into <code>users.deterlab.net</code>
+Your login name and password will be the same as your Web Interface login and password.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although you can log into the web interface using your email address instead of your login name, you must use your login name when logging into <code>users.deterlab.net</code>.</p>
+</div>
+<p>Once logged into users you can then SSH to your nodes.  You should use the `qualified name' from the nodes mapping table so that you do not form dependencies on any particular physical node.  For more information on using SSH with DETER, please take a look at the <a href="/core/DETERSSH/">DETER SSH</a> wiki page.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+  <script>var base_url = '../..';</script>
+  <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+
+</body>
+</html>

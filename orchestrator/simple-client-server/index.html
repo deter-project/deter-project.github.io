@@ -3,37 +3,31 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
   
+  <link rel="shortcut icon" href="../../img/favicon.ico">
   <title>Simple Client Server Case Study - DETERLab Documentation</title>
-  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="shortcut icon" href="../../favicon.ico">
-  
-
-  
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
-
-  <link rel="stylesheet" href="../../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="../../css/highlight.css">
-  <link href="../../css/extra.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
   
   <script>
     // Current page data
     var mkdocs_page_name = "Simple Client Server Case Study";
     var mkdocs_page_input_path = "orchestrator/simple-client-server.md";
-    var mkdocs_page_url = "/orchestrator/simple-client-server/";
+    var mkdocs_page_url = null;
   </script>
   
-  <script src="../../js/jquery-2.1.1.min.js"></script>
-  <script src="../../js/modernizr-2.8.3.min.js"></script>
-  <script type="text/javascript" src="../../js/highlight.pack.js"></script>
-  <script src="../../js/theme.js"></script> 
-
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
   
 </head>
 
@@ -42,13 +36,13 @@
   <div class="wy-grid-for-nav">
 
     
-
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="../.." class="icon">
-          <!--REPLACE LOGO FILE HERE -->
-          <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-          <span class="title">DETERLab Documentation</span></a>
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -57,532 +51,195 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-        <ul class="current">
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../..">Welcome to the DETERLab Documentation</a>
-        
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the DETERLab Documentation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/registering/">Registering with DETERLab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/passwords/">Passwords</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/elab-elab-ssh-proxy/">Configuring E-lab in E-lab</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">DETERLab Core</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/core-quickstart/">Core Quickstart</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/core-guide/">Core Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/using-nodes/">Using Your Nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/generating-traffic/">Generating Traffic</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/link-delays/">End Node Traffic Shaping</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/risky-experiment/">Risky Experiments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/sharing/">Using Shared Materials</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/user-guidelines/">User Do's and Don'ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Core Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/deterlab-commands/">DETERLab Commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/ns-commands/">NS Commands Extensions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/node-types/">DETERLab Node Types</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/serial-console/">Using the Serial Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/dell-serial-console/">Dell Serial Console</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/os-images/">OS Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/custom-images/">Creating Custom Images</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/windows/">Windows XP</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/legacy-tools/">Legacy Tools</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Orchestrator</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../orchestrator-quickstart/">Orchestrator Quickstart</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../orchestrator-guide/">Orchestrator Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../orchestrator-case-studies/">Orchestrator Case Studies</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Simple Client Server Case Study</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#event-streams">Event Streams</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#server-stream">Server Stream</a>
     </li>
-<li>
-          
-            <li>
-    <li class="toctree-l1 ">
-        <a class="" href="../../Glossary/">Glossary</a>
-        
+    <li class="toctree-l3"><a class="reference internal" href="#client-stream">Client Stream</a>
     </li>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Support</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../support/registering/">Registering with DETERLab</a>
-        
+    <li class="toctree-l3"><a class="reference internal" href="#cleanup-stream">Cleanup Stream</a>
     </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../support/getting-help/">Getting Help</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../support/faqs/">FAQs</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../support/passwords/">Passwords</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../support/usage-policy/">Usage Policy</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../support/elab-elab-ssh-proxy/">Configuring E-lab in E-lab</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>DETERLab Core</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/core-quickstart/">Core Quickstart</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/core-guide/">Core Guide</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/sample-topologies/">Sample Topologies</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/using-nodes/">Using Your Nodes</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/generating-traffic/">Generating Traffic</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/link-delays/">End Node Traffic Shaping</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/risky-experiment/">Risky Experiments</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/sharing/">Using Shared Materials</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/user-guidelines/">User Do's and Don'ts</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Core Reference</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/deterlab-commands/">DETERLab Commands</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/ns-commands/">NS Commands Extensions</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/swapping/">Understanding Swapping (Node Use Policies)</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/DETERSSH/">Accessing testbeds using SSH</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/node-types/">DETERLab Node Types</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/serial-console/">Using the Serial Console</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/dell-serial-console/">Dell Serial Console</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/os-images/">OS Images</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/custom-images/">Creating Custom Images</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/windows/">Windows XP</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../core/legacy-tools/">Legacy Tools</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Orchestrator</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../orchestrator-quickstart/">Orchestrator Quickstart</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../orchestrator-guide/">Orchestrator Guide</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../orchestrator-case-studies/">Orchestrator Case Studies</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 current">
-        <a class="current" href="./">Simple Client Server Case Study</a>
-        
-            <ul>
-            
-                <li class="toctree-l3"><a href="#simple-client-server-case-study">Simple Client Server Case Study</a></li>
-                
-                    <li><a class="toctree-l4" href="#event-streams">Event Streams</a></li>
-                
-                    <li><a class="toctree-l4" href="#running-the-experiment">Running the Experiment</a></li>
-                
-                    <li><a class="toctree-l4" href="#visualizing-experiment-results">Visualizing Experiment Results</a></li>
-                
-                    <li><a class="toctree-l4" href="#scaling-the-experiment">Scaling the Experiment</a></li>
-                
-            
-            </ul>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../scaled-client-server/">Scaled Client Server Case Study</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../feedback/">Feedback Case Study</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../flooder/">Flooder Case Study</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../writing-agents/">Specialized User</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../data-management/">Orchestrator Data Management</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../orchestrator-config/">MAGI Configuration</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../orchestrator-reference/">Orchestrator Reference</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../system-files/">MAGI System Organization</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../agent-library/">MAGI Agent Library</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../magi-tools/">MAGI Tools</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../magi-dev/">MAGI Development Codebase</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../magi-desktop/">MAGI Desktop</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Containers</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../containers/containers-quickstart/">Containers Quickstart</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../containers/containers-guide/">Containers Guide</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../containers/containers-reference/">Containers Reference</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>DeterLab Tools</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/">Tools Index</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../tools/internet-atlas/">Internet Atlas</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Other Features</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../federation/">Federation</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../abac/">ABAC</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../competitions/">Competitions</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Education Materials</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/">Education Materials Overview</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/class-support/">Class Support</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/course-setup/">Course Setup</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/guidelines-for-students/">Guidelines for Students</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/student-intro/">Student Introduction to DETERLab</a>
-        
-    </li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../education/public-materials/">Public Materials</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
-            <li>
-    <ul class="subnav">
-    <li><span>Miscellaneous</span></li>
-
-        
-            
-    <li class="toctree-l1 ">
-        <a class="" href="../../ISIUCB/">DETERLab Rooms</a>
-        
-    </li>
-
-        
-    </ul>
-<li>
-          
         </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#running-the-experiment">Running the Experiment</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-swap-in-the-experiment">Step 1: Swap in the experiment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-set-up-your-environment">Step 2: Set up your environment</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-run-the-orchestrator">Step 3: Run the Orchestrator</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visualizing-experiment-results">Visualizing Experiment Results</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#offline-plotting">Offline Plotting</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#real-time-plotting">Real-time Plotting</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#scaling-the-experiment">Scaling the Experiment</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../scaled-client-server/">Scaled Client Server Case Study</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../feedback/">Feedback Case Study</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../flooder/">Flooder Case Study</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../writing-agents/">Specialized User</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../data-management/">Orchestrator Data Management</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../orchestrator-config/">MAGI Configuration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../orchestrator-reference/">Orchestrator Reference</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../system-files/">MAGI System Organization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../agent-library/">MAGI Agent Library</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../magi-tools/">MAGI Tools</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../magi-dev/">MAGI Development Codebase</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../magi-desktop/">MAGI Desktop</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Containers</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers Quickstart</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-guide/">Containers Guide</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-reference/">Containers Reference</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">DeterLab Tools</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools/">Tools Index</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../tools/internet-atlas/">Internet Atlas</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Other Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../federation/">Federation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../abac/">ABAC</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Education Materials</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/class-support/">Class Support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/course-setup/">Course Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/student-intro/">Student Introduction to DETERLab</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../ISIUCB/">DETERLab Rooms</a>
+                    </li>
+                </ul>
       </div>
-      &nbsp;
+    </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
@@ -611,6 +268,7 @@
       
     </li>
   </ul>
+  
   <hr/>
 </div>
           <div role="main">
@@ -622,7 +280,7 @@
 <h2 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link"></a></h2>
 <p>This example has three events streams; the server stream, the client stream, and the cleanup stream.</p>
 <p>The coordination between the events can be illustrated as follows:</p>
-<p><img alt="Example of events streams in Orchestrator" src="../../img/cs_workflow.png" /></p>
+<p><img alt="Example of events streams in Orchestrator" src="/img/cs_workflow.png" /></p>
 <p>Event streams can be synchronized using <em>event-based triggers</em> (such as after the server has started) or <em>time-based triggers</em> (such as wait for 30 seconds). The triggers are indicated as <em>wait</em> states (in gray). Forming the groups and loading the agents, which are also automated by the orchestrator tool, are not illustrated above.</p>
 <h3 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link"></a></h3>
 <p>The server event stream consists of three states. </p>
@@ -717,7 +375,7 @@ AAL=casestudy_clientserver.aal
 </code></pre>
 
 <p>Once run, you will see the orchestrator step through the events in the AAL file. The example output below uses the project <strong>montage</strong> with experiment <strong>caseClientServer</strong>. The output will be as follows:</p>
-<p><img alt="Example of Orchestrator output" src="../../img/cs_orch.png" /></p>
+<p><img alt="Example of Orchestrator output" src="/img/cs_orch.png" /></p>
 <ol>
 <li>The Orchestrator runs an internally defined stream called <code>initilization</code> that is responsible for establishing the <code>server_group</code> and the <code>client_group</code> and loading the agents. Once the agents are loaded, as indicated by the received trigger <code>AgentLoadDone</code>, the initialization stream is complete.</li>
 <li>Now the <code>serverstream</code>, <code>clientstream</code> and the <code>cleanup</code> stream start concurrently. The <code>serverstream</code> sends the <code>startServer</code> event to the <code>server_group</code>. All members of the <code>server_group</code> start the server and fire a trigger <code>serverStarted</code>.</li>
@@ -768,7 +426,7 @@ monitorstream:
 &gt; /share/magi/current/magi_graph.py -e $EXP -p $PROJ -c $GRAPHCONF -o cs_traffic_plot.png
 </code></pre>
 
-<p><img alt="Example of traffic plot" src="../../img/cs_traffic_plot.png" /></p>
+<p><img alt="Example of traffic plot" src="/img/cs_traffic_plot.png" /></p>
 <h3 id="real-time-plotting">Real-time Plotting<a class="headerlink" href="#real-time-plotting" title="Permanent link"></a></h3>
 <p>A real time simulated traffic plot using canned data from a pre-run experiment may be visualized <a href="http://tau.isi.edu/magidemos/casestudy/clientserver55/traffic.html">here</a>.</p>
 <p>A similar plot using live data may be plotted by visiting the same web page and additionally passing it the hostname of the database config node of your experiment.</p>
@@ -807,7 +465,7 @@ http://&lt;web-host&gt;/traffic.html?host=node-1.myExperiment.myProject
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="../scaled-client-server/" class="btn btn-neutral float-right" title="Scaled Client Server Case Study"/>Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../scaled-client-server/" class="btn btn-neutral float-right" title="Scaled Client Server Case Study">Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
         <a href="../orchestrator-case-studies/" class="btn btn-neutral" title="Orchestrator Case Studies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
@@ -824,9 +482,9 @@ http://&lt;web-host&gt;/traffic.html?host=node-1.myExperiment.myProject
     
   </div>
 
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-	  
+      
         </div>
       </div>
 
@@ -834,7 +492,7 @@ http://&lt;web-host&gt;/traffic.html?host=node-1.myExperiment.myProject
 
   </div>
 
-<div class="rst-versions" role="note" style="cursor: pointer">
+  <div class="rst-versions" role="note" aria-label="versions">
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
@@ -845,6 +503,9 @@ http://&lt;web-host&gt;/traffic.html?host=node-1.myExperiment.myProject
       
     </span>
 </div>
+  <script>var base_url = '../..';</script>
+  <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
   <!-- this makes the active part of the navigation sidebar scroll to top -->
 <script type="text/javascript">
 $(document).ready(function () {
@@ -860,5 +521,6 @@ $(document).ready(function () {
     }
 });
 </script>
+
 </body>
 </html>
