@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Using Your Nodes - DETERLab Documentation</title>
+  <title>Hostnames for your nodes - DETERLab Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Using Your Nodes";
-    var mkdocs_page_input_path = "core/using-nodes.md";
+    var mkdocs_page_name = "Hostnames for your nodes";
+    var mkdocs_page_input_path = "core/hostnames.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -74,24 +74,14 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">DETERLab Core</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../core-quickstart/">Core Quickstart</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../core-guide/">Core Guide</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Using Your Nodes</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#know-your-deter-servers">Know your DETER servers</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#accessing-your-nodes">Accessing your nodes</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#modes-of-use">Modes of Use</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../using-nodes/">Using Your Nodes</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../generating-traffic/">Generating Traffic</a>
                     </li>
@@ -235,12 +225,8 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>DETERLab Core &raquo;</li>
-        
-      
     
-    <li>Using Your Nodes</li>
+    <li>Hostnames for your nodes</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -251,50 +237,25 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="using-your-nodes">Using Your Nodes<a class="headerlink" href="#using-your-nodes" title="Permanent link">&para;</a></h1>
-<h2 id="know-your-deter-servers">Know your DETER servers<a class="headerlink" href="#know-your-deter-servers" title="Permanent link">&para;</a></h2>
-<p>Here are the most important things to know.</p>
+                <h1 id="hostnames-for-your-nodes">Hostnames for your nodes<a class="headerlink" href="#hostnames-for-your-nodes" title="Permanent link">&para;</a></h1>
+<p>We set up names for your nodes in DNS and <code>/etc/hosts</code> files for use on the nodes in the experiment. Since our nodes have multiple interfaces (the control network, and, depending on the experiment, possibly several experimental interfaces) determining which name refers to which interface can be somewhat confusing. The rules below should help you figure this out.</p>
 <ul>
-<li><code>www.isi.deterlab.net</code> is the primary web interface for the testbed.</li>
-<li><code>users.deterlab.net</code> is the host through which the testbed nodes are accessed and it is primary file server.</li>
-<li><code>scratch</code> is the local package mirror for CentOS, Ubuntu, and FreeBSD.</li>
+<li><strong>From users.deterlab.net</strong> - We set up names in the form of <code>node.expt.proj</code> in DNS. This name always refers to the node's control network interface, which is the only one reachable from <code>users.deterlab.net</code>. </li>
+<li><strong>On the nodes themselves</strong> - There are three basic ways to refer to the interfaces of a node. The first is stored in DNS, and the second two are stored on the node in the <code>/etc/hosts</code> file.<ol>
+<li><em>Short form</em> - Within your experiment you should use just the node name (e..g, <code>nodeA</code>) to refer to the nodes. This ensures that traffic between nodes in your experiment goes over the links you created</li>
+<li><em>Node-link form</em> - You can refer to an individual experimental interface by suffixing it with the name of the link or LAN (as defined in your NS file) that it is a member of. For example, <code>nodeA-link0</code> or <code>server-serverLAN</code>. This is the preferred way to refer to experimental interfaces, since it uniquely and unambiguously identifies an interface.</li>
+<li><em>Fully-qualified hostnames</em> - These names are the same ones that use use on users.deterlab.net and look like <code>node.expt.proj</code>. This name always refers to the control network interface.</li>
+</ol>
+</li>
 </ul>
-<h2 id="accessing-your-nodes">Accessing your nodes<a class="headerlink" href="#accessing-your-nodes" title="Permanent link">&para;</a></h2>
-<p>To access your nodes you will need to:</p>
-<ol>
-<li>Swap in your experiment</li>
-<li>SSH into <code>users.deterlab.net</code></li>
-<li>SSH into your experimental nodes using <code>node.exprt.proj</code>. For example to access node <code>client</code> in experiment <code>test</code> and project <code>CS444</code> one could type <code>ssh client.test.CS444</code> on the users.deterlab.net. </li>
-</ol>
-<p>Please see more detailed documentation about <a href="../hostnames/">hostnames</a> and <a href="../logging-in/">logging in</a>.</p>
-<h2 id="modes-of-use">Modes of Use<a class="headerlink" href="#modes-of-use" title="Permanent link">&para;</a></h2>
-<p>There are several ways in which you can use your nodes:</p>
-<ol>
-<li>
-<p>As you start developing your experiment you may want to design your NS topology, swap the experiment in, and then SSH to your nodes and manually execute commands.</p>
-</li>
-<li>
-<p>As your work progresses you may want to develop <em>scripts</em> (e.g., using Bash or Python or MAGI or Ansible) to automate running of your experiments</p>
-</li>
-</ol>
-<p>We have developed three toolkits to help you with experiment design and automation. First, you can use <a href="https://dew.isi.edu">DEW - distributed experiment workflows</a> to design your experiment in a human-readable format and generate NS file and bash scripts. We provide more guidance on this direction in <a href="https://www.youtube.com/channel/UCocyRn8Lk40f_1giKrDnRLQ/">DEW YouTube channel</a> as well as in documentation on DEW Web site.</p>
-<p>Second, if you use image Ubuntu-DEW on your nodes, all the commands you type and snippets of their outputs will be saved in your project directory. You can use the tool <em>flight_log</em>, which is automatically installed in that image, to remind yourself of the commands you ran in the past and to select those you want to include in a Bash script. The script will be automatically generated for you. More information about this direction is in <a href="https://www.youtube.com/channel/UCocyRn8Lk40f_1giKrDnRLQ/">DEW YouTube channel</a>.</p>
-<p>Third, you can use our <a href="../../orchestrator/orchestrator-guide/">MAGI orchestrator</a> to create scripts that will be more robust and readable than Bash scripts.</p>
-<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
-<p>We have compiled a list of frequenty asked questions about node access <a href="../faq/">here</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is a bad idea to pick virtual node names in your topology that clash with the physical node names in the testbed, such as "pc45".</p>
+</div>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../generating-traffic/" class="btn btn-neutral float-right" title="Generating Traffic">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../sample-topologies/" class="btn btn-neutral" title="Sample Topologies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -320,10 +281,6 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../sample-topologies/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../generating-traffic/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

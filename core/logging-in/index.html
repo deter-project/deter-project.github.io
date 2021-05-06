@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Using Your Nodes - DETERLab Documentation</title>
+  <title>Logging into your Node - DETERLab Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,8 +19,8 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Using Your Nodes";
-    var mkdocs_page_input_path = "core/using-nodes.md";
+    var mkdocs_page_name = "Logging into your Node";
+    var mkdocs_page_input_path = "core/logging-in.md";
     var mkdocs_page_url = null;
   </script>
   
@@ -74,24 +74,14 @@
                     </li>
                 </ul>
                 <p class="caption"><span class="caption-text">DETERLab Core</span></p>
-                <ul class="current">
+                <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../core-quickstart/">Core Quickstart</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../core-guide/">Core Guide</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Using Your Nodes</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#know-your-deter-servers">Know your DETER servers</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#accessing-your-nodes">Accessing your nodes</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#modes-of-use">Modes of Use</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../using-nodes/">Using Your Nodes</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../generating-traffic/">Generating Traffic</a>
                     </li>
@@ -235,12 +225,8 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>DETERLab Core &raquo;</li>
-        
-      
     
-    <li>Using Your Nodes</li>
+    <li>Logging into your Node</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -251,50 +237,27 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="using-your-nodes">Using Your Nodes<a class="headerlink" href="#using-your-nodes" title="Permanent link">&para;</a></h1>
-<h2 id="know-your-deter-servers">Know your DETER servers<a class="headerlink" href="#know-your-deter-servers" title="Permanent link">&para;</a></h2>
-<p>Here are the most important things to know.</p>
-<ul>
-<li><code>www.isi.deterlab.net</code> is the primary web interface for the testbed.</li>
-<li><code>users.deterlab.net</code> is the host through which the testbed nodes are accessed and it is primary file server.</li>
-<li><code>scratch</code> is the local package mirror for CentOS, Ubuntu, and FreeBSD.</li>
-</ul>
-<h2 id="accessing-your-nodes">Accessing your nodes<a class="headerlink" href="#accessing-your-nodes" title="Permanent link">&para;</a></h2>
-<p>To access your nodes you will need to:</p>
-<ol>
-<li>Swap in your experiment</li>
-<li>SSH into <code>users.deterlab.net</code></li>
-<li>SSH into your experimental nodes using <code>node.exprt.proj</code>. For example to access node <code>client</code> in experiment <code>test</code> and project <code>CS444</code> one could type <code>ssh client.test.CS444</code> on the users.deterlab.net. </li>
-</ol>
-<p>Please see more detailed documentation about <a href="../hostnames/">hostnames</a> and <a href="../logging-in/">logging in</a>.</p>
-<h2 id="modes-of-use">Modes of Use<a class="headerlink" href="#modes-of-use" title="Permanent link">&para;</a></h2>
-<p>There are several ways in which you can use your nodes:</p>
-<ol>
-<li>
-<p>As you start developing your experiment you may want to design your NS topology, swap the experiment in, and then SSH to your nodes and manually execute commands.</p>
-</li>
-<li>
-<p>As your work progresses you may want to develop <em>scripts</em> (e.g., using Bash or Python or MAGI or Ansible) to automate running of your experiments</p>
-</li>
-</ol>
-<p>We have developed three toolkits to help you with experiment design and automation. First, you can use <a href="https://dew.isi.edu">DEW - distributed experiment workflows</a> to design your experiment in a human-readable format and generate NS file and bash scripts. We provide more guidance on this direction in <a href="https://www.youtube.com/channel/UCocyRn8Lk40f_1giKrDnRLQ/">DEW YouTube channel</a> as well as in documentation on DEW Web site.</p>
-<p>Second, if you use image Ubuntu-DEW on your nodes, all the commands you type and snippets of their outputs will be saved in your project directory. You can use the tool <em>flight_log</em>, which is automatically installed in that image, to remind yourself of the commands you ran in the past and to select those you want to include in a Bash script. The script will be automatically generated for you. More information about this direction is in <a href="https://www.youtube.com/channel/UCocyRn8Lk40f_1giKrDnRLQ/">DEW YouTube channel</a>.</p>
-<p>Third, you can use our <a href="../../orchestrator/orchestrator-guide/">MAGI orchestrator</a> to create scripts that will be more robust and readable than Bash scripts.</p>
-<h2 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
-<p>We have compiled a list of frequenty asked questions about node access <a href="../faq/">here</a></p>
+                <h1 id="logging-into-your-node">Logging into your Node<a class="headerlink" href="#logging-into-your-node" title="Permanent link">&para;</a></h1>
+<p>By the time you receive the email message listing your nodes, the DETER configuration system will have ensured that your nodes are fully configured and ready to use. If you have selected one of the DETER-supported operating system images <a href="/core/os-images/">see supported images</a>), this configuration process includes:
+    * loading fresh disk images so that each node is in a known clean state;
+    * rebooting each node so that it is running the OS specified in the NS script;
+    * configuring each of the network interfaces so that each one is "up" and talking to its virtual LAN (VLAN);
+    * creating user accounts for each of the project members;
+    * mounting the projects NFS directory in /proj so that project files are easily shared amongst all the nodes in the experiment;
+    * creating a /etc/hosts file on each node so that you may refer to the experimental interfaces of other nodes by name instead of IP number;
+    * configuring all of the delay parameters;
+    * configuring the serial console lines so that project members may access the console ports from users.deterlab.net.</p>
+<p>As this point you may log into any of the nodes in your experiment. You will need to use <a href="/core/DETERSSH/">Secure Shell (ssh)</a> to log into <code>users.deterlab.net</code>
+Your login name and password will be the same as your Web Interface login and password.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Although you can log into the web interface using your email address instead of your login name, you must use your login name when logging into <code>users.deterlab.net</code>.</p>
+</div>
+<p>Once logged into users you can then SSH to your nodes.  You should use the `qualified name' from the nodes mapping table so that you do not form dependencies on any particular physical node.  For more information on using SSH with DETER, please take a look at the <a href="/core/DETERSSH/">DETER SSH</a> wiki page.</p>
               
             </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../generating-traffic/" class="btn btn-neutral float-right" title="Generating Traffic">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../sample-topologies/" class="btn btn-neutral" title="Sample Topologies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -320,10 +283,6 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../sample-topologies/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../generating-traffic/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>
