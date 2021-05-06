@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -256,8 +255,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="creating-custom-operating-system-images">Creating Custom Operating System Images<a class="headerlink" href="#creating-custom-operating-system-images" title="Permanent link"></a></h1>
-<h2 id="what-is-an-operating-system-id-osid-versus-an-image-id">What is an Operating System ID (OSID) versus an Image ID?<a class="headerlink" href="#what-is-an-operating-system-id-osid-versus-an-image-id" title="Permanent link"></a></h2>
+                <h1 id="creating-custom-operating-system-images">Creating Custom Operating System Images<a class="headerlink" href="#creating-custom-operating-system-images" title="Permanent link">&para;</a></h1>
+<h2 id="what-is-an-operating-system-id-osid-versus-an-image-id">What is an Operating System ID (OSID) versus an Image ID?<a class="headerlink" href="#what-is-an-operating-system-id-osid-versus-an-image-id" title="Permanent link">&para;</a></h2>
 <p>In order to make the best use of custom operating system images, it is important to understand the difference between these two concepts.</p>
 <ul>
 <li>
@@ -267,11 +266,11 @@
 <p>An <strong>OSID</strong> describes an operating system which resides on a partition of a disk image.  Every Image ID will have at least one OSID associated with it.  In typical testbed usage, the Image ID and OSID will be the same since we usually do not put multiple operating systems on a single image.  You can view the OSIDs on the <a href="https://www.isi.deterlab.net/showosid_list.php3">List OSIDs page</a>, which is in the <em>Experimentation</em> drop down menu on the testbed web interface.</p>
 </li>
 </ul>
-<h2 id="standard-testbed-images">Standard Testbed Images<a class="headerlink" href="#standard-testbed-images" title="Permanent link"></a></h2>
+<h2 id="standard-testbed-images">Standard Testbed Images<a class="headerlink" href="#standard-testbed-images" title="Permanent link">&para;</a></h2>
 <p>We provide a number of supported testbed images here at DETERLab.  These images can be viewed by looking at the <a href="https://www.isi.deterlab.net/showosid_list.php3">Operating System ID list</a>.  </p>
 <p>Most new operating system images that we support are whole disk images, which is different from the more traditional scheme of using partition 1 for FreeBSD and partition 2 for Linux.  To view what nodes a particular operating system image runs on and what sort of partition scheme it uses, please refer to the <a href="https://www.isi.deterlab.net/showimageid_list.php3">Image ID list page</a>.</p>
 <p>The supported testbed images are listed in the <a href="/os-images/">Operating System Images</a> documentation page. </p>
-<h2 id="custom-os-images"><a name="CustomOS"></a>Custom OS Images<a class="headerlink" href="#custom-os-images" title="Permanent link"></a></h2>
+<h2 id="custom-os-images"><a name="CustomOS"></a>Custom OS Images<a class="headerlink" href="#custom-os-images" title="Permanent link">&para;</a></h2>
 <p>If your set of operating system customizations cannot be easily contained within an RPM/TAR (or multiple RPM/TARs), then you can create your own custom OS image. DETERLab allows you to create your own disk images and load them on your experimental nodes automatically when your experiment is created or swapped in. </p>
 <p>Once you have created a custom disk image (and the associated <a href="https://www.isi.deterlab.net/newimageid_ez.php3"> ImageID/OSID descriptor</a> for it, you can use that OSID in your NS file. When your experiment is swapped in, the testbed system will arrange for your disks to be loaded in parallel using a locally written multicast disk loading protocol. </p>
 <div class="admonition note">
@@ -279,7 +278,7 @@
 <p>Experience has shown that it is much faster to load a disk image on 10 nodes at once, then it is to load a bunch of RPMS or tarballs on each node as it boots. So while it may seem like overkill to create your own disk image, we can assure you it is not.</p>
 </div>
 <p>The most common approach is to use the <a href="https://www.isi.deterlab.net/newimageid_ez.php3">New Image Descriptor</a> form to create a disk image that contains a customized version of a standard Linux or the FreeBSD image. All you need to do is enter the node name in the form, and the testbed system will create the image for you automatically, notifying you via email when it is finished. You can then use that image in subsequent experiments by specifying the descriptor name in your NS file with the <a href="/core/ns-commands/#tb-set-node-os"><code>tb-set-node-os</code></a> command. When the experiment is configured, the proper image will be loaded on each node automatically by the system.</p>
-<h2 id="creating-your-custom-image">Creating Your Custom Image<a class="headerlink" href="#creating-your-custom-image" title="Permanent link"></a></h2>
+<h2 id="creating-your-custom-image">Creating Your Custom Image<a class="headerlink" href="#creating-your-custom-image" title="Permanent link">&para;</a></h2>
 <p>A typical approach to creating your own disk image is using one of the default images as a base or template. To do this:</p>
 <ol>
 <li>
@@ -310,7 +309,7 @@ tb-set-node-os $nodeA Ubuntu-STD
 </code></pre>
 </li>
 </ol>
-<h2 id="hints-when-making-new-os-images">Hints When Making New OS Images<a class="headerlink" href="#hints-when-making-new-os-images" title="Permanent link"></a></h2>
+<h2 id="hints-when-making-new-os-images">Hints When Making New OS Images<a class="headerlink" href="#hints-when-making-new-os-images" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Please, <strong>never</strong> try to create an image from a node or type that begins with the letter <strong>b</strong>, e.g. <strong>bpc183</strong> or  <strong>bpc2133</strong>. These nodes are located in Berkeley which is physically located 400 miles away from the <code>boss</code> and <code>users</code> servers.</li>
 <li>
@@ -345,7 +344,7 @@ where:
 <p>Create whole disk images on a smaller machine rather than a single partition image.</p>
 </li>
 </ol>
-<h2 id="updating-your-custom-image">Updating your Custom Image<a class="headerlink" href="#updating-your-custom-image" title="Permanent link"></a></h2>
+<h2 id="updating-your-custom-image">Updating your Custom Image<a class="headerlink" href="#updating-your-custom-image" title="Permanent link">&para;</a></h2>
 <p>Once you have your image, it is easy to update it later by taking a new snapshot from a node running your image. Assuming you have swapped in an experiment with a node running your image and you have made changes to that node, use the DETERLab web interface to navigate to the descriptor page for your image:</p>
 <ol>
 <li>Use the <em>Experimentation</em> drop down menu, and choose <em>List ImageIDs</em> to see the entire list of Images you may access.</li>

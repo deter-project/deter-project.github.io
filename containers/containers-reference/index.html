@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -278,11 +277,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="containers-reference">Containers Reference<a class="headerlink" href="#containers-reference" title="Permanent link"></a></h1>
+                <h1 id="containers-reference">Containers Reference<a class="headerlink" href="#containers-reference" title="Permanent link">&para;</a></h1>
 <p>This document describes the details of the commands and data structures that make up the Containers system.  The <a href="/containers/containers-guide/">Containers Guide</a> provides useful context about the workflows and goals of the system that inform these technical details.</p>
-<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link"></a></h2>
+<h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <p>This section describes the command line interface to the Containers system.</p>
-<h3 id="containerizepy">containerize.py<a class="headerlink" href="#containerizepy" title="Permanent link"></a></h3>
+<h3 id="containerizepy">containerize.py<a class="headerlink" href="#containerizepy" title="Permanent link">&para;</a></h3>
 <p>The <code>containerize.py</code> command creates a DETERLab experiment made up of containers.  The <code>containerize.py</code> program is available from <code>/share/containers/containerize.py</code> on <code>users.deterlab.net</code>.  A sample invocation is:</p>
 <pre><code>$ /share/containers/containerize.py MyProject MyExperiment ~/mytopology.tcl
 </code></pre>
@@ -409,7 +408,7 @@
 <p>takes the topology in <code>~/experiment.xml</code> (which must be a topdl description), packs it into 25 qemu containers per physical node, and creates an experiment called 'DeterTest/faber-packem' that can be swapped-in.  If <code>experiment.xml</code> is already partitioned, it will be re-partitioned.  If some nodes in that topology are assigned to openvz nodes already, those nodes will be still be in openvz containers.</p>
 <p>The result of a successful <code>containerize.py</code> run is a DETERLab experiment that can be swapped in.</p>
 <p>More detailed examples are available in the <a href="/containers/containers-guide/">Containers Guide</a>.</p>
-<h3 id="container_imagepy">container_image.py<a class="headerlink" href="#container_imagepy" title="Permanent link"></a></h3>
+<h3 id="container_imagepy">container_image.py<a class="headerlink" href="#container_imagepy" title="Permanent link">&para;</a></h3>
 <p>The <code>container_image.py</code> command draws a picture of the topology of an experiment.  This is helpful in keeping track of how virtual nodes are connected.  <code>containerize.py</code> calls this internally and stores the output in the <a href="#per-experiment-directory">per-experiment directory</a> (unless <code>--no-image</code> is used).</p>
 <p>A researcher may call <code>container_image.py</code> directly to generate an image later or to generate one with the partitioning drawn.</p>
 <p>The simplest way to call <code>container_image.py</code> is:</p>
@@ -449,7 +448,7 @@
 <pre><code>/share/containers/container_image.py --experiment SAFER/testbed-containers ~/drawing.png
 </code></pre>
 
-<h2 id="topdl-attributes-for-containers">Topdl Attributes For Containers<a class="headerlink" href="#topdl-attributes-for-containers" title="Permanent link"></a></h2>
+<h2 id="topdl-attributes-for-containers">Topdl Attributes For Containers<a class="headerlink" href="#topdl-attributes-for-containers" title="Permanent link">&para;</a></h2>
 <p>Several <a href="http://fedd.deterlab.net/wiki/TopDl">topdl</a> attributes influence how an experiment is containerized.  These can be added to nodes using the ns2 <code>tb-add-node-attribute</code> command (used throughout the <a href="/containers/containers-guide/">Containers Guide</a>) or directly to the topdl.</p>
 <p>These attributes are all attached to nodes/Computers:</p>
 <ul>
@@ -499,9 +498,9 @@
 <p>The IPv4 netmask.  ns2 sets this.</p>
 </li>
 </ul>
-<h2 id="configuration-files">Configuration Files<a class="headerlink" href="#configuration-files" title="Permanent link"></a></h2>
+<h2 id="configuration-files">Configuration Files<a class="headerlink" href="#configuration-files" title="Permanent link">&para;</a></h2>
 <p>These files control the operation of the containers system.</p>
-<h3 id="per-experiment-directory">Per-experiment Directory<a class="headerlink" href="#per-experiment-directory" title="Permanent link"></a></h3>
+<h3 id="per-experiment-directory">Per-experiment Directory<a class="headerlink" href="#per-experiment-directory" title="Permanent link">&para;</a></h3>
 <p>When an experiment is containerized, the data necessary to create it is stored in <code>/proj/</code><em>project</em><code>/exp/</code><em>experiment</em><code>/containers</code>.  The path <code>/proj/</code><em>project</em><code>/exp/</code><em>experiment</em> is created by DETERLab when the experiment is created, and used by experimenters for a variety of things.  This directory is replicated on nodes under <code>/var/containers/config</code>.</p>
 <p>There are a few files in the per-experiment directory that most experimenters can use:</p>
 <ul>
@@ -611,7 +610,7 @@
 <p>Specific parameters for configuring the delay elements in VDE switched topologies that implement traffic shaping. <a href="#interconnections-vde-switches-and-local-networking">See below</a>.</p>
 </li>
 </ul>
-<h3 id="site-configuration-file">Site Configuration File<a class="headerlink" href="#site-configuration-file" title="Permanent link"></a></h3>
+<h3 id="site-configuration-file">Site Configuration File<a class="headerlink" href="#site-configuration-file" title="Permanent link">&para;</a></h3>
 <p>The site configuration file controls how all experiments are containerized across DETERLab.  The contents are primarily of interest to developers, but researchers may occasionally find the need to specify their own.  The <code>--config</code> parameter to <a href="#containerize.py">containerize.py</a> does that.</p>
 <p>The site configuration file is an attribute-value pair file parsed by a python ConfigParser that sets overall container parameters.  Many of these have legacy internal names.</p>
 <p>The default site configuration is in <code>/share/containers/site.conf</code> on <code>users.deterlab.net</code>.</p>
@@ -686,13 +685,13 @@
 <p>Deprecated</p>
 </li>
 </ul>
-<h2 id="container-notes">Container Notes<a class="headerlink" href="#container-notes" title="Permanent link"></a></h2>
+<h2 id="container-notes">Container Notes<a class="headerlink" href="#container-notes" title="Permanent link">&para;</a></h2>
 <p>Different container types have some quirks.  This section lists limitations of each container, as well as issues in interconnecting them.</p>
-<h3 id="qemu">Qemu<a class="headerlink" href="#qemu" title="Permanent link"></a></h3>
+<h3 id="qemu">Qemu<a class="headerlink" href="#qemu" title="Permanent link">&para;</a></h3>
 <p>Qemu nodes are limited to 7 experimental interfaces.  They currently run only Ubuntu 12.04 32 bit operating systems.</p>
-<h3 id="physical-nodes">Physical Nodes<a class="headerlink" href="#physical-nodes" title="Permanent link"></a></h3>
+<h3 id="physical-nodes">Physical Nodes<a class="headerlink" href="#physical-nodes" title="Permanent link">&para;</a></h3>
 <p>Physical nodes can be incorporated into experiments, but should only use modern versions of Ubuntu, to allow the Containers system to run their <a href="/containers/containers-guide/#start-commands">start commands</a> correctly and to initialize their routing tables.</p>
-<h3 id="interconnections-vde-switches-and-local-networking">Interconnections: VDE switches and local networking<a class="headerlink" href="#interconnections-vde-switches-and-local-networking" title="Permanent link"></a></h3>
+<h3 id="interconnections-vde-switches-and-local-networking">Interconnections: VDE switches and local networking<a class="headerlink" href="#interconnections-vde-switches-and-local-networking" title="Permanent link">&para;</a></h3>
 <p>The various containers are interconnected using either local kernel virtual networking or <a href="http://wiki.virtualsquare.org/wiki/index.php/VDE">VDE switches</a>.  Kernel networking is lower overhead because it does not require process context switching, but VDE switches are a more general solution.</p>
 <p>Network behavior changes such as loss, delay or rate limits  are introduced into a network of containers using one of two mechanisms: inserting elements into a VDE switch topology or end node traffic shaping.  </p>
 <p>Inserting elements into the VDE switch topology allows the system to modify the behavior for all packets passing through it.  Generally this means all packets to or from a host, as the Containers system inserts these elements in the path between the node and the switch.</p>
@@ -708,7 +707,7 @@
 <p>Similarly embedded physical nodes use only endnode traffic shaping, as routing outgoing traffic through a virtual switch infrastructure that just connects to its physical interfaces is at best confusing.</p>
 <p>Unfortunately, endnode traffic shaping and VDE shaping are incompatible.  Because endnode shaping does not impose delays on arriving traffic, it cannot delay traffic from a VDE delayed node correctly.</p>
 <p>This is primarily of academic interest, unless a researcher wants to impose traffic shaping between containers using incompatible traffic shaping.  There needs to be an unshaped link between the two kinds of traffic shaping.</p>
-<h2 id="bootable-qemu-images">Bootable Qemu Images<a class="headerlink" href="#bootable-qemu-images" title="Permanent link"></a></h2>
+<h2 id="bootable-qemu-images">Bootable Qemu Images<a class="headerlink" href="#bootable-qemu-images" title="Permanent link">&para;</a></h2>
 <p>For qemu images to boot reliably, they should not wait for a keypress at the <code>grub</code> command, which is distressingly common.</p>
 <p>To ensure that your image does not wait for <code>grub</code>, do the following:</p>
 <p>For Ubuntu 12.04 (and any system that uses grub2) edit <code>/etc/default/grub</code>. For example:</p>
@@ -726,7 +725,7 @@ GRUB_CMDLINE_LINUX=&quot;&quot;
 <pre><code>$ sudo update-grub
 </code></pre>
 
-<h3 id="sudo-configuration">sudo configuration<a class="headerlink" href="#sudo-configuration" title="Permanent link"></a></h3>
+<h3 id="sudo-configuration">sudo configuration<a class="headerlink" href="#sudo-configuration" title="Permanent link">&para;</a></h3>
 <p>The Containers system adds all users to the admin group so that group should be able to use <code>sudo</code> without providing a password.</p>
               
             </div>

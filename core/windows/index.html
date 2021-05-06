@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -282,27 +281,27 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="windows-xp">Windows XP<a class="headerlink" href="#windows-xp" title="Permanent link"></a></h1>
+                <h1 id="windows-xp">Windows XP<a class="headerlink" href="#windows-xp" title="Permanent link">&para;</a></h1>
 <p>Microsoft <strong>Windows XP</strong> is supported as one of the operating system types for experiment nodes in DETER.</p>
 <p>As much as possible, we have left Windows XP "stock". Some Windows services are shut down: Messenger, SSDP Discovery Service, Universal Plug and Play Device Host, and Remote Registry. Other setting changes are described under <a href="#Network_config">Network config</a> and <a href="#Routing">Routing</a> below.</p>
 <p>Before booting the node at swap-in time, DETER loads a <a href="#Experiment_setup">fresh image of Windows XP</a> onto the experiment nodes in parallel, using our <code>frisbee</code> service. DETER software automatically configures each Windows XP node, providing the expected experiment user environment including: user accounts and DETER SSH keys; remote home, project, and shared directories; and network connections.</p>
 <p>The <a href="#Cygwin">Cygwin GNU</a> environment is provided, including Bash and TCSH shells, the C/C++, Perl and Python programming languages, and several editors including Emacs, vim, nano and ed. <a href="#Cygwin">Cygwin</a> handles both Unix and Windows-style command paths, as described <a href="#Cygwin_arcana">below</a>.</p>
 <p>The DETERLab web interface manages a separate <a href="#Windows_Passwords">Windows password</a> in the user profile, as well as making <a href="#Login_connections">login connections</a> to the experiment nodes. Remote Desktop Protocol service supports Windows Desktop logins from the user's workstation screen to the experiment node. SSH and Serial Console command-line connections are also supported.</p>
 <p>Windows XP installations are more hardware dependent than Linux or FreeBSD. At present, this Windows XP image runs on only <a href="/core/node-types/#pc3000">pc3000 class</a> machines.</p>
-<h2 id="differences-from-freebsd-and-linux">Differences from FreeBSD and Linux<a class="headerlink" href="#differences-from-freebsd-and-linux" title="Permanent link"></a></h2>
+<h2 id="differences-from-freebsd-and-linux">Differences from FreeBSD and Linux<a class="headerlink" href="#differences-from-freebsd-and-linux" title="Permanent link">&para;</a></h2>
 <p>The biggest difference of course, is that this is <strong>Windows</strong>, with Cygwin layered on top, and DETERLab management services added. In particular, this is Windows XP (NT 5.1), with various levels of service packs and updates (see <a href="#Experiment_setup">below</a>.)</p>
-<h3 id="file-sharing"><a name="File_sharing"></a>File Sharing<a class="headerlink" href="#file-sharing" title="Permanent link"></a></h3>
+<h3 id="file-sharing"><a name="File_sharing"></a>File Sharing<a class="headerlink" href="#file-sharing" title="Permanent link">&para;</a></h3>
 <p>The second-biggest difference is that shared directories are provided not by the NFS (Network File System) protocol, but instead by the <strong>SMB</strong> (Server Message Block) protocol, otherwise known as Windows File Sharing.</p>
 <p>The "Client for Microsoft Networks" software contacts the SMB server, in this case <strong>Samba</strong> running on the file server known as <strong>Fs</strong> (an alias for <strong>Users</strong>.) The SMB protocol authenticates using a plain-text user name and password, encrypted as they go across the network. (These Windows Shares are then accessed by UNC paths under Cygwin mounts, [#SMB_mounts described below].)</p>
 <p>In Windows GUI programs, you can just type the UNC path into the Address bar or a file-open dialog with <strong>backslashes</strong>, e.g. <code>\\fs\share</code> or <code>\\fs\&lt;username&gt;</code>. User and project shares are marked "not browsable", so just <code>\\fs</code> shows only <code>share</code>.</p>
 <p>If you want to serve files from one of your experiment nodes to others, see the section on [#netbt_command  The netbt command ].</p>
-<h3 id="windows-passwords"><a id="Windows_Passwords"></a>Windows Passwords<a class="headerlink" href="#windows-passwords" title="Permanent link"></a></h3>
+<h3 id="windows-passwords"><a id="Windows_Passwords"></a>Windows Passwords<a class="headerlink" href="#windows-passwords" title="Permanent link">&para;</a></h3>
 <p>A separate <strong>Windows password</strong> is kept for use only with experiment nodes running Windows. It is presented behind-the-scenes to <code>rdesktop</code> for RDP logins by our Web interface under Unix, and for the Samba mount of shared directories like your home directory under an SSH login, so you don't have to type it in those cases. You <em>will</em> have to type it each time if you use the <a href="#Login_connections">Microsoft RDC (Remote Desktop Connector) client program</a> from a Windows machine.</p>
 <p>The default Windows password is randomly generated. It's easy to change it to something easier to remember.</p>
 <p>To see or edit your Windows password, log in to DETERLab, and click <strong>Manage User Profile</strong> and then <strong>Edit Profile</strong> under <strong>User Options</strong>. You will see <strong>Windows Password</strong> fields in addition to the regular DETERLab <strong>Password</strong> fields.</p>
 <p>When you change your Windows password, you will also have to re-type it as a check. The new Windows password should propagate to the Samba server on Fs instantly, so you can swap in an experiment and log in to its Windows nodes with the new password.</p>
 <p>If you have already swapped-in experiment nodes and changed your Windows password, the account information including passwords will be updated at the next DETERLab watchdog daemon <code>isalive</code> interval. This should be in 3 to 6 minutes.</p>
-<h3 id="experiment-setup-for-windows-nodes"><a id="Experiment_setup"></a>Experiment setup for Windows nodes<a class="headerlink" href="#experiment-setup-for-windows-nodes" title="Permanent link"></a></h3>
+<h3 id="experiment-setup-for-windows-nodes"><a id="Experiment_setup"></a>Experiment setup for Windows nodes<a class="headerlink" href="#experiment-setup-for-windows-nodes" title="Permanent link">&para;</a></h3>
 <p>All you have to do is put a line specifying a WINXP OS image in your experiment NS file, like this:</p>
 <pre><code>    tb-set-node-os $node WINXP-UPDATE
 </code></pre>
@@ -329,7 +328,7 @@
 <p class="admonition-title">Note</p>
 <p>The Windows Firewall is disabled by default (as it will inform you repeatedly!)</p>
 </div>
-<h3 id="network-config"><a id="Network_config"></a>Network config<a class="headerlink" href="#network-config" title="Permanent link"></a></h3>
+<h3 id="network-config"><a id="Network_config"></a>Network config<a class="headerlink" href="#network-config" title="Permanent link">&para;</a></h3>
 <p>Some default Windows networking features are disabled. <em>NetBT (!NetBios over TCP)</em> (<a href="http://www.microsoft.com/technet/prodtechnol/windowsserver2003/library/DepKit/40c09844-a669-463c-94dc-7ccf7214083d.mspx">NetbiosOptions=2 </a>) and <em>DNS auto-registration</em> (<a href="http://support.microsoft.com/default.aspx?scid=kb;EN-US;q246804">DisableDynamicUpdate=1</a>) are disabled to allow network <a href="/core/swapping/#idleness">idle detection</a> by the slothd service. <em>TCP/IP address autoconfiguration</em> is disabled (<a href="http://www.microsoft.com/resources/documentation/Windows/2000/server/reskit/en-us/Default.asp?url=/resources/documentation/Windows/2000/server/reskit/en-us/regentry/58861.asp">IPAutoconfigurationEnabled=0</a>) so that un-switched interfaces like the sixth NICs on the pc3000's don't get bogus Microsoft class B network 169.254.0.0 addresses assigned.</p>
 <p>The Windows <strong><code>ipconfig /all</code></strong> command only shows the configuration information for the enabled network interfaces. There will always be one enabled control net interface on the <code>192.168.0.0/22</code> network. The others are disabled if not used in your experiment. (See file <code>/var/emulab/boot/ipconfig-cache</code> for a full listing from boot time, including the interfaces that were later disabled.)</p>
 <p>If you specified links or LANs in your experiment network topology, other interfaces will be enabled, with an IP address, subnet mask, and gateway that you can specify in the NS file. Notice that the Windows names of the interfaces start with <strong><code>Local Area Connection</code></strong> and have a number appended. You can't count on what this number is, since it depends on the order the NIC's are probed as Windows boots.</p>
@@ -337,12 +336,12 @@
 <p class="admonition-title">Note</p>
 <p>Often, we have seen <code>ipconfig</code> report an IP address and mask of <code>0.0.0.0</code>, while the TCP/IP properties dialog boxes and the <code>netsh</code> command show the proper values. Our startup scripts disable and re-enable the network interface in an attempt to reset this. Sometimes it doesn't work, and another reboot is done in an attempt to get the network up.</p>
 </div>
-<h3 id="routing">Routing<a class="headerlink" href="#routing" title="Permanent link"></a></h3>
+<h3 id="routing">Routing<a class="headerlink" href="#routing" title="Permanent link">&para;</a></h3>
 <p>Full-blown router nodes cannot run Windows, i.e. <strong><code>rtproto Session</code></strong> is not supported. However, basic routing between connected network components of your experiment topology works. The Windows command to see the routing tables is <strong><code>route print</code></strong>. The <a href="http://www.microsoft.com/windows2000/en/advanced/help/default.asp?url=/windows2000/en/advanced/help/sag_TCPIP_pro_EnableForwarding.htm">IPEnableRouter=1</a> registry key is set on multi-homed hosts in the experiment network, before they are rebooted to change the hostname.</p>
 <p><strong><code>rtproto Static</code></strong> is supported in all recent WINXP images, but not in WINXP-02-16 (2005) or before.</p>
 <p><strong><code>rtproto Static-old</code></strong> or <strong><code>rtproto Manual</code></strong> will work in any image.</p>
 <p>There is more information on routing in the <a href="/core/core-guide/#Routing">Routing section of the Core Guide</a>.</p>
-<h3 id="windows-nodes-boot-twice">Windows nodes boot twice<a class="headerlink" href="#windows-nodes-boot-twice" title="Permanent link"></a></h3>
+<h3 id="windows-nodes-boot-twice">Windows nodes boot twice<a class="headerlink" href="#windows-nodes-boot-twice" title="Permanent link">&para;</a></h3>
 <p>Notice that Windows reboots an extra time after being loaded onto a node during swap-in. It must reboot after changing the node name to set up the network stack properly. Be patient, Windows XP doesn't boot quickly.</p>
 <p>With <a href="#Hardware_independent">hardware-independent</a>, (<a href="#Sysprep">sysprep'ed</a>) images, the first boot is actually running <code>Mini-Setup</code> as well, setting up device drivers and so on.</p>
 <p>It's best not to log in to the nodes until the experiment is fully swapped-in. (You may be able to log in briefly between the first two reboots; if you see the wrong <code>pcXXX</code> name, you'll know that a reboot is imminent.) You can know that the swap-in process is finished by any of these methods:</p>
@@ -371,7 +370,7 @@
 </code></pre>
 
 <p>This gives Windows another chance to get it right.</p>
-<h3 id="login-connections-to-windows">Login connections to Windows<a class="headerlink" href="#login-connections-to-windows" title="Permanent link"></a></h3>
+<h3 id="login-connections-to-windows">Login connections to Windows<a class="headerlink" href="#login-connections-to-windows" title="Permanent link">&para;</a></h3>
 <p>You can manually start up the SSH or RDP client programs to connect and log in to nodes in your experiment, or use the <code>console</code> command on Ops. You will have to type your <a href="#Windows_Passwords">Windows Password</a> when logging in, except for SSH when you have ssh-agent keys loaded.</p>
 <p>Or you can set up your browser to automatically connect in one click from the DETERLab web interface and pop up a connection window. Once you start swapping in an experiment, the <em>Experiment Information</em> page contains a table of the physical node ID and logical node name, status, and connection buttons. The captions at the top of the button columns link to pages explaining how to set up up mime-types in your browser to make the buttons work, from FreeBSD, Linux, and Windows workstations:</p>
 <ul>
@@ -398,7 +397,7 @@
 <p class="admonition-title">Note</p>
 <p>There are no Cygwin ports of some other useful networking commands, such as <strong><code>traceroute</code></strong> and <strong><code>ifconfig -a</code></strong>. The Windows system equivalents are <code>tracert</code> and <code>ipconfig /all</code>.</p>
 </div>
-<h3 id="rdp-details">RDP details<a class="headerlink" href="#rdp-details" title="Permanent link"></a></h3>
+<h3 id="rdp-details">RDP details<a class="headerlink" href="#rdp-details" title="Permanent link">&para;</a></h3>
 <p>Here are some fine points and hints for RDP logins to remote Windows desktops:</p>
 <ul>
 <li>
@@ -448,7 +447,7 @@
 <p>To restart the computer, run <strong>/sbin/reboot</strong>, or use the "Shut Down" menu of <strong>Task Manager</strong>. One way to start Task Manager is to right-click on the background of the Taskbar at the bottom of the screen and select "Task Manager".</p>
 </li>
 </ul>
-<h3 id="the-netbt-command">The <code>netbt</code> command<a class="headerlink" href="#the-netbt-command" title="Permanent link"></a></h3>
+<h3 id="the-netbt-command">The <code>netbt</code> command<a class="headerlink" href="#the-netbt-command" title="Permanent link">&para;</a></h3>
 <p>The <strong>NetBT</strong> (Netbios over TCP) protocol is used to announce shared directories (folders) from one Windows machine to others. (See the Name and Session services in <a href="http://en.wikipedia.org/wiki/Netbios">http://en.wikipedia.org/wiki/Netbios</a>.)</p>
 <p>The <strong>SMB</strong> (Server Message Block) protocol is used to actually serve files. (See <a href="http://en.wikipedia.org/wiki/Server_Message_Block">http://en.wikipedia.org/wiki/Server_Message_Block</a>.)</p>
 <p>In DETERLab, we normally disable NetBT on experiment nodes, because it chatters and messes up slothd network idle detection, and is not needed for the usual SMB mounts of <code>/users</code>, <code>/proj</code>, and <code>/share</code> dirs, which are served from a Samba service on <strong>fs</strong>.</p>
@@ -483,7 +482,7 @@ _files_without_running_the_wizard,_click_here._"
 <p>The machine names for UNC paths sharing are the same as in shell prompts: <code>pcXXX</code>, where <code>XXX</code> is the machine number. These will show up in <code>My Network Places / Entire Network / Microsoft Windows Network / DETER</code> once you have used them.</p>
 <p>IP numbers can also be used in UNC paths, giving you a way to share files across experiment network links rather than the control network.</p>
 <p>There is an DETER-generated <strong><code>LMHOSTS</code></strong> file, to provide the usual node aliases within an experiment, but it is currently ignored even though "Enable LMHOSTS lookup" is turned on in the TCP/IP WINS settings. Try <code>nbtstat -c</code> and <code>nbtstat -R</code> to experiment with this. (See the <a href="http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/nbtstat.mspx?mfr=true">Microsoft doc for nbtstat</a>.</p>
-<h3 id="making-custom-windows-os-images">Making Custom Windows OS Images<a class="headerlink" href="#making-custom-windows-os-images" title="Permanent link"></a></h3>
+<h3 id="making-custom-windows-os-images">Making Custom Windows OS Images<a class="headerlink" href="#making-custom-windows-os-images" title="Permanent link">&para;</a></h3>
 <p>Making custom Windows images is similar to <a href="/core/custom-images/">doing it on the other DETER operating systems</a>, except that you must do a little more work to run the <code>prepare</code> script as user <code>root</code> since there are no <code>su</code> or <code>sudo</code> commands on Windows. This is optional on the other OS types, but on Windows, proper TCP/IP network setup depends on <code>prepare</code> being run.</p>
 <ul>
 <li>
@@ -551,9 +550,9 @@ Re-enter new password:
 <p>When you're testing your custom image, it's a good idea to set the <a href="/core/ns-commands/#tb-set-node-failure-action">tb-set-node-failure-action</a> to "nonfatal" in the ns file so you get a chance to examine an image that hasn't completed the set-up process. See the <a href="#tb-set-node-failure-action">note below</a> for other useful ideas.</p>
 </li>
 </ul>
-<h2 id="cygwin">Cygwin<a class="headerlink" href="#cygwin" title="Permanent link"></a></h2>
+<h2 id="cygwin">Cygwin<a class="headerlink" href="#cygwin" title="Permanent link">&para;</a></h2>
 <p>Cygwin is <a href="http://www.cygwin.com/">GNU + Cygnus + Windows</a>, providing Linux-like functionality at the API, command-line, and package installation levels.</p>
-<h3 id="cygwin-documentation">Cygwin documentation<a class="headerlink" href="#cygwin-documentation" title="Permanent link"></a></h3>
+<h3 id="cygwin-documentation">Cygwin documentation<a class="headerlink" href="#cygwin-documentation" title="Permanent link">&para;</a></h3>
 <p>Cygwin is well documented. Here are some links to get you started:</p>
 <ul>
 <li><a href="http://cygwin.com/cygwin-ug-net/cygwin-ug-net.html">Users guide</a></li>
@@ -562,7 +561,7 @@ Re-enter new password:
 <li><a href="http://cygwin.com/faq.html">FAQ</a></li>
 <li><a href="http://cygwin.com/cygwin-api/cygwin-api.html">API compatibility and Cygwin functions</a></li>
 </ul>
-<h3 id="cygwin-packages">Cygwin packages<a class="headerlink" href="#cygwin-packages" title="Permanent link"></a></h3>
+<h3 id="cygwin-packages">Cygwin packages<a class="headerlink" href="#cygwin-packages" title="Permanent link">&para;</a></h3>
 <p>A number of optional Cygwin packages are installed in the image due to our building and running the DETER client software, plus some editors for convenience. These packages are currently agetty, bison, cvs, cygrunsrv, ed, file, flex, gcc, gdb, inetutils, make, minires-devel, more, nano, openssh, openssl-devel, patch, perl, perl-libwin32, psmisc, python, rpm, rsync, shutdown, sysvinit, tcsh, vim, wget, and zip.</p>
 <p>The Cygwin command <strong><code>cygcheck -c</code></strong> lists the packages that are installed, and their current version number and status. Package-specific notes and/or documentation for installed packages are in <code>/usr{,/share}/doc/Cygwin/*.README</code> and <code>/usr/share/doc/*/README</code> files. The <a href="http://www.cygwin.com/packages/">Cygwin package site</a> lists the available pre-compiled packages and provides a search engine.</p>
 <p>If you want to install more Cygwin pre-compiled packages, run the graphical installer:</p>
@@ -582,7 +581,7 @@ Re-enter new password:
 </code></pre>
 
 <p>as usual.</p>
-<h3 id="smb-mounts-and-samba">SMB mounts and Samba<a class="headerlink" href="#smb-mounts-and-samba" title="Permanent link"></a></h3>
+<h3 id="smb-mounts-and-samba">SMB mounts and Samba<a class="headerlink" href="#smb-mounts-and-samba" title="Permanent link">&para;</a></h3>
 <p>User home directories and other shared directories are served by <strong>fs</strong>, another alias for Ops/Users, via the SMB protocol (Server Message Block, also known as Windows File Sharing) with the Windows Client connecting to the Samba server.</p>
 <p>UNC paths with leading double-slashes and a server name, e.g. <strong><code>//fs</code></strong>, are used to access the SMB Shares under Cygwin. DETER then uses the <a href="#Cygwin_mounts">Cygwin mount command</a> to make them appear on the usual Unix paths for the DETER shared directories: <code>/users/&lt;username&gt;</code>, <code>/proj/&lt;pid&gt;</code>, <code>/group/&lt;pid&gt;/&lt;gid&gt;</code>, and <code>/share</code>.</p>
 <p>The Cygwin <strong><code>mount</code></strong> command lists what you could access on the Samba server, with the UNC path in the first column. Unix file permissions may further limit your access on the Samba server. Log in to Ops to investigate.</p>
@@ -590,7 +589,7 @@ Re-enter new password:
 <p>In Windows GUI programs, you can just type the UNC path into the Address bar or a file-open dialog with <strong>backslashes</strong>, e.g. <code>\\fs\share</code> or <code>\\fs\&lt;username&gt;</code>. User and project shares are marked "not browsable", so just <code>\\fs</code> shows only <code>share</code>.</p>
 <p><em>Windows limitation:</em> There is only <strong>one protection mask</strong> for everything in a whole mount/share under SMB. It's set in the "share properties" on the server (Samba config file in this case) so <strong><code>chmod</code></strong> will do you no good across SMB.</p>
 <p><em>Cygwin limitation:</em> There is a hard-coded <strong>limit of 30 mount points</strong> in Cygwin. Cygwin uses 4 of them, and DETER uses another 3 or 4. So some of your <code>/users</code> mounts will fail on Windows startup if you have more than 23 or 24 members in your project, unless they are grouped into smaller subgroups.</p>
-<h3 id="cygwin-arcana">Cygwin arcana<a class="headerlink" href="#cygwin-arcana" title="Permanent link"></a></h3>
+<h3 id="cygwin-arcana">Cygwin arcana<a class="headerlink" href="#cygwin-arcana" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p><strong>File paths</strong></p>
@@ -674,7 +673,7 @@ $ cygpath -u 'c:\WINDOWS'
 <p>Notice that the value string is single-quoted with <code>C:</code> and backslashes. Windows interprets this regkey, and wants its flavor of file path.</p>
 </li>
 </ul>
-<h2 id="ntemacs">NtEmacs<a class="headerlink" href="#ntemacs" title="Permanent link"></a></h2>
+<h2 id="ntemacs">NtEmacs<a class="headerlink" href="#ntemacs" title="Permanent link">&para;</a></h2>
 <p>We don't include the Cygwin X server in our XP images to keep the bulk and complexity down. So <a href="http://www.gnu.org/software/emacs/windows/ntemacs.html">NtEmacs 21.3</a> is provided instead of the Cygwin <strong>X</strong> Emacs. <em>NtEmacs</em> "frames" are windows on the Windows Desktop, e.g. <code>^X-5-2</code> makes another one.</p>
 <p>The <code>/usr/local/bin/emacs</code> executable is a symlink to <code>/cygdrive/c/emacs-21.3/bin/runemacs.exe</code>, which starts up an Emacs on the desktop. This only works under RDP, since SSH logins have a null desktop.</p>
 <p>There is also a <code>/usr/local/bin/emacs-exe</code> executable, a symlink to <code>/cygdrive/c/emacs-21.3/bin/emacs.exe</code>, which is only useful as an Emacs compiler. It could be used to run Emacs in an SSH or Serial Console login window with the <code>-nw</code> (no windows) flag, except that it exits with <code>emacs: standard input is not a tty</code>. Another thing not to try is running <code>emacs-exe -nw</code> in a Bash or TCSH shell on the RDP desktop. It crashed <em>Windows XP</em> when I tried it.</p>

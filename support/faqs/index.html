@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -260,29 +259,29 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="frequently-asked-questions">Frequently Asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link"></a></h1>
-<h2 id="why-cant-i-log-in">Why can't I log in?<a class="headerlink" href="#why-cant-i-log-in" title="Permanent link"></a></h2>
+                <h1 id="frequently-asked-questions">Frequently Asked questions<a class="headerlink" href="#frequently-asked-questions" title="Permanent link">&para;</a></h1>
+<h2 id="why-cant-i-log-in">Why can't I log in?<a class="headerlink" href="#why-cant-i-log-in" title="Permanent link">&para;</a></h2>
 <p>Too many failed attempts to log into the web interface will result in your account being locked. You will get a message saying that your account has been frozen if you trigger it. If you are a student, please contact your TA. Otherwise, please ​<a href="https://www.deter-project.org/contact">contact us</a>.</p>
 <p>Also:
 - You must use your <strong>actual account name</strong>, not an email address, to log into <code>users.deterlab.net</code>. 
 - Too many failed attempts to log into <code>users.deterlab.net</code> will result in an <strong>IP address ban</strong>. We automatically whitelist all IP addresses that have successfully logged into the <a href="https://www.isi.deterlab.net/">​web interface</a> and this list is synchronized every 15 minutes. So if you find yourself banned from connecting to <code>users.deterlab.net</code> please log into the ​web interface and then wait 15 minutes.</p>
-<h2 id="how-do-i-copy-files-from-my-workstation-to-a-node-in-an-experiment">How do I copy files from my workstation to a node in an experiment?<a class="headerlink" href="#how-do-i-copy-files-from-my-workstation-to-a-node-in-an-experiment" title="Permanent link"></a></h2>
+<h2 id="how-do-i-copy-files-from-my-workstation-to-a-node-in-an-experiment">How do I copy files from my workstation to a node in an experiment?<a class="headerlink" href="#how-do-i-copy-files-from-my-workstation-to-a-node-in-an-experiment" title="Permanent link">&para;</a></h2>
 <p>Your home directory from <code>users</code> is available on the nodes in your experiment. Copy your files to <code>users.deterlab.net</code> using <code>scp</code> or <code>sftp</code> to make them available on your nodes.</p>
-<h2 id="how-can-i-copy-files-from-a-node-in-the-testbed-to-my-workstation">How can I copy files from a node in the testbed to my workstation?<a class="headerlink" href="#how-can-i-copy-files-from-a-node-in-the-testbed-to-my-workstation" title="Permanent link"></a></h2>
+<h2 id="how-can-i-copy-files-from-a-node-in-the-testbed-to-my-workstation">How can I copy files from a node in the testbed to my workstation?<a class="headerlink" href="#how-can-i-copy-files-from-a-node-in-the-testbed-to-my-workstation" title="Permanent link">&para;</a></h2>
 <p>The reverse of the previous question: copy the files you want to your home directory, then download them from <code>users.deterlab.net</code> using <code>scp</code> or <code>sftp</code>.</p>
-<h2 id="how-can-i-install-software-on-my-nodes">How can I install software on my nodes?<a class="headerlink" href="#how-can-i-install-software-on-my-nodes" title="Permanent link"></a></h2>
+<h2 id="how-can-i-install-software-on-my-nodes">How can I install software on my nodes?<a class="headerlink" href="#how-can-i-install-software-on-my-nodes" title="Permanent link">&para;</a></h2>
 <p>The currently supported operating system images (see the ​<a href="https://www.isi.deterlab.net/showosid_list.php3">Recommended list for currently supported OS images</a>) have access to full package repositories on a local mirror. Depending on your OS you may use <code>yum</code>, <code>apt-get</code>, or <code>pkg_add</code> to install software that has been pre-packaged for each OS.</p>
 <p>If there is no package for the software you wish to install, you may install from source. Copy the source tarball to the testbed (see <a href="#HowdoIcopyfilesfrommyworkstationtoanodeinanexperiment">How do I copy files from my workstation to a node in an experiment?</a> or use <code>wget</code> or <code>curl</code> on <code>users</code>), then follow the package's installation instructions.</p>
 <p>While we will do everything we can to assist any issues you face, we do not have the resources to help individual users install software.</p>
-<h2 id="how-do-i-connect-the-web-browser-on-my-workstation-to-the-inner-boss-within-an-emulab-in-emulab-experiment">How do I connect the web browser on my workstation to the inner boss within an Emulab-in-Emulab experiment?<a class="headerlink" href="#how-do-i-connect-the-web-browser-on-my-workstation-to-the-inner-boss-within-an-emulab-in-emulab-experiment" title="Permanent link"></a></h2>
+<h2 id="how-do-i-connect-the-web-browser-on-my-workstation-to-the-inner-boss-within-an-emulab-in-emulab-experiment">How do I connect the web browser on my workstation to the inner boss within an Emulab-in-Emulab experiment?<a class="headerlink" href="#how-do-i-connect-the-web-browser-on-my-workstation-to-the-inner-boss-within-an-emulab-in-emulab-experiment" title="Permanent link">&para;</a></h2>
 <p>See <a href="/support/elab-elab-ssh-proxy/">Setting Up FoxyProxy</a>.</p>
-<h2 id="i-try-to-swap-in-and-get-the-error-admission-control-projectexperiment-has-too-many-nodes-allocated">I try to swap in and get the error: Admission Control: $project/$experiment has too many nodes allocated!<a class="headerlink" href="#i-try-to-swap-in-and-get-the-error-admission-control-projectexperiment-has-too-many-nodes-allocated" title="Permanent link"></a></h2>
+<h2 id="i-try-to-swap-in-and-get-the-error-admission-control-projectexperiment-has-too-many-nodes-allocated">I try to swap in and get the error: Admission Control: $project/$experiment has too many nodes allocated!<a class="headerlink" href="#i-try-to-swap-in-and-get-the-error-admission-control-projectexperiment-has-too-many-nodes-allocated" title="Permanent link">&para;</a></h2>
 <p><strong>If you are a class user:</strong> the maximum number of nodes that can be allocated for a class is limited (see <a href="/education/course-setup/#resource-limits">Class Resource Limits</a> for details). Wait for some of your classmates to free up resources before trying to swap in again.</p>
 <p>You are less likely to encounter this during non-peak hours (late night and early morning) and when deadlines are distant.</p>
 <p><strong>If you are NOT a class user:</strong> please <a href="https://trac.deterlab.net/newticket">file a ticket</a>, because something is broken.</p>
-<h2 id="i-try-to-swap-out-and-get-the-error-usrtestbedbinnfree-please-cleanup-the-previous-errors">I try to swap out and get the error: /usr/testbed/bin/nfree: Please cleanup the previous errors.<a class="headerlink" href="#i-try-to-swap-out-and-get-the-error-usrtestbedbinnfree-please-cleanup-the-previous-errors" title="Permanent link"></a></h2>
+<h2 id="i-try-to-swap-out-and-get-the-error-usrtestbedbinnfree-please-cleanup-the-previous-errors">I try to swap out and get the error: /usr/testbed/bin/nfree: Please cleanup the previous errors.<a class="headerlink" href="#i-try-to-swap-out-and-get-the-error-usrtestbedbinnfree-please-cleanup-the-previous-errors" title="Permanent link">&para;</a></h2>
 <p>This may not be so frequent an error, but may arise when the experiment deliberately brings an interface down without bringing it back up prior to swap out. Try scheduling the link back up before the end of experiment.</p>
-<h2 id="your-site-claims-that-my-new-password-is-in-the-dictionary-i-checked-the-dictionary-and-qwerty1234-is-not-in-it">Your site claims that my new password is in the dictionary. I checked the dictionary and 'qwerty1234' is not in it.<a class="headerlink" href="#your-site-claims-that-my-new-password-is-in-the-dictionary-i-checked-the-dictionary-and-qwerty1234-is-not-in-it" title="Permanent link"></a></h2>
+<h2 id="your-site-claims-that-my-new-password-is-in-the-dictionary-i-checked-the-dictionary-and-qwerty1234-is-not-in-it">Your site claims that my new password is in the dictionary. I checked the dictionary and 'qwerty1234' is not in it.<a class="headerlink" href="#your-site-claims-that-my-new-password-is-in-the-dictionary-i-checked-the-dictionary-and-qwerty1234-is-not-in-it" title="Permanent link">&para;</a></h2>
 <p>Please see our <a href="/support/passwords/">Passwords page</a>.</p>
               
             </div>

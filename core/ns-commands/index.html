@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -336,14 +335,14 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="ns-commands">NS Commands<a class="headerlink" href="#ns-commands" title="Permanent link"></a></h1>
+                <h1 id="ns-commands">NS Commands<a class="headerlink" href="#ns-commands" title="Permanent link">&para;</a></h1>
 <p>In order to use the testbed specific commands, you must include the following line near the top of your NS topology file (before any testbed commands are used):</p>
 <pre><code>    source tb_compat.tcl
 </code></pre>
 
 <p>If you wish to use your file under NS, download <a href="/downloads/tb_compat.tcl">tb_compat.tcl</a> and place it in the same directory as your NS file. When run in this way under NS, the testbed commands will have no effect, but NS will be able to parse your file.</p>
 <hr />
-<h2 id="tcl-ns-and-node-names">TCL, NS, and node names<a class="headerlink" href="#tcl-ns-and-node-names" title="Permanent link"></a></h2>
+<h2 id="tcl-ns-and-node-names">TCL, NS, and node names<a class="headerlink" href="#tcl-ns-and-node-names" title="Permanent link">&para;</a></h2>
 <p>In your file, you will be creating nodes with something like the following line:</p>
 <pre><code>    set node1 [$ns node]
 </code></pre>
@@ -381,7 +380,7 @@
 </code></pre>
 
 <hr />
-<h2 id="captured-ns-file-parameters">Captured NS file parameters<a class="headerlink" href="#captured-ns-file-parameters" title="Permanent link"></a></h2>
+<h2 id="captured-ns-file-parameters">Captured NS file parameters<a class="headerlink" href="#captured-ns-file-parameters" title="Permanent link">&para;</a></h2>
 <p>A common convention when writing NS files is to place any parameters in an array named <code>opt</code> at the beginning of the file. For example:</p>
 <pre><code>    set opt(CLIENT_COUNT) 5
     set opt(BW) 10mb;    Link bandwidth
@@ -414,11 +413,11 @@
 </code></pre>
 
 <hr />
-<h2 id="ordering-issues">Ordering Issues<a class="headerlink" href="#ordering-issues" title="Permanent link"></a></h2>
+<h2 id="ordering-issues">Ordering Issues<a class="headerlink" href="#ordering-issues" title="Permanent link">&para;</a></h2>
 <p><code>tb-</code> commands have the same status as all other Tcl and NS commands. Thus <strong>the order matters</strong> not only relative to each other but also relative to other commands. One common example of this is that IP commands must be issued <em>after</em> the links or LANs are created.</p>
 <hr />
-<h2 id="hardware-commands">Hardware Commands<a class="headerlink" href="#hardware-commands" title="Permanent link"></a></h2>
-<h3 id="tb-set-hardware">tb-set-hardware<a class="headerlink" href="#tb-set-hardware" title="Permanent link"></a></h3>
+<h2 id="hardware-commands">Hardware Commands<a class="headerlink" href="#hardware-commands" title="Permanent link">&para;</a></h2>
+<h3 id="tb-set-hardware">tb-set-hardware<a class="headerlink" href="#tb-set-hardware" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-hardware node type [args]
 
 tb-set-hardware $node3 pc
@@ -436,11 +435,11 @@ tb-set-hardware $node4 shark
 </ul>
 </div>
 <hr />
-<h2 id="ip-address-commands">IP Address Commands<a class="headerlink" href="#ip-address-commands" title="Permanent link"></a></h2>
+<h2 id="ip-address-commands">IP Address Commands<a class="headerlink" href="#ip-address-commands" title="Permanent link">&para;</a></h2>
 <p>Each node will be assigned an IP address for each interface that is in use. The following commands will allow you to explicitly set those IP addresses. IP addresses will be automatically generated for all nodes for which you do not explicitly set IP addresses.</p>
 <p>In most cases, the IP addresses on either side of a link must be in the same subnet. Likewise, all IP addresses on a LAN should be in the same subnet. Generally the same subnet should not be used for more than one link or LAN in a given experiment, nor should one node have multiple interfaces in the same subnet. Automatically generated IP addresses will conform to these requirements. If part of a link or LAN is explicitly specified with the commands below then the remainder will be automatically generated under the same subnet.</p>
 <p>IP address assignment is deterministic and tries to fill lower IP's first, starting at 2. Except in the partial specification case (see above), all automatic IP addresses are in the network <code>10</code>.</p>
-<h3 id="tb-set-ip">tb-set-ip<a class="headerlink" href="#tb-set-ip" title="Permanent link"></a></h3>
+<h3 id="tb-set-ip">tb-set-ip<a class="headerlink" href="#tb-set-ip" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-ip node ip
 
 tb-set-ip $node1 142.3.4.5
@@ -455,7 +454,7 @@ tb-set-ip $node1 142.3.4.5
 <li>This command should only be used for nodes that have a single link. For nodes with multiple links the following commands should be used. Mixing <code>tb-set-ip</code> and any other IP command on the same node will result in an error.</li>
 </ul>
 </div>
-<h3 id="tb-set-ip-link">tb-set-ip-link<a class="headerlink" href="#tb-set-ip-link" title="Permanent link"></a></h3>
+<h3 id="tb-set-ip-link">tb-set-ip-link<a class="headerlink" href="#tb-set-ip-link" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-ip-link node link ip
 
 tb-set-ip-link $node0 $link0 142.3.4.6
@@ -472,7 +471,7 @@ tb-set-ip-link $node0 $link0 142.3.4.6
 <li>This command cannot be mixed with <code>tb-set-ip</code> on the same node.</li>
 </ul>
 </div>
-<h3 id="tb-set-ip-lan">tb-set-ip-lan<a class="headerlink" href="#tb-set-ip-lan" title="Permanent link"></a></h3>
+<h3 id="tb-set-ip-lan">tb-set-ip-lan<a class="headerlink" href="#tb-set-ip-lan" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-ip-lan node lan ip
 tb-set-ip-lan $node1 $lan0 142.3.4.6
 </code></pre>
@@ -488,7 +487,7 @@ tb-set-ip-lan $node1 $lan0 142.3.4.6
 <li>This command cannot be mixed with <code>tb-set-ip</code> on the same node.</li>
 </ul>
 </div>
-<h3 id="tb-set-ip-interface">tb-set-ip-interface<a class="headerlink" href="#tb-set-ip-interface" title="Permanent link"></a></h3>
+<h3 id="tb-set-ip-interface">tb-set-ip-interface<a class="headerlink" href="#tb-set-ip-interface" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-ip-interface node dst ip
 tb-set-ip-interface $node2 $node1 142.3.4.6
 </code></pre>
@@ -505,7 +504,7 @@ tb-set-ip-interface $node2 $node1 142.3.4.6
 <li>This command is converted internally to either <code>tb-set-ip-link</code> or <code>tb-set-ip-lan</code>. It is possible that error messages will report either of those commands instead of <code>tb-set-ip-interface</code>.</li>
 </ul>
 </div>
-<h3 id="tb-set-netmask">tb-set-netmask<a class="headerlink" href="#tb-set-netmask" title="Permanent link"></a></h3>
+<h3 id="tb-set-netmask">tb-set-netmask<a class="headerlink" href="#tb-set-netmask" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-netmask lanlink netmask
 
 tb-set-netmask $link0 &quot;255.255.255.248&quot;
@@ -522,8 +521,8 @@ tb-set-netmask $link0 &quot;255.255.255.248&quot;
 </ul>
 </div>
 <hr />
-<h2 id="os-commands">OS Commands <a name="OS"></a><a class="headerlink" href="#os-commands" title="Permanent link"></a></h2>
-<h3 id="tb-set-node-os">tb-set-node-os<a class="headerlink" href="#tb-set-node-os" title="Permanent link"></a></h3>
+<h2 id="os-commands">OS Commands <a name="OS"></a><a class="headerlink" href="#os-commands" title="Permanent link">&para;</a></h2>
+<h3 id="tb-set-node-os">tb-set-node-os<a class="headerlink" href="#tb-set-node-os" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-os node os
 
 tb-set-node-os $node1 FBSD-STD
@@ -541,7 +540,7 @@ tb-set-node-os $node1 MY_OS
 <li>The currently available standard OS types are listed in the <a href="/core/os-images/">OS Images</a> page.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-rpms">tb-set-node-rpms<a class="headerlink" href="#tb-set-node-rpms" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-rpms">tb-set-node-rpms<a class="headerlink" href="#tb-set-node-rpms" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-rpms node rpms...
 
 tb-set-node-rpms $node0 rpm1 rpm2 rpm3
@@ -555,7 +554,7 @@ tb-set-node-rpms $node0 rpm1 rpm2 rpm3
 <li>See the <a href="/core/core-guide/#installing-rpms-automatically">Core Guide</a> for more information.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-startcmd">tb-set-node-startcmd<a class="headerlink" href="#tb-set-node-startcmd" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-startcmd">tb-set-node-startcmd<a class="headerlink" href="#tb-set-node-startcmd" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-startcmd node startupcmd
 
 tb-set-node-startcmd $node0 &quot;mystart.sh -a &gt;&amp; /tmp/node0.log&quot;
@@ -568,7 +567,7 @@ tb-set-node-startcmd $node0 &quot;mystart.sh -a &gt;&amp; /tmp/node0.log&quot;
 <li>See the <a href="/core/core-guide/">Core Guide</a> for more information.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-cmdline">tb-set-node-cmdline<a class="headerlink" href="#tb-set-node-cmdline" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-cmdline">tb-set-node-cmdline<a class="headerlink" href="#tb-set-node-cmdline" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-cmdline node cmdline
 
 tb-set-node-cmdline $node0 {???}
@@ -581,7 +580,7 @@ tb-set-node-cmdline $node0 {???}
 <li>Currently, this is supported on OSKit kernels only.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-tarfiles">tb-set-node-tarfiles<a class="headerlink" href="#tb-set-node-tarfiles" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-tarfiles">tb-set-node-tarfiles<a class="headerlink" href="#tb-set-node-tarfiles" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-tarfiles node install-dir1 tarfile1 ...
 </code></pre>
 
@@ -629,7 +628,7 @@ tb-set-node-cmdline $node0 {???}
 </ul>
 </div>
 <hr />
-<h2 id="link-loss-commands">Link Loss Commands<a class="headerlink" href="#link-loss-commands" title="Permanent link"></a></h2>
+<h2 id="link-loss-commands">Link Loss Commands<a class="headerlink" href="#link-loss-commands" title="Permanent link">&para;</a></h2>
 <p>This is the NS syntax for creating a link:</p>
 <pre><code>$ns duplex-link $node1 $node2 100Mb 150ms DropTail
 </code></pre>
@@ -638,7 +637,7 @@ tb-set-node-cmdline $node0 {???}
 <p class="admonition-title">Note</p>
 <p>This does not allow for specifying link loss rates. DETERLab does, however, support link loss. The following commands can be used to specify link loss rates.</p>
 </div>
-<h3 id="tb-set-link-loss">tb-set-link-loss<a class="headerlink" href="#tb-set-link-loss" title="Permanent link"></a></h3>
+<h3 id="tb-set-link-loss">tb-set-link-loss<a class="headerlink" href="#tb-set-link-loss" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-link-loss src dst loss
 tb-set-link-loss link loss
 
@@ -657,7 +656,7 @@ tb-set-link-loss $link1 0.02
 <li>The source/destination pair is incapable of describing an individual link in the case of multiple links between two nodes. Use the second syntax for this case.</li>
 </ul>
 </div>
-<h3 id="tb-set-lan-loss">tb-set-lan-loss<a class="headerlink" href="#tb-set-lan-loss" title="Permanent link"></a></h3>
+<h3 id="tb-set-lan-loss">tb-set-lan-loss<a class="headerlink" href="#tb-set-lan-loss" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-lan-loss lan loss
 
 tb-set-lan-loss $lan1 0.3
@@ -670,7 +669,7 @@ tb-set-lan-loss $lan1 0.3
 <p class="admonition-title">Note</p>
 <p>This command sets the loss rate for the entire LAN.</p>
 </div>
-<h3 id="tb-set-node-lan-delay">tb-set-node-lan-delay<a class="headerlink" href="#tb-set-node-lan-delay" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-lan-delay">tb-set-node-lan-delay<a class="headerlink" href="#tb-set-node-lan-delay" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-lan-delay node lan delay
 
 tb-set-node-lan-delay $node0 $lan0 40ms
@@ -689,7 +688,7 @@ tb-set-node-lan-delay $node0 $lan0 40ms
 <li>Delays of less than 2ms (per trip) are too small to be accurately modeled at this time, and will be silently ignored. As a convenience, a delay of 0ms can be used to indicate that you do not want added delay; the two interfaces will be "directly" connected to each other.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-lan-bandwidth">tb-set-node-lan-bandwidth<a class="headerlink" href="#tb-set-node-lan-bandwidth" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-lan-bandwidth">tb-set-node-lan-bandwidth<a class="headerlink" href="#tb-set-node-lan-bandwidth" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-lan-bandwidth node lan bandwidth
 
 tb-set-node-lan-bandwidth $node0 $lan0 20Mb
@@ -707,7 +706,7 @@ tb-set-node-lan-bandwidth $node0 $lan0 20Mb
 <li>The behavior of this command is not defined when used with nodes that are in the same LAN multiple times.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-lan-loss">tb-set-node-lan-loss<a class="headerlink" href="#tb-set-node-lan-loss" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-lan-loss">tb-set-node-lan-loss<a class="headerlink" href="#tb-set-node-lan-loss" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-lan-loss node lan loss
 
 tb-set-node-lan-loss $node0 $lan0 0.05
@@ -725,7 +724,7 @@ tb-set-node-lan-loss $node0 $lan0 0.05
 <li>The behavior of this command is not defined when used with nodes that are in the same LAN multiple times.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-lan-params">tb-set-node-lan-params<a class="headerlink" href="#tb-set-node-lan-params" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-lan-params">tb-set-node-lan-params<a class="headerlink" href="#tb-set-node-lan-params" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-lan-params node lan delay bandwidth loss
 
 tb-set-node-lan-params $node0 $lan0 40ms 20Mb 0.05
@@ -741,7 +740,7 @@ tb-set-node-lan-params $node0 $lan0 40ms 20Mb 0.05
 <p class="admonition-title">Note</p>
 <p>This command is exactly equivalent to calling each of the above three commands appropriately. See above for more information.</p>
 </div>
-<h3 id="tb-set-link-simplex-params">tb-set-link-simplex-params<a class="headerlink" href="#tb-set-link-simplex-params" title="Permanent link"></a></h3>
+<h3 id="tb-set-link-simplex-params">tb-set-link-simplex-params<a class="headerlink" href="#tb-set-link-simplex-params" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-link-simplex-params link src delay bw loss
 
 tb-set-link-simplex-params $link1 $srcnode 100ms 50Mb 0.2
@@ -760,7 +759,7 @@ tb-set-link-simplex-params $link1 $srcnode 100ms 50Mb 0.2
 <li>This command only applies to links. Use <code>tb-set-lan-simplex-params</code> below for LANs.</li>
 </ul>
 </div>
-<h3 id="tb-set-lan-simplex-params">tb-set-lan-simplex-params<a class="headerlink" href="#tb-set-lan-simplex-params" title="Permanent link"></a></h3>
+<h3 id="tb-set-lan-simplex-params">tb-set-lan-simplex-params<a class="headerlink" href="#tb-set-lan-simplex-params" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-lan-simplex-params lan node todelay tobw toloss fromdelay frombw fromloss
 
 tb-set-lan-simplex-params $lan1 $node1 100ms 10Mb 0.1 5ms 100Mb 0
@@ -779,7 +778,7 @@ tb-set-lan-simplex-params $lan1 $node1 100ms 10Mb 0.1 5ms 100Mb 0
 <p class="admonition-title">Note</p>
 <p>This command is exactly like <code>tb-set-node-lan-params</code> except that it allows the characteristics in each direction to be chosen separately. See all the notes for <code>tb-set-node-lan-params</code>.</p>
 </div>
-<h3 id="tb-set-endnodeshaping">tb-set-endnodeshaping<a class="headerlink" href="#tb-set-endnodeshaping" title="Permanent link"></a></h3>
+<h3 id="tb-set-endnodeshaping">tb-set-endnodeshaping<a class="headerlink" href="#tb-set-endnodeshaping" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-endnodeshaping link-or-lan enable
 
 tb-set-endnodeshaping $link1 1
@@ -798,7 +797,7 @@ tb-set-endnodeshaping $lan1 1
 <li>See <a href="/core/link-delays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
 </ul>
 </div>
-<h3 id="tb-set-noshaping">tb-set-noshaping<a class="headerlink" href="#tb-set-noshaping" title="Permanent link"></a></h3>
+<h3 id="tb-set-noshaping">tb-set-noshaping<a class="headerlink" href="#tb-set-noshaping" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-noshaping link-or-lan enable
 
 tb-set-noshaping $link1 1
@@ -817,7 +816,7 @@ tb-set-noshaping $lan1 1
 <li><strong>This command is a hack.</strong> The primary purpose for this command is to subvert the topology mapper (<code>assign</code>). <code>Assign</code> always observes the physical bandwidth constraints of the testbed. By using <code>tb-set-noshaping</code>, you can convince <code>assign</code> that links are low-bandwidth and thus get your topology mapped, but then not actually have the links shaped.</li>
 </ul>
 </div>
-<h3 id="tb-use-endnodeshaping">tb-use-endnodeshaping<a class="headerlink" href="#tb-use-endnodeshaping" title="Permanent link"></a></h3>
+<h3 id="tb-use-endnodeshaping">tb-use-endnodeshaping<a class="headerlink" href="#tb-use-endnodeshaping" title="Permanent link">&para;</a></h3>
 <pre><code>tb-use-endnodeshaping enable
 
 tb-use-endnodeshaping 1
@@ -832,7 +831,7 @@ tb-use-endnodeshaping 1
 <li>See <a href="/core/linkdelays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
 </ul>
 </div>
-<h3 id="tb-force-endnodeshaping">tb-force-endnodeshaping<a class="headerlink" href="#tb-force-endnodeshaping" title="Permanent link"></a></h3>
+<h3 id="tb-force-endnodeshaping">tb-force-endnodeshaping<a class="headerlink" href="#tb-force-endnodeshaping" title="Permanent link">&para;</a></h3>
 <pre><code>tb-force-endnodeshaping enable
 
 tb-force-endnodeshaping 1
@@ -848,7 +847,7 @@ tb-force-endnodeshaping 1
 <li>See <a href="/core/linkdelays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
 </ul>
 </div>
-<h3 id="tb-set-multiplexed">tb-set-multiplexed<a class="headerlink" href="#tb-set-multiplexed" title="Permanent link"></a></h3>
+<h3 id="tb-set-multiplexed">tb-set-multiplexed<a class="headerlink" href="#tb-set-multiplexed" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-multiplexed link allow
 
 tb-set-multiplexed $link1 1
@@ -866,7 +865,7 @@ tb-set-multiplexed $link1 1
 <li>See <a href="/core/linkdelays/">End Node Traffic Shaping and Multiplexed Links</a> for more details.</li>
 </ul>
 </div>
-<h3 id="tb-set-vlink-emulation">tb-set-vlink-emulation<a class="headerlink" href="#tb-set-vlink-emulation" title="Permanent link"></a></h3>
+<h3 id="tb-set-vlink-emulation">tb-set-vlink-emulation<a class="headerlink" href="#tb-set-vlink-emulation" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-vlink-emulation style
 
 tb-set-vlink-emulation $link1 vlan
@@ -879,7 +878,7 @@ tb-set-vlink-emulation $link1 vlan
 <p>It seems to be necessary to set the virtual link emulation style to vlan for multiplexed links to work under linux.</p>
 </div>
 <hr />
-<h2 id="virtual-type-commands">Virtual Type Commands<a class="headerlink" href="#virtual-type-commands" title="Permanent link"></a></h2>
+<h2 id="virtual-type-commands">Virtual Type Commands<a class="headerlink" href="#virtual-type-commands" title="Permanent link">&para;</a></h2>
 <p>Virtual Types are a method of defining fuzzy types, i.e. types that can be fulfilled by multiple different physical types. The advantage of virtual types, also known as <code>'vtypes</code>', is that all nodes of the same vtype will usually be the same physical type of node. In this way, vtypes allows logical grouping of nodes.</p>
 <p>As an example, imagine we have a network with internal routers connecting leaf nodes. We want the routers to all have the same hardware, and the leaf nodes to all have the same hardware, but the specifics do not matter. We have the following fragment in our NS file:</p>
 <pre><code>...
@@ -911,7 +910,7 @@ tb-set-hardware $node2 N
 </code></pre>
 
 <p>This is because pc600 is a sub type of pc. You may very well end up with two routers as type pc with different hardware, as pc covers multiple types of hardware.</p>
-<h3 id="tb-make-soft-vtype">tb-make-soft-vtype<a class="headerlink" href="#tb-make-soft-vtype" title="Permanent link"></a></h3>
+<h3 id="tb-make-soft-vtype">tb-make-soft-vtype<a class="headerlink" href="#tb-make-soft-vtype" title="Permanent link">&para;</a></h3>
 <pre><code>tb-make-soft-vtype vtype {types}
 tb-make-hard-vtype vtype {types}
 tb-make-weighted-vtype vtype weight {types}
@@ -934,8 +933,8 @@ tb-make-weighted-vtype A 0.1 {pc600 pc850}
 <li>Do not use <code>tb-fix-node</code> with nodes that have a vtype.</li>
 </ul>
 </div>
-<h2 id="misc-commands">Misc. Commands<a class="headerlink" href="#misc-commands" title="Permanent link"></a></h2>
-<h3 id="tb-fix-node">tb-fix-node<a class="headerlink" href="#tb-fix-node" title="Permanent link"></a></h3>
+<h2 id="misc-commands">Misc. Commands<a class="headerlink" href="#misc-commands" title="Permanent link">&para;</a></h2>
+<h3 id="tb-fix-node">tb-fix-node<a class="headerlink" href="#tb-fix-node" title="Permanent link">&para;</a></h3>
 <pre><code>tb-fix-node vnode pnode
 
 tb-fix-node $node0 pc42
@@ -951,7 +950,7 @@ tb-fix-node $node0 pc42
 <li>Do not use this command on nodes that are a virtual type.</li>
 </ul>
 </div>
-<h3 id="tb-fix-interface">tb-fix-interface<a class="headerlink" href="#tb-fix-interface" title="Permanent link"></a></h3>
+<h3 id="tb-fix-interface">tb-fix-interface<a class="headerlink" href="#tb-fix-interface" title="Permanent link">&para;</a></h3>
 <pre><code>tb-fix-interface vnode vlink iface 
 
 tb-fix-interface $node0 $link0 &quot;eth0&quot;
@@ -968,7 +967,7 @@ tb-fix-interface $node0 $link0 &quot;eth0&quot;
 <li>Different types of nodes have different sets of interfaces, so this command is most useful if you are also using <code>tb-fix-node</code> and/or <code>tb-set-hardware</code> on the <code>vnode</code>.</li>
 </ul>
 </div>
-<h3 id="tb-set-uselatestwadata">tb-set-uselatestwadata<a class="headerlink" href="#tb-set-uselatestwadata" title="Permanent link"></a></h3>
+<h3 id="tb-set-uselatestwadata">tb-set-uselatestwadata<a class="headerlink" href="#tb-set-uselatestwadata" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-uselatestwadata 0
 tb-set-uselatestwadata 1
 </code></pre>
@@ -979,7 +978,7 @@ tb-set-uselatestwadata 1
 <li>This command indicates which widearea data to use when mapping widearea nodes to links. The default is 0, which says to use the aged data. Setting it to 1 says to use the most recent data.</li>
 </ul>
 </div>
-<h3 id="tb-set-wasolver-weights">tb-set-wasolver-weights<a class="headerlink" href="#tb-set-wasolver-weights" title="Permanent link"></a></h3>
+<h3 id="tb-set-wasolver-weights">tb-set-wasolver-weights<a class="headerlink" href="#tb-set-wasolver-weights" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-wasolver-weights delay bw plr
 
 tb-set-wasolver-weights 1 10 500
@@ -995,7 +994,7 @@ tb-set-wasolver-weights 1 10 500
 <li>This command sets the relative weights to use when assigning widearea nodes to links. Specifying a zero says to ignore that particular metric when doing the assignment. Setting all three to zero results in an essentially random selection.</li>
 </ul>
 </div>
-<h3 id="tb-set-node-failure-action">tb-set-node-failure-action<a class="headerlink" href="#tb-set-node-failure-action" title="Permanent link"></a></h3>
+<h3 id="tb-set-node-failure-action">tb-set-node-failure-action<a class="headerlink" href="#tb-set-node-failure-action" title="Permanent link">&para;</a></h3>
 <pre><code>tb-set-node-failure-action node action
 
 tb-set-node-failure-action $nodeA &quot;fatal&quot;

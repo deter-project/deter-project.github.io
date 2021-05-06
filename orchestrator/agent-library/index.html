@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -270,10 +269,10 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="magi-agent-library">MAGI Agent Library<a class="headerlink" href="#magi-agent-library" title="Permanent link"></a></h1>
+                <h1 id="magi-agent-library">MAGI Agent Library<a class="headerlink" href="#magi-agent-library" title="Permanent link">&para;</a></h1>
 <p>Every node has a daemon running with a series of Agents on it. These Agents are each executed in their own thread or process. They are provided with a defined interface with which to send and receive messages to other objects in the experiment. The MAGI daemon will route messages to the agent based on the routing information in the message. The daemon supports group-based, name-based, and “dock”-based routing. (A dock is like a port for a traditional daemon; an agent listens on a dock.) Once a message is delivered to an agent, the format of the message data is then up to the agent itself.</p>
 <p>Most agents will not need to parse messages directly, however, because the MAGI Agent Library supports a number of useful abstractions implemented in base classes from which Agent authors can derive. These are described in detail below.</p>
-<h3 id="agent-execution-models">Agent Execution Models<a class="headerlink" href="#agent-execution-models" title="Permanent link"></a></h3>
+<h3 id="agent-execution-models">Agent Execution Models<a class="headerlink" href="#agent-execution-models" title="Permanent link">&para;</a></h3>
 <p>There are two execution models supported by the daemon for Agents: </p>
 <ul>
 <li>
@@ -302,7 +301,7 @@
 <p class="admonition-title">Note</p>
 <p>As of now, only Python is supported. We are working on adding support for other languages.</p>
 </div>
-<h3 id="interface-description-language-idl">Interface Description Language (IDL)<a class="headerlink" href="#interface-description-language-idl" title="Permanent link"></a></h3>
+<h3 id="interface-description-language-idl">Interface Description Language (IDL)<a class="headerlink" href="#interface-description-language-idl" title="Permanent link">&para;</a></h3>
 <p>Agent authors must write an IDL that matches the interface exported by their agent. This IDL is used by MAGI to validate the interface of the agent (and in the future to generate GUIs for agent execution and configuration.) </p>
 <p>The IDL should specify: 
 * agent execution model (thread or process);
@@ -313,13 +312,13 @@
 <p>This may seem like a lot to specify, but the Agent Library supplies IDL for base Agents --  so in practice much of the IDL specification will be supplied to the Agent author.</p>
 <p>The IDL format and keywords are given in a table below. </p>
 <p>(TBD - Coming soon)</p>
-<h3 id="agent-library">Agent Library<a class="headerlink" href="#agent-library" title="Permanent link"></a></h3>
+<h3 id="agent-library">Agent Library<a class="headerlink" href="#agent-library" title="Permanent link">&para;</a></h3>
 <p>In this section we describe the Agent Library and give brief examples for usage. Classes are organized from the bottom up, that is, starting with the class from which the others derive.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>When using the Orchestrator to run your experiment, the Orchestrator will, by default, handle a return value of <em>False</em> from an Agent method as a reason to unload all Agents, break down communication groups and exit. Thus your Agent may stop an experiment by returning <em>False</em>.</p>
 </div>
-<h4 id="agent"><code>Agent</code><a class="headerlink" href="#agent" title="Permanent link"></a></h4>
+<h4 id="agent"><code>Agent</code><a class="headerlink" href="#agent" title="Permanent link">&para;</a></h4>
 <p>This is the base Agent class. It implements a <code>setConfiguration</code> method. If derived from, the user may call <code>setConfiguration</code> to set any <code>self</code> variables in your class. </p>
 <p>Agent also implements an empty <code>confirmConfiguration</code> method that is called once the <code>self</code> variables are set. You may implement your own <code>confirmConfiguration</code> if you need to make sure the user has set your internal variables to match any constraints you may want to impose. Returning <em>False</em> from this method will signal to the Orchestrator that something is wrong and the Orchestrator should handle this as an error. The default implementation of <code>confirmConfiguration</code> simply returns <em>True</em>. </p>
 <p>The method signature for <code>confirmConfiguration()</code> is</p>
@@ -352,7 +351,7 @@ class myAgent(Agent):
 </div>
 <p>All classes in the <code>AgentLibrary</code> inherit from <code>Agent</code>.</p>
 <p>The <code>Agent</code> documentation can seen <a href="http://montage.deterlab.net/backend/python/util.html#magi.util.agent.Agent">here</a>.</p>
-<h4 id="dispatchagent"><code>DispatchAgent</code><a class="headerlink" href="#dispatchagent" title="Permanent link"></a></h4>
+<h4 id="dispatchagent"><code>DispatchAgent</code><a class="headerlink" href="#dispatchagent" title="Permanent link">&para;</a></h4>
 <p>The <code>DispatchAgent</code> implements the simple remote procedure call (RPC) mechanism used by the Orchestrator (and available through the MAGI python API). This allows any method in a class derived from <code>DispatchAgent</code> to be invoked in an AAL file (or by a <code>MagiMessage</code> if using the MAGI python interface directly). </p>
 <p>You almost always want to derive your agent from <code>DispatchAgent</code>. The <code>DispatchAgent</code> code simply loops, parsing incoming messages, looking for an event message. When it finds one, it attempts to call the method specified in the message with the arguments given in the message, thus implementing a basic RPC functionality in your agent.</p>
 <p>The first argument to your RPC-enabled method is the received message. It is accompanied by the optional named-parameters, sent as part of the <code>MagiMessage</code>. The Agent Library exports a function decorator for <code>DispatchAgent</code>-callable methods named <code>agentmethod</code>. It is not currently used for anything, but it is suggested that agent developers use it anyway.</p>
@@ -379,9 +378,9 @@ def myAgent(DispatchAgent):
 </code></pre>
 
 <p>The <code>DispatchAgent</code> documentation may seen <a href="http://montage.deterlab.net/backend/python/util.html#magi.util.agent.DispatchAgent">here</a>. </p>
-<h4 id="nonblockingdispatchagent"><code>NonBlockingDispatchAgent</code><a class="headerlink" href="#nonblockingdispatchagent" title="Permanent link"></a></h4>
+<h4 id="nonblockingdispatchagent"><code>NonBlockingDispatchAgent</code><a class="headerlink" href="#nonblockingdispatchagent" title="Permanent link">&para;</a></h4>
 <p>The <code>NonBlockingDispatchAgent</code> is similar to <code>DispatchAgent</code>. The only difference is that <code>NonBlockingDispatchAgent</code> invokes the methods <em>asynchronously</em>, i.e., it forks a new thread for each method call and does not wait for the call to return. It invokes the required method and moves on to read the next message.</p>
-<h4 id="reportingdispatchagent"><code>ReportingDispatchAgent</code><a class="headerlink" href="#reportingdispatchagent" title="Permanent link"></a></h4>
+<h4 id="reportingdispatchagent"><code>ReportingDispatchAgent</code><a class="headerlink" href="#reportingdispatchagent" title="Permanent link">&para;</a></h4>
 <p>You will note that the <code>DispatchAgent</code> only allows an outside source to send commands to the agent. There is no communication backwards. The <code>ReportingDispatchAgent</code> base class has a slightly different run loop. Rather than blocking forever on incoming messages, it will also call its own method, <code>periodic</code>, to allow other operations to occur.</p>
 <p>The call to <code>periodic</code> will return the amount of time in seconds (as a float) that it will wait until calling <code>periodic</code> again. The <code>periodic</code> function therefore controls how often it is called. The first call will happen as soon as the run is called.</p>
 <p>The method signature of the <code>periodic</code> method is:</p>
@@ -412,7 +411,7 @@ class myTimeTracker(ReportingDispatchAgent):
 </code></pre>
 
 <p>The <code>ReportingDispatchAgent</code> documentation may seen here. http://montage.deterlab.net/backend/python/util.html#magi.util.agent.ReportingDispatchAgent</p>
-<h4 id="sharedserver"><code>SharedServer</code><a class="headerlink" href="#sharedserver" title="Permanent link"></a></h4>
+<h4 id="sharedserver"><code>SharedServer</code><a class="headerlink" href="#sharedserver" title="Permanent link">&para;</a></h4>
 <p>The <code>SharedServer</code> class inherits from <code>DispatchAgent</code> and expects the subclass to implement the methods <code>runserver</code> and <code>terminateserver</code> to start or stop a local server process. </p>
 <p>The <code>SharedServer</code> class takes care of multiple agents requesting use of the server and only calls <code>runserver</code> or <code>terminateserver</code> when required. This ensures that there is ever only one instance of the server running at once on a given host. A canonical example of this would be a web server running a single instance of Apache. The methods <code>runserver</code> and <code>stopserver</code> take no arguments.</p>
 <p>Below is an example of a simple agent that starts and stops Apache on the local host. If there are other agents running on the machine that require Apache to be running, they may inherit from <code>SharedServer</code> as well, thus ensuring that there is only ever one instance of Apache running.</p>
@@ -443,7 +442,7 @@ class ApacheServerAgent(SharedServer):
 </code></pre>
 
 <p>The <code>SharedServer</code> documentation may seen <a href="http://montage.deterlab.net/backend/python/util.html#magi.util.agent.SharedServer">here</a>. </p>
-<h4 id="trafficclientagent"><code>TrafficClientAgent</code><a class="headerlink" href="#trafficclientagent" title="Permanent link"></a></h4>
+<h4 id="trafficclientagent"><code>TrafficClientAgent</code><a class="headerlink" href="#trafficclientagent" title="Permanent link">&para;</a></h4>
 <p><code>TrafficClientAgent</code> models an agent that periodically generates traffic. It must implement the <code>getCmd</code> method, returning a string to execute on the commandline to generate traffic. For example, the <code>getCmd</code> could return a <code>curl</code> or <code>wget</code> command to generate client-side HTML traffic. The signature of <code>getCmd</code> is:</p>
 <pre><code>def getCmd(self, destination)
 </code></pre>
@@ -491,9 +490,9 @@ class mySimpleHTTPClient(TrafficClientAgent):
 </code></pre>
 
 <p>The <code>TrafficClientAgent</code> documentation may seen here. http://montage.deterlab.net/backend/python/util.html#magi.util.agent.TrafficClientAgent</p>
-<h4 id="probabilistictrafficclientagent"><code>ProbabilisticTrafficClientAgent</code><a class="headerlink" href="#probabilistictrafficclientagent" title="Permanent link"></a></h4>
+<h4 id="probabilistictrafficclientagent"><code>ProbabilisticTrafficClientAgent</code><a class="headerlink" href="#probabilistictrafficclientagent" title="Permanent link">&para;</a></h4>
 <p><code>ProbabilisticTrafficClientAgent</code> provides the same service as <code>TrafficAgent</code>, but <code>getCmd</code> is called only when the configured probability function evaluates to a non-zero value.</p>
-<h4 id="connectedtrafficclientagent"><code>ConnectedTrafficClientAgent</code><a class="headerlink" href="#connectedtrafficclientagent" title="Permanent link"></a></h4>
+<h4 id="connectedtrafficclientagent"><code>ConnectedTrafficClientAgent</code><a class="headerlink" href="#connectedtrafficclientagent" title="Permanent link">&para;</a></h4>
 <p><code>ConnectedTrafficClientAgent</code> is a base for an agent that controls a set of agents that have standing connections to, and traffic between, a set of servers. </p>
 <p><code>connect()</code> and <code>disconnect()</code> are called periodically when a given client should connect or disconnect to a given server. </p>
 <p><code>generateTraffic()</code> is called when the given client should generate traffic between itself and the server it is connected to. The sequence of calls is: </p>
@@ -502,7 +501,7 @@ class mySimpleHTTPClient(TrafficClientAgent):
 
 <p>This sequence may be repeated.</p>
 <p>Derived classes should implement <code>connect()</code>, <code>disconnect()</code>, and <code>generateTraffic()</code>.</p>
-<h3 id="agent-load-and-execution-chain-for-threaded-agents">Agent Load and Execution Chain (for threaded agents)<a class="headerlink" href="#agent-load-and-execution-chain-for-threaded-agents" title="Permanent link"></a></h3>
+<h3 id="agent-load-and-execution-chain-for-threaded-agents">Agent Load and Execution Chain (for threaded agents)<a class="headerlink" href="#agent-load-and-execution-chain-for-threaded-agents" title="Permanent link">&para;</a></h3>
 <p>(TBD - Coming soon)</p>
               
             </div>

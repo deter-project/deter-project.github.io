@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -264,8 +263,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="feedback-case-study">Feedback Case Study<a class="headerlink" href="#feedback-case-study" title="Permanent link"></a></h1>
-<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link"></a></h2>
+                <h1 id="feedback-case-study">Feedback Case Study<a class="headerlink" href="#feedback-case-study" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
 <p>This case study demonstrates our system’s ability to do real-time feedback from the experiment using triggers. We show how information from the experiment may be used to extend the Orchestrator autonomy and deterministically control dynamic experiments. This is an example where the active state of an experiment is a driving input to the control. The data management layer too plays an important role in enabling the flow of information.</p>
 <p>In this case study we show how, in a semi-controllable environment, <strong>the amount of traffic on a given link may be controlled using feedback from the experiment itself</strong>. The traffic on one of the links in the experiment must be maintained within a certain range; for this example, the range was 100-105 MB. We assume that the uncontrollable traffic on the link would not exceed the required maximum.</p>
 <p>This experiment is set up with the following characteristics:</p>
@@ -287,7 +286,7 @@
 <p>The Orchestrator, based on the real time traffic feedback, sends change load messages to the control client agent, in order to maintain the total traffic on the monitored link within the set limits.
 Event Streams</p>
 <p>This example has six events streams; the server stream, the noise stream, the noise modify stream, the control client stream, the control stream and the duration stream.</p>
-<h2 id="mapping-to-the-topology">Mapping to the Topology<a class="headerlink" href="#mapping-to-the-topology" title="Permanent link"></a></h2>
+<h2 id="mapping-to-the-topology">Mapping to the Topology<a class="headerlink" href="#mapping-to-the-topology" title="Permanent link">&para;</a></h2>
 <p>The groups directive in the AAL file allows mapping a agent behavior to one or more nodes.</p>
 <pre><code>#!php
 groups:
@@ -326,7 +325,7 @@ client_agent:
   execargs: {servers: *slist, interval: '2', sizes: '4000000'}
 </code></pre>
 
-<h2 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link"></a></h2>
+<h2 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link">&para;</a></h2>
 <p>The server event stream consists of three states. The start state which generates a trigger, called serverStarted, once all the server agents are activated on the experiment nodes.</p>
 <p>It then enters the wait state where it waits for a trigger from the noise stream and the client event stream.</p>
 <p>Once the trigger is received, it enters the stop state, where the server is deactivated or terminated.
@@ -341,8 +340,8 @@ Control Stream</p>
 <p>The control stream starts once the control client agent has started. It configures the traffic monitoring agent and instucts it to start monitoring. Once the monitoring starts, this stream continously monitors the amount of traffic flowing on the monitored link, and based on the traffic information, instructs the control client to modify the amount of traffic it is pulling, in order to maintain the total traffic on the monitored link within the required limits.
 Duration Stream</p>
 <p>The duration stream manages the time duration for which the experiment needs to run. Its starts once the monitor agent has started. The stream then waits for ∆t before instructing the monitor agent stop and terminating all of the agents.</p>
-<h2 id="running-the-experiment">Running the Experiment<a class="headerlink" href="#running-the-experiment" title="Permanent link"></a></h2>
-<h3 id="step-1-set-up-your-environment">Step 1: Set up your environment<a class="headerlink" href="#step-1-set-up-your-environment" title="Permanent link"></a></h3>
+<h2 id="running-the-experiment">Running the Experiment<a class="headerlink" href="#running-the-experiment" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-set-up-your-environment">Step 1: Set up your environment<a class="headerlink" href="#step-1-set-up-your-environment" title="Permanent link">&para;</a></h3>
 <p>Set up your environment. Assuming your experiment is named myExp, your DETER project is myProj, and the AAL file is called procedure.aal.</p>
 <pre><code>
 PROJ=myExp
@@ -351,7 +350,7 @@ AAL=procedure.aal
 
 </code></pre>
 
-<h3 id="step-2-set-up-containerized-experiment">Step 2: Set Up Containerized Experiment<a class="headerlink" href="#step-2-set-up-containerized-experiment" title="Permanent link"></a></h3>
+<h3 id="step-2-set-up-containerized-experiment">Step 2: Set Up Containerized Experiment<a class="headerlink" href="#step-2-set-up-containerized-experiment" title="Permanent link">&para;</a></h3>
 <p>As this experiment requires a lot of nodes, we should try and use containerized nodes. Create a containerized version of the experiment using this network description file: <a href="/downloads/casestudy_feedback.tcl">casestudy_feedback.tcl</a></p>
 <pre><code>
 NS=fb_topology.tcl
@@ -359,9 +358,9 @@ NS=fb_topology.tcl
 &gt; /share/containers/containerize.py $PROJ $EXP $NS --packing=8 --openvz-diskspace 15G --pnode-type MicroCloud,pc2133
 </code></pre>
 
-<h3 id="step-3-swap-in-your-experiment">Step 3: Swap in your Experiment<a class="headerlink" href="#step-3-swap-in-your-experiment" title="Permanent link"></a></h3>
+<h3 id="step-3-swap-in-your-experiment">Step 3: Swap in your Experiment<a class="headerlink" href="#step-3-swap-in-your-experiment" title="Permanent link">&para;</a></h3>
 <p>Swap in the newly created experiment.</p>
-<h3 id="step-4-run-orchestrator">Step 4: Run Orchestrator<a class="headerlink" href="#step-4-run-orchestrator" title="Permanent link"></a></h3>
+<h3 id="step-4-run-orchestrator">Step 4: Run Orchestrator<a class="headerlink" href="#step-4-run-orchestrator" title="Permanent link">&para;</a></h3>
 <p>Once the experiment is swapped in, run the Orchestrator, giving it this AAL: <a href="/downloads/casestudy_feedback.tcl">casestudy_feedback.aal</a>, the experiment name and project name. </p>
 <pre><code>&gt; /share/magi/current/magi_orchestrator.py --experiment $EXP --project $PROJ --events $AAL
 </code></pre>
@@ -387,7 +386,7 @@ NS=fb_topology.tcl
 <li><strong>Archive Logs:</strong> <a href="/downloads/casestudy_feedback.tar.gz">casestudy_feedback.tar.gz</a></li>
 <li><strong>Orchestration:</strong> <a href="/downloads/casestudy_feedback.orch.log">casestudy_feedback.orch.log</a></li>
 </ul>
-<h2 id="visualizing-experiment-results">Visualizing Experiment Results<a class="headerlink" href="#visualizing-experiment-results" title="Permanent link"></a></h2>
+<h2 id="visualizing-experiment-results">Visualizing Experiment Results<a class="headerlink" href="#visualizing-experiment-results" title="Permanent link">&para;</a></h2>
 <p>Offline: A traffic plot may be generated using the <a href="http://montage.deterlab.net/magi/tools.html#magigraph">MAGI Graph Creation Tool</a>.</p>
 <p>Real Time: A real time simulated traffic plot using canned data from a pre-run experiment may be visualized <a href="http://tau.isi.edu/magidemos/casestudy/feedback/traffic.html">here</a>.</p>
 <p>A similar plot using live data may be plotted by <a href="http://tau.isi.edu/magidemos/casestudy/feedback/traffic.html">visiting the same web page</a>, and additionally passing it the hostname of the database config node of your experiment.</p>

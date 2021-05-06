@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -256,12 +255,12 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="internet-atlas-to-ns2">Internet Atlas to NS2<a class="headerlink" href="#internet-atlas-to-ns2" title="Permanent link"></a></h1>
+                <h1 id="internet-atlas-to-ns2">Internet Atlas to NS2<a class="headerlink" href="#internet-atlas-to-ns2" title="Permanent link">&para;</a></h1>
 <p><strong>Internet Atlas to NS2</strong> is a continuation of <a href="http://internetatlas.org/">Internet Atlas</a>, which provides a geographically anchored representation of the physical Internet including (i) nodes (e.g., hosting facilities and data centers), (ii) conduits/links that connect these nodes, and (iii) relevant meta data (e.g., source provenance). </p>
 <p>This tool adds the feature of extrapolating the generated map to a <a href="http://www.isi.edu/nsnam/ns/">Network Simulator 2</a> topology and allows you to customize it by filtering the topology based on geo-coordinates. The customized map of network topology can be converted into a Network Simulator script that can then be run on an NS engine.</p>
-<h2 id="download-the-code">Download the Code<a class="headerlink" href="#download-the-code" title="Permanent link"></a></h2>
+<h2 id="download-the-code">Download the Code<a class="headerlink" href="#download-the-code" title="Permanent link">&para;</a></h2>
 <p>To use this tool, (obtain the source code from /deterlab/library/geocoder) and copy it to your local workstation. Then following these instructions:</p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link"></a></h2>
+<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Python above version 2.7. Note: If you are using Python 3, you will need to convert the syntax of the geocoding.py script and troubleshoot any bugs the conversion may introduce.</li>
 <li>pip (to install the required package)</li>
@@ -270,12 +269,12 @@
 <p>sudo pip install geocoder</p>
 </li>
 </ul>
-<h2 id="how-to">How To<a class="headerlink" href="#how-to" title="Permanent link"></a></h2>
-<h3 id="run-the-python-script">Run the python script<a class="headerlink" href="#run-the-python-script" title="Permanent link"></a></h3>
+<h2 id="how-to">How To<a class="headerlink" href="#how-to" title="Permanent link">&para;</a></h2>
+<h3 id="run-the-python-script">Run the python script<a class="headerlink" href="#run-the-python-script" title="Permanent link">&para;</a></h3>
 <p>Run the geocoding python script. You only need to run this once - if you see <code>geocoded.json</code> in the source directory, you may skip this step.</p>
 <pre><code>python geocoding.py
 </code></pre>
-<h3 id="using-the-form">Using the form<a class="headerlink" href="#using-the-form" title="Permanent link"></a></h3>
+<h3 id="using-the-form">Using the form<a class="headerlink" href="#using-the-form" title="Permanent link">&para;</a></h3>
 <p>Run python's small server locally to host the Internet Atlas form, fill out the form to generate the desired map and then download the .NS file of your new topology:</p>
 <ol>
 <li>
@@ -302,7 +301,7 @@
 <p>Once you are satisfied with the topology, click <em>Generate NS File</em> to download the corresponding .NS file. </p>
 </li>
 </ol>
-<h1 id="further-details">Further details<a class="headerlink" href="#further-details" title="Permanent link"></a></h1>
+<h1 id="further-details">Further details<a class="headerlink" href="#further-details" title="Permanent link">&para;</a></h1>
 <p>Internet Atlas is a visualization and analysis portal for diverse Internet measurement data.</p>
 <p>Initial ventures include but are not limited to:</p>
 <ul>

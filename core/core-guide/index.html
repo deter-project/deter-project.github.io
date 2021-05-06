@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -296,36 +295,36 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="core-guide">Core Guide<a class="headerlink" href="#core-guide" title="Permanent link"></a></h1>
+                <h1 id="core-guide">Core Guide<a class="headerlink" href="#core-guide" title="Permanent link">&para;</a></h1>
 <p>In this tutorial we begin with a small 3-5 node experiment, so that you will become familiar with NS syntax and the practical aspects of DETERLab operation. Usually, you will want to incorporate another system such as the
 <a href="/orchestrator/orchestrator-quickstart/">MAGI Orchestrator</a> for more fully fleshed out experiments. But this is a good starting point for those new to DETERLab.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you are a student, go to the <a href="http://education.deterlab.net">http://education.deterlab.net</a> site for classroom-specific instructions.</p>
 </div>
-<h2 id="node-use-policy">Node Use Policy<a class="headerlink" href="#node-use-policy" title="Permanent link"></a></h2>
+<h2 id="node-use-policy">Node Use Policy<a class="headerlink" href="#node-use-policy" title="Permanent link">&para;</a></h2>
 <p>Please make sure to read our <a href="/usage-policy/">guidelines for using nodes in DETERLab</a>. These guidelines help keep DETERLab an effective environment for all users.</p>
-<h2 id="deterlab-environment">DETERLab Environment<a class="headerlink" href="#deterlab-environment" title="Permanent link"></a></h2>
+<h2 id="deterlab-environment">DETERLab Environment<a class="headerlink" href="#deterlab-environment" title="Permanent link">&para;</a></h2>
 <p>Your experiment is made up of one or more machines on the internal DETERLab network, which is behind a firewall. </p>
 <p><code>users.deterlab.net</code> (or <code>users</code> for short) is the "control server" for DETERLab. From <code>users</code>, you can contact all your nodes, reboot them, connect to their serial ports, etc. Each user has a home directory on this server and you may SSH into it with your username and password for your DETERLab account.</p>
 <p><code>myboss.isi.deterlab.net</code> ( or <code>boss</code> for short) is the main testbed server that runs DETERLab. Users are not allowed to log directly into it.</p>
-<h2 id="basic-tutorial">Basic Tutorial<a class="headerlink" href="#basic-tutorial" title="Permanent link"></a></h2>
-<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link"></a></h3>
+<h2 id="basic-tutorial">Basic Tutorial<a class="headerlink" href="#basic-tutorial" title="Permanent link">&para;</a></h2>
+<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
 <p>Work in DETERLab is organized by <strong>experiments</strong> within <strong>projects</strong>. Each project is created and managed by a leader - usually the Principal Investigator (PI) of a research project or the instructor of a class on cybersecurity. The project leader then invites members to join by providing them with the project name and sending them the link to the 'Join a Project' page.</p>
 <p>Before you can take the following tutorial, you need an active account in a project in DETERLab. See <a href="https://trac.deterlab.net/wiki/GettingStarted">How to Register</a> to make sure if you're qualified, and then follow the directions to create a project or ask to join an existing project - if you go through either process for the first time, your account is created as a result. </p>
 <p>If you already have an account, proceed to the next step.</p>
-<h3 id="step-1-design-the-topology">Step 1: Design the topology<a class="headerlink" href="#step-1-design-the-topology" title="Permanent link"></a></h3>
+<h3 id="step-1-design-the-topology">Step 1: Design the topology<a class="headerlink" href="#step-1-design-the-topology" title="Permanent link">&para;</a></h3>
 <p>Part of DETERLab's power lies in its ability to assume many different topologies; the description of a such a topology is a necessary part
 of an experiment.  Before you can start your experiment, you must model the elements of the experiment's network with a topology. </p>
 <p><strong>For this basic tutorial, use this <a href="/downloads/basic.ns">NS file</a> which includes a simple topology and save it to a directory called <em>basicExp</em> in your local directory on <code>users.deterlab.net</code>.</strong> </p>
 <p>The rest of this section describes NS format and walks you through the different parts of the sample file.</p>
-<h4 id="ns-format">NS Format<a class="headerlink" href="#ns-format" title="Permanent link"></a></h4>
+<h4 id="ns-format">NS Format<a class="headerlink" href="#ns-format" title="Permanent link">&para;</a></h4>
 <p>DETERLab uses the "NS" ("Network Simulator") format to describe network topologies. This is substantially the same <a href="http://www.scriptics.com/software/tcltk/">Tcl-based format</a> used by <a href="http://www.isi.edu/nsnam/ns/">ns-2</a>. Since DETERLab offers emulation, rather than simulation, these files are interpreted in a somewhat different manner than ns-2. Therefore, some ns-2 functionality may work differently than you expect, or may not be implemented at all. Please look for warnings of the form: </p>
 <pre><code>*** WARNING: Unsupported NS Statement!
     Link type BAZ, using DropTail!
 </code></pre>
 <p>If you feel there is useful functionality missing, please <a href="https://trac.deterlab.net/wiki/GettingHelp">let us know</a>. Also, some <a href="/core/ns-commands/">testbed-specific syntax</a> has been added, which, with the inclusion of the compatibility module <code>tb_compat.tcl</code>, will be ignored by the NS simulator. This allows the same NS file to work on both DETERLab and ns-2, most of the time.</p>
-<h4 id="ns-example">NS Example<a class="headerlink" href="#ns-example" title="Permanent link"></a></h4>
+<h4 id="ns-example">NS Example<a class="headerlink" href="#ns-example" title="Permanent link">&para;</a></h4>
 <p>In our example, we are creating a test network which looks like the following:</p>
 <p><img alt="Diagram of simple network" src="/img/abcd.png" /></p>
 <p><em>Figure 1: A is connected to B, and B to C and D with a LAN.</em></p>
@@ -372,7 +371,7 @@ First off, all NS files start with a simple prologue, declaring a simulator and 
     $ns run
 </code></pre>
 
-<h3 id="step-2-create-a-new-experiment">Step 2: Create a new experiment<a class="headerlink" href="#step-2-create-a-new-experiment" title="Permanent link"></a></h3>
+<h3 id="step-2-create-a-new-experiment">Step 2: Create a new experiment<a class="headerlink" href="#step-2-create-a-new-experiment" title="Permanent link">&para;</a></h3>
 <p>For this tutorial, we will use the web interface to create a new experiment. You could also use the <a href="/core/deterlab-commands/">DETERLab Shell Commands</a>.</p>
 <ol>
 <li>Log into <a href="https://www.isi.deterlab.net">DETERLab</a> with your account credentials (see <a href="https://trac.deterlab.net/wiki/GettingStarted">How to Register</a>).</li>
@@ -438,7 +437,7 @@ lan0-tracemon   lan0-nodeB-tracemon,lan0-nodeC-tracemon,lan0-nodeD-tracemon
     * Each link in the <em>Virtual Lan/Link</em> section has its delay, etc., split between two entries. One is for traffic coming into the link from the node, and the other is for traffic leaving the link to the node. In the case of links, the four entries often get optimized to two entries in a <em>Physical Lan/Link</em> section. [[BR]]
     * The names in the <em>Qualified Name</em> column refer to the control network interfaces for each of your allocated nodes. These names are added to the DETERLab nameserver map on the fly, and are immediately available for you to use so that you do not have to worry about the actual physical node names that were chosen. In the names listed above, <strong>DeterTest</strong> is the name of the project that you chose to work in, and <strong>basic-experiment</strong> is the name of the experiment that you provided on the <em>Begin an Experiment</em> page. [[BR]]
     * Please don't use the <em>Qualified Name</em> from within nodes in your experiment, since it will contact them over the control network, bypassing the link shaping we configured.</p>
-<h4 id="starting-an-experiment-swap-in">Starting an experiment (Swap-in)<a class="headerlink" href="#starting-an-experiment-swap-in" title="Permanent link"></a></h4>
+<h4 id="starting-an-experiment-swap-in">Starting an experiment (Swap-in)<a class="headerlink" href="#starting-an-experiment-swap-in" title="Permanent link">&para;</a></h4>
 <p>If you want to go back to an existing experiment to start it and swap-in (allocate resources):</p>
 <ol>
 <li>Go to your dashboard by clicking the <em>My DETERLab</em> link in the top menu.</li>
@@ -446,7 +445,7 @@ lan0-tracemon   lan0-nodeB-tracemon,lan0-nodeC-tracemon,lan0-nodeD-tracemon
 <li>In the left sidebar, click <em>Swap Experiment In</em>, then click <em>Confirm</em>. </li>
 </ol>
 <p>The swap in process will take 5 to 10 minutes; you will receive an email notification when it is complete. While you are waiting, you can watch the swap in process displayed in your web browser.</p>
-<h3 id="step-3-access-nodes-in-your-lab-environment">Step 3: Access nodes in your lab environment<a class="headerlink" href="#step-3-access-nodes-in-your-lab-environment" title="Permanent link"></a></h3>
+<h3 id="step-3-access-nodes-in-your-lab-environment">Step 3: Access nodes in your lab environment<a class="headerlink" href="#step-3-access-nodes-in-your-lab-environment" title="Permanent link">&para;</a></h3>
 <p>To access your experimental nodes, you'll need to first <a href="/core/DETERSSH/">SSH</a> into <code>users.deterlab.net</code> using your DETERLab username and password.</p>
 <p>Once you log in to <code>users</code>, you'll need to SSH again to your actual experimental nodes. Since your nodes addresses may change every time you swap them in, it's best to SSH to the permanent network names of the nodes. </p>
 <p>As we mentioned in the previous step, the Qualified Names are included in the output after the experiment is swapped in. Here is another way to find them after swap-in:</p>
@@ -468,30 +467,30 @@ c. <strong>SSH from <code>users</code> to your experimental nodes by running a c
   <code>ssh newuser@node1.basicExp.ProjectName.isi.deterlab.net</code>
   or
   <code>ssh newuser@localhost</code></p>
-<h3 id="step-4-view-results-and-modify-the-experiment">Step 4: View results and modify the experiment<a class="headerlink" href="#step-4-view-results-and-modify-the-experiment" title="Permanent link"></a></h3>
+<h3 id="step-4-view-results-and-modify-the-experiment">Step 4: View results and modify the experiment<a class="headerlink" href="#step-4-view-results-and-modify-the-experiment" title="Permanent link">&para;</a></h3>
 <p>You can visualize the experiment by going to your experiment page (from My DETERLab, click the EID link for your experiment) and clicking the <em>Visualization</em> tab. From this page you can also change the NS file by clicking on the <em>NS File</em> tab or modify parameters by clicking <em>Modify Traffic Shaping</em> in the left sidebar.</p>
 <p>An alternative method is to log into <code>users.deterlab.net</code> and use the <a href="/core/deterlab-commands/#delay_config:ChangethelinkshapingcharacteristicsforalinkorLAN">delay_config</a> program. This program requires that you know the symbolic names of the individual links. This information is available on the experiment page. </p>
-<h3 id="step-5-configure-and-run-your-experiment">Step 5: Configure and run your experiment.<a class="headerlink" href="#step-5-configure-and-run-your-experiment" title="Permanent link"></a></h3>
+<h3 id="step-5-configure-and-run-your-experiment">Step 5: Configure and run your experiment.<a class="headerlink" href="#step-5-configure-and-run-your-experiment" title="Permanent link">&para;</a></h3>
 <p>Once you have all link modifications to your liking, you now need to install any additional tools you need (tools not included in the OS images you chose in Step 1), configure your tools and coordinate these tools to create events in your experiment.</p>
 <p>For simple experiments, installation, configuration and triggering events can be done by hand or through small scripts. To accomplish this, log into your machines (see Step 3), perform the OS-specific steps needed to install and configure your tools, and run these tools by hand or through scripts, such as shell scripts or remote scripts such as Fabric-based scripts <a href="http://www.fabfile.org">http://www.fabfile.org</a>.</p>
 <p>For more complicated experiments, you may need more automated ways to install and configure tools as well as coordinate events within your experiment. For fine-grained control over events and event triggers, see the <a href="/orchestrator/orchestrator-quickstart/">MAGI Orchestrator</a>.</p>
 <p>A large part of many experiments is traffic generation: the generation and modulation of packets on experiment links. Tools for such generation include the MAGI Orchestrator and <a href="/core/generating-traffic/">LegoTG</a>, as well as <a href="/core/legacy-tools/#legitimate-traffic-generators">many other possibilities</a>.</p>
-<h3 id="step-6-save-your-work-and-swap-out-release-resources">Step 6: Save your work and swap-out (release resources)<a class="headerlink" href="#step-6-save-your-work-and-swap-out-release-resources" title="Permanent link"></a></h3>
+<h3 id="step-6-save-your-work-and-swap-out-release-resources">Step 6: Save your work and swap-out (release resources)<a class="headerlink" href="#step-6-save-your-work-and-swap-out-release-resources" title="Permanent link">&para;</a></h3>
 <p>When you are done working with your nodes, it is best practice to save your work and swap out the experiment so that other users have access to the physical machines.</p>
-<h4 id="saving-and-securing-your-files-on-deterlab">Saving and securing your files on DETERLab<a class="headerlink" href="#saving-and-securing-your-files-on-deterlab" title="Permanent link"></a></h4>
+<h4 id="saving-and-securing-your-files-on-deterlab">Saving and securing your files on DETERLab<a class="headerlink" href="#saving-and-securing-your-files-on-deterlab" title="Permanent link">&para;</a></h4>
 <p>Every user on DETERLab has a home directory on <code>users.deterlab.net</code> which is mounted via NFS to experimental nodes. This means that anything you place in your home directory on one experimental node (or the <code>users</code> machine) is visible in your home directory on your other experimental nodes. Your home directory is private and will not be overwritten, so you may save your work in that directory. <strong>However, everything else on experimental nodes is permanently lost when an experiment is swapped out.</strong></p>
 <p><strong>Remember: Make sure you save your work in your home directory before swapping out your experiment!</strong></p>
 <p>Another place you may save your files would be <code>/proj/YourProject</code>. This directory is also NFS-mounted to all experimental nodes, so the same rules apply about writing to it a lot, as for your home directory. It is shared by all members of your project/class.</p>
 <p><strong>Again, on DETERLab, files ARE NOT SAVED between swap-ins. Additionally, experiments may be forcibly swapped out after a certain number of idle hours (or some maximum amount of time).</strong></p>
 <p>You must manually save copies of any files you want to keep in your home directory. Any files left elsewhere on the experimental nodes will be erased and lost forever. This means that if you want to store progress for a lab and come back to it later, you will need to put it in your home directory before swapping out the experiment.</p>
-<h4 id="swap-out-vs-terminate">Swap Out vs Terminate<a class="headerlink" href="#swap-out-vs-terminate" title="Permanent link"></a></h4>
+<h4 id="swap-out-vs-terminate">Swap Out vs Terminate<a class="headerlink" href="#swap-out-vs-terminate" title="Permanent link">&para;</a></h4>
 <p><strong>When to Swap Out</strong>
 When you are done with your experiment for the time being, make sure you save your work into an appropriate location and then swap out your experiment. Swapping out is the equivalent of temporarily stopping the experiment and relinquishing the testbed resources. Swapping out is what you want to do when you are taking a break from the work, but coming back later. </p>
 <p>To do this, click <em>Swap Experiment Out</em> link on the experiment page. This allows the resources to be de-allocated so that someone else can use them.</p>
 <p><strong>When to Terminate</strong>
 When you are completely finished with your experiment and have no intention of running it again, use the <em>Terminate Experiment</em> link in the sidebar of the experiment page. Be careful: <strong>termination will erase the experiment</strong> and you won't be able to swap it back in without recreating it. DETERLab will then tear down your experiment, and send you an email message when the process is complete. At this point you are allowed to reuse the experiment name (say, if you wanted to create a similar experiment with different parameters).</p>
 <p>Terminating says "I won't need this experiment ever again." Just remember to Swap In/Out, and never "Terminate" unless you're sure you're completely done with the experiment. If you do end up terminating an experiment, you can always go back and recreate it.</p>
-<h4 id="scheduling-experiment-swapouttermination"><a name="Halting"></a>Scheduling experiment swapout/termination<a class="headerlink" href="#scheduling-experiment-swapouttermination" title="Permanent link"></a></h4>
+<h4 id="scheduling-experiment-swapouttermination"><a name="Halting"></a>Scheduling experiment swapout/termination<a class="headerlink" href="#scheduling-experiment-swapouttermination" title="Permanent link">&para;</a></h4>
 <p>If you expect that your experiment should run for a set period of time, but you will not be around to terminate or swap the experiment out, then you should use the scheduled swapout/termination feature. This allows you to specify a maximum running time in your NS file so that you will not hold scarce resources when you are offline. To schedule a swapout or termination in your NS file:</p>
 <pre><code>     $ns at 2000.0 &quot;$ns terminate&quot;
 </code></pre>
@@ -501,10 +500,10 @@ When you are completely finished with your experiment and have no intention of r
 </code></pre>
 
 <p>This will cause your experiment to either be terminated or swapped out after 2000 seconds of wallclock time.</p>
-<h2 id="why-cant-i-log-in-to-deterlab">Why can't I log in to DETERLab?<a class="headerlink" href="#why-cant-i-log-in-to-deterlab" title="Permanent link"></a></h2>
+<h2 id="why-cant-i-log-in-to-deterlab">Why can't I log in to DETERLab?<a class="headerlink" href="#why-cant-i-log-in-to-deterlab" title="Permanent link">&para;</a></h2>
 <p>DETERLab has an automatic blacklist mechanism. If you enter the wrong username and password combination too many times, your account will no longer be accessible from your current IP address. </p>
 <p>If you think that this has happened to you, try logging in from another address (if you know how), or create an issue (see <a href="https://trac.deterlab.net/wiki/GettingHelp">Getting Help</a>), which will relay the request to the <em>testbed-ops</em> group that this specific blacklist entry should be erased.</p>
-<h2 id="installing-rpms-automatically">Installing RPMs automatically<a class="headerlink" href="#installing-rpms-automatically" title="Permanent link"></a></h2>
+<h2 id="installing-rpms-automatically">Installing RPMs automatically<a class="headerlink" href="#installing-rpms-automatically" title="Permanent link">&para;</a></h2>
 <p>The DETERLab NS extension <code>tb-set-node-rpms</code> allows you to specify a (space-separated) list of RPMs to install on each of your nodes when it boots:</p>
 <pre><code>  tb-set-node-rpms $nodeA /proj/myproj/rpms/silly-freebsd.rpm
   tb-set-node-rpms $nodeB /proj/myproj/rpms/silly-linux.rpm
@@ -512,14 +511,14 @@ When you are completely finished with your experiment and have no intention of r
 </code></pre>
 
 <p>The above NS code says to install the <code>silly-freebsd.rpm</code> file on <code>nodeA</code>, the <code>silly-linux.rpm</code> on <code>nodeB</code>, and the <code>silly-windows.rpm</code> on <code>nodeC</code>. RPMs are installed as root, and must reside in either the project's <code>/proj</code> directory, or if the experiment has been created in a subgroup, in the <code>/groups</code> directory. You may not place your RPMs in your home directory.</p>
-<h2 id="installing-tar-files-automatically">Installing TAR files automatically<a class="headerlink" href="#installing-tar-files-automatically" title="Permanent link"></a></h2>
+<h2 id="installing-tar-files-automatically">Installing TAR files automatically<a class="headerlink" href="#installing-tar-files-automatically" title="Permanent link">&para;</a></h2>
 <p>The DETERLab NS extension <a href="/core/ns-commands/#tb-set-node-tarfiles">tb-set-node-tarfiles</a> allows you to specify a set of tarfiles to install on each of your nodes when it boots. </p>
 <p>While similar to the <a href="/core/ns-commands/#tb-set-node-rpms">tb-set-node-rpms</a> command, the format of this command is slightly different in that you must specify a directory in which to unpack the tar file. This avoids problems with having to specify absolute pathnames in your tarfile, which many modern tar programs balk at.</p>
 <pre><code>  tb-set-node-tarfiles $nodeA /usr/site /proj/projectName/tarfiles/silly.tar.gz
 </code></pre>
 
 <p>The above NS code says to install the <code>silly.tar.gz</code> tar file on <code>nodeA</code> from the working directory <code>/usr/site</code> when the node first boots. The tarfile must reside in either the project's <code>/proj</code> directory, or if the experiment has been created in a subgroup, in the <code>/groups</code> directory. You may not place your tarfiles in your home directory. You may specify as many tarfiles as you wish, as long as each one is preceded by the directory it should be unpacked in, all separated by spaces.</p>
-<h2 id="starting-your-application-automatically">Starting your application automatically<a class="headerlink" href="#starting-your-application-automatically" title="Permanent link"></a></h2>
+<h2 id="starting-your-application-automatically">Starting your application automatically<a class="headerlink" href="#starting-your-application-automatically" title="Permanent link">&para;</a></h2>
 <p>You may start your application automatically when your nodes boot for the first time (when an experiment is started or swapped in) by using the <code>tb-set-node-startcmd</code> NS extension. The argument is a command string (pathname of a script or program, plus arguments) that is run as the <code>UID</code> of the experiment creator, after the node has reached multiuser mode. </p>
 <p>The command is invoked using <code>/bin/csh</code>, and the working directory is undefined (your script should <code>cd</code> to the directory you need). You can specify the same program for each node, or a different program. For example:</p>
 <pre><code>  tb-set-node-startcmd $nodeA &quot;/proj/projectName/runme.nodeA&quot;
@@ -533,7 +532,7 @@ When you are completely finished with your experiment and have no intention of r
 
 <p>Note that the syntax and function of <code>/bin/csh</code> differs from other shells (including bash), specifically in redirection syntax.  Be sure to use <code>csh</code> syntax or your start command will fail silently.</p>
 <p>The exit value of the start command is reported back to the Web Interface, and is made available to you via the experiment page. There is a listing for all of the nodes in the experiment, and the exit value is recorded in this listing. The special symbol <code>none</code> indicates that the node is still running the start command.</p>
-<h2 id="notifying-the-start-program-when-all-other-nodes-have-started">Notifying the start program when all other nodes have started<a class="headerlink" href="#notifying-the-start-program-when-all-other-nodes-have-started" title="Permanent link"></a></h2>
+<h2 id="notifying-the-start-program-when-all-other-nodes-have-started">Notifying the start program when all other nodes have started<a class="headerlink" href="#notifying-the-start-program-when-all-other-nodes-have-started" title="Permanent link">&para;</a></h2>
 <p>It is often necessary for your start program to determine when all of the other nodes in the experiment have started, and are ready to proceed. Sometimes called a <em>barrier</em>, this allows programs to wait at a specific point, and then all proceed at once. DETERLab provides a simple form of this mechanism using a synchronization server that runs on a node of your choice. </p>
 <p>Specify the node in your NS file:</p>
 <pre><code>    tb-set-sync-server $nodeB
@@ -556,7 +555,7 @@ When you are completely finished with your experiment and have no intention of r
 </code></pre>
 
 <p>This allows multiple barriers to be in use at the same time. Scripts on nodeA and nodeB can be waiting on a barrier named "foo" while (other) scripts on nodeA and nodeC can be waiting on a barrier named "bar." You may reuse an existing barrier (including the default barrier) once it has been released (all clients arrived and woken up).</p>
-<h2 id="setting-up-ip-routing-between-nodes"><a name="Routing"></a> Setting up IP routing between nodes<a class="headerlink" href="#setting-up-ip-routing-between-nodes" title="Permanent link"></a></h2>
+<h2 id="setting-up-ip-routing-between-nodes"><a name="Routing"></a> Setting up IP routing between nodes<a class="headerlink" href="#setting-up-ip-routing-between-nodes" title="Permanent link">&para;</a></h2>
 <p>As DETER strives to make all aspects of the network controllable by the user, we do not attempt to impose any IP routing architecture or protocol by default. However, many users are more interested in end-to-end aspects and don't want to be bothered with setting up routes. For those users we provide an option to automatically set up routes on nodes which run one of our provided FreeBSD, Linux or <a href="/core/windows/">Windows XP</a> disk images.</p>
 <p>You can use the NS <code>rtproto</code> syntax in your NS file to enable routing:</p>
 <pre><code>    $ns rtproto protocolOption

@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -266,12 +265,12 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="scaled-client-server-case-study">Scaled Client Server Case Study<a class="headerlink" href="#scaled-client-server-case-study" title="Permanent link"></a></h1>
+                <h1 id="scaled-client-server-case-study">Scaled Client Server Case Study<a class="headerlink" href="#scaled-client-server-case-study" title="Permanent link">&para;</a></h1>
 <p>In this example we demonstrate how to set up client server traffic generators in a larger topology.</p>
 <p>This case study is identical to <a href="/orchestrator/simple-client-server/">Simple Client Case Study</a> except the topology is significantly larger.</p>
-<h2 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link"></a></h2>
+<h2 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link">&para;</a></h2>
 <p>As in the <a href="/orchestrator/simple-client-server/">simpler case</a>, this example has three events streams; the server stream, the client stream, and the cleanup stream.</p>
-<h2 id="mapping-to-the-topology">Mapping to the Topology<a class="headerlink" href="#mapping-to-the-topology" title="Permanent link"></a></h2>
+<h2 id="mapping-to-the-topology">Mapping to the Topology<a class="headerlink" href="#mapping-to-the-topology" title="Permanent link">&para;</a></h2>
 <p>The groups directive in the AAL file allows mapping an agent behavior to one or more nodes.</p>
 <pre><code>groups:
    client_group: [clientnode-1, clientnode-2, clientnode-3, clientnode-4, clientnode-5,
@@ -289,7 +288,7 @@
 
 <p>In this example, we observe that there are two groups: <strong>client_group</strong> which consists of all 50 clientnodes, and <strong>server_group</strong> which consists of 5 servernodes.</p>
 <p>Additionally, we use YAML pointers to annotate the server_group as <strong>slist</strong>. The slist annotation is used to refer to the list of servers for configuring the client_agent in the section below.</p>
-<h2 id="configuring-the-agents">Configuring the Agents<a class="headerlink" href="#configuring-the-agents" title="Permanent link"></a></h2>
+<h2 id="configuring-the-agents">Configuring the Agents<a class="headerlink" href="#configuring-the-agents" title="Permanent link">&para;</a></h2>
 <p>There are two types of agents, a client_agent and a server_agent. Each agent description consists of at least three directives; group, path and execargs.</p>
 <ul>
 <li><code>group</code>: indicates the set of nodes that the client_agent should be deployed on.</li>
@@ -308,7 +307,7 @@
     execargs: []
 </code></pre>
 
-<h2 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link"></a></h2>
+<h2 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link">&para;</a></h2>
 <p>The server event stream consists of three states. </p>
 <ol>
 <li>The <strong>start</strong> state which generates a trigger, called <code>serverStarted</code>, once all the server agents are activated on the experiment nodes.</li>
@@ -316,7 +315,7 @@
 <li>Once the trigger is received, it enters the <strong>stop</strong> state, where the server is deactivated or terminated.</li>
 </ol>
 <p>The AAL description is the same as the one used in the <a href="/downloads/casestudy_clientserver.aal">Simple Client case study</a>.</p>
-<h2 id="client-stream">Client Stream<a class="headerlink" href="#client-stream" title="Permanent link"></a></h2>
+<h2 id="client-stream">Client Stream<a class="headerlink" href="#client-stream" title="Permanent link">&para;</a></h2>
 <p>The client event stream consists of five states. </p>
 <ol>
 <li>First, the client agent implementation is parameterized by the configuration state. This occurs as part of the agent loading process on all 50 nodes.</li>
@@ -325,17 +324,17 @@
 <li>Next, the client stream waits for a period (\Delta) t and then terminates the client agents in the stop state.</li>
 <li>On termination, the client agents sends a <code>clientStopped</code> trigger that allows the server stream to synchronize and terminate the servers only after all the client have terminated.</li>
 </ol>
-<h2 id="running-the-experiment">Running the Experiment<a class="headerlink" href="#running-the-experiment" title="Permanent link"></a></h2>
-<h3 id="step-1-swap-in-the-experiment">Step 1: Swap in the experiment<a class="headerlink" href="#step-1-swap-in-the-experiment" title="Permanent link"></a></h3>
+<h2 id="running-the-experiment">Running the Experiment<a class="headerlink" href="#running-the-experiment" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-swap-in-the-experiment">Step 1: Swap in the experiment<a class="headerlink" href="#step-1-swap-in-the-experiment" title="Permanent link">&para;</a></h3>
 <p>Swap in the experiment using this network description file: <a href="/downloads/cs55_topology.tcl">cs55_topology.tcl</a></p>
-<h3 id="step-2-set-up-your-environment">Step 2: Set up your environment<a class="headerlink" href="#step-2-set-up-your-environment" title="Permanent link"></a></h3>
+<h3 id="step-2-set-up-your-environment">Step 2: Set up your environment<a class="headerlink" href="#step-2-set-up-your-environment" title="Permanent link">&para;</a></h3>
 <p>Set up your environment. Assuming your experiment is named <em>myExp</em>, your DETER project is <em>myProj</em>, and the AAL file is called <em>procedure.aal</em>.</p>
 <pre><code>PROJ=myExp
 EXP=myProj
 AAL=procedure.aal
 </code></pre>
 
-<h3 id="step-3-run-the-orchestrator">Step 3: Run the Orchestrator<a class="headerlink" href="#step-3-run-the-orchestrator" title="Permanent link"></a></h3>
+<h3 id="step-3-run-the-orchestrator">Step 3: Run the Orchestrator<a class="headerlink" href="#step-3-run-the-orchestrator" title="Permanent link">&para;</a></h3>
 <p>Once the experiment is swapped in, run the orchestrator, giving it the AAL above and the experiment and project name. </p>
 <pre><code>&gt; /share/magi/current/magi_orchestrator.py --experiment $EXP --project $PROJ --events $AAL
 </code></pre>
@@ -356,7 +355,7 @@ AAL=procedure.aal
 <li><strong>Archive Logs:</strong> <a href="/downloads/casestudy_clientserver55.tar.gz">casestudy_clientserver55.tar.gz</a></li>
 <li><strong>Orchestration:</strong> <a href="/downloads/casestudy_clientserver55.orch.log">casestudy_clientserver55.orch.log</a></li>
 </ul>
-<h2 id="visualizing-experiment-results">Visualizing Experiment Results<a class="headerlink" href="#visualizing-experiment-results" title="Permanent link"></a></h2>
+<h2 id="visualizing-experiment-results">Visualizing Experiment Results<a class="headerlink" href="#visualizing-experiment-results" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This process is the same as for the Simple Client case - we are reproducing here for your convenience.</p>

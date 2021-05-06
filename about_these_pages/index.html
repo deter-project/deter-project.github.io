@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href=".."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -238,17 +237,17 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="about-these-pages">About These Pages<a class="headerlink" href="#about-these-pages" title="Permanent link"></a></h1>
-<h2 id="note-about-porting">Note about porting<a class="headerlink" href="#note-about-porting" title="Permanent link"></a></h2>
+                <h1 id="about-these-pages">About These Pages<a class="headerlink" href="#about-these-pages" title="Permanent link">&para;</a></h1>
+<h2 id="note-about-porting">Note about porting<a class="headerlink" href="#note-about-porting" title="Permanent link">&para;</a></h2>
 <p>This information should be adjusted for the ported docs and turned into a readme file (ie, not publicly viewable)</p>
-<h2 id="software-used">Software Used<a class="headerlink" href="#software-used" title="Permanent link"></a></h2>
+<h2 id="software-used">Software Used<a class="headerlink" href="#software-used" title="Permanent link">&para;</a></h2>
 <p>These pages are created with <a href="http://www.mkdocs.org/">mkdocs</a> version 0.14.0, a static documentation site generator. </p>
-<h2 id="site-location-and-directory-layout">Site Location and Directory Layout<a class="headerlink" href="#site-location-and-directory-layout" title="Permanent link"></a></h2>
+<h2 id="site-location-and-directory-layout">Site Location and Directory Layout<a class="headerlink" href="#site-location-and-directory-layout" title="Permanent link">&para;</a></h2>
 <p>This site is kept in the <strong>deter-project</strong> repository, under the directory <code>docs</code>. The pages are generated from markdown files in <code>site/docs/</code>.</p>
-<h2 id="updating-a-page">Updating a Page<a class="headerlink" href="#updating-a-page" title="Permanent link"></a></h2>
+<h2 id="updating-a-page">Updating a Page<a class="headerlink" href="#updating-a-page" title="Permanent link">&para;</a></h2>
 <p>To update a page, edit the file in docs/. Run the command <code>mkdocs serve</code> in the <code>site/</code> directory. This will start a local web browser which you can use to preview your changes. If you are making multiple changes, it is convenient to keep this preview server running, because it will automatically pick up, render, and display changes as you make them.</p>
 <p>Once you are happy with your changes, commit them and then push them to the live server (see <a href="#pushing-changes-to-the-live-server">below</a>).</p>
-<h2 id="creating-a-new-page">Creating a New Page<a class="headerlink" href="#creating-a-new-page" title="Permanent link"></a></h2>
+<h2 id="creating-a-new-page">Creating a New Page<a class="headerlink" href="#creating-a-new-page" title="Permanent link">&para;</a></h2>
 <p>To create a new page, create a file in docs/ and then add a corresponding line in the <code>pages</code> section of <code>sysadmin.deterlab.net/mkdocs.yml</code>. This configuration file is of the format:</p>
 <pre><code class="yaml">site_name: DETERLab Docs
 site_description: User documentation for the DETERLab testbed
@@ -267,16 +266,16 @@ pages:
 
 <p>In the <code>pages</code> section, the left half of the line is the page's human-readable name, while the right half is the name of the file in docs/. You can change the order of the page listing in the sidebar by changing the order of the items in the .yml file.</p>
 <p>Once you are happy with your changes, add your new file and the mkdocs.yml to the git repository, commit them, and then push the changes to the live server (see <a href="#pushing-changes-to-the-live-server">below</a>).</p>
-<h2 id="renaming-a-page">Renaming a Page<a class="headerlink" href="#renaming-a-page" title="Permanent link"></a></h2>
+<h2 id="renaming-a-page">Renaming a Page<a class="headerlink" href="#renaming-a-page" title="Permanent link">&para;</a></h2>
 <p>This would simply be a matter of renaming the file in docs/, and making corresponding changes in mkdocs.yml, as well as in any other files in docs/ which reference the original name. Note that if you rename a page, you may want to run <code>mkdocs build --clean</code> instead of <code>mkdocs build</code> when you <a href="#pushing-changes-to-the-live-server">regenerate the site</a>.</p>
-<h2 id="customizing-docs">Customizing Docs<a class="headerlink" href="#customizing-docs" title="Permanent link"></a></h2>
+<h2 id="customizing-docs">Customizing Docs<a class="headerlink" href="#customizing-docs" title="Permanent link">&para;</a></h2>
 <p>If you are customizing these docs for your own organization, here are some general guidelines for making them your own. Changing the logo and colors requires a small amount of HTML and CSS knowledge:</p>
 <ul>
 <li>In general, you can do a find/replace in the <code>site/docs</code> directory replacing 'DETERLab' with your own organization name.</li>
 <li>The <code>base.html</code> file in the `readthedocs_custom' directory includes customizations to the layout and is where the doc-logo.png is included. Replace the png with your own using a PNG file around 24px by 24px. </li>
 <li>Colors are controlled in the docs/css/extra.css file.</li>
 </ul>
-<h2 id="pushing-changes-to-the-live-server">Pushing Changes to the Live Server<a class="headerlink" href="#pushing-changes-to-the-live-server" title="Permanent link"></a></h2>
+<h2 id="pushing-changes-to-the-live-server">Pushing Changes to the Live Server<a class="headerlink" href="#pushing-changes-to-the-live-server" title="Permanent link">&para;</a></h2>
 <p>This site is hosted on <a href="virtual_machines.md#tardisdeterlabnet">tardis.deterlab.net</a>, in the directory /var/www-sysadmin/.</p>
 <p>Authentication is provided by apache Basic Auth, configured in <code>/etc/apache2/sites-enabled/sysadmin.deterlab.net</code>, with an htpasswd file at <code>/var/www-sysadmin/.htpasswd</code>. You can add user accounts to this, or change their password, by running <code>htpasswd /var/www-sysadmin/.htpasswd USERNAME</code> (where you replace USERNAME with the username you want) with root privileges on tardis.</p>
 <p>Once you are satisfied with your changes and have committed them, build a new static HTML version of the site by running <code>mkdocs build</code> in the <code>sysadmin.deterlab.net</code> directory. You may see some python errors about unicode literals. These can safely be ignored.</p>

@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -256,7 +255,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="flooder-case-study">Flooder Case Study<a class="headerlink" href="#flooder-case-study" title="Permanent link"></a></h1>
+                <h1 id="flooder-case-study">Flooder Case Study<a class="headerlink" href="#flooder-case-study" title="Permanent link">&para;</a></h1>
 <p>In this experiment we demonstrate how one can setup a flooding agent and a victim server. </p>
 <p>We demonstrate three aspects of MAGI: </p>
 <ul>
@@ -264,13 +263,13 @@
 <li>Synchronizing with triggers, and</li>
 <li>A special target called <code>exit</code> to unload agents.</li>
 </ul>
-<h2 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link"></a></h2>
+<h2 id="event-streams">Event Streams<a class="headerlink" href="#event-streams" title="Permanent link">&para;</a></h2>
 <p>This experiment has three streams: the <strong>flooder stream</strong>, the <strong>server stream</strong>, and the <strong>cleanup stream</strong>. </p>
 <p>The co-ordination between the events can be illustrated as follows:</p>
 <p><img alt="Event diagram" src="/orchestrator/event.png" /></p>
 <p>Event streams can be synchronized using event-based triggers or time-based triggers.</p>
 <p>The triggers are indicated as wait states in gray. The group formation and loading the agents, which is also automated by the orchestrator tool, is not illustrated above.</p>
-<h2 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link"></a></h2>
+<h2 id="server-stream">Server Stream<a class="headerlink" href="#server-stream" title="Permanent link">&para;</a></h2>
 <p>The server event stream consists of three states. The start state which generates a trigger, called serverStarted, once the server agent is activated on the experiment nodes.</p>
 <p>It then enters the wait state and stays there for a period ∆t and terminates the server agent in stop state. </p>
 <p>The AAL description is below:</p>
@@ -291,7 +290,7 @@
     args: {} 
 </code></pre>
 
-<h2 id="flooder-stream">Flooder Stream<a class="headerlink" href="#flooder-stream" title="Permanent link"></a></h2>
+<h2 id="flooder-stream">Flooder Stream<a class="headerlink" href="#flooder-stream" title="Permanent link">&para;</a></h2>
 <p>The flooder stream consists of five states. First, the flooder agent implementation is parameterized by the configuration state. This occurs as part of the agent loading process. </p>
 <p>The flooder stream then synchronizes with the server stream by waiting for the serverStarted trigger from the server nodes. Once it receives the trigger the flooder agent is activated in the start state.</p>
 <p>Next, the flooder stream waits for a period of ∆t before repeating the start and stop events one more time while waiting for a period of ∆t in between. Finally, the flooder stream terminates the flooder agent in the stop state. </p>
@@ -343,7 +342,7 @@
     args: {}
 </code></pre>
 
-<h2 id="cleanup-stream">Cleanup Stream<a class="headerlink" href="#cleanup-stream" title="Permanent link"></a></h2>
+<h2 id="cleanup-stream">Cleanup Stream<a class="headerlink" href="#cleanup-stream" title="Permanent link">&para;</a></h2>
 <p>The last event stream, the cleanup stream consists of two states. First, it waits for the server to stop and then it enters the exit state.</p>
 <p>The exit state unload and tears down all the comminucation mechanisms between the agents. The exit state is entered by the key target is used to transfer control to a reserved state internal to the orchestrator.</p>
 <p>It causes the orchestrator to send agent unload and disband group messages to all the experiment node and then it exits the orchestrator.</p>
@@ -352,7 +351,7 @@
     triggers: [ {event: serverStopped, target: exit} ] 
 </code></pre>
 
-<h2 id="running-the-experiment">Running the experiment<a class="headerlink" href="#running-the-experiment" title="Permanent link"></a></h2>
+<h2 id="running-the-experiment">Running the experiment<a class="headerlink" href="#running-the-experiment" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Swap in the experiment using the network description file given below.</li>
 <li>Set up your environment. Assuming your experiment is named myExp, your DETER project is myProj, and the AAL file is called procedure.aal.</li>
@@ -411,7 +410,7 @@ stream groupLeaveS... : DONE : (16:18:06) complete.
 <p><strong>Procedure</strong>: <a href="/orchestrator/procedure.aal">casestudy_flooder.aal</a></p>
 <p><strong>Topology</strong> : <a href="/orchestrator/topology.tcl">casestudy_flooder.tcl</a></p>
 <p><strong>Archived logs</strong>:  <a href="/orchestrator/cs_exparchive_flooder.tar.gz">casestudy_flooder.tar.gz</a></p>
-<h2 id="visualizing-experiment-results">Visualizing Experiment Results<a class="headerlink" href="#visualizing-experiment-results" title="Permanent link"></a></h2>
+<h2 id="visualizing-experiment-results">Visualizing Experiment Results<a class="headerlink" href="#visualizing-experiment-results" title="Permanent link">&para;</a></h2>
 <p>In order to visulaize the traffic on the network, we modify the above mentioned procedure to add another stream called “monitor”. This stream deploys a packet sensor agent on the server node to measure the traffic on the link in the experiment. The packet sensor agent records the traffic data using MAGI’s data management layer.</p>
 <pre><code>monitor_group: [servernode]
 

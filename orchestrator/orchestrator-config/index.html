@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -256,8 +255,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="magi-configuration">MAGI Configuration<a class="headerlink" href="#magi-configuration" title="Permanent link"></a></h1>
-<h2 id="experiment-configuration">Experiment Configuration<a class="headerlink" href="#experiment-configuration" title="Permanent link"></a></h2>
+                <h1 id="magi-configuration">MAGI Configuration<a class="headerlink" href="#magi-configuration" title="Permanent link">&para;</a></h1>
+<h2 id="experiment-configuration">Experiment Configuration<a class="headerlink" href="#experiment-configuration" title="Permanent link">&para;</a></h2>
 <p>The MAGI experiment-wide configuration (<code>experiment.conf</code>) is a YAML-based configuration file. A customized <code>experiment.conf</code> can be provided to the MAGI bootstrap process.</p>
 <pre><code>magi_bootstrap.py --expconf /path/to/experiment.conf
 </code></pre>
@@ -276,7 +275,7 @@
 <p><strong>ExpDL</strong>: Other experiment information</p>
 </li>
 </ul>
-<h2 id="mesdl-configure-the-magi-control-overlay">MesDL: Configure the MAGI Control Overlay<a class="headerlink" href="#mesdl-configure-the-magi-control-overlay" title="Permanent link"></a></h2>
+<h2 id="mesdl-configure-the-magi-control-overlay">MesDL: Configure the MAGI Control Overlay<a class="headerlink" href="#mesdl-configure-the-magi-control-overlay" title="Permanent link">&para;</a></h2>
 <p>The MAGI bootstrap process establishes a networking overlay over which it communicates with the experiment nodes.</p>
 <p>The control overlay provides a control plane across heterogeneous resources, such as containers, federation, and specialized hardware, on the DETERLab testbed.</p>
 <p>The control overlay provides a network to reliably propagate discrete control events across the experiment. Hence, it is critical to establish a robust and scalable overlay to ensure the experiments are orchestrated correctly.</p>
@@ -332,7 +331,7 @@ overlay:
        type: TCPTransport
 </code></pre>
 
-<h2 id="dbdl-configure-the-magi-data-management-layer">DBDL: Configure the MAGI Data Management Layer<a class="headerlink" href="#dbdl-configure-the-magi-data-management-layer" title="Permanent link"></a></h2>
+<h2 id="dbdl-configure-the-magi-data-management-layer">DBDL: Configure the MAGI Data Management Layer<a class="headerlink" href="#dbdl-configure-the-magi-data-management-layer" title="Permanent link">&para;</a></h2>
 <p>The database configuration contains the following parameters:</p>
 <pre><code>dbdl:
 
@@ -365,7 +364,7 @@ overlay:
 <p class="admonition-title">Note</p>
 <p>The ports are not configurable, they are only for informational purpose.</p>
 </div>
-<h2 id="expdl-other-common-experiment-wide-configuration">ExpDL: Other common experiment wide configuration<a class="headerlink" href="#expdl-other-common-experiment-wide-configuration" title="Permanent link"></a></h2>
+<h2 id="expdl-other-common-experiment-wide-configuration">ExpDL: Other common experiment wide configuration<a class="headerlink" href="#expdl-other-common-experiment-wide-configuration" title="Permanent link">&para;</a></h2>
 <p>The ExpDL part of the experiment configuration file contains common experiment-wide configuration that is used by the various MAGI tools. Most of the configuration in this section is automatically generated.</p>
 <p>A user can override the default AAL file location and the default directories for config files, log files, database files and temporary files.</p>
 <pre><code>expdl:
@@ -378,7 +377,7 @@ overlay:
   testbedPaths: {experimentDir: /proj/montage/exp/clientserver}
 </code></pre>
 
-<h2 id="node-configuration">Node Configuration<a class="headerlink" href="#node-configuration" title="Permanent link"></a></h2>
+<h2 id="node-configuration">Node Configuration<a class="headerlink" href="#node-configuration" title="Permanent link">&para;</a></h2>
 <p>The MAGI daemon process runs using a node-specific configuration (<code>node.conf</code>). The experiment wide configuration (<code>experiment.conf</code>) is converted into a node specific configuration as part of the bootstrap process. The node configuration file contains some additional configuration apart from all the node specific configuration from the experiment wide configuration.</p>
 <p>A customized <code>node.conf</code> can be provided as an input to the MAGI bootstrap script, or to the MAGI daemon startup script, directly. Similar to the <code>experiment.conf</code>, a user can provide an incomplete configuration file, containing only customized parameters. The MAGI configuration validation process would fill in the missing configuration.</p>
 <pre><code>transports:
@@ -417,7 +416,7 @@ software:
 - {dir: /tmp/src, type: source}
 </code></pre>
 
-<h2 id="bootstrap-process">Bootstrap Process<a class="headerlink" href="#bootstrap-process" title="Permanent link"></a></h2>
+<h2 id="bootstrap-process">Bootstrap Process<a class="headerlink" href="#bootstrap-process" title="Permanent link">&para;</a></h2>
 <p>The <code>magi_bootstrap.py</code> is used to configure the overlay and start MAGI on the experiment nodes.</p>
 <p>The <code>magi_bootstrap.py</code> tool is typically called when the node starts as follows:</p>
 <pre><code>tb-set-node-startcmd $NodeName &quot;sudo python /share/magi/current/magi_bootstrap.py&quot;

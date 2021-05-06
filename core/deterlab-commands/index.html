@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -290,7 +289,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="deterlab-commands">DETERLab Commands<a class="headerlink" href="#deterlab-commands" title="Permanent link"></a></h1>
+                <h1 id="deterlab-commands">DETERLab Commands<a class="headerlink" href="#deterlab-commands" title="Permanent link">&para;</a></h1>
 <p>The following commands are available from the commandline on <code>users.deterlab.net</code>. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -298,7 +297,7 @@
 </div>
 <p>For example, to start an experiment, you would use:
 <code>/usr/testbed/bin/startexp [options]</code></p>
-<h2 id="transport-layers">Transport Layers<a class="headerlink" href="#transport-layers" title="Permanent link"></a></h2>
+<h2 id="transport-layers">Transport Layers<a class="headerlink" href="#transport-layers" title="Permanent link">&para;</a></h2>
 <p>The DETERLab XMLRPC server can be accessed via two different transport layers: SSH and SSL.</p>
 <p><strong>How to use SSH keys</strong>
 Follow <a href="/core/DETERSSH/">these directions</a> if you are unfamiliar with using SSH.</p>
@@ -309,8 +308,8 @@ You need to request a certificate from the <a href="https://www.isi.deterlab.net
 <li>Enter a passphrase to use to encrypt the private key. </li>
 <li>Once the key has been created, you will be given a link to download a text version (in PEM format). Simply provide this certificate as an input to your SSL client. </li>
 </ul>
-<h2 id="operational-commands">Operational Commands<a class="headerlink" href="#operational-commands" title="Permanent link"></a></h2>
-<h3 id="startexp-start-an-deterlab-experiment"><code>startexp</code>: Start an DETERLab experiment <a name="startexp"></a><a class="headerlink" href="#startexp-start-an-deterlab-experiment" title="Permanent link"></a></h3>
+<h2 id="operational-commands">Operational Commands<a class="headerlink" href="#operational-commands" title="Permanent link">&para;</a></h2>
+<h3 id="startexp-start-an-deterlab-experiment"><code>startexp</code>: Start an DETERLab experiment <a name="startexp"></a><a class="headerlink" href="#startexp-start-an-deterlab-experiment" title="Permanent link">&para;</a></h3>
 <pre><code>startexp [-q] [-i [-w]] [-f] [-N] [-E description] [-g gid]
          [-S reason] [-L reason] [-a &lt;time&gt;] [-l &lt;time&gt;]
          -p &lt;pid&gt; -e &lt;eid&gt; &lt;nsfile&gt;
@@ -332,10 +331,10 @@ You need to request a certificate from the <a href="https://www.isi.deterlab.net
 <p><code>-N</code> Suppress most email to the user and testbed-ops.</p>
 <p><code>nsfile</code> NS file to parse for experiment</p>
 <hr />
-<h3 id="batchexp-synonym-for-startexp"><code>batchexp</code>: Synonym for startexp <a name="batchexp"></a><a class="headerlink" href="#batchexp-synonym-for-startexp" title="Permanent link"></a></h3>
+<h3 id="batchexp-synonym-for-startexp"><code>batchexp</code>: Synonym for startexp <a name="batchexp"></a><a class="headerlink" href="#batchexp-synonym-for-startexp" title="Permanent link">&para;</a></h3>
 <p>This is a legacy command. See command description for startexp.</p>
 <hr />
-<h3 id="endexp-terminate-an-experiment"><code>endexp</code>: Terminate an experiment <a name="endexp"></a><a class="headerlink" href="#endexp-terminate-an-experiment" title="Permanent link"></a></h3>
+<h3 id="endexp-terminate-an-experiment"><code>endexp</code>: Terminate an experiment <a name="endexp"></a><a class="headerlink" href="#endexp-terminate-an-experiment" title="Permanent link">&para;</a></h3>
 <pre><code>endexp [-w] [-N] -e pid,eid
 endexp [-w] [-N] pid eid
 </code></pre>
@@ -353,7 +352,7 @@ endexp [-w] [-N] pid eid
 </ul>
 </div>
 <hr />
-<h3 id="delay_config-change-the-link-shaping-characteristics-for-a-link-or-lan"><code>delay_config</code>: Change the link shaping characteristics for a link or LAN <a name="delay_config"></a><a class="headerlink" href="#delay_config-change-the-link-shaping-characteristics-for-a-link-or-lan" title="Permanent link"></a></h3>
+<h3 id="delay_config-change-the-link-shaping-characteristics-for-a-link-or-lan"><code>delay_config</code>: Change the link shaping characteristics for a link or LAN <a name="delay_config"></a><a class="headerlink" href="#delay_config-change-the-link-shaping-characteristics-for-a-link-or-lan" title="Permanent link">&para;</a></h3>
 <pre><code>delay_config [options] -e pid,eid link PARAM#value ...
 delay_config [options] pid eid link PARAM#value ...
 </code></pre>
@@ -375,7 +374,7 @@ delay_config [options] pid eid link PARAM#value ...
 <p><code>LINTERM#NNN</code> Packet dropping probability</p>
 <p><code>Q_WEIGHT#NNN</code> For calculating the average queue size</p>
 <hr />
-<h3 id="modexp-modify-experiment"><code>modexp</code>: Modify experiment <a name="modexp"></a><a class="headerlink" href="#modexp-modify-experiment" title="Permanent link"></a></h3>
+<h3 id="modexp-modify-experiment"><code>modexp</code>: Modify experiment <a name="modexp"></a><a class="headerlink" href="#modexp-modify-experiment" title="Permanent link">&para;</a></h3>
 <pre><code>modexp [-r] [-s] [-w] [-N] -e pid,eid nsfile
 modexp [-r] [-s] [-w] [-N] pid eid nsfile
 </code></pre>
@@ -398,7 +397,7 @@ modexp [-r] [-s] [-w] [-N] pid eid nsfile
 </ul>
 </div>
 <hr />
-<h3 id="swapexp-swap-experiment-in-or-out"><code>swapexp</code>: Swap experiment in or out <a name="swapexp"></a><a class="headerlink" href="#swapexp-swap-experiment-in-or-out" title="Permanent link"></a></h3>
+<h3 id="swapexp-swap-experiment-in-or-out"><code>swapexp</code>: Swap experiment in or out <a name="swapexp"></a><a class="headerlink" href="#swapexp-swap-experiment-in-or-out" title="Permanent link">&para;</a></h3>
 <pre><code>swapexp -e pid,eid in|out
 swapexp pid eid in|out
 </code></pre>
@@ -416,7 +415,7 @@ swapexp pid eid in|out
 </ul>
 </div>
 <hr />
-<h3 id="create_image-create-a-disk-image-from-a-node"><code>create_image</code>: Create a disk image from a node <a name="create_image"></a><a class="headerlink" href="#create_image-create-a-disk-image-from-a-node" title="Permanent link"></a></h3>
+<h3 id="create_image-create-a-disk-image-from-a-node"><code>create_image</code>: Create a disk image from a node <a name="create_image"></a><a class="headerlink" href="#create_image-create-a-disk-image-from-a-node" title="Permanent link">&para;</a></h3>
 <pre><code>create_image [options] imageid node
 </code></pre>
 
@@ -431,7 +430,7 @@ swapexp pid eid in|out
 </code></pre>
 
 <hr />
-<h3 id="eventsys_control-startstoprestart-the-event-system"><code>eventsys_control</code>: Start/Stop/Restart the event system <a name="eventsys_control"></a><a class="headerlink" href="#eventsys_control-startstoprestart-the-event-system" title="Permanent link"></a></h3>
+<h3 id="eventsys_control-startstoprestart-the-event-system"><code>eventsys_control</code>: Start/Stop/Restart the event system <a name="eventsys_control"></a><a class="headerlink" href="#eventsys_control-startstoprestart-the-event-system" title="Permanent link">&para;</a></h3>
 <pre><code>eventsys_control -e pid,eid start|stop|replay
 eventsys_control pid eid start|stop|replay
 </code></pre>
@@ -442,7 +441,7 @@ eventsys_control pid eid start|stop|replay
 <p><code>start</code> Start the event stream from time index 0.</p>
 <p><code>replay</code> Replay the event stream from time index 0</p>
 <hr />
-<h3 id="loghole-downloads-and-manages-an-experiments-log-files"><code>loghole</code>: Downloads and manages an experiment's log files <a name="loghole"></a><a class="headerlink" href="#loghole-downloads-and-manages-an-experiments-log-files" title="Permanent link"></a></h3>
+<h3 id="loghole-downloads-and-manages-an-experiments-log-files"><code>loghole</code>: Downloads and manages an experiment's log files <a name="loghole"></a><a class="headerlink" href="#loghole-downloads-and-manages-an-experiments-log-files" title="Permanent link">&para;</a></h3>
 <p>This utility downloads log files from certain directories on the experimental nodes (e.g. <code>/local/logs</code>) to the DETERLab <code>users</code> machine. After downloading, it can also be used to produce and manage archives of the log files.</p>
 <p>Using this utility to manage an experiment's log files is encouraged because it will transfer the logs in a network-friendly manner and is already integrated with the rest of DETERLab. For example, any programs executed using the DETERLab event-system will have their standard output/error automatically placed in the <code>/local/logs</code> directory. The tool can also be used to preserve multiple trials of an experiment by producing and managing zip archives of the logs. </p>
 <pre><code>loghole [-hVdqva] [-e pid/eid] [-s server] [-P port] action [...]
@@ -496,7 +495,7 @@ loghole gc [-n] [-m atmost] [-s megabytes]
 </code></pre>
 
 <hr />
-<h3 id="os_load-reload-disks-on-selected-nodes-or-all-nodes-in-an-experiment"><code>os_load</code>: Reload disks on selected nodes or all nodes in an experiment <a name="os_load"></a><a class="headerlink" href="#os_load-reload-disks-on-selected-nodes-or-all-nodes-in-an-experiment" title="Permanent link"></a></h3>
+<h3 id="os_load-reload-disks-on-selected-nodes-or-all-nodes-in-an-experiment"><code>os_load</code>: Reload disks on selected nodes or all nodes in an experiment <a name="os_load"></a><a class="headerlink" href="#os_load-reload-disks-on-selected-nodes-or-all-nodes-in-an-experiment" title="Permanent link">&para;</a></h3>
 <pre><code>os_load [options] node [node ...]
 os_load [options] -e pid,eid
 </code></pre>
@@ -510,7 +509,7 @@ os_load [options] -e pid,eid
 <p><code>-e</code> Reboot all nodes in an experiment.</p>
 <p><code>node</code> Node to reboot (pcXXX).</p>
 <hr />
-<h3 id="portstats-get-portstats-from-the-switches"><code>portstats</code>: Get portstats from the switches <a name="portstats"></a><a class="headerlink" href="#portstats-get-portstats-from-the-switches" title="Permanent link"></a></h3>
+<h3 id="portstats-get-portstats-from-the-switches"><code>portstats</code>: Get portstats from the switches <a name="portstats"></a><a class="headerlink" href="#portstats-get-portstats-from-the-switches" title="Permanent link">&para;</a></h3>
 <pre><code>portstats &lt;-p | pid eid&gt; [vname ...] [vname:port ...]
 </code></pre>
 
@@ -533,7 +532,7 @@ os_load [options] -e pid,eid
 </ul>
 </div>
 <hr />
-<h3 id="node_reboot-reboot-selected-nodes-or-all-nodes-in-an-experiment"><code>node_reboot</code>: Reboot selected nodes or all nodes in an experiment <a name="node_reboot"></a><a class="headerlink" href="#node_reboot-reboot-selected-nodes-or-all-nodes-in-an-experiment" title="Permanent link"></a></h3>
+<h3 id="node_reboot-reboot-selected-nodes-or-all-nodes-in-an-experiment"><code>node_reboot</code>: Reboot selected nodes or all nodes in an experiment <a name="node_reboot"></a><a class="headerlink" href="#node_reboot-reboot-selected-nodes-or-all-nodes-in-an-experiment" title="Permanent link">&para;</a></h3>
 <p>Use this if you need to powercycle a node.</p>
 <pre><code>node_reboot [options] node [node ...]
 node_reboot [options] -e pid,eid
@@ -560,7 +559,7 @@ node_reboot [options] -e pid,eid
 </code></pre>
 
 <hr />
-<h3 id="expwait-wait-for-experiment-to-reach-a-state"><code>expwait</code>: Wait for experiment to reach a state <a name="expwait"></a><a class="headerlink" href="#expwait-wait-for-experiment-to-reach-a-state" title="Permanent link"></a></h3>
+<h3 id="expwait-wait-for-experiment-to-reach-a-state"><code>expwait</code>: Wait for experiment to reach a state <a name="expwait"></a><a class="headerlink" href="#expwait-wait-for-experiment-to-reach-a-state" title="Permanent link">&para;</a></h3>
 <pre><code>expwait [-t timeout] -e pid,eid state
 expwait [-t timeout] pid eid state
 </code></pre>
@@ -568,8 +567,8 @@ expwait [-t timeout] pid eid state
 <p><strong>Options:</strong></p>
 <p><code>-e</code> Project and Experiment ID in format <code>&lt;projectID&gt;/&lt;experimentID&gt;</code>.</p>
 <p><code>-t</code> Maximum time to wait (in seconds).</p>
-<h2 id="informational-commands">Informational Commands<a class="headerlink" href="#informational-commands" title="Permanent link"></a></h2>
-<h3 id="node_list-print-physical-mapping-of-nodes-in-an-experiment"><code>node_list</code>: Print physical mapping of nodes in an experiment <a name="node_list"></a><a class="headerlink" href="#node_list-print-physical-mapping-of-nodes-in-an-experiment" title="Permanent link"></a></h3>
+<h2 id="informational-commands">Informational Commands<a class="headerlink" href="#informational-commands" title="Permanent link">&para;</a></h2>
+<h3 id="node_list-print-physical-mapping-of-nodes-in-an-experiment"><code>node_list</code>: Print physical mapping of nodes in an experiment <a name="node_list"></a><a class="headerlink" href="#node_list-print-physical-mapping-of-nodes-in-an-experiment" title="Permanent link">&para;</a></h3>
 <pre><code>node_list [options] -e pid,eid
 </code></pre>
 
@@ -593,7 +592,7 @@ expwait [-t timeout] pid eid state
 </ul>
 </div>
 <hr />
-<h3 id="expinfo-get-information-about-an-experiment"><code>expinfo</code>: Get information about an experiment <a name="expinfo"></a><a class="headerlink" href="#expinfo-get-information-about-an-experiment" title="Permanent link"></a></h3>
+<h3 id="expinfo-get-information-about-an-experiment"><code>expinfo</code>: Get information about an experiment <a name="expinfo"></a><a class="headerlink" href="#expinfo-get-information-about-an-experiment" title="Permanent link">&para;</a></h3>
 <pre><code>expinfo [-n] [-m] [-l] [-d] [-a] -e pid,eid
 expinfo [-n] [-m] [-l] [-d] [-a] pid eid
 </code></pre>
@@ -605,7 +604,7 @@ expinfo [-n] [-m] [-l] [-d] [-a] pid eid
 <p><code>-l</code> Show link information.</p>
 <p><code>-a</code> Show all of the above.</p>
 <hr />
-<h3 id="node_avail-print-free-node-counts"><code>node_avail</code>: Print free node counts <a name="node_avail"></a><a class="headerlink" href="#node_avail-print-free-node-counts" title="Permanent link"></a></h3>
+<h3 id="node_avail-print-free-node-counts"><code>node_avail</code>: Print free node counts <a name="node_avail"></a><a class="headerlink" href="#node_avail-print-free-node-counts" title="Permanent link">&para;</a></h3>
 <pre><code>node_avail [-p project] [-c class] [-t type]
 </code></pre>
 
@@ -619,7 +618,7 @@ expinfo [-n] [-m] [-l] [-d] [-a] pid eid
 </code></pre>
 
 <hr />
-<h3 id="node_avail_list-print-physical-node_ids-of-available-nodes"><code>node_avail_list</code>: Print physical node_ids of available nodes <a name="node_avail_list"></a><a class="headerlink" href="#node_avail_list-print-physical-node_ids-of-available-nodes" title="Permanent link"></a></h3>
+<h3 id="node_avail_list-print-physical-node_ids-of-available-nodes"><code>node_avail_list</code>: Print physical node_ids of available nodes <a name="node_avail_list"></a><a class="headerlink" href="#node_avail_list-print-physical-node_ids-of-available-nodes" title="Permanent link">&para;</a></h3>
 <pre><code>node_avail_list [-p project] [-c class] [-t type] [-n nodes]
 </code></pre>
 
@@ -634,7 +633,7 @@ expinfo [-n] [-m] [-l] [-d] [-a] pid eid
 </code></pre>
 
 <hr />
-<h3 id="nscheck-check-and-ns-file-for-parser-errors"><code>nscheck</code>: Check and NS file for parser errors <a name="nscheck"></a><a class="headerlink" href="#nscheck-check-and-ns-file-for-parser-errors" title="Permanent link"></a></h3>
+<h3 id="nscheck-check-and-ns-file-for-parser-errors"><code>nscheck</code>: Check and NS file for parser errors <a name="nscheck"></a><a class="headerlink" href="#nscheck-check-and-ns-file-for-parser-errors" title="Permanent link">&para;</a></h3>
 <pre><code>nscheck nsfile
 </code></pre>
 

@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -238,9 +237,9 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="configuring-a-magi-agent-at-runtime">Configuring a MAGI Agent at Runtime<a class="headerlink" href="#configuring-a-magi-agent-at-runtime" title="Permanent link"></a></h1>
+                <h1 id="configuring-a-magi-agent-at-runtime">Configuring a MAGI Agent at Runtime<a class="headerlink" href="#configuring-a-magi-agent-at-runtime" title="Permanent link">&para;</a></h1>
 <p>In <a href="/orchestrator/writing-agents/">Writing MAGI Agents</a>, you saw how to create a basic agent. The sample agent created a single file on a test node. This document will explain how to use configuration in the AAL file to configure an agent at runtime.</p>
-<h2 id="setting-agent-configuration">Setting Agent Configuration<a class="headerlink" href="#setting-agent-configuration" title="Permanent link"></a></h2>
+<h2 id="setting-agent-configuration">Setting Agent Configuration<a class="headerlink" href="#setting-agent-configuration" title="Permanent link">&para;</a></h2>
 <p>This document will expand the sample code of our <code>FileCreator</code> example. For reference, here is the agent code:</p>
 <pre><code>  from magi.util.agent import DispatchAgent, agentmethod
   from magi.util.processAgent import initializeProcessAgent
@@ -341,7 +340,7 @@
 </code></pre>
 
 <p>And we see that our specified file, <strong>/tmp/myCreatedFile</strong> was created.</p>
-<h2 id="confirming-valid-configuration">Confirming Valid Configuration<a class="headerlink" href="#confirming-valid-configuration" title="Permanent link"></a></h2>
+<h2 id="confirming-valid-configuration">Confirming Valid Configuration<a class="headerlink" href="#confirming-valid-configuration" title="Permanent link">&para;</a></h2>
 <p>This works well, but the input to the Agent is free-form. What if the user gives invalid input, like the wrong type or data that is not in a valid range? This is where the Agent <code>confirmConfiguration</code> method comes into play.</p>
 <p><code>confirmConfiguration</code> should be written for any Agent that wants to validate its state. It gets invoked in the AAL file after the user invokes <code>setConfiguration</code>.</p>
 <p><strong>Note:</strong> The concept of an Agent confirming user input will change in future releases of MAGI. The Orchestrator (or other MAGI/Montage components) will use the interface specification in the Agent’s IDL file to ensure the input to the agent is valid.</p>
@@ -401,7 +400,7 @@
 
 </code></pre>
 
-<h2 id="triggers-and-event-stream-sequence-points">Triggers and Event Stream Sequence Points<a class="headerlink" href="#triggers-and-event-stream-sequence-points" title="Permanent link"></a></h2>
+<h2 id="triggers-and-event-stream-sequence-points">Triggers and Event Stream Sequence Points<a class="headerlink" href="#triggers-and-event-stream-sequence-points" title="Permanent link">&para;</a></h2>
 <p>If you run the AAL and Agent code above, you may see that it does not actually work. One small needed detail has been left out of the AAL file. Normally the Orchestrator will run through the events in the AAL as fast is it can. If we used the event streams in the AAL file as it now stands:</p>
 <pre><code>  eventstreams:
       main:

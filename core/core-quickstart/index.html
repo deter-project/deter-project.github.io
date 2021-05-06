@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -264,25 +263,25 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="core-quickstart">Core Quickstart<a class="headerlink" href="#core-quickstart" title="Permanent link"></a></h1>
+                <h1 id="core-quickstart">Core Quickstart<a class="headerlink" href="#core-quickstart" title="Permanent link">&para;</a></h1>
 <p>This page describes basic information about DETERLab and its core functionality.</p>
-<h2 id="what-is-deterlab">What is DETERLab?<a class="headerlink" href="#what-is-deterlab" title="Permanent link"></a></h2>
+<h2 id="what-is-deterlab">What is DETERLab?<a class="headerlink" href="#what-is-deterlab" title="Permanent link">&para;</a></h2>
 <p>The DETERLab testbed is a security and education-enhanced version of Emulab. Funded by the National Science Foundation and the Department of Homeland Security, DETERLab is hosted by USC/ISI and UC Berkeley.</p>
 <p>DETERLab (like Emulab) offers user accounts with assorted permissions associated with different experiment groups. Each group can have its own pre-configured experimental environments running on Linux, BSD, Windows, or other operating systems. Users running DETERLab experiments have full control of real hardware and networks running preconfigured software packages.</p>
-<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link"></a></h2>
+<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h2>
 <p>The software running DETERLab loads operating system images (low level disk copies) onto free nodes in the testbed, and then reconfigures programmable switches to create VLANs with the newly-imaged nodes connected according to the topology specified by the experiment creator.</p>
 <p>After the system is fully imaged and configured, DETERLab executes specified scripts, unpacks tarballs, and/or installs RPM files according to the experiment's configuration. The end result is a live network of real machines, accessible via the Internet.</p>
 <p>Work in DETERLab is based on projects that include individual experiments and is accomplished either via the browser-based web interface (isi.deterlab.net) or via commandline on the DETERLab nodes.</p>
 <p>To access DETERLab, you need to create an account, which provides credentials for accessing both the web interface and nodes.</p>
-<h2 id="how-do-i-get-a-deterlab-account">How do I get a DETERLab account?<a class="headerlink" href="#how-do-i-get-a-deterlab-account" title="Permanent link"></a></h2>
+<h2 id="how-do-i-get-a-deterlab-account">How do I get a DETERLab account?<a class="headerlink" href="#how-do-i-get-a-deterlab-account" title="Permanent link">&para;</a></h2>
 <p>You may obtain a DETERLab account by either starting a new project (if you are a PI or instructor) or joining an existing project (if you are a project member or a student).</p>
 <p><strong>If you are the project investigator or instructor,</strong> you must create a project and invite your team members or students to join.</p>
 <p><strong>If you are the member of a team using DETERLab,</strong> your project leader will invite you to join the appropriate DETERLab project.</p>
 <p><strong>If you are a student,</strong> you may not create a project. Your instructor must create the project and, once approved, will give you information for joining the project.</p>
 <p>See Getting Started for more information.</p>
-<h2 id="how-do-i-use-deterlab">How do I use DETERLab?<a class="headerlink" href="#how-do-i-use-deterlab" title="Permanent link"></a></h2>
+<h2 id="how-do-i-use-deterlab">How do I use DETERLab?<a class="headerlink" href="#how-do-i-use-deterlab" title="Permanent link">&para;</a></h2>
 <p>In general, once you have a DETERLab account, you follow these steps. The DETERLab Core Guide will walk you through a basic tutorial of these steps.</p>
-<h3 id="1-design-the-topology">1. Design the topology<a class="headerlink" href="#1-design-the-topology" title="Permanent link"></a></h3>
+<h3 id="1-design-the-topology">1. Design the topology<a class="headerlink" href="#1-design-the-topology" title="Permanent link">&para;</a></h3>
 <p>Every experiment in DETERLab is based on a network topology file written in NS format and saved on the users node. The following is a very basic example:</p>
 <pre><code># This is a simple ns script. Comments start with #.
 set ns [new Simulator]                 
@@ -307,15 +306,15 @@ $ns rtproto Static
 # Go!
 $ns run
 </code></pre>
-<h3 id="2-create-start-and-swap-in-allocate-resources-for-an-experiment">2. Create, start and swap in (allocate resources for) an experiment<a class="headerlink" href="#2-create-start-and-swap-in-allocate-resources-for-an-experiment" title="Permanent link"></a></h3>
+<h3 id="2-create-start-and-swap-in-allocate-resources-for-an-experiment">2. Create, start and swap in (allocate resources for) an experiment<a class="headerlink" href="#2-create-start-and-swap-in-allocate-resources-for-an-experiment" title="Permanent link">&para;</a></h3>
 <p>Using your topology file, you start a new experiment via menu options in the DETERLab web interface.</p>
 <p><img alt="Screenshot of the Create an Experiment page in the DETERLab web interface." src="/img/create_experiment_screenshot.png" title="Screenshot of the Create an Experiment page in the DETERLab web interface." /></p>
-<h3 id="3-generate-traffic-for-your-nodes">3. Generate traffic for your nodes<a class="headerlink" href="#3-generate-traffic-for-your-nodes" title="Permanent link"></a></h3>
+<h3 id="3-generate-traffic-for-your-nodes">3. Generate traffic for your nodes<a class="headerlink" href="#3-generate-traffic-for-your-nodes" title="Permanent link">&para;</a></h3>
 <p>Now you can experiment and start generating traffic for your nodes. We provide a flexible framework to pull together the software you'll need.</p>
-<h3 id="4-view-results-by-accessing-nodes-modify-the-experiment-as-needed">4. View results by accessing nodes, modify the experiment as needed.<a class="headerlink" href="#4-view-results-by-accessing-nodes-modify-the-experiment-as-needed" title="Permanent link"></a></h3>
+<h3 id="4-view-results-by-accessing-nodes-modify-the-experiment-as-needed">4. View results by accessing nodes, modify the experiment as needed.<a class="headerlink" href="#4-view-results-by-accessing-nodes-modify-the-experiment-as-needed" title="Permanent link">&para;</a></h3>
 <p>Once your experiment has started, you now can access nodes via SSH and conduct your desired experiments in your new environment.</p>
 <p>You may modify aspects of a running experiment through the "Modify experiment" page in the web interface or by making changes to the NS file.</p>
-<h3 id="5-save-your-work-and-swap-out-your-experiment-release-the-resources">5. Save your work and swap out your experiment (release the resources)<a class="headerlink" href="#5-save-your-work-and-swap-out-your-experiment-release-the-resources" title="Permanent link"></a></h3>
+<h3 id="5-save-your-work-and-swap-out-your-experiment-release-the-resources">5. Save your work and swap out your experiment (release the resources)<a class="headerlink" href="#5-save-your-work-and-swap-out-your-experiment-release-the-resources" title="Permanent link">&para;</a></h3>
 <p>When you are ready to stop working on an experiment but know you will want to work on it again, save your files in specific protected directories and swap-out (via web interface or commandline) to release resources back to the testbed. This helps ensure there are enough resources for all DETERLab users.</p>
 <p>This is just a high-level overview. Go to the Core Guide for a basic hands-on example of using DETERLab Core. </p>
               

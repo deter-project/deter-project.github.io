@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -252,7 +251,7 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="orchestrator-data-management">Orchestrator Data Management<a class="headerlink" href="#orchestrator-data-management" title="Permanent link"></a></h1>
+                <h1 id="orchestrator-data-management">Orchestrator Data Management<a class="headerlink" href="#orchestrator-data-management" title="Permanent link">&para;</a></h1>
 <p>Data Management is a very important aspect of experimentation, which is why the data management layer is a very important aspect of the Orchestrator's framework.</p>
 <p>The following are some of the important terms that are used in context of Orchestrator's data management layer.</p>
 <ul>
@@ -263,11 +262,11 @@
 <p>Orchestrator's data management layer is highly configurable, with experimenters having the ability to setup a centralized or a distributed database, and also configure, at the node level, where sensors collect data.</p>
 <p>In case of a distributed/shared database setup, Orchestrator sets up a global database server. This server gives a holistic view of the database.</p>
 <p>Orchestrator data management uses <a href="http://www.mongodb.org">MongoDB</a> at its base.</p>
-<h2 id="data-manager-configuration">Data Manager Configuration<a class="headerlink" href="#data-manager-configuration" title="Permanent link"></a></h2>
+<h2 id="data-manager-configuration">Data Manager Configuration<a class="headerlink" href="#data-manager-configuration" title="Permanent link">&para;</a></h2>
 <p>The data management layer configuration is part of the Orchestrator’s experiment level and node level configuration files.</p>
 <p>As mentioned earlier, Orchestrator’s data management layer is highly configurable. More information about the same in available at <a href="/orchestrator/orchestrator-config/#dbdl-configure-the-magi-data-management-layer">DBDL: Configure the Orchestrator Data Management Layer</a>.</p>
 <p>Orchestrator’s data management layer enables an experimenter to do the following.</p>
-<h3 id="sense-and-collect">Sense and Collect<a class="headerlink" href="#sense-and-collect" title="Permanent link"></a></h3>
+<h3 id="sense-and-collect">Sense and Collect<a class="headerlink" href="#sense-and-collect" title="Permanent link">&para;</a></h3>
 <p>The following are the steps an agent developer should follow to populate Orchestrator’s database</p>
 <ol>
 <li>Import the database management utility</li>
@@ -302,7 +301,7 @@
 </li>
 </ul>
 </div>
-<h3 id="query-and-analyze">Query and Analyze<a class="headerlink" href="#query-and-analyze" title="Permanent link"></a></h3>
+<h3 id="query-and-analyze">Query and Analyze<a class="headerlink" href="#query-and-analyze" title="Permanent link">&para;</a></h3>
 <p>In case of a distributed database setup, a user can connect to the mongo db server running on the global server node to get an experiment-wide view.</p>
 <p>However, in case of an unsharded setup, a user would have to connect to the appropriate collector based on the sensor-collector mapping to fetch data stored by a particular sensor.</p>
 <p>Orchestrator, by default, sets up an non-distributed database, with all the sensors collecting at the same collector.</p>

@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -264,11 +263,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="accessing-testbeds-using-ssh">Accessing testbeds using SSH<a class="headerlink" href="#accessing-testbeds-using-ssh" title="Permanent link"></a></h1>
+                <h1 id="accessing-testbeds-using-ssh">Accessing testbeds using SSH<a class="headerlink" href="#accessing-testbeds-using-ssh" title="Permanent link">&para;</a></h1>
 <p>Each node on the testbed is reachable via <a href="http://en.wikipedia.org/wiki/Secure_Shell">SSH</a>.  One main difference between DETER and Emulab is that DETER nodes are not accessible directly from the internet.  In order to log into your nodes, you must first log into '''users.deterlab.net''' using your DETER username (not your email address) and password (or your SSH public key).  From users you can log into your nodes.  To save on connections, you might want to look into using <a href="http://en.wikipedia.org/wiki/GNU_Screen">GNU screen</a> on <code>users</code>.  Also refer to the <a href="#tips-and-tricks">Tips and Tricks</a> section below for ways to make accessing DETER easier.</p>
-<h2 id="uploading-files-to-deter">Uploading files to DETER<a class="headerlink" href="#uploading-files-to-deter" title="Permanent link"></a></h2>
+<h2 id="uploading-files-to-deter">Uploading files to DETER<a class="headerlink" href="#uploading-files-to-deter" title="Permanent link">&para;</a></h2>
 <p>You can upload files to users.deterlab.net via <a href="http://en.wikipedia.org/wiki/Secure_Shell#File_transfer_protocols_using_SSH">SCP</a>  or <a href="http://en.wikipedia.org/wiki/Secure_Shell#File_transfer_protocols_using_SSH">SFTP</a>.  Files in your home directory and in your project directory will be made available to you on all of your testbed nodes via <a href="http://en.wikipedia.org/wiki/Network_File_System_%28protocol%29">NFS</a>.</p>
-<h2 id="an-example-session-with-windows-and-putty">An Example Session with Windows and Putty<a class="headerlink" href="#an-example-session-with-windows-and-putty" title="Permanent link"></a></h2>
+<h2 id="an-example-session-with-windows-and-putty">An Example Session with Windows and Putty<a class="headerlink" href="#an-example-session-with-windows-and-putty" title="Permanent link">&para;</a></h2>
 <p><a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/">Putty</a> is a free, lightweight SSH client for Windows.  Here is an example session in which I connect to my experimental node "node0" in my experiment "jjh-ubuntu1004" in the project "DeterTest".</p>
 <p>First we connect to '''users.deterlab.net''':</p>
 <p><img alt="" src="/img/putty_session_one.png" title="Screenshot of default Putty session." /></p>
@@ -278,8 +277,8 @@
 <p><img alt="" src="/img/putty_session_three.png" /></p>
 <p>From users, we now ssh into our experimental node, "node0.jjh-ubuntu.detertest":</p>
 <p><img alt="" src="/img/putty_session_four.png" /></p>
-<h2 id="tips-and-tricks">Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permanent link"></a></h2>
-<h3 id="listing-your-nodes-from-the-command-line">Listing your nodes from the command line<a class="headerlink" href="#listing-your-nodes-from-the-command-line" title="Permanent link"></a></h3>
+<h2 id="tips-and-tricks">Tips and Tricks<a class="headerlink" href="#tips-and-tricks" title="Permanent link">&para;</a></h2>
+<h3 id="listing-your-nodes-from-the-command-line">Listing your nodes from the command line<a class="headerlink" href="#listing-your-nodes-from-the-command-line" title="Permanent link">&para;</a></h3>
 <p>When logged into <code>users.deterlab.net</code>, the <code>node_list</code> command will list the names of all your nodes.  You can log into your nodes using either the pcXXX name or the full experimental name.</p>
 <pre><code>  [jhickey@users ~]$ node_list
   DeterTest/jjh-ubuntu
@@ -291,13 +290,13 @@
   [jhickey@users ~]$ 
 </code></pre>
 
-<h3 id="ssh-port-forwarding">SSH port forwarding<a class="headerlink" href="#ssh-port-forwarding" title="Permanent link"></a></h3>
+<h3 id="ssh-port-forwarding">SSH port forwarding<a class="headerlink" href="#ssh-port-forwarding" title="Permanent link">&para;</a></h3>
 <p>If you are, for example, running an internal web server on one of your DETER nodes, you can access it via SSH through users.  For example to redirect port 80 on pcXXX to your local machine on port 8080 you would do:</p>
 <pre><code>    ssh -L 8080:pcXXX:80 username@users.deterlab.net
 </code></pre>
 
 <p>Once logged in, you should be able to access the web server on your DETER node by going to http://localhost:8080.  For more information on port forwarding with SSH, please refer to the SSH man page.</p>
-<h3 id="ssh-port-forwarding-with-putty">SSH port forwarding with Putty<a class="headerlink" href="#ssh-port-forwarding-with-putty" title="Permanent link"></a></h3>
+<h3 id="ssh-port-forwarding-with-putty">SSH port forwarding with Putty<a class="headerlink" href="#ssh-port-forwarding-with-putty" title="Permanent link">&para;</a></h3>
 <p>To use putty for port forwarding, configure putty to open a connection to <code>users.deterlab.net</code></p>
 <p><img alt="" src="/img/putty1.png" /></p>
 <p>before you make that connection, set up the tunneling parameters.  This example forwards local port 12345 to a remode desktop protocol server (port 3389) on a testbed node.  select the <code>Tunnels</code> menu from under the <code>SSH</code> choice in the <code>Connection</code> menu on the left hand side.  Add a forwarded port using the <code>Local</code> type, a local port number (12345 in the image) and the DETER hostname and port in the <code>Destination</code> field.  In the example we are forwarding the connection to port 3389 (the remote desktop protocol) on <code>pc102</code>. </p>
@@ -309,13 +308,13 @@
 <p>Now you should be able to point your local remote desktop viewer to localhost port 12345 and see the login screen of pc102.  If the node is a Windows node, you will see something like this:</p>
 <p><img alt="" src="/img/tunnel.png" /></p>
 <p>Be sure that your local machine does not firewall the local port 12345.  Replace <code>pc102</code> with a node in your experiment and the forwarded port with the port your service uses.</p>
-<h3 id="uploading-your-ssh-key-from-os-x">Uploading your SSH key from OS X <a name="OSX"></a><a class="headerlink" href="#uploading-your-ssh-key-from-os-x" title="Permanent link"></a></h3>
+<h3 id="uploading-your-ssh-key-from-os-x">Uploading your SSH key from OS X <a name="OSX"></a><a class="headerlink" href="#uploading-your-ssh-key-from-os-x" title="Permanent link">&para;</a></h3>
 <p>The Upload File dialog in Macintosh OS X does not show hidden directories by default.  This creates and extra hassle when uploading SSH public keys from an OS X machine.  </p>
 <p>In the "Upload File" dialog, use the shortcut '''Shift-Command-G''' and type in "~/.ssh" to navigate to the contents of your .ssh directory.</p>
 <p><img alt="" src="/img/os_x_key_upload_one.png" /></p>
 <p>Then you will be presented with the contents of your .ssh directory and will be able to upload your id_rsa.pub file to DETER:</p>
 <p><img alt="" src="/img/os_x_key_upload_two.png" /></p>
-<h3 id="openssh-configuration-for-directly-logging-into-testbed-nodes">OpenSSH Configuration for Directly Logging into testbed nodes<a class="headerlink" href="#openssh-configuration-for-directly-logging-into-testbed-nodes" title="Permanent link"></a></h3>
+<h3 id="openssh-configuration-for-directly-logging-into-testbed-nodes">OpenSSH Configuration for Directly Logging into testbed nodes<a class="headerlink" href="#openssh-configuration-for-directly-logging-into-testbed-nodes" title="Permanent link">&para;</a></h3>
 <p>These configuration tweaks should work for any operating system that runs OpenSSH (Linux, BSD, and OS X typically use OpenSSH as the default SSH client).</p>
 <p>It is possible to log directly into testbed nodes with a little SSH configuration tweaking.  Adding the following statement to '''~/.ssh/config''' will allow you to skip logging into users in order to access a particular testbed node.  Change MyProject to the name of your project.</p>
 <pre><code>    Host pc*.isi.deterlab.net
@@ -354,7 +353,7 @@
     node0:~&gt; 
 </code></pre>
 
-<h3 id="accelerating-multiple-connections-using-openssh-connection-multplexing">Accelerating Multiple Connections using OpenSSH Connection Multplexing<a class="headerlink" href="#accelerating-multiple-connections-using-openssh-connection-multplexing" title="Permanent link"></a></h3>
+<h3 id="accelerating-multiple-connections-using-openssh-connection-multplexing">Accelerating Multiple Connections using OpenSSH Connection Multplexing<a class="headerlink" href="#accelerating-multiple-connections-using-openssh-connection-multplexing" title="Permanent link">&para;</a></h3>
 <p>You can log in multiple times using the same SSH connection.  This dramatically speeds up creating new connections.  To enable SSH connection multiplexing, add the following lines to ~/.ssh/config.  If you are on a multiuser machine, you may want to store the control socket someplace other than /tmp.</p>
 <pre><code>    Host users.deterlab.net
         ControlMaster auto

@@ -39,10 +39,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="" class="icon">
+    <a href="../.."> <!-- class="icon"-->
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -264,19 +263,19 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="containers-quickstart">Containers Quickstart<a class="headerlink" href="#containers-quickstart" title="Permanent link"></a></h1>
+                <h1 id="containers-quickstart">Containers Quickstart<a class="headerlink" href="#containers-quickstart" title="Permanent link">&para;</a></h1>
 <p>This page describes basic information about DETERLab Containers and provides an overview of how to use it. More details are available in the <a href="/containers/containers-guide/">Containers Guide</a>.</p>
-<h2 id="what-are-containers">What are Containers?<a class="headerlink" href="#what-are-containers" title="Permanent link"></a></h2>
+<h2 id="what-are-containers">What are Containers?<a class="headerlink" href="#what-are-containers" title="Permanent link">&para;</a></h2>
 <p>The Containers system enables experimenters to create large-scale DETERLab topologies that support differing degrees of fidelity in individual elements.  In order to create an experiment larger than the 400+ computers available in DETERLab Core, experimenters must use virtualization, simulation, or some other abstraction to represent their topology.  The Containers system guides this process allowing experimenters to create large experimental environments that may be used to gather correct results.</p>
 <p>The Containers system is built on top of the resource allocation that underlies the <a href="http://www.isi.deterlab.net">DETERLab testbed</a>, extending it to provide multiple implementations of virtual nodes. Most DETERLab tools that run on physical experiments may be used directly on containerized experiments.  Experimenters find working in a containerized experiment very similar to working in physical DETERLab experiments.</p>
-<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link"></a></h2>
+<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">&para;</a></h2>
 <p>An experimenter comes to DETERLab with an experimental topology of computers and networks and an experiment to carry out on that topology, and the Containers system allocates resources in the configuration specified.  The experimenter may directly access the computers in order to carry out the experiment.  The computers themselves are either physical computers or some virtual computers that emulate a computer at an acceptable level of fidelity.  Multiple experiments may be in progress at once using DETER resources, and they are protected from interfering with one another.</p>
 <p>Containers present researchers with more resources while preserving the DETERLab interfaces. The process of converting a topology description to an isolated collection of networked computers is basically the same as when an experimenter creates a physical topology on DETERLab.  The difference is that a containerized experiment is configured to present more experimental resources than physical ones, preserving the DETERLab interface.</p>
 <p>A little more completely, the Containers system lays out the virtual computers into a physical layout of computers and uses the resource allocation system to allocate that physical layout.  Then the system installs and configures the appropriate virtualization technologies in that environment to create the virtual environment.</p>
 <p><img alt="Model of a DETERLab Container" src="/img/container-model.png" /></p>
 <p>As in physical DETERLab experiments, the experiment's topology is written in an extended version of DETER's ns2 syntax, or in <a href="http://fedd.deterlab.net/wiki/TopDl">topdl</a>, a topology description language.  </p>
 <p>Currently experimenters pick containers directly using those languages.</p>
-<h2 id="kinds-of-containers">Kinds of Containers<a class="headerlink" href="#kinds-of-containers" title="Permanent link"></a></h2>
+<h2 id="kinds-of-containers">Kinds of Containers<a class="headerlink" href="#kinds-of-containers" title="Permanent link">&para;</a></h2>
 <p>A container is a virtualization technology, like a virtual machine implementation.  We use the term ''container'' to mean any one of the various virtualization technologies from an openvz container to a physical machine to a simulation.  The Containers system gives us a way to create interconnections of containers (in our sense) holding different experiment elements.  A containerized topology might include a physical machine, a <a href="http://wiki.qemu.org/Main_Page">qemu</a> virtual machine and an <a href="http://openvz.org">openvz container</a> that can all communicate transparently.</p>
 <p>The Containers system framework supports multiple kinds of containers, but at this point researchers may request these:</p>
 <table>
@@ -305,25 +304,25 @@
 </tr>
 </tbody>
 </table>
-<h2 id="how-do-i-use-containers">How do I use Containers?<a class="headerlink" href="#how-do-i-use-containers" title="Permanent link"></a></h2>
+<h2 id="how-do-i-use-containers">How do I use Containers?<a class="headerlink" href="#how-do-i-use-containers" title="Permanent link">&para;</a></h2>
 <p>In general, once you have a DETERLab account, you follow these steps. The <a href="/containers/containers-guide/">DETERLab Containers Guide</a> will walk you through a basic tutorial of these steps.</p>
-<h3 id="1-design-the-topology">1. Design the topology<a class="headerlink" href="#1-design-the-topology" title="Permanent link"></a></h3>
+<h3 id="1-design-the-topology">1. Design the topology<a class="headerlink" href="#1-design-the-topology" title="Permanent link">&para;</a></h3>
 <p>Every experiment in DETERLab is based on a network topology file written in NS format and saved on the <code>users</code> node. In a containerized experiment, the topology will typically be a large one with more than 400 nodes.</p>
 <pre><code>sample of topology
 </code></pre>
 
-<h3 id="2-run-containerized-experiment-with-the-containerizepy-command">2. Run containerized experiment with the containerize.py command<a class="headerlink" href="#2-run-containerized-experiment-with-the-containerizepy-command" title="Permanent link"></a></h3>
+<h3 id="2-run-containerized-experiment-with-the-containerizepy-command">2. Run containerized experiment with the containerize.py command<a class="headerlink" href="#2-run-containerized-experiment-with-the-containerizepy-command" title="Permanent link">&para;</a></h3>
 <p>The Containers system will build the containerized experiment on top of an existing <a href="/core/core-guide/"> DETERLab physical experiment</a> by running the <code>containerize.py</code> command from the shell on <code>users.deterlab.net</code>, as in the following example:</p>
 <pre><code> $ /share/containers/containerize.py DeterTest example1 ~/example1.tcl 
 </code></pre>
 
 <p>where ''DeterTest'' and ''example1'' are the project and experiment name, respectively, of the physical DETERLab experiment and ''example.tcl'' is the topology file.</p>
 <p>With these default parameters, <code>containerize.py</code> will put each node into an  Openvz container with at most 10 containers per physical node.</p>
-<h3 id="3-view-results-by-accessing-nodes-modify-the-experiment-as-needed">3. View results by accessing nodes, modify the experiment as needed.<a class="headerlink" href="#3-view-results-by-accessing-nodes-modify-the-experiment-as-needed" title="Permanent link"></a></h3>
+<h3 id="3-view-results-by-accessing-nodes-modify-the-experiment-as-needed">3. View results by accessing nodes, modify the experiment as needed.<a class="headerlink" href="#3-view-results-by-accessing-nodes-modify-the-experiment-as-needed" title="Permanent link">&para;</a></h3>
 <p>In a containerized experiment, you can access the virtual nodes with the same directories mounted as in a physical DETERLab experiment. You can load and run software and conduct experiments as you would in a physical experiment. </p>
-<h3 id="4-save-your-work-and-swap-out-your-experiment-release-the-resources">4. Save your work and swap out your experiment (release the resources)<a class="headerlink" href="#4-save-your-work-and-swap-out-your-experiment-release-the-resources" title="Permanent link"></a></h3>
+<h3 id="4-save-your-work-and-swap-out-your-experiment-release-the-resources">4. Save your work and swap out your experiment (release the resources)<a class="headerlink" href="#4-save-your-work-and-swap-out-your-experiment-release-the-resources" title="Permanent link">&para;</a></h3>
 <p>As with all DETERLab experiment, when you are ready to stop working on an experiment but know you want to work on it again, save your files in specific protected directories and swap-out (via web interface or commandline) to release resources back to the testbed. This helps ensure there are enough resources for all DETERLab users.</p>
-<h2 id="more-information">More Information<a class="headerlink" href="#more-information" title="Permanent link"></a></h2>
+<h2 id="more-information">More Information<a class="headerlink" href="#more-information" title="Permanent link">&para;</a></h2>
 <p>For more detailed information about Containers, read the following:</p>
 <ul>
 <li><a href="/containers/containers-guide/">Containers Guide</a> - This guide walks you through a basic example of using Containers and includes some advanced topics.</li>
