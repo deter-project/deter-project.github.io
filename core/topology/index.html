@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Create a topology - DETERLab Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Create a topology";
+    var mkdocs_page_input_path = "core/topology.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the DETERLab Documentation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quickstart/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Opening Account</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/research/">Research users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/class/">Class users</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Running Experiments</span></p>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Create a topology</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#ns-format">NS Format</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#basic-example">Basic Example</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#advanced-options">Advanced options</a>
+    </li>
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../create/">Create an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapin/">Swap in an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interact/">Use your nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapout/">Swap out or terminate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../user-guidelines/">User DOs and DON'Ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dsc/">Nework Emulation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../risky-experiment/">Risky Experiments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://binary.deterlab.net/docs">Binary Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/">Orchestrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dash/">Human user emulation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Sharing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sharing/">Shared Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Deterlab for Classes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/class-support/">Class Support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/course-setup/">Course Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../deterlab-commands/">DETERLab commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ns-commands/">NS commands</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Running Experiments &raquo;</li>
+        
+      
+    
+    <li>Create a topology</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="create-experiment-topology">Create Experiment Topology<a class="headerlink" href="#create-experiment-topology" title="Permanent link"></a></h1>
+<p>Part of DETERLab's power lies in its ability to assume many different topologies; the description of a such a topology is a necessary part
+of an experiment.  Before you can start your experiment, you must model the elements of the experiment's network with a topology. Create your topology in a text file using any text editor you like (e.g., Notepad on Windows, vi, vim, emacs, nano or pico on Linux or TextEdit on Mac)</p>
+<p><strong>For this basic tutorial, use this <a href="../../downloads/basic.ns">NS file</a> which includes a simple topology and save it locally on your device </strong></p>
+<p>The rest of this section describes NS format and walks you through the different parts of the sample file.</p>
+<h2 id="ns-format">NS Format<a class="headerlink" href="#ns-format" title="Permanent link"></a></h2>
+<p>DETERLab uses the "NS" ("Network Simulator") format to describe network topologies. You can see the list of <a href="../../ns-commands/">supported commands</a>.</p>
+<h3 id="basic-example">Basic Example<a class="headerlink" href="#basic-example" title="Permanent link"></a></h3>
+<p>In our example, we are creating a test network which looks like the following:</p>
+<p><img alt="Diagram of simple network" src="../../img/abcd.png" /></p>
+<p><em>Figure 1: A is connected to B with a link, and B to C and D with a LAN.</em></p>
+<p>The red shapes on the nodes denote network interfaces. Each physical node has a limited number of interfaces (usually 3-4).</p>
+<p>Here's how to describe this topology:</p>
+<p><strong>Step 1. Prologue</strong></p>
+<p>All NS files start with a simple prologue, declaring a simulator and including a file that allows you to use the special <code>tb-</code> commands:</p>
+<pre><code>    # This is a simple ns script. Comments start with #.
+    set ns [new Simulator]
+    source tb_compat.tcl
+</code></pre>
+<p><strong>Step 2. Define the nodes in the topology</strong></p>
+<pre><code>    set A [$ns node]
+    set B [$ns node]
+    set C [$ns node]
+    set D [$ns node]
+</code></pre>
+<p><code>A</code>, <code>B</code>, <code>C</code>, <code>D</code>  are names of the nodes in your topology. You can use any alphanumeric string, as long as it starts with a letter. </p>
+<p><strong>Step 3. Define the link and the LAN that connect the nodes</strong></p>
+<p>NS syntax permits you to specify the bandwidth, latency, and queue type. When you specify bandwidth that is not divisible by 10Mbps or latency that is different from 0, the testbed inserts another node on the link to emulate these conditions. Unless you absolutely need different settings, please specify 10 Mbps, 100 Mbps, 100 Mbps or 1000 Mbps bandwidth and 0 ms delay.</p>
+<pre><code>    set link0 [$ns duplex-link $A $B 100Mb 0ms DropTail]
+    set lan0 [$ns make-lan &quot;$B $C $D&quot; 100Mb 0ms]
+</code></pre>
+<p>The difference between a link and a LAN is how many nodes they can connect. A link can only connect two nodes. A LAN can connect any number of nodes (in our example 3 nodes). </p>
+<p>In addition to the standard NS syntax above, a number of <a href="../../ns-commands/">extensions</a> are available in DETERLab that allow you to better control your experiment.
+For example, you may specify what Operating System is booted on your nodes, the IP addresses to be assigned to network interfaces (red shapes in the picture), the hardware for each node, etc. </p>
+<p><strong>Step 4. Enable routing</strong></p>
+<p>In a topology like this, you will likely want to communicate between all the nodes, including nodes that aren't directly connected, like <code>A</code> and <code>C</code>. In order for that to happen, we must enable routing in our experiment, so <code>B</code> can route packets for the other nodes. </p>
+<p>The typical way to do this is with Static routing.</p>
+<pre><code>    $ns rtproto Static
+</code></pre>
+<p><strong>Step 5. Epilogue</strong></p>
+<p>All NS files have the following epilogue.</p>
+<pre><code>    # Go!
+    $ns run
+</code></pre>
+<h2 id="advanced-options">Advanced options<a class="headerlink" href="#advanced-options" title="Permanent link"></a></h2>
+<p>DETERLab has many advanced options, which you can use to customize your topology.</p>
+<ol>
+<li>
+<p>You can specify a different <a href="../ns-commands/#hardware-commands">hardware</a> for each node</p>
+</li>
+<li>
+<p>You can specify which <a href="../ns-commands/#os-commands">OS image</a> the node should load. You can customize one of existing OS images to add your own configuration, files and applications, then create a <a href="../custom-images">custom OS image</a> and use that image on your nodes.</p>
+</li>
+<li>
+<p>You can specify link loss, delay or limited bandwidth on your links</p>
+</li>
+<li>
+<p>You can assign any <a href="../ns-commands/#ip-address-commands">IP address</a> to your nodes (as long as it is not from 198.162.<em>.</em> address range)</p>
+</li>
+<li>
+<p>You can specify <a href="../routing/">routing</a> between nodes</p>
+</li>
+<li>
+<p>You can install <a href="../ns-commands/#tb-set-node-rpms">RPMs</a> or <a href="../ns-commands/#tb-set-node-tarfiles">tarballs</a> during experiment swap in and <a href="../ns-commands/#tb-set-node-startcmd">specify commands</a> to run automatically on each swap in.</p>
+</li>
+<li>
+<p>You can implement <a href="../link-delays/">end-node traffic shaping</a>.</p>
+</li>
+</ol>
+<p>Please see full <a href="../ns-commands/">NS command reference</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../create/" class="btn btn-neutral float-right" title="Create an experiment">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../../support/class/" class="btn btn-neutral" title="Class users"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../../support/class/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../create/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+  <script>var base_url = '../..';</script>
+  <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Setting up IP routing between nodes - DETERLab Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Setting up IP routing between nodes";
+    var mkdocs_page_input_path = "core/routing.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the DETERLab Documentation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quickstart/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Opening Account</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/research/">Research users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/class/">Class users</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Running Experiments</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../topology/">Create a topology</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../create/">Create an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapin/">Swap in an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interact/">Use your nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapout/">Swap out or terminate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../user-guidelines/">User DOs and DON'Ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dsc/">Nework Emulation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../risky-experiment/">Risky Experiments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://binary.deterlab.net/docs">Binary Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/">Orchestrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dash/">Human user emulation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Sharing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sharing/">Shared Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Deterlab for Classes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/class-support/">Class Support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/course-setup/">Course Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../deterlab-commands/">DETERLab commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ns-commands/">NS commands</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Setting up IP routing between nodes</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="setting-up-ip-routing-between-nodes">Setting up IP routing between nodes<a class="headerlink" href="#setting-up-ip-routing-between-nodes" title="Permanent link"></a></h1>
+<p>As DETERLab strives to make all aspects of the network controllable by the user, we do not attempt to impose any IP routing architecture or protocol by default. However, many users are more interested in end-to-end aspects and don't want to be bothered with setting up routes. For those users we provide an option to automatically set up routes on nodes.</p>
+<p>You can use the NS <code>rtproto</code> syntax in your NS file to enable routing:</p>
+<pre><code>    $ns rtproto protocolOption
+</code></pre>
+<p>where the <code>protocolOption</code> is limited to one of <em>Session</em>, <em>Static</em> or <em>Manual</em>.</p>
+<ul>
+<li><strong>Session</strong> routing provides fully automated routing support, and is implemented by enabling <code>gated</code> running of the OSPF protocol on all nodes in the experiment. This is not supported on Windows XP nodes.</li>
+<li><strong>Static</strong> routing also provides automatic routing support, but rather than computing the routes dynamically, the routes are precomputed by a distributed route computation algorithm running in parallel on the experiment nodes.</li>
+<li><strong>Manual</strong> routing allows you to explicitly specify per-node routing information in the NS file. To do this, use the <code>Manual</code> routing option to <code>rtproto</code>, followed by a list of routes using the <code>add-route</code> command:</li>
+</ul>
+<pre><code>    $node add-route $dst $nexthop
+</code></pre>
+<p>where the <code>dst</code> can be either a node, a link, or a LAN. For example:</p>
+<pre><code>    $client add-route $server $router
+    $client add-route [$ns link $server $router] $router
+    $client add-route $serverlan $router
+</code></pre>
+<p>Note that you would need a separate <code>add-route</code> command to establish a route for the reverse direction; thus allowing you to specify differing forward and reverse routes if so desired. These statements are converted into appropriate <code>route(8)</code> commands on your experimental nodes when they boot.</p>
+<p>In the above examples, the first form says to set up a manual route between <code>$client</code> and <code>$server</code>, using <code>$router</code> as the nexthop; <code>$client</code> and <code>$router</code> should be directly connected, and the interface on <code>$server</code> should be unambiguous; either directly connected to the router, or an edge node that has just a single interface.</p>
+<p><img alt="Example of routing" src="../../img/routing.png" /></p>
+<p>If the destination has multiple interfaces configured, and it is not connected directly to the nexthop, the interface that you are intending to route to is ambiguous. In the topology shown to the right, <code>$nodeD</code> has two interfaces configured. If you attempted to set up a route like this:</p>
+<pre><code>    $nodeA add-route $nodeD $nodeB
+</code></pre>
+<p>you would receive an error since DETERLab staff would not easily be able to determine which of the two links on <code>$nodeD</code> you are referring to. Fortunately, there is an easy solution. Instead of a node, specify the link directly:</p>
+<pre><code>    $nodeA add-route [$ns link $nodeD $nodeC] $nodeB
+</code></pre>
+<p>This tells us exactly which link you mean, enabling us to convert that information into a proper <code>route</code> command on <code>$nodeA</code>.</p>
+<p>The last form of the <code>add-route</code> command is used when adding a route to an entire LAN. It would be tedious and error prone to specify a route to each node in a LAN by hand. Instead, just route to the entire network:</p>
+<pre><code>    set clientlan [$ns make-lan &quot;$nodeE $nodeF $nodeG&quot; 100Mb 0ms]
+    $nodeA add-route $clientlan $nodeB
+</code></pre>
+<p>In general, it is still best practice to use either <em>Session</em> or <em>Static</em> routing for all but small, simple topologies. Explicitly setting up all the routes in even a moderately-sized experiment is extremely error prone. Consider this: a recently created experiment with 17 nodes and 10 subnets <strong>required 140 hand-created routes in the NS file</strong>.</p>
+<p>Two final, cautionary notes on routing:</p>
+<ul>
+<li>The default route <em>must</em> be set to use the control network interface. You might be tempted to set the default route on your nodes to reduce the number of explicit routes used. <strong>Please avoid this.</strong> That would prevent nodes from contacting the outside world, i.e., you. </li>
+<li>If you use your own routing daemon, you must avoid using the control network interface in the configuration. Since every node in the testbed is directly connected to the control network LAN, a naive routing daemon configuration will discover that any node is just one hop away, via the control network, from any other node and <em>all</em> inter-node traffic will be routed via that interface.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+  <script>var base_url = '../..';</script>
+  <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+
+</body>
+</html>

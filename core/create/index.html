@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Create an experiment - DETERLab Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Create an experiment";
+    var mkdocs_page_input_path = "core/create.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the DETERLab Documentation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quickstart/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Opening Account</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/research/">Research users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/class/">Class users</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Running Experiments</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="../topology/">Create a topology</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Create an experiment</a>
+    <ul class="current">
+    </ul>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapin/">Swap in an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../interact/">Use your nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapout/">Swap out or terminate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../user-guidelines/">User DOs and DON'Ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dsc/">Nework Emulation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../risky-experiment/">Risky Experiments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://binary.deterlab.net/docs">Binary Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/">Orchestrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dash/">Human user emulation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Sharing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sharing/">Shared Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Deterlab for Classes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/class-support/">Class Support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/course-setup/">Course Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../deterlab-commands/">DETERLab commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ns-commands/">NS commands</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Running Experiments &raquo;</li>
+        
+      
+    
+    <li>Create an experiment</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="create-experiment">Create Experiment<a class="headerlink" href="#create-experiment" title="Permanent link"></a></h1>
+<p>You can use the web interface to create a new experiment. </p>
+<ol>
+<li>Log into <a href="https://www.isi.deterlab.net">DETERLab</a> with your account credentials</li>
+<li>Click the <em>Experimentation</em> menu item, then click <em>Begin an Experiment</em>.</li>
+<li>Click <em>Select Project</em> and choose your project. Most people will be a member of just one project, and will not have a choice. If you are a member of multiple projects, be sure to select the correct project from the menu. In this example, we will refer to the project as <em>YourProject</em>.</li>
+<li>Leave the <em>Group</em> field set to <em>Default Group</em> unless otherwise instructed.</li>
+<li>Enter the <em>Name</em> field with an easily identifiable name for the experiment. The Name should be a single word (no spaces) identifier. If you are following our tutorial, use <em>basic-experiment</em> for the name.</li>
+<li>Enter the <em>Description</em> field with a brief description of the experiment. Any string will work here.</li>
+<li>In the <strong>Your NS File</strong> field, upload the <em>basic.ns</em> file you downloaded or any other NS file you created. You can also create the file on DETERLab by SSH-ing to <em>users.deterlab.net</em> and using a text editor like vi, vim, emacs, nano or pico. In that case you would specify the path to the file like <em>/users/YourUsername/YourFilename.ns</em>.
+     The rest of the settings depend on the goals of your experiment. In our example, please set the <em>Idle Swap</em> field to <em>1 h</em> and leave the rest of the settings for <em>Swapping</em>, <em>Linktest Option</em>, and <em>BatchMode</em> at their default.</li>
+<li>Click <em>Submit</em>.  </li>
+</ol>
+<p>After submission, DETERLab will begin processing your request. Since you did not check <em>Swap In Immediately</em> box, DETERLab will simply check sytax of your NS file and save some state in the database. You will receive an email and a pop-up notification when this has been done. The process usually takes a few seconds.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../swapin/" class="btn btn-neutral float-right" title="Swap in an experiment">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../topology/" class="btn btn-neutral" title="Create a topology"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../topology/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../swapin/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+  <script>var base_url = '../..';</script>
+  <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+
+</body>
+</html>

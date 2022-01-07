@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>End Node Traffic Shaping - DETERLab Documentation</title>
+  <title>Per-Link Traffic Shaping ("linkdelays") - DETERLab Documentation</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,7 +19,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "End Node Traffic Shaping";
+    var mkdocs_page_name = "Per-Link Traffic Shaping (\"linkdelays\")";
     var mkdocs_page_input_path = "core/link-delays.md";
     var mkdocs_page_url = null;
   </script>
@@ -39,9 +39,10 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-    <a href="../.."> <!-- class="icon"-->
+    <a href="" class="icon">
       <!--REPLACE LOGO FILE HERE -->
-      <img class="logo" style="float:left" src="/img/doc-logo.png"/>DETERLab Documentation</a>
+      <img class="logo" style="float:left" src="img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -58,136 +59,57 @@
                     <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Support</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../support/registering/">Registering with DETERLab</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../support/passwords/">Passwords</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../support/elab-elab-ssh-proxy/">Configuring E-lab in E-lab</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quickstart/">Quickstart</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">DETERLab Core</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="../core-quickstart/">Core Quickstart</a>
+                <p class="caption"><span class="caption-text">Opening Account</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/research/">Research users</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../core-guide/">Core Guide</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/class/">Class users</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
+                </ul>
+                <p class="caption"><span class="caption-text">Running Experiments</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../topology/">Create a topology</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../using-nodes/">Using Your Nodes</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../create/">Create an experiment</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../generating-traffic/">Generating Traffic</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapin/">Swap in an experiment</a>
                     </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="./">End Node Traffic Shaping</a>
-    <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#multiplexed-links">Multiplexed Links</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#freebsd-technical-discussion">FreeBSD Technical Discussion</a>
-    </li>
-    <li class="toctree-l2"><a class="reference internal" href="#linux-technical-discussion">Linux Technical Discussion</a>
-    </li>
-    </ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../interact/">Use your nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../swapout/">Swap out or terminate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../user-guidelines/">User DOs and DON'Ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dsc/">Nework Emulation</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../risky-experiment/">Risky Experiments</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../sharing/">Using Shared Materials</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../user-guidelines/">User Do's and Don'ts</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Core Reference</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../deterlab-commands/">DETERLab Commands</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../ns-commands/">NS Commands Extensions</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../swapping/">Understanding Swapping (Node Use Policies)</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../DETERSSH/">Accessing testbeds using SSH</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../node-types/">DETERLab Node Types</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../serial-console/">Using the Serial Console</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../dell-serial-console/">Dell Serial Console</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../os-images/">OS Images</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../custom-images/">Creating Custom Images</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../windows/">Windows XP</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../legacy-tools/">Legacy Tools</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Orchestrator</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-quickstart/">Orchestrator Quickstart</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-guide/">Orchestrator Guide</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-case-studies/">Orchestrator Case Studies</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/simple-client-server/">Simple Client Server Case Study</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/scaled-client-server/">Scaled Client Server Case Study</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/feedback/">Feedback Case Study</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/flooder/">Flooder Case Study</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/writing-agents/">Specialized User</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/data-management/">Orchestrator Data Management</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-config/">MAGI Configuration</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/orchestrator-reference/">Orchestrator Reference</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/system-files/">MAGI System Organization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/agent-library/">MAGI Agent Library</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/magi-tools/">MAGI Tools</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/magi-dev/">MAGI Development Codebase</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/magi-desktop/">MAGI Desktop</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Containers</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers Quickstart</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-guide/">Containers Guide</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-reference/">Containers Reference</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">DeterLab Tools</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../tools/">Tools Index</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../tools/internet-atlas/">Internet Atlas</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Other Features</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../federation/">Federation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../abac/">ABAC</a>
+                    <li class="toctree-l1"><a class="" href="https://binary.deterlab.net/docs">Binary Analysis</a>
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
                     </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/">Orchestrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dash/">Human user emulation</a>
+                    </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Education Materials</span></p>
+                <p class="caption"><span class="caption-text">Sharing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../sharing/">Shared Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Deterlab for Classes</span></p>
                 <ul>
                     <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
                     </li>
@@ -203,14 +125,23 @@
                     </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
                     </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../../education/student-intro/">Student Introduction to DETERLab</a>
-                    </li>
                     <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
                     </li>
                 </ul>
-                <p class="caption"><span class="caption-text">Miscellaneous</span></p>
+                <p class="caption"><span class="caption-text">Reference</span></p>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../../ISIUCB/">DETERLab Rooms</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../deterlab-commands/">DETERLab commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../ns-commands/">NS commands</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
                     </li>
                 </ul>
       </div>
@@ -233,12 +164,8 @@
     <li><a href="../..">Docs</a> &raquo;</li>
     
       
-        
-          <li>DETERLab Core &raquo;</li>
-        
-      
     
-    <li>End Node Traffic Shaping</li>
+    <li>Per-Link Traffic Shaping ("linkdelays")</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -249,13 +176,13 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="per-link-traffic-shaping-linkdelays">Per-Link Traffic Shaping ("linkdelays")<a class="headerlink" href="#per-link-traffic-shaping-linkdelays" title="Permanent link">&para;</a></h1>
+                <h1 id="per-link-traffic-shaping-linkdelays">Per-Link Traffic Shaping ("linkdelays")<a class="headerlink" href="#per-link-traffic-shaping-linkdelays" title="Permanent link"></a></h1>
 <p>In order to conserve nodes, it is possible to specify that instead of doing traffic shaping on separate delay nodes (which eats up a node for every two shaped links), it be done on the nodes that are actually generating the traffic.</p>
-<p>Under FreeBSD, just like normal delay nodes, end node (sometimes called "per-link") traffic shaping uses IPFW to direct traffic into the proper Dummynet pipe. On each node in a duplex link or LAN, a set of IPFW rules and Dummynet pipes is set up. As traffic enters or leaves your node, IPFW looks at the packet and stuffs it into the proper Dummynet pipe. At the proper time, Dummynet takes the packet and sends it on its way.</p>
+<p>If you are running FreeBSD on your nodes, end node traffic shaping uses IPFW to direct traffic into the proper Dummynet pipe. On each node in a duplex link or LAN, a set of IPFW rules and Dummynet pipes is set up. As traffic enters or leaves your node, IPFW looks at the packet and stuffs it into the proper Dummynet pipe. At the proper time, Dummynet takes the packet and sends it on its way.</p>
 <p>Under Linux, end node traffic shaping is performed by the packet scheduler modules, part of the kernel NET3 implementation. Each packet is added to the appropriate scheduler queue tree and shaped as specified in your NS file. Note that Linux traffic shaping currently only supports the drop-tail queueing discipline; gred and red are not available yet.</p>
 <p>To specify end node shaping in your NS file, simply set up a normal link or LAN, and then mark it as wanting to use end node traffic shaping. For example: </p>
-<pre><code>set link0 [$ns duplex-link $nodeA $nodeD 50Mb 0ms DropTail]
-set lan0  [$ns make-lan "nodeA nodeB nodeC" 1Mb 100ms]
+<pre><code>set link0 [$ns duplex-link $nodeA $nodeD 10Mb 0ms DropTail]
+set lan0  [$ns make-lan "nodeA nodeB nodeC" 1Mb 0ms]
 
 tb-set-endnodeshaping $link0 1
 tb-set-endnodeshaping $lan0 1
@@ -273,7 +200,7 @@ tb-set-endnodeshaping $lan0 1
 <p>To specify non-shaped links, but perhaps control the shaping parameters later (increase delay, decrease bandwidth, etc.) after the experiment is swapped in, use the following in your NS file:</p>
 <pre><code>tb-force-endnodeshaping   1
 </code></pre>
-<h2 id="multiplexed-links">Multiplexed Links<a class="headerlink" href="#multiplexed-links" title="Permanent link">&para;</a></h2>
+<h2 id="multiplexed-links">Multiplexed Links<a class="headerlink" href="#multiplexed-links" title="Permanent link"></a></h2>
 <p>Another feature we have added (FreeBSD only) is ''multiplexed'' (sometimes called ''emulated'') links. An emulated link is one that can be multiplexed over a physical link along with other links. Say your experimental nodes have just one physical interface (call it "fxp0"), but you want to create two duplex links on it:</p>
 <pre><code>set link0 [$ns duplex-link $nodeA $nodeB 50Mb 0ms DropTail]
 set link1 [$ns duplex-link $nodeA $nodeC 50Mb 0ms DropTail]
@@ -300,8 +227,8 @@ tb-set-vlink-emulation vlan
 # Turn on routing.
 $ns rtproto Static
 </code></pre>
-<p>Since each node has four 100Mbs interfaces, the above mapping would not be possible without the use of multiplexed links. However, since each link is defined to use 30Mbs, by using multiplexed links, the 12 links can be shared over the four physical interfaces, without oversubscribing the 400Mbs aggregate bandwidth available to the node that is assigned to the router. '' Note: while it may sound a little like channel bonding, it is not!''</p>
-<h2 id="freebsd-technical-discussion">FreeBSD Technical Discussion<a class="headerlink" href="#freebsd-technical-discussion" title="Permanent link">&para;</a></h2>
+<p>Since each node has four 100Mbs interfaces, the above mapping would not be possible without the use of multiplexed links. However, since each link is defined to use 30Mbs, by using multiplexed links, the 12 links can be shared over the four physical interfaces, without oversubscribing the 400Mbs aggregate bandwidth available to the node that is assigned to the router. </p>
+<h2 id="freebsd-technical-discussion">FreeBSD Technical Discussion<a class="headerlink" href="#freebsd-technical-discussion" title="Permanent link"></a></h2>
 <p>First, let's just look at what happens with per-link delays on a duplex link. In this case, an IPFW pipe is set up on each node. The rule for the pipe looks like:</p>
 <pre><code>ipfw add pipe 10 ip from any to any out xmit fxp0
 </code></pre>
@@ -329,7 +256,7 @@ ipfw add ... in recv fxp0
 </code></pre>
 <p>Now, no matter how the user alters the routing table, packets will be stuffed into the proper pipe since the nexthop indicates which directly connected virtual link the packet was sent over. The use of a mask allows for matching when directly connected to a LAN (a simplification). </p>
 <p>Multiplexed LANs present even worse problems because of the need to figure out which flow an incoming packet is part of. When a packet arrives at an interface, there is nothing in the packet to indicate which IP alias the packet was intended for (or which it came from) when the packet is not destined for the local node (is being forwarded).</p>
-<h2 id="linux-technical-discussion">Linux Technical Discussion<a class="headerlink" href="#linux-technical-discussion" title="Permanent link">&para;</a></h2>
+<h2 id="linux-technical-discussion">Linux Technical Discussion<a class="headerlink" href="#linux-technical-discussion" title="Permanent link"></a></h2>
 <p>Traffic shaping under Linux uses the NET3 packet scheduling modules, a hierarchically composable set of disciplines providing facilities such as bandwidth limiting, packet loss, and packet delay. As in the FreeBSD case, simplex (outgoing) link shaping is used on point-to-point links, while duplex shaping (going out, and coming in an interface) is used with LANs. See the previous section to understand why this is done. </p>
 <p>Unlike FreeBSD, Linux traffic shaping modules must be connected directly to a network device, and hence don't require a firewall directive to place packets into them. This means that all packets must pass through the shaping tree connected to a particular interface. Note that filters may be used on the shapers themselves to discriminate traffic flows, so it's not strictly the case that all traffic must be shaped if modules are attached. However, all traffic to an interface, at the least, is queued and de-queued through the root module of the shaping hierarchy. And all interfaces have at least a root module, but it is normally just a fast FIFO. </p>
 <p>Also of note is the fact that Linux traffic shaping normally only happens on the outgoing side of an interface, and requires a special virtual network device (known as an intermediate queuing device or IMQ) to capture incoming packets for shaping. This also requires the aid of the Linux firewalling facility, iptables, to divert the packets to the IMQs prior to routing. </p>
@@ -359,15 +286,6 @@ tc qdisc add dev eth0 parent 2:1 handle 3 delay usecs 20000
           </div>
           <footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../risky-experiment/" class="btn btn-neutral float-right" title="Risky Experiments">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href="../generating-traffic/" class="btn btn-neutral" title="Generating Traffic"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
-    </div>
-  
 
   <hr/>
 
@@ -392,10 +310,6 @@ tc qdisc add dev eth0 parent 2:1 handle 3 delay usecs 20000
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
-        <span><a href="../generating-traffic/" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../risky-experiment/" style="color: #fcfcfc">Next &raquo;</a></span>
       
     </span>
 </div>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Manual traffic generation - DETERLab Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Manual traffic generation";
+    var mkdocs_page_input_path = "traffic/manual.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the DETERLab Documentation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quickstart/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Opening Account</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/research/">Research users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/class/">Class users</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Running Experiments</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/topology/">Create a topology</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/create/">Create an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/swapin/">Swap in an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/interact/">Use your nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/swapout/">Swap out or terminate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/user-guidelines/">User DOs and DON'Ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dsc/">Nework Emulation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/risky-experiment/">Risky Experiments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://binary.deterlab.net/docs">Binary Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/">Orchestrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dash/">Human user emulation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Sharing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/sharing/">Shared Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Deterlab for Classes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/class-support/">Class Support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/course-setup/">Course Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/deterlab-commands/">DETERLab commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/ns-commands/">NS commands</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Manual traffic generation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="manual-traffic-generation">Manual traffic generation<a class="headerlink" href="#manual-traffic-generation" title="Permanent link"></a></h1>
+<p>There are many tools that can be used to generate traffic. Below we give an overview of some frequently used tools. This list is not exhaustive. If you discover a useful tool that is not on the list, please let us know.</p>
+<h2 id="ping-traffic">Ping traffic<a class="headerlink" href="#ping-traffic" title="Permanent link"></a></h2>
+<p>To just generate any traffic between two nodes, A and B, you can type on node A:</p>
+<pre><code>    ping B
+</code></pre>
+<p>This will generate one packet per second from A to B, and B will then send one-packet reply to A. If you want higher-intensity traffic try</p>
+<pre><code>    sudo ping -f B
+</code></pre>
+<p>This will generate a flood of packets between A and B.</p>
+<h2 id="steady-simple-tcp-or-udp-traffic">Steady, simple TCP or UDP traffic<a class="headerlink" href="#steady-simple-tcp-or-udp-traffic" title="Permanent link"></a></h2>
+<p>To generate steady, simple traffic between A and B, where A just sends lots of data to B you can use <code>iperf</code> program. You may need to install this program on your nodes by typing <code>sudo apt install iperf</code>. </p>
+<p>On node B type</p>
+<pre><code>    iperf -s
+</code></pre>
+<p>and on node A type</p>
+<pre><code>    iperf -c B
+</code></pre>
+<p>There are many different parameters you can set for this program, such as length of running, how many parallel flows to create, how much bandwidth to use per flow, which transport protocol to use and if the traffic is unidirectional or bidirectional. Type <code>man iperf</code> to learn about these options.</p>
+<h2 id="complex-tcp-traffic">Complex, TCP traffic<a class="headerlink" href="#complex-tcp-traffic" title="Permanent link"></a></h2>
+<p>You can use Mimic tool to generate complex TCP traffic, which is congestion-responsive. For example you can use this tool to generate flows that are not filling up the whole bandwidth, but rather pausing between sending some traffic chunks to emulate server and user think time. You can use Mimic tool to generate made-up traffic (similar to <code>iperf</code> use) or you can use it to extract data from a pcap trace and replay it in your experiment. While this tool is more complex than iperf it can also generate more complex and realistic traffic scenarios.</p>
+<p>Clone the tool from <a href="https://github.com/STEELISI/mimic">https://github.com/STEELISI/mimic</a> into your home directory on  <code>users.deterlab.net</code>, then go on to your experimental nodes to  compile and use it.</p>
+<h2 id="web-traffic">Web traffic<a class="headerlink" href="#web-traffic" title="Permanent link"></a></h2>
+<p>You can generate Web traffic between A and B, by running a web server on B and requesting files from A. Here are the necessary steps:</p>
+<p>On B:</p>
+<pre><code>    sudo apt install apache2
+</code></pre>
+<p>Then, manually create some files in /var/www/html on B.</p>
+<p>On A:</p>
+<pre><code>    wget B/one-of-files-you-created
+</code></pre>
+<p>The above will just generate one request for one file. If you want to continuously request files from B you can do the following</p>
+<pre><code>1. store file names you created into a file, e.g., list.txt
+2. on A create `run.sh` with the following code:
+</code></pre>
+<pre><code>    while :
+    do
+          for file in `cat list.txt` ; do
+              wget B/$file &amp;
+          sleep 1
+          done
+    done
+</code></pre>
+<p>Then run the code on A with <code>bash run.sh</code></p>
+<p>This script will request one file per second in a forever loop.</p>
+<p>If you want to request files more aggressively you can use <code>httpperf</code> program on A, instead of writing your own scripts. You will likely have to install it by typing <code>sudo apt install httpperf</code>. Then type <code>man httpperf</code> to learn how to use it.</p>
+<h2 id="dns-traffic">DNS traffic<a class="headerlink" href="#dns-traffic" title="Permanent link"></a></h2>
+<p>You can install a DNS server on node B by typing <code>sudo apt install bind9</code>. Then you can follow steps outlined <a href="https://www.linuxbabe.com/ubuntu/set-up-authoritative-dns-server-ubuntu-18-04-bind9">here</a> to set it up as authoritative server for some domain, e.g., <code>www.example.com</code>.</p>
+<p>You can use <code>dnsperf</code> tool on A to generate client DNS traffic. Information on how to install and use <code>dnsperf</code> is given <a href="https://www.dns-oarc.net/tools/dnsperf">here</a>.</p>
+<h2 id="ddos-traffic">DDoS traffic<a class="headerlink" href="#ddos-traffic" title="Permanent link"></a></h2>
+<p>You can use <code>flooder</code> tool to generate DDoS traffic between your nodes. To install it type on your experimental node <code>sudo /share/education/TCPSYNFlood_USC_ISI/install-flooder</code>. After that, type <code>floder --help</code> to see the attack options. Some examples on how to use flooder are <a href="https://www.isi.edu/~mirkovic/tapia/flooder.html">here</a>.</p>
+<h2 id="scanning-traffic">Scanning traffic<a class="headerlink" href="#scanning-traffic" title="Permanent link"></a></h2>
+<p>You can use <code>nmap</code> tool to scan a machine on Deterlab. You will likely need to install it by typing <code>sudo apt install nmap</code>.</p>
+<p>To scan B from A you would type on A <code>nmap B</code>. Type <code>man nmap</code> to learn about many different options that nmap has.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+  <script>var base_url = '../..';</script>
+  <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../../img/favicon.ico">
+  <title>Network Emulation Tutorial - DETERLab Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../../css/theme.css" />
+  <link rel="stylesheet" href="../../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../../css/extra.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Network Emulation Tutorial";
+    var mkdocs_page_input_path = "dsc/tutorial.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+    <a href="" class="icon">
+      <!--REPLACE LOGO FILE HERE -->
+      <img class="logo" style="float:left" src="img/doc-logo.png"/> 
+      <span class="title">DETERLab Documentation</span></a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search documentation" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../..">Welcome to the DETERLab Documentation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../Glossary/">Glossary</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../quickstart/">Quickstart</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Opening Account</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/research/">Research users</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/class/">Class users</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Running Experiments</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/topology/">Create a topology</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/create/">Create an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/swapin/">Swap in an experiment</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/interact/">Use your nodes</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/swapout/">Swap out or terminate</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/user-guidelines/">User DOs and DON'Ts</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Advanced Features</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../containers/containers-quickstart/">Containers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../">Nework Emulation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/risky-experiment/">Risky Experiments</a>
+                    </li>
+                    <li class="toctree-l1"><a class="" href="https://binary.deterlab.net/docs">Binary Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../competitions/">Competitions</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../orchestrator/">Orchestrator</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../dash/">Human user emulation</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Sharing</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/sample-topologies/">Sample Topologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/sharing/">Shared Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Deterlab for Classes</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/">Education Materials Overview</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-teachers/">Guidelines for Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/class-support/">Class Support</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/course-setup/">Course Setup</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/good-teaching-practices/">Good Teaching Practices</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/connect-with-teachers/">Connect With Other Teachers</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/guidelines-for-students/">Guidelines for Students</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../education/public-materials/">Public Materials</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Reference</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/deterlab-commands/">DETERLab commands</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../core/ns-commands/">NS commands</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Support</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/getting-help/">Getting Help</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/faqs/">FAQs</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../../support/usage-policy/">Usage Policy</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../..">DETERLab Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Network Emulation Tutorial</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="network-emulation-tutorial">Network Emulation Tutorial<a class="headerlink" href="#network-emulation-tutorial" title="Permanent link"></a></h1>
+<p>In this tutorial we will show you how to create an experiment with emulated network.</p>
+<h2 id="step-1-clone-the-repository">Step 1: Clone the Repository<a class="headerlink" href="#step-1-clone-the-repository" title="Permanent link"></a></h2>
+<p>First, you need to clone the repository that contains scripts that convert
+edge-list representation of the topology into scripts and NS file that can
+run on Deterlab. You can do this on your device or on users.deterlab.net.</p>
+<pre><code>   git clone https://github.com/ISIEdgeLab/graphGen.git
+   cd graphGen
+</code></pre>
+<h2 id="step-2-create-edge-list-representation-of-your-topology">Step 2: Create Edge-list Representation of Your Topology<a class="headerlink" href="#step-2-create-edge-list-representation-of-your-topology" title="Permanent link"></a></h2>
+<p>We will use the basic example with two enclaves and two nodes that was described previously. You can find this example in the cloned repository, in the file <code>/tests/inputs/basic.xnet</code>:</p>
+<pre><code>   e1 1
+   e2 2
+   1 2
+</code></pre>
+<h2 id="step-3-convert-edge-list-to-ns-representation">Step 3: Convert Edge-list to NS Representation<a class="headerlink" href="#step-3-convert-edge-list-to-ns-representation" title="Permanent link"></a></h2>
+<p>The program graph_gen.py has many optional arguments to use (check developer documentation if you want to learn more). From the base folder where you cloned the git repository type the following:</p>
+<pre><code>    cd graphGen
+    python graphgen/graph_gen.py tests/inputs/basic.xnet -n tutorial.ns --click-hardware MicroCloud --disable-crypto-nodes --num-servers 0 --num-clients 0 --CT-OS Ubuntu-STD --ct-hardware pc3000
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sometimes the above command cannot be pasted properly due to double dashes in options. Ensure that the command you are executing has the correct options and arguments.</p>
+</div>
+<p>Be aware that nodes you can specify in the --click-hardware directive at the time are MicroCloud, dl380g3 and sm. You can specify any node type for --ct-hardware option.</p>
+<p>After running graphGen framework, you'll have two new files: <code>vrouter.template</code> and <code>tutorial.ns</code>. </p>
+<h2 id="step-4-deploy-your-experiment-on-deterlab">Step 4: Deploy Your Experiment on Deterlab<a class="headerlink" href="#step-4-deploy-your-experiment-on-deterlab" title="Permanent link"></a></h2>
+<p>Copy your <code>vrouter.template</code> and <code>tutorial.ns</code> files to DETERLab, if they are not there already. Then run:</p>
+<pre><code>     bash /share/click/exp_scripts/saveresources.sh tutorial.ns
+</code></pre>
+<p>to minimize the number of physical nodes you will need for deployment.</p>
+<p>On users.deterlab.net create a folder with the same name as the NS file ('tutorial' in this example) you want to create, inside the directory <code>/proj/YourProject/templates</code>. Copy <code>vrouter.template</code> file there.</p>
+<pre><code>   mkdir /proj/YourProject/templates/tutorial
+   cp vrouter.template /proj/YourProject/templates/tutorial
+</code></pre>
+<p>Next, use the tutorial.ns file to create a new DETERLab experiment and swap it in.</p>
+<p>To see how the network looks like, you can click 'Visualization; tab and the network's diagram should look like this:</p>
+<p><img alt="Experiment on DETERLab" src="../../img/2e-2n.ond.png" /></p>
+<p>Be aware that the DETER topology hides the emulated nodes within vrouter. The vrouter node emulates your specified core topology, which actually looks like this.</p>
+<p><img alt="A simple two-enclave two-core-nodes topology" src="../../img/2e-2n.png" /></p>
+<h2 id="step-5-verify-setup">Step 5: Verify Setup<a class="headerlink" href="#step-5-verify-setup" title="Permanent link"></a></h2>
+<p>Swap in your experiment (we will assume that the experiment name is <em>YourExperiment</em>) and check if the components are running correctly.</p>
+<h3 id="check-click-is-running">Check Click Is Running<a class="headerlink" href="#check-click-is-running" title="Permanent link"></a></h3>
+<p>Check if click is actually running on vrouter node.</p>
+<pre><code>      ssh vrouter.YourExperiment.YourProject
+      ps axuw | grep click
+</code></pre>
+<p>If Click isn't running, the problem may be in the <em>coremask</em> argument for DPDK when Click is being started. We use DPDK to emulate your desired topology on Click.
+The coremask parameter is always mandatory for DPDK applications. Each bit of the mask corresponds to the number of cores on the machine. You can check how many cores your vrouter node has by doing the following on the node:</p>
+<pre><code>    lscpu
+</code></pre>
+<p>and look at the <em>CPU(s)</em> line in the output. Then use the mask with that many bits set to 1 (-c parameter). For example, if the vrouter node has 8 cores we would start the Click router by typing</p>
+<pre><code>    click --dpdk -c 0xff -n 4 -- -u /click /tmp/vrouter.click &gt;/tmp/click.log 2&gt;&amp;1 &lt; /dev/null &amp;
+</code></pre>
+<h3 id="check-liveness-and-loss">Check Liveness and Loss<a class="headerlink" href="#check-liveness-and-loss" title="Permanent link"></a></h3>
+<p>You can use ping command to check liveness and packet loss. To install ping, type the following on <em>ct1</em> node:</p>
+<pre><code>    sudo apt-get install -y ping
+</code></pre>
+<p>Then check that you can ping node ct2 from ct1:</p>
+<pre><code>    ssh ct1.YourExperiment.YourProject
+    ping ct2
+</code></pre>
+<p>You should see an output similar to below:</p>
+<pre><code>    PING ct2-elink2 (10.2.2.1) 56(84) bytes of data.
+    64 bytes from ct2-elink2 (10.2.2.1): icmp_seq=1 ttl=62 time=4.68 ms
+    64 bytes from ct2-elink2 (10.2.2.1): icmp_seq=2 ttl=62 time=2.22 ms
+    64 bytes from ct2-elink2 (10.2.2.1): icmp_seq=3 ttl=62 time=2.12 ms
+    64 bytes from ct2-elink2 (10.2.2.1): icmp_seq=4 ttl=62 time=2.11 ms
+    --- ct2-elink2 ping statistics ---
+    4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+    rtt min/avg/max/mdev = 2.119/2.786/4.681/1.095 ms
+</code></pre>
+<p>This indicates 0% loss and 2ms delay, which is what we expect based on the desired core topology.</p>
+<h3 id="checking-bandwidth">Checking Bandwidth<a class="headerlink" href="#checking-bandwidth" title="Permanent link"></a></h3>
+<p>You can use iperf command to check bandwidth between your nodes. To install iperf, type the following on <em>ct1</em> and <em>ct2</em> nodes:</p>
+<pre><code>    sudo apt-get install -y iperf
+</code></pre>
+<p>Then run on ct1 node:</p>
+<pre><code>     iperf -s commnad
+</code></pre>
+<p>and on ct2 node:</p>
+<pre><code>     iperf -c ct1
+</code></pre>
+<p>Let the measurement run for a few seconds. You should see the output similar to the one below:</p>
+<pre><code>------------------------------------------------------------
+Client connecting to ct1, TCP port 5001
+TCP window size: 85.0 KByte (default)
+------------------------------------------------------------
+[  3] local 10.2.2.1 port 47962 connected with 10.1.2.1 port 5001
+[ ID] Interval       Transfer     Bandwidth
+[  3]  0.0-10.0 sec  1.03 GBytes   887 Mbits/sec
+</code></pre>
+<p>This output indicates that the bandwidth is around 1Gbps (887Mbps).</p>
+<p>Finally, you should check if the routing level is working correctly with a command like traceroute. To check that you have reachability from one enclave to the other, you can install traceroute on ct1 and run it</p>
+<pre><code>    sudo apt install -y traceroute
+    traceroute ct2
+</code></pre>
+<p>You should see three hops (two intermediate nodes) between ct1 and ct2 in traceroute's output.</p>
+<h2 id="different-available-models">Different available models<a class="headerlink" href="#different-available-models" title="Permanent link"></a></h2>
+<p>If you want to explore different models, you can take a look at <code>/share/click/templates</code>, where you'll find many models with different number of enclaves, node types, number of nodes and other options. Moreover, many of these models have their ns file, enclave.routes file, vrouter.template, among others. Each folder has an image file, illustrating the topology.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p>Copyright &copy; 2018 <a href="https://www.deter-project.org/">DETER Project</a>.</p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+    </span>
+</div>
+  <script>var base_url = '../..';</script>
+  <script src="../../js/theme.js"></script>
+    <script src="../../search/main.js"></script>
+  <!-- this makes the active part of the navigation sidebar scroll to top -->
+<script type="text/javascript">
+$(document).ready(function () {
+
+  if ($("a").hasClass("current")) {
+    var container = $("nav"),
+    scrollTo = $("a.current");
+
+    container.scrollTop(
+    scrollTo.offset().top - container.offset().top + container.scrollTop() - 92
+    );
+    
+    }
+});
+</script>
+
+</body>
+</html>
