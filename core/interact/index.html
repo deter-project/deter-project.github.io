@@ -102,6 +102,8 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#install-software">Install Software</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#generate-traffic">Generate Traffic</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#collect-statistics">Collect Statistics</a>
@@ -281,6 +283,22 @@ at least two <em>names</em>: a <em>short</em> name like <code>A</code>, and a <e
 <p>Then <em>on your device</em>  open a terminal window, navigate to the folder where you want to store the file and type the commands below:</p>
 <pre><code>        scp YourUsername@users.deterlab.net:myfile.txt .
 </code></pre>
+<h2 id="install-software">Install Software<a class="headerlink" href="#install-software" title="Permanent link"></a></h2>
+<p>To contain malicious traffic within experiments, DETERLab has no connectivity to the outside world. To install packages please use our mirrors of popular content:</p>
+<ul>
+<li>Install Ubuntu packages by typing</li>
+</ul>
+<pre><code>    sudo apt install [package name]
+</code></pre>
+<ul>
+<li>Install Python packages by typing</li>
+</ul>
+<pre><code>    pip install -i https://fbsd-build.isi.deterlab.net/pypi/web/simple [package name]
+</code></pre>
+<ul>
+<li>Install software from source by: (1) downloading the software into your home directory by typing on <code>users.deterlab.net</code> the following <code>wget [software URL]</code>, then (2) in your experiment access the software you downloaded in your home directory, extract it and follow install instructions</li>
+</ul>
+<p>If you have any other installation needs that are not met with the above instructions please file a ticket.</p>
 <h2 id="generate-traffic">Generate Traffic<a class="headerlink" href="#generate-traffic" title="Permanent link"></a></h2>
 <p>You can generate traffic in your experiment in many ways. At first, as you are designing your experiment, you may want generate traffic <a href="../../traffic/manual/">manually and interactively</a>. Later, you may want to <a href="../automate/">write scripts</a> for traffic generation. You may also want to <a href="../../dash/">emulate human actions</a> in your experiments.</p>
 <h2 id="collect-statistics">Collect Statistics<a class="headerlink" href="#collect-statistics" title="Permanent link"></a></h2>
