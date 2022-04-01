@@ -102,6 +102,8 @@
     </li>
         </ul>
     </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mount-more-disk-space">Mount More Disk Space</a>
+    </li>
     <li class="toctree-l2"><a class="reference internal" href="#install-software">Install Software</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#generate-traffic">Generate Traffic</a>
@@ -282,6 +284,13 @@ at least two <em>names</em>: a <em>short</em> name like <code>A</code>, and a <e
 </code></pre>
 <p>Then <em>on your device</em>  open a terminal window, navigate to the folder where you want to store the file and type the commands below:</p>
 <pre><code>        scp YourUsername@users.deterlab.net:myfile.txt .
+</code></pre>
+<h2 id="mount-more-disk-space">Mount More Disk Space<a class="headerlink" href="#mount-more-disk-space" title="Permanent link"></a></h2>
+<p>DETERLab nodes come with a modest amount of disk space. You can mount more disk space by typing the following instructions on your experimental node:</p>
+<pre><code>    sudo mkdir /mnt/local
+    sudo /usr/local/etc/emulab/mkextrafs /mnt/local
+    user=`whoami`
+    sudo chown $user /mnt/local
 </code></pre>
 <h2 id="install-software">Install Software<a class="headerlink" href="#install-software" title="Permanent link"></a></h2>
 <p>To contain malicious traffic within experiments, DETERLab has no connectivity to the outside world. To install packages please use our mirrors of popular content:</p>

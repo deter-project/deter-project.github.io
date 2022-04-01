@@ -218,8 +218,9 @@
 </ul>
 </li>
 </ul>
-<pre><code>    sudo /usr/local/etc/emulab/mkextrafs.pl /mnt
-    user='whoami'
+<pre><code>    sudo mkdir /mnt/local
+    sudo /usr/local/etc/emulab/mkextrafs /mnt/local
+    user=`whoami`
     sudo chown $user /mnt/local
 </code></pre>
 <p>Remember to transfer the files to your home directory before you swap out to save them.</p>
