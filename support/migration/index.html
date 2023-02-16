@@ -189,16 +189,18 @@
 <li>Carefully read <a href="https://mergetb.org/docs/">Merge documentation</a></li>
 <li>Apply for account on the new DeterLab <a href="https://launch.mod.deterlab.net/registration">here</a>. Please select a password that is strong but easy for you to remember and type. For example, passwords that contain 5+ words significant to you should work.</li>
 <li>Wait for approval, which should arrive via email</li>
-<li>Set up your SSH access by following instructions <a href="https://mergetb.org/docs/experimentation/xdc/">here</a> to set up an XDC (experiment development container), similar to the current <code>users.deterlab.net</code> gateway. When setting up <code>.ssh/config</code>, please log into <code>users.deterlab.net</code> and make changes there. If everything is set up correctly, you should be able to SSH to your first XDC.</li>
+<li>Log into  <code>users.deterlab.net</code> and edit <code>.ssh/config</code> file by following instructions <a href="https://mergetb.org/docs/experimentation/xdc/#ssh-configuration-for-old-openssh-versions">here</a>.</li>
+<li>Set up an XDC (experiment development container), which will serve as your gateway into the new DeterLab, by following the instructions <a href="https://mergetb.org/docs/experimentation/hello-world-gui/#create-an-xdc">here</a>.  If everything is set up correctly, you should be able to SSH into your first XDC by typing on <code>users.deterlab.net</code> the following command <code>ssh &lt;xdcname&gt;-&lt;yourusername&gt;</code>. There is no need to create new experiments at this step, although you are welcome to try it.</li>
 <li>Migrate your projects, experiments and data by following instructions below this list</li>
-<li>Put in a <a href="../getting-help/">DeterLab ticket</a> to let us know you have migrated your items</li>
+<li>Put in a <a href="../getting-help/">DeterLab ticket</a> to let us know you have migrated your items.</li>
+<li>From this point on please do not use old DeterLab anymore.</li>
 </ol>
-<p>To migrate a project X using your new username U and password P, type on <code>users.deterlab.net</code>:</p>
-<pre><code>migrate U P X
+<p>To migrate a project X using your new username U, type on <code>users.deterlab.net</code>:</p>
+<pre><code>migrate U X (you will be prompted for password)
 </code></pre>
 <p>Experiments in your project will be automatically converted and migrated to a new project on our new infrastructure. Project and experiment naming conventions have changed, so you may notice some differences. New project and experiment names must be all lower-case and alphanumeric only. In addition to this, current OS images on the new infrastructure differ from the existing OS images, and there is currently no support for startup commands. Thus, during experiment conversion OS, hardware and startup directives are skipped.</p>
 <p>You will also need to migrate any data in your personal user directory, which you want to keep. To do so, create folder <code>newdeter</code> in your home directory, and move into it all files and folders that you want to keep. Then run:</p>
-<pre><code>migrate U P
+<pre><code>migrate U (you will be prompted for password)
 </code></pre>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
