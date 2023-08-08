@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Core Principles of Network Emulation on Deterlab - DETERLab Documentation</title>
+  <title>Core - DeterLab Documentation (DEPRECATED)</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,7 +19,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Core Principles of Network Emulation on Deterlab";
+    var mkdocs_page_name = "Core";
     var mkdocs_page_input_path = "dsc/core.md";
     var mkdocs_page_url = null;
   </script>
@@ -41,7 +41,7 @@
     <a href="" class="icon">
       <!--REPLACE LOGO FILE HERE -->
       <img class="logo" style="float:left" src="img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <span class="title">DeterLab Documentation (DEPRECATED)</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -154,7 +154,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Documentation</a>
+        <a href="../..">DeterLab Documentation (DEPRECATED)</a>
       </nav>
 
       
@@ -166,7 +166,7 @@
     
       
     
-    <li>Core Principles of Network Emulation on Deterlab</li>
+    <li>Core</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -178,7 +178,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="core-principles-of-network-emulation-on-deterlab">Core Principles of Network Emulation on Deterlab<a class="headerlink" href="#core-principles-of-network-emulation-on-deterlab" title="Permanent link"></a></h1>
+                <div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This page is deprecated. Please use our <a href="https://launch.mod.deterlab.net/">new platform</a> and accompanying documentation.</p>
+</div>
+<h1 id="core-principles-of-network-emulation-on-deterlab">Core Principles of Network Emulation on Deterlab<a class="headerlink" href="#core-principles-of-network-emulation-on-deterlab" title="Permanent link"></a></h1>
 <p>To use network emulation, you need to represent your topology as a list of edges. Some edges may have attributes, such as bandwidth and delay associated with them. To specify nodes that will not be modeled on a Click router (enclave
 nodes, usually at the edges of topology) preface their names with the letter "e", like "e1". Nodes that will be modeled on a Click router are denoted by numbers (e.g., 1 2 represents an edge between node 1 and node 2). Attributes for an edge are specified in a json format (attribute: value) following the edge.</p>
 <p>For example, the following edge-list file represents a topology of two enclaves (one node each) and two core nodes with some edges between them (no attributes):</p>

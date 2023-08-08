@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>Course Setup - DETERLab Documentation</title>
+  <title>Course Setup - DeterLab Documentation (DEPRECATED)</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -41,7 +41,7 @@
     <a href="" class="icon">
       <!--REPLACE LOGO FILE HERE -->
       <img class="logo" style="float:left" src="img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <span class="title">DeterLab Documentation (DEPRECATED)</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -142,15 +142,13 @@
         <ul>
     <li class="toctree-l3"><a class="reference internal" href="#students">Students</a>
         <ul>
-    <li class="toctree-l4"><a class="reference internal" href="#reset-student-passwords">Reset student passwords</a>
+    <li class="toctree-l4"><a class="reference internal" href="#lookup-and-reset-student-passwords">Lookup and reset student passwords</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#unfreeze-student-accounts">Unfreeze student accounts</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#reset-ssh-keys">Reset SSH keys</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#login-as-a-student-in-the-web-interface">Login as a student in the web interface</a>
-    </li>
-    <li class="toctree-l4"><a class="reference internal" href="#log-into-a-students-experiment">Log into a student's experiment</a>
     </li>
     <li class="toctree-l4"><a class="reference internal" href="#recycle-an-account">Recycle an account</a>
     </li>
@@ -177,8 +175,6 @@
         </ul>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#access-control">Access Control</a>
-    </li>
-    <li class="toctree-l3"><a class="reference internal" href="#resource-limits">Resource Limits</a>
     </li>
         </ul>
     </li>
@@ -220,7 +216,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Documentation</a>
+        <a href="../..">DeterLab Documentation (DEPRECATED)</a>
       </nav>
 
       
@@ -248,14 +244,18 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="course-setup">Course Setup<a class="headerlink" href="#course-setup" title="Permanent link"></a></h1>
+                <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page is updated to show the workflow with our <a href="https://launch.mod.deterlab.net/">new platform</a>.</p>
+</div>
+<h1 id="course-setup">Course Setup<a class="headerlink" href="#course-setup" title="Permanent link"></a></h1>
 <p>Since we apply different access control (<a href="#access-control">see about this topic</a>) for educational projects, we really need to hear from you if you're planning to run a class on DETERLab. This is the procedure you should follow:</p>
 <h2 id="actions-at-the-startend-of-a-class">Actions at the Start/End of a Class<a class="headerlink" href="#actions-at-the-startend-of-a-class" title="Permanent link"></a></h2>
 <h3 id="start-a-class-project">Start a class project<a class="headerlink" href="#start-a-class-project" title="Permanent link"></a></h3>
 <p>If you don't already have a project for the given class, start a new project on DETERLab by selecting <em>Experimentation-&gt;Start New Project</em> once you log into DETERLab or <a href="https://www.isi.deterlab.net/newproject.php">click here</a>. Tell us in the description that this is a class project.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Only do this if you have <em>never</em> taught a given class. For each new semester that       you teach for the same class, recycle your current class project (see <a href="#recycle-an-account">here</a>). </p>
+<p>Only do this if you have <em>never</em> taught a given class. For each new semester that you teach for the same class, recycle your current class project (see <a href="#recycle-an-account">here</a>). </p>
 <p>If you already have a research project on DETERLab, do not reuse your research project for your class. Start a new project and categorize it as "class" in the project application. Wait for your project to be approved. It should take a few days and you should receive an automated email message once it is approved.</p>
 </div>
 <h3 id="set-up-your-class">Set up your class<a class="headerlink" href="#set-up-your-class" title="Permanent link"></a></h3>
@@ -263,9 +263,13 @@
 <ol>
 <li>Log in to DETERLab, click the <em>My DETERLab</em> link, find the <em>Teaching</em> tab and click on your class. </li>
 <li>Then select <em>Setup Class</em> from the left menu. You will not be able to enroll students until you complete this step. You will be able to populate your class with materials.</li>
-<li>Input the end date for your class, the estimated number of students and at least one anticipated assignment. </li>
-<li>For the assignment, make your best guess of the start and submission dates, and the number of machines you will need per student. You can change these values at any time. </li>
-<li>The system calculates the class limit automatically as <code>per_student_num_students_0.25</code>. You can also assign a value that is more suitable for your needs. At least one of the "number of machines per student" or "class limit" values must be entered.</li>
+<li>Input the end date for your class and the estimated number of students</li>
+<li>
+<p><strong>In our new workflow</strong> you must set up your Merge password in your user profile, so you and your students can use our new platform for experimentation. You will do this only once. Please see <a href="../../support/migration/index.html#migrating-class-projects">illustrations</a>. </p>
+</li>
+<li>
+<p><strong>In our new workflow</strong> you must select <em>Migrate Class</em> from the left menu to create your class on our new platform. You only need to do this once per class project.</p>
+</li>
 </ol>
 <h3 id="create-accounts-for-students-and-tas">Create accounts for students and TAs<a class="headerlink" href="#create-accounts-for-students-and-tas" title="Permanent link"></a></h3>
 <p>DO NOT ask students or TAs to open accounts themselves. Follow the steps below.</p>
@@ -276,11 +280,11 @@
 <p>To create accounts:</p>
 <ol>
 <li>Copy and paste your students' (or TA's) emails, one per line. Account creation takes up to a minute per student. </li>
-<li>When accounts are created, the system will automatically email the students/TAs so make sure to alert them to the fact that you are signing them up for a DETERLab account.</li>
+<li>When accounts are created, the system will automatically email the students/TAs so make sure to alert them to the fact that you are signing them up for a DETERLab account. Students and TAs will get an automatically chosen username and password in email. </li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If your students or TAs later desire to use DETERLab for research, they will need to join a research project and open an individual account on DETERLab. <strong>Class accounts are only for class use</strong>. If you later desire to use DETERLab in research please apply for a research project.</p>
+<p>If you, your students or TAs later desire to use DETERLab for research, they will need to open a research account <a href="https://launch.mod.deterlab.net/">on our new platform</a>. <strong>Class accounts are only for class use</strong>. </p>
 </div>
 <h2 id="course-wrap-up">Course Wrap-up<a class="headerlink" href="#course-wrap-up" title="Permanent link"></a></h2>
 <h3 id="student-account-locking-and-removal">Student account locking and removal<a class="headerlink" href="#student-account-locking-and-removal" title="Permanent link"></a></h3>
@@ -303,7 +307,7 @@
 <h2 id="course-hand-off-to-another-instructor">Course hand-off to another instructor<a class="headerlink" href="#course-hand-off-to-another-instructor" title="Permanent link"></a></h2>
 <p>Some classes within the same institution may be taught by different instructors each time. To hand your class off to another instructor:</p>
 <ol>
-<li>Ask the new instructor to <a href="https://www.isi.deterlab.net/joinproject.php">use this link</a> to create a DETERLab account and join the project "Share". If they already have a DETERLab account, skip this step. </li>
+<li>Create a TA account for the new instructor</li>
 <li>Either you or the new instructor should <a href="https://trac.deterlab.net/wiki/GettingHelp">file a ticket</a> asking Testbed Ops to complete the hand-off. </li>
 </ol>
 <p><strong>Please follow these steps even if a hand-off is temporary.</strong></p>
@@ -315,13 +319,14 @@
 <h3 id="students">Students<a class="headerlink" href="#students" title="Permanent link"></a></h3>
 <p>You and your TA both can manage your course with minimal involvement of DETERLab operations. You can create accounts for students and TAs, recycle accounts for the next semester, delete accounts for students who dropped the class, and follow student's usage of DETERLab.</p>
 <p>Additionally, you can do the following actions to help students that have problems during your class:</p>
-<h4 id="reset-student-passwords">Reset student passwords<a class="headerlink" href="#reset-student-passwords" title="Permanent link"></a></h4>
+<h4 id="lookup-and-reset-student-passwords">Lookup and reset student passwords<a class="headerlink" href="#lookup-and-reset-student-passwords" title="Permanent link"></a></h4>
 <p>If a student forgets their password:</p>
 <ol>
 <li>From the left menu choose <em>Manage students or TAs</em>. </li>
-<li>Select the student and choose <em>Reset password</em> from the select box below the student list. </li>
+<li>Look up student's password in the last column of the table.</li>
+<li>If you wish you can select the student and choose <em>Reset password</em> from the select box below the student list. </li>
 </ol>
-<p>The student will receive an automated email with instructions for choosing a new password.</p>
+<p>The student will receive an automated email with their new password.</p>
 <h4 id="unfreeze-student-accounts">Unfreeze student accounts<a class="headerlink" href="#unfreeze-student-accounts" title="Permanent link"></a></h4>
 <p>If a student makes too many failed login attempts, their account will be automatically frozen. To unfreeze it:</p>
 <ol>
@@ -341,12 +346,6 @@
 <ol>
 <li>From the left menu choose <em>Manage students or TAs</em></li>
 <li>Click on the glasses icon next to the student.</li>
-</ol>
-<h4 id="log-into-a-students-experiment">Log into a student's experiment<a class="headerlink" href="#log-into-a-students-experiment" title="Permanent link"></a></h4>
-<ol>
-<li>SSH to <code>users.deterlab.net</code> and then SSH to the student's experiment as <code>root</code>, like this:
-    <code>ssh root@....</code></li>
-<li>To get a student's view, type <code>sudo su student_username</code>.</li>
 </ol>
 <h4 id="recycle-an-account">Recycle an account<a class="headerlink" href="#recycle-an-account" title="Permanent link"></a></h4>
 <ol>
@@ -385,10 +384,7 @@
 <li>Add it to your class via <em>Add Materials</em>. </li>
 <li>Choose <em>Assign to Students</em> from the left menu.</li>
 <li>Select materials you want to assign from the list and choose if you want to assign them to all students, a group of students, or individual students. </li>
-<li>
-<p>You must set the due date for the assignment and fill either the anticipated number of nodes per student or the class limit (<a href="#resource-limits">see about class limits</a>). </p>
-<p>Once you create an assignment, the system will automatically enforce the limit for your class from the date of the assignment's creation until the due date.</p>
-</li>
+<li>You must set the due date for the assignment.</li>
 </ol>
 <h4 id="managing-assignments">Managing Assignments<a class="headerlink" href="#managing-assignments" title="Permanent link"></a></h4>
 <p>To make changes to assignments:</p>
@@ -407,23 +403,7 @@
 <p>To download student submissions click on <em>Teaching</em> tab, then <em>Manage Assignments</em> on left sidebar, then <em>Download submissions</em> button next to the given assignment. </p>
 <p>You can download submissions many times. New submissions will be added to the folder with the old ones.</p>
 <h3 id="access-control">Access Control<a class="headerlink" href="#access-control" title="Permanent link"></a></h3>
-<p>When an experiment is created in a DETERLab research project by one member, all members have their home directories exported to the experiment's machines. All members can also log on to the experiment's machines. </p>
-<p>This creates a problem for the educational use of DETERLab since students can log on to experiments created by their classmates and can also access their home directories (if they change permissions on them first, running <code>sudo</code> from experimental machines). To address these problems we treat class projects differently than research projects.</p>
-<p><strong>If a student creates an experiment in the default group of the project,</strong> only this student (and no other students, TAs or instructors) gets his home directory exported to the experiment's machines. Instructors and TA's will be able to log on to the machines with root privileges (<a href="#log-into-a-students-experiment">see how</a>). No other students will be able to log on this experiment's machines. This creates conditions for class use of DETERLab by individual students.</p>
-<p><strong>If a student creates an experiment in a group other than the default group of the project,</strong> all members of that group (and no other students, TAs or instructors) get their home directories exported to the experiment's machines and can log on to them. Instructors and TA's will be able to log on to the machines with root privileges. This creates conditions for class use of DETERLab by groups of students. Content is protected between groups but collaboration is facilitated within each group.</p>
-<p>In the past, we have been asked by instructors to prevent topology display on the experiment's web page so students could learn how to use reconnaissance tools to infer it. We are working on automating this process. At the moment, if you need this service <a href="https://trac.deterlab.net/wiki/GettingHelp">file a ticket</a>.</p>
-<h3 id="resource-limits">Resource Limits<a class="headerlink" href="#resource-limits" title="Permanent link"></a></h3>
-<p>Once you set up your course and input a schedule of assignments, an automated program will enforce the limits you set on your class. This means that if your limit is <code>L</code> for a given day, your students will only be able to use up to <strong><code>L</code> total machines on that day simultaneously</strong>. </p>
-<p>You can always change limits to accommodate more students by choosing <em>Setup Class</em> from the left menu. Please be mindful of other DETERLab users and set reasonable limits for your class. These are usually around 1/4 of the maximum anticipated usage for your class.</p>
-<p>If you move around your class assignments or change what you want to do and how many machines will be in use, the limits will be adjusted automatically. When you create the Nth assignment for your students, our system rewrites the Nth anticipated assignment in your class schedule with the actual assignment you created. If you end up moving a due date of your assignment, the limits will be extended to match the new due date.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Use of resources by students that are granted "incompletes" in your class is not counted against the class limit. Also use of resources by the teacher or the TAs is not counted against the class limit.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>If a student attempts to swap in an experiment in your class on a day for which limits have not been set, and if this student does not have an incomplete, this swap in will fail and the student will receive a message that he/she was not allowed to allocate resources.</p>
-</div>
+<p>Students do not have access to each other's files or experiments. Currently teachers and TAs can access students' experiments using username and password for a student (shown in <em>Manage Students or TAs</em> view).</p>
               
             </div>
           </div>

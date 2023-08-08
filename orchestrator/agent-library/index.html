@@ -9,7 +9,7 @@
   
   
   <link rel="shortcut icon" href="../../img/favicon.ico">
-  <title>MAGI Agent Library - DETERLab Documentation</title>
+  <title>Agent library - DeterLab Documentation (DEPRECATED)</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
   <link rel="stylesheet" href="../../css/theme.css" />
@@ -19,7 +19,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "MAGI Agent Library";
+    var mkdocs_page_name = "Agent library";
     var mkdocs_page_input_path = "orchestrator/agent-library.md";
     var mkdocs_page_url = null;
   </script>
@@ -41,7 +41,7 @@
     <a href="" class="icon">
       <!--REPLACE LOGO FILE HERE -->
       <img class="logo" style="float:left" src="img/doc-logo.png"/> 
-      <span class="title">DETERLab Documentation</span></a>
+      <span class="title">DeterLab Documentation (DEPRECATED)</span></a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search documentation" />
@@ -154,7 +154,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../..">DETERLab Documentation</a>
+        <a href="../..">DeterLab Documentation (DEPRECATED)</a>
       </nav>
 
       
@@ -166,7 +166,7 @@
     
       
     
-    <li>MAGI Agent Library</li>
+    <li>Agent library</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -178,7 +178,11 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="magi-agent-library">MAGI Agent Library<a class="headerlink" href="#magi-agent-library" title="Permanent link"></a></h1>
+                <div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This page is deprecated. Please use our <a href="https://launch.mod.deterlab.net/">new platform</a> and accompanying documentation.</p>
+</div>
+<h1 id="magi-agent-library">MAGI Agent Library<a class="headerlink" href="#magi-agent-library" title="Permanent link"></a></h1>
 <p>Every node has a daemon running with a series of Agents on it. These Agents are each executed in their own thread or process. They are provided with a defined interface with which to send and receive messages to other objects in the experiment. The MAGI daemon will route messages to the agent based on the routing information in the message. The daemon supports group-based, name-based, and “dock”-based routing. (A dock is like a port for a traditional daemon; an agent listens on a dock.) Once a message is delivered to an agent, the format of the message data is then up to the agent itself.</p>
 <p>Most agents will not need to parse messages directly, however, because the MAGI Agent Library supports a number of useful abstractions implemented in base classes from which Agent authors can derive. These are described in detail below.</p>
 <h3 id="agent-execution-models">Agent Execution Models<a class="headerlink" href="#agent-execution-models" title="Permanent link"></a></h3>
